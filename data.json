@@ -1,0 +1,378 @@
+{
+  "version": "0.1.0",
+  "episodes": [
+    {
+      "id": "episode-001",
+      "number": 1,
+      "title": "Пилотный",
+      "date": "2013-11-02",
+      "duration": 2661.598313
+    }
+  ],
+  "games": [
+    {
+      "id": "game-spartacus",
+      "name": "Спартак",
+      "original_name": "Spartacus: A Game of Blood and Treachery",
+      "bgg_id": 128671,
+      "bgg_url": "https://boardgamegeek.com/boardgame/128671",
+      "description": "Гладиаторы, ставки и интриги",
+      "cover": "assets/spartacus.jpg"
+    },
+    {
+      "id": "game-robinson-crusoe",
+      "name": "Робинзон Крузо",
+      "original_name": "Robinson Crusoe: Adventures on the Cursed Island",
+      "bgg_id": 121921,
+      "bgg_url": "https://boardgamegeek.com/boardgame/121921",
+      "description": "Приключения на необитаемом острове",
+      "cover": "assets/robinson-crusoe.jpg"
+    },
+    {
+      "id": "game-eclipse-2011",
+      "name": "Eclipse",
+      "original_name": "Eclipse: New Dawn for the Galaxy",
+      "bgg_id": 72125,
+      "bgg_url": "https://boardgamegeek.com/boardgame/72125",
+      "description": "Космическая стратегия",
+      "cover": "assets/eclipse.jpg"
+    },
+    {
+      "id": "game-carcassonne",
+      "name": "Каркассон",
+      "original_name": "Carcassonne",
+      "bgg_id": 822,
+      "bgg_url": "https://boardgamegeek.com/boardgame/822",
+      "description": "Тайлы и средневековые города",
+      "cover": "assets/carcassonne.jpg"
+    },
+    {
+      "id": "game-catan",
+      "name": "Колонизаторы",
+      "original_name": "Catan",
+      "bgg_id": 13,
+      "bgg_url": "https://boardgamegeek.com/boardgame/13",
+      "description": "Ресурсы, обмен и поселения",
+      "cover": "assets/catan.jpg"
+    },
+    {
+      "id": "game-escape",
+      "name": "Escape",
+      "original_name": "Escape: The Curse of the Temple",
+      "bgg_id": 113294,
+      "bgg_url": "https://boardgamegeek.com/boardgame/113294",
+      "description": "Побег из храма в реальном времени",
+      "cover": null
+    },
+    {
+      "id": "game-dominion",
+      "name": "Доминион",
+      "original_name": "Dominion",
+      "bgg_id": 36218,
+      "bgg_url": "https://boardgamegeek.com/boardgame/36218",
+      "description": "Колодостроение",
+      "cover": "assets/dominion.jpg"
+    },
+    {
+      "id": "game-ticket-to-ride",
+      "name": "Ticket to Ride",
+      "original_name": "Ticket to Ride",
+      "bgg_id": 9209,
+      "bgg_url": "https://boardgamegeek.com/boardgame/9209",
+      "description": "Поезда и маршруты",
+      "cover": "assets/ticket-to-ride.jpg"
+    },
+    {
+      "id": "game-svintus",
+      "name": "Свинтус",
+      "original_name": "Свинтус (Svintus)",
+      "bgg_id": 46147,
+      "bgg_url": "https://boardgamegeek.com/boardgame/46147",
+      "description": "Карты и быстрая реакция",
+      "cover": "assets/svintus.jpg"
+    },
+    {
+      "id": "game-svintus-3d",
+      "name": "Свинтус в кубе",
+      "original_name": "Swintus 3D",
+      "bgg_id": 151089,
+      "bgg_url": "https://boardgamegeek.com/boardgame/151089",
+      "description": "Знакомые свинки, новые кубики",
+      "cover": "assets/svintus-3d.jpg"
+    },
+    {
+      "id": "game-memoir-44",
+      "name": "Memoir ’44",
+      "original_name": "Memoir '44",
+      "bgg_id": 10630,
+      "bgg_url": "https://boardgamegeek.com/boardgame/10630",
+      "description": "Сражения Второй мировой",
+      "cover": "assets/memoir-44.jpg"
+    },
+    {
+      "id": "game-puerto-rico",
+      "name": "Пуэрто-Рико",
+      "original_name": "Puerto Rico",
+      "bgg_id": 3076,
+      "bgg_url": "https://boardgamegeek.com/boardgame/3076",
+      "description": "Классика евроигр",
+      "cover": "assets/puerto-rico.jpg"
+    },
+    {
+      "id": "game-uno",
+      "name": "Уно",
+      "original_name": "UNO",
+      "bgg_id": 2223,
+      "bgg_url": "https://boardgamegeek.com/boardgame/2223",
+      "description": "Цвета, числа и специальные карты",
+      "cover": "assets/uno.png"
+    },
+    {
+      "id": "game-monopoly",
+      "name": "Монополия",
+      "original_name": "Monopoly",
+      "bgg_id": 1406,
+      "bgg_url": "https://boardgamegeek.com/boardgame/1406",
+      "description": "Знакомая всем классика",
+      "cover": "assets/monopoly.jpg"
+    },
+    {
+      "id": "game-hollywood-2013",
+      "name": "Голливуд",
+      "original_name": "Hollywood",
+      "bgg_id": 147021,
+      "bgg_url": "https://boardgamegeek.com/boardgame/147021",
+      "description": "Собрать свой фильм",
+      "cover": "assets/hollywood.png"
+    },
+    {
+      "id": "game-mammuz",
+      "name": "Заврики",
+      "original_name": "MammuZ",
+      "bgg_id": 172073,
+      "bgg_url": "https://boardgamegeek.com/boardgame/172073",
+      "description": "Блеф с доисторическими животными",
+      "cover": "assets/mammuz.JPG"
+    },
+    {
+      "id": "game-world-of-tanks-rush",
+      "name": "World of Tanks: Rush",
+      "original_name": "World of Tanks: Rush",
+      "bgg_id": 147030,
+      "bgg_url": "https://boardgamegeek.com/boardgame/147030",
+      "description": "Колодостроительная игра про танки",
+      "cover": "assets/world-of-tanks-rush.jpg"
+    },
+    {
+      "id": "game-zapretnye-slova",
+      "name": "Запретные слова",
+      "original_name": null,
+      "bgg_id": 144305,
+      "bgg_url": "https://boardgamegeek.com/boardgame/144305",
+      "description": "Игра с буквами",
+      "cover": "assets/zapretnye-slova.jpg"
+    }
+  ],
+  "quotes": [
+    {
+      "id": "quote-001",
+      "game_id": "game-spartacus",
+      "episode_id": "episode-001",
+      "start": 922.88,
+      "end": 963.32,
+      "text": "С одной стороны кажется, что ты должен купить себе самого крутого гладиатора и прокачать, чтобы он всех убивал. Но люди говорят, что игра на самом деле не об этом."
+    },
+    {
+      "id": "quote-002",
+      "game_id": "game-spartacus",
+      "episode_id": "episode-001",
+      "start": 951.36,
+      "end": 980.6,
+      "text": "Ты можешь купить какого-нибудь хлюпика, выпускаешь его и сам ставишь деньги против него — что он умрёт."
+    },
+    {
+      "id": "quote-003",
+      "game_id": "game-spartacus",
+      "episode_id": "episode-001",
+      "start": 991.0,
+      "end": 1014.6,
+      "text": "Жалуются иногда, что долго: порядка двух часов может длиться партия. В основном, говорят, бои затянутые."
+    },
+    {
+      "id": "quote-004",
+      "game_id": "game-spartacus",
+      "episode_id": "episode-001",
+      "start": 1014.92,
+      "end": 1027.32,
+      "text": "Объявили цену в России — 2 500 рублей. Учитывая, что за границей, правда без учёта доставки, она стоит порядка 25–30 долларов."
+    },
+    {
+      "id": "quote-005",
+      "game_id": "game-robinson-crusoe",
+      "episode_id": "episode-001",
+      "start": 241.04,
+      "end": 264.88,
+      "text": "Она очень классная. С точки зрения механик особо ничего нового… В итоге получилась очень крутая игра про жизнь на необитаемом острове."
+    },
+    {
+      "id": "quote-006",
+      "game_id": "game-eclipse-2011",
+      "episode_id": "episode-001",
+      "start": 265.2,
+      "end": 283.52,
+      "text": "Ничего принципиально нового — космическая стратегия. Но она сделана настолько круто, соткана из отдельных частей, что реально прорывная игра."
+    },
+    {
+      "id": "quote-007",
+      "game_id": "game-eclipse-2011",
+      "episode_id": "episode-001",
+      "start": 1357.36,
+      "end": 1370.48,
+      "text": "Сейчас Puerto Rico пятую позицию занимает, на шестой позиции стоит Eclipse 2011 года выпуска."
+    },
+    {
+      "id": "quote-008",
+      "game_id": "game-carcassonne",
+      "episode_id": "episode-001",
+      "start": 443.68,
+      "end": 472.8,
+      "text": "Лично мне менее интересно: в «Колонизаторах» хотя бы нужно добывать, менять и строить что-то. А в «Каркассоне» ты просто ставишь разными способами фишку и за это тебе очки."
+    },
+    {
+      "id": "quote-009",
+      "game_id": "game-carcassonne",
+      "episode_id": "episode-001",
+      "start": 472.8,
+      "end": 500.4,
+      "text": "Заучивают, какие они бывают, что на них нарисовано, с какой стороны поле, город. Считают карты: какие ещё выйдут, какие вышли, что можно построить. Требует определённых усилий, не просто так."
+    },
+    {
+      "id": "quote-010",
+      "game_id": "game-catan",
+      "episode_id": "episode-001",
+      "start": 1614.76,
+      "end": 1627.32,
+      "text": "В «Колонизаторов» у нас играло человек тридцать, когда турнир был общероссийский. В «Колонизаторов» играют и девочки, и мальчики всех возрастов."
+    },
+    {
+      "id": "quote-011",
+      "game_id": "game-escape",
+      "episode_id": "episode-001",
+      "start": 169.4,
+      "end": 189.8,
+      "text": "В неё играют сразу несколько человек в команде, в реальном времени. Включается компакт-диск с мелодией. Музыка становится всё более напряжённой, а люди бегают фишечками по полю и пытаются сбежать из заброшенного храма."
+    },
+    {
+      "id": "quote-012",
+      "game_id": "game-dominion",
+      "episode_id": "episode-001",
+      "start": 1382.52,
+      "end": 1391.08,
+      "text": "«Доминион», выпущенный в 2008 году, успел побывать, по-моему, даже в пятёрке. Сейчас уже выпал."
+    },
+    {
+      "id": "quote-013",
+      "game_id": "game-ticket-to-ride",
+      "episode_id": "episode-001",
+      "start": 524.0,
+      "end": 529.96,
+      "text": "Будет чемпионат по Ticket to Ride, где поезда, такие фишечки, надо выставлять."
+    },
+    {
+      "id": "quote-014",
+      "game_id": "game-svintus",
+      "episode_id": "episode-001",
+      "start": 677.2,
+      "end": 688.96,
+      "text": "Она достаточно интересная и успешная, в том числе коммерчески. Неоднократно переиздавалась, была выпущена вторая редакция пару лет назад."
+    },
+    {
+      "id": "quote-015",
+      "game_id": "game-svintus",
+      "episode_id": "episode-001",
+      "start": 674.32,
+      "end": 676.8,
+      "text": "Я в неё совершенно не способен играть."
+    },
+    {
+      "id": "quote-016",
+      "game_id": "game-svintus-3d",
+      "episode_id": "episode-001",
+      "start": 735.44,
+      "end": 745.12,
+      "text": "Это будет немножко другая игра. Там тоже будут карты, но играть ими не надо: их надо покупать с помощью обычных кубиков."
+    },
+    {
+      "id": "quote-017",
+      "game_id": "game-uno",
+      "episode_id": "episode-001",
+      "start": 689.76,
+      "end": 720.16,
+      "text": "Игра основана на принципе другой известной игры — Uno… В свой ход нужно положить карту того же достоинства либо той же масти."
+    },
+    {
+      "id": "quote-018",
+      "game_id": "game-puerto-rico",
+      "episode_id": "episode-001",
+      "start": 1338.08,
+      "end": 1357.04,
+      "text": "В существующем топ-10 самая старая игра — Puerto Rico 2002 года. Она достаточно долго, наверное до 2009 или 2010 года, вообще первое место занимала."
+    },
+    {
+      "id": "quote-019",
+      "game_id": "game-monopoly",
+      "episode_id": "episode-001",
+      "start": 1357.36,
+      "end": 1370.48,
+      "text": "Нет такого, что там «Монополия», например. Сейчас Puerto Rico пятую позицию занимает, на шестой позиции стоит Eclipse 2011 года выпуска."
+    },
+    {
+      "id": "quote-020",
+      "game_id": "game-memoir-44",
+      "episode_id": "episode-001",
+      "start": 1627.32,
+      "end": 1645.56,
+      "text": "Memoir показался такой игрой, у которой не низкий порог вхождения. Надо, чтобы тема была интересна, с правилами разобраться, с нюансами."
+    },
+    {
+      "id": "quote-021",
+      "game_id": "game-memoir-44",
+      "episode_id": "episode-001",
+      "start": 1673.16,
+      "end": 1684.28,
+      "text": "Говорят, в Memoir всё решают карты и кубики. Но практика показывает: кто играет дольше, тот выигрывает больше."
+    },
+    {
+      "id": "quote-022",
+      "game_id": "game-hollywood-2013",
+      "episode_id": "episode-001",
+      "start": 2357.6,
+      "end": 2370.0,
+      "text": "Если ты помнишь, игра «Голливуд» — можно снимать фильмы."
+    },
+    {
+      "id": "quote-023",
+      "game_id": "game-mammuz",
+      "episode_id": "episode-001",
+      "start": 2370.0,
+      "end": 2376.08,
+      "text": "«Заврики» — это, по сути, «Верю — не верю», переделанная карточная."
+    },
+    {
+      "id": "quote-024",
+      "game_id": "game-zapretnye-slova",
+      "episode_id": "episode-001",
+      "start": 2376.08,
+      "end": 2382.16,
+      "text": "«Запретные слова» — очень прикольная игра с буквами."
+    },
+    {
+      "id": "quote-025",
+      "game_id": "game-world-of-tanks-rush",
+      "episode_id": "episode-001",
+      "start": 2382.16,
+      "end": 2394.32,
+      "text": "World of Tanks: Rush — коллекционная… Не коллекционная, господи! Колодостроительная карточная игра про танки."
+    }
+  ]
+}
