@@ -25,7 +25,7 @@ const currentQuotes = () => database.quotes.filter(q => !selectedEpisode || q.ep
 const gameQuotes = id => currentQuotes().filter(q => q.game_id === id);
 const visibleGames = () => {const ids=new Set(currentQuotes().map(q=>q.game_id));return database.games.filter(g=>ids.has(g.id));};
 function image(game, large = false) {
-  return game.cover ? `<img src="${escapeHtml(game.cover)}" alt="Коробка игры ${escapeHtml(game.name)}" ${large?'':'loading="lazy"'}>` : '<span class="missing-cover">Обложка уточняется</span>';
+  return game.cover ? `<img src="${escapeHtml(game.cover)}" alt="Игра ${escapeHtml(game.name)}" ${large?'':'loading="lazy"'}>` : '<span class="missing-cover">Обложка уточняется</span>';
 }
 function renderLibrary() {
   const games = visibleGames();
@@ -35,7 +35,7 @@ function renderLibrary() {
   trigger.title = episode ? episodeName(episode) : 'Выбрать выпуск';
   document.getElementById('episode-meta').hidden = Boolean(episode);
   document.getElementById('episode-meta').textContent = episode ? '' : `${new Set(database.quotes.map(q=>q.episode_id)).size} ${plural(new Set(database.quotes.map(q=>q.episode_id)).size,'выпуск','выпуска','выпусков')} с цитатами`;
-  document.getElementById('library-note').hidden = Boolean(selectedEpisode && selectedEpisode !== 'episode-001');
+  document.getElementById('library-note').hidden = Boolean(selectedEpisode);
   grid.innerHTML = games.map(g => {
     const n = gameQuotes(g.id).length;
     return `<button type="button" class="game-card" data-game="${escapeHtml(g.id)}" aria-pressed="${g.id===selectedId}" aria-label="${escapeHtml(g.name)}. ${n} ${plural(n,'цитата','цитаты','цитат')}. Открыть">
@@ -231,4 +231,4 @@ function restoreLocation(initial = false) {
 }
 window.addEventListener('popstate',()=>{if(database)restoreLocation();});
 window.addEventListener('hashchange',()=>{if(database)restoreLocation();});
-fetch('data.json?v=0.3.0').then(r=>{if(!r.ok)throw new Error('data');return r.json();}).then(d=>{database=d;restoreLocation(true);trigger.disabled=false;}).catch(()=>{document.getElementById('error').hidden=false;document.getElementById('error').textContent='Не удалось открыть библиотеку. Обновите страницу.';});
+fetch('data.json?v=0.4.0').then(r=>{if(!r.ok)throw new Error('data');return r.json();}).then(d=>{database=d;restoreLocation(true);trigger.disabled=false;}).catch(()=>{document.getElementById('error').hidden=false;document.getElementById('error').textContent='Не удалось открыть библиотеку. Обновите страницу.';});

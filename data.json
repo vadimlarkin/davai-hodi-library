@@ -1,5 +1,5 @@
 {
-  "version": "0.3.0",
+  "version": "0.4.0",
   "episodes": [
     {
       "id": "episode-001",
@@ -3051,15 +3051,6 @@
       "cover": "assets/spartacus.jpg"
     },
     {
-      "id": "game-robinson-crusoe",
-      "name": "Робинзон Крузо",
-      "original_name": "Robinson Crusoe: Adventures on the Cursed Island",
-      "bgg_id": 121921,
-      "bgg_url": "https://boardgamegeek.com/boardgame/121921",
-      "description": "Приключения на необитаемом острове",
-      "cover": "assets/robinson-crusoe.jpg"
-    },
-    {
       "id": "game-eclipse-2011",
       "name": "Eclipse",
       "original_name": "Eclipse: New Dawn for the Galaxy",
@@ -3078,6 +3069,24 @@
       "cover": "assets/carcassonne.jpg"
     },
     {
+      "id": "game-world-of-tanks-rush",
+      "name": "World of Tanks: Rush",
+      "original_name": "World of Tanks: Rush",
+      "bgg_id": 147030,
+      "bgg_url": "https://boardgamegeek.com/boardgame/147030",
+      "description": "Колодостроительная игра про танки",
+      "cover": "assets/world-of-tanks-rush.jpg"
+    },
+    {
+      "id": "game-activity",
+      "name": "Активити",
+      "original_name": "Activity",
+      "bgg_id": 8790,
+      "bgg_url": "https://boardgamegeek.com/boardgame/8790",
+      "description": "1990 · Настольная игра",
+      "cover": "assets/activity.jpg"
+    },
+    {
       "id": "game-catan",
       "name": "Колонизаторы",
       "original_name": "Catan",
@@ -3087,22 +3096,13 @@
       "cover": "assets/catan.jpg"
     },
     {
-      "id": "game-escape",
-      "name": "Escape",
-      "original_name": "Escape: The Curse of the Temple",
-      "bgg_id": 113294,
-      "bgg_url": "https://boardgamegeek.com/boardgame/113294",
-      "description": "Побег из храма в реальном времени",
-      "cover": null
-    },
-    {
-      "id": "game-dominion",
-      "name": "Доминион",
-      "original_name": "Dominion",
-      "bgg_id": 36218,
-      "bgg_url": "https://boardgamegeek.com/boardgame/36218",
-      "description": "Колодостроение",
-      "cover": "assets/dominion.jpg"
+      "id": "game-evolution-random",
+      "name": "Эволюция: Случайные мутации",
+      "original_name": "Evolution: Random Mutations",
+      "bgg_id": 151985,
+      "bgg_url": "https://boardgamegeek.com/boardgame/151985",
+      "description": "2013 · Настольная игра",
+      "cover": "assets/evolution-random.jpg"
     },
     {
       "id": "game-ticket-to-ride",
@@ -3114,6 +3114,33 @@
       "cover": "assets/ticket-to-ride.jpg"
     },
     {
+      "id": "game-desktopia",
+      "name": "Настолье",
+      "original_name": "Desktopia",
+      "bgg_id": 145911,
+      "bgg_url": "https://boardgamegeek.com/boardgame/145911",
+      "description": "2013 · Настольная игра",
+      "cover": "assets/desktopia.jpg"
+    },
+    {
+      "id": "game-ordonnance",
+      "name": "Ордонанс",
+      "original_name": "The Kingdoms of Crusaders",
+      "bgg_id": 76681,
+      "bgg_url": "https://boardgamegeek.com/boardgame/76681",
+      "description": "2007 · Настольная игра",
+      "cover": "assets/ordonnance.jpg"
+    },
+    {
+      "id": "game-robinson-crusoe",
+      "name": "Робинзон Крузо",
+      "original_name": "Robinson Crusoe: Adventures on the Cursed Island",
+      "bgg_id": 121921,
+      "bgg_url": "https://boardgamegeek.com/boardgame/121921",
+      "description": "Приключения на необитаемом острове",
+      "cover": "assets/robinson-crusoe.jpg"
+    },
+    {
       "id": "game-svintus",
       "name": "Свинтус",
       "original_name": "Свинтус (Svintus)",
@@ -3123,13 +3150,49 @@
       "cover": "assets/svintus.jpg"
     },
     {
-      "id": "game-svintus-3d",
-      "name": "Свинтус в кубе",
-      "original_name": "Swintus 3D",
-      "bgg_id": 151089,
-      "bgg_url": "https://boardgamegeek.com/boardgame/151089",
-      "description": "Знакомые свинки, новые кубики",
-      "cover": "assets/svintus-3d.jpg"
+      "id": "game-7-wonders",
+      "name": "7 чудес",
+      "original_name": "7 Wonders",
+      "bgg_id": 68448,
+      "bgg_url": "https://boardgamegeek.com/boardgame/68448",
+      "description": "2010 · Настольная игра",
+      "cover": "assets/7-wonders.jpg"
+    },
+    {
+      "id": "game-city-of-horror",
+      "name": "City of Horror",
+      "original_name": "City of Horror",
+      "bgg_id": 120217,
+      "bgg_url": "https://boardgamegeek.com/boardgame/120217",
+      "description": "2012 · Настольная игра",
+      "cover": "assets/city-of-horror.jpg"
+    },
+    {
+      "id": "game-descent-2",
+      "name": "Descent: Странствия во тьме, вторая редакция",
+      "original_name": "Descent: Journeys in the Dark (Second Edition)",
+      "bgg_id": 104162,
+      "bgg_url": "https://boardgamegeek.com/boardgame/104162",
+      "description": "2012 · Настольная игра",
+      "cover": "assets/descent-2.jpg"
+    },
+    {
+      "id": "game-mage-knight",
+      "name": "Mage Knight",
+      "original_name": "Mage Knight Board Game",
+      "bgg_id": 96848,
+      "bgg_url": "https://boardgamegeek.com/boardgame/96848",
+      "description": "2011 · Настольная игра",
+      "cover": "assets/mage-knight.jpg"
+    },
+    {
+      "id": "game-magic",
+      "name": "Magic: The Gathering",
+      "original_name": "Magic: The Gathering",
+      "bgg_id": 463,
+      "bgg_url": "https://boardgamegeek.com/boardgame/463",
+      "description": "1993 · Настольная игра",
+      "cover": "assets/magic.jpg"
     },
     {
       "id": "game-memoir-44",
@@ -3141,31 +3204,31 @@
       "cover": "assets/memoir-44.jpg"
     },
     {
-      "id": "game-puerto-rico",
-      "name": "Пуэрто-Рико",
-      "original_name": "Puerto Rico",
-      "bgg_id": 3076,
-      "bgg_url": "https://boardgamegeek.com/boardgame/3076",
-      "description": "Классика евроигр",
-      "cover": "assets/puerto-rico.jpg"
+      "id": "game-nations",
+      "name": "Nations",
+      "original_name": "Nations",
+      "bgg_id": 126042,
+      "bgg_url": "https://boardgamegeek.com/boardgame/126042",
+      "description": "2013 · Настольная игра",
+      "cover": "assets/nations.jpg"
     },
     {
-      "id": "game-uno",
-      "name": "Уно",
-      "original_name": "UNO",
-      "bgg_id": 2223,
-      "bgg_url": "https://boardgamegeek.com/boardgame/2223",
-      "description": "Цвета, числа и специальные карты",
-      "cover": "assets/uno.png"
+      "id": "game-timeline",
+      "name": "Timeline",
+      "original_name": "Timeline",
+      "bgg_id": 128664,
+      "bgg_url": "https://boardgamegeek.com/boardgame/128664",
+      "description": "2012 · Настольная игра",
+      "cover": "assets/timeline.jpg"
     },
     {
-      "id": "game-monopoly",
-      "name": "Монополия",
-      "original_name": "Monopoly",
-      "bgg_id": 1406,
-      "bgg_url": "https://boardgamegeek.com/boardgame/1406",
-      "description": "Знакомая всем классика",
-      "cover": "assets/monopoly.jpg"
+      "id": "game-eight-minute-empire",
+      "name": "Восьмиминутная империя",
+      "original_name": "Eight-Minute Empire",
+      "bgg_id": 131366,
+      "bgg_url": "https://boardgamegeek.com/boardgame/131366",
+      "description": "2012 · Настольная игра",
+      "cover": "assets/eight-minute-empire.jpg"
     },
     {
       "id": "game-hollywood-2013",
@@ -3177,6 +3240,393 @@
       "cover": "assets/hollywood.png"
     },
     {
+      "id": "game-dixit",
+      "name": "Диксит",
+      "original_name": "Dixit",
+      "bgg_id": 39856,
+      "bgg_url": "https://boardgamegeek.com/boardgame/39856",
+      "description": "2008 · Настольная игра",
+      "cover": "assets/dixit.jpg"
+    },
+    {
+      "id": "game-dominion",
+      "name": "Доминион",
+      "original_name": "Dominion",
+      "bgg_id": 36218,
+      "bgg_url": "https://boardgamegeek.com/boardgame/36218",
+      "description": "Колодостроение",
+      "cover": "assets/dominion.jpg"
+    },
+    {
+      "id": "game-potion-making",
+      "name": "Зельеварение. Практикум",
+      "original_name": "Potion-Making: Practice",
+      "bgg_id": 34169,
+      "bgg_url": "https://boardgamegeek.com/boardgame/34169",
+      "description": "2005 · Настольная игра",
+      "cover": "assets/potion-making.jpg"
+    },
+    {
+      "id": "game-celebrity",
+      "name": "Знаменитость",
+      "original_name": "Знаменитость",
+      "bgg_id": 151351,
+      "bgg_url": "https://boardgamegeek.com/boardgame/151351",
+      "description": "2013 · Настольная игра",
+      "cover": "assets/celebrity.jpg"
+    },
+    {
+      "id": "game-zombicide",
+      "name": "Зомбицид",
+      "original_name": "Zombicide",
+      "bgg_id": 113924,
+      "bgg_url": "https://boardgamegeek.com/boardgame/113924",
+      "description": "2012 · Настольная игра",
+      "cover": "assets/zombicide.jpg"
+    },
+    {
+      "id": "game-kamisado",
+      "name": "Камисадо",
+      "original_name": "Kamisado",
+      "bgg_id": 38545,
+      "bgg_url": "https://boardgamegeek.com/boardgame/38545",
+      "description": "2008 · Настольная игра",
+      "cover": "assets/kamisado.jpg"
+    },
+    {
+      "id": "game-maya",
+      "name": "Майя",
+      "original_name": "Maya",
+      "bgg_id": 124598,
+      "bgg_url": "https://boardgamegeek.com/boardgame/124598",
+      "description": "2012 · Настольная игра",
+      "cover": "assets/maya.jpg"
+    },
+    {
+      "id": "game-manhattan-project",
+      "name": "Манхэттенский проект",
+      "original_name": "The Manhattan Project",
+      "bgg_id": 63628,
+      "bgg_url": "https://boardgamegeek.com/boardgame/63628",
+      "description": "2012 · Настольная игра",
+      "cover": "assets/manhattan-project.jpg"
+    },
+    {
+      "id": "game-monopoly",
+      "name": "Монополия",
+      "original_name": "Monopoly",
+      "bgg_id": 1406,
+      "bgg_url": "https://boardgamegeek.com/boardgame/1406",
+      "description": "Знакомая всем классика",
+      "cover": "assets/monopoly.jpg"
+    },
+    {
+      "id": "game-few-acres-snow",
+      "name": "Несколько акров снега",
+      "original_name": "A Few Acres of Snow",
+      "bgg_id": 79828,
+      "bgg_url": "https://boardgamegeek.com/boardgame/79828",
+      "description": "2011 · Настольная игра",
+      "cover": "assets/few-acres-snow.jpg"
+    },
+    {
+      "id": "game-pandemic",
+      "name": "Пандемия",
+      "original_name": "Pandemic",
+      "bgg_id": 30549,
+      "bgg_url": "https://boardgamegeek.com/boardgame/30549",
+      "description": "2008 · Настольная игра",
+      "cover": "assets/pandemic.jpg"
+    },
+    {
+      "id": "game-hobbit-unexpected",
+      "name": "Хоббит: Нежданное путешествие",
+      "original_name": "The Hobbit: An Unexpected Journey",
+      "bgg_id": 131530,
+      "bgg_url": "https://boardgamegeek.com/boardgame/131530",
+      "description": "2012 · Настольная игра",
+      "cover": "assets/hobbit-unexpected.jpg"
+    },
+    {
+      "id": "game-civilization-2010",
+      "name": "Цивилизация Сида Мейера",
+      "original_name": "Sid Meier's Civilization: The Board Game",
+      "bgg_id": 77130,
+      "bgg_url": "https://boardgamegeek.com/boardgame/77130",
+      "description": "2010 · Настольная игра",
+      "cover": "assets/civilization-2010.jpg"
+    },
+    {
+      "id": "game-evolution-origin",
+      "name": "Эволюция: Происхождение видов",
+      "original_name": "Evolution: The Origin of Species",
+      "bgg_id": 71021,
+      "bgg_url": "https://boardgamegeek.com/boardgame/71021",
+      "description": "2010 · Настольная игра",
+      "cover": "assets/evolution-origin.jpg"
+    },
+    {
+      "id": "game-android-netrunner",
+      "name": "Android: Netrunner",
+      "original_name": "Android: Netrunner",
+      "bgg_id": 124742,
+      "bgg_url": "https://boardgamegeek.com/boardgame/124742",
+      "description": "2012 · Настольная игра",
+      "cover": "assets/android-netrunner.jpg"
+    },
+    {
+      "id": "game-ascension",
+      "name": "Ascension",
+      "original_name": "Ascension: Deckbuilding Game",
+      "bgg_id": 69789,
+      "bgg_url": "https://boardgamegeek.com/boardgame/69789",
+      "description": "2010 · Настольная игра",
+      "cover": "assets/ascension.jpg"
+    },
+    {
+      "id": "game-eclipse-rise",
+      "name": "Eclipse: Rise of the Ancients",
+      "original_name": "Eclipse: Rise of the Ancients",
+      "bgg_id": 125898,
+      "bgg_url": "https://boardgamegeek.com/boardgame/125898",
+      "description": "2012 · Дополнение",
+      "cover": "assets/eclipse-rise.jpg"
+    },
+    {
+      "id": "game-escape",
+      "name": "Escape",
+      "original_name": "Escape: The Curse of the Temple",
+      "bgg_id": 113294,
+      "bgg_url": "https://boardgamegeek.com/boardgame/113294",
+      "description": "Побег из храма в реальном времени",
+      "cover": "assets/escape.jpg"
+    },
+    {
+      "id": "game-field-of-glory",
+      "name": "Field of Glory: The Card Game",
+      "original_name": "Field of Glory: The Card Game",
+      "bgg_id": 147451,
+      "bgg_url": "https://boardgamegeek.com/boardgame/147451",
+      "description": "2013 · Настольная игра",
+      "cover": "assets/field-of-glory.jpg"
+    },
+    {
+      "id": "game-nefarious",
+      "name": "Nefarious",
+      "original_name": "Nefarious",
+      "bgg_id": 108044,
+      "bgg_url": "https://boardgamegeek.com/boardgame/108044",
+      "description": "2011 · Настольная игра",
+      "cover": "assets/nefarious.jpg"
+    },
+    {
+      "id": "game-pokemon-tcg",
+      "name": "Pokémon: Карточная игра",
+      "original_name": "Pokémon Trading Card Game",
+      "bgg_id": 2165,
+      "bgg_url": "https://boardgamegeek.com/boardgame/2165",
+      "description": "1996 · Настольная игра",
+      "cover": "assets/pokemon-tcg.jpg"
+    },
+    {
+      "id": "game-rockband-manager",
+      "name": "Rockband Manager",
+      "original_name": "Rockband Manager",
+      "bgg_id": 70916,
+      "bgg_url": "https://boardgamegeek.com/boardgame/70916",
+      "description": "2010 · Настольная игра",
+      "cover": "assets/rockband-manager.jpg"
+    },
+    {
+      "id": "game-russian-railroads",
+      "name": "Russian Railroads",
+      "original_name": "Russian Railroads",
+      "bgg_id": 144733,
+      "bgg_url": "https://boardgamegeek.com/boardgame/144733",
+      "description": "2013 · Настольная игра",
+      "cover": "assets/russian-railroads.jpg"
+    },
+    {
+      "id": "game-starcraft",
+      "name": "StarCraft: Настольная игра",
+      "original_name": "StarCraft: The Board Game",
+      "bgg_id": 22827,
+      "bgg_url": "https://boardgamegeek.com/boardgame/22827",
+      "description": "2007 · Настольная игра",
+      "cover": "assets/starcraft.jpg"
+    },
+    {
+      "id": "game-thunderstone",
+      "name": "Thunderstone",
+      "original_name": "Thunderstone",
+      "bgg_id": 53953,
+      "bgg_url": "https://boardgamegeek.com/boardgame/53953",
+      "description": "2009 · Настольная игра",
+      "cover": "assets/thunderstone.jpg"
+    },
+    {
+      "id": "game-ticket-to-ride-europe",
+      "name": "Ticket to Ride: Европа",
+      "original_name": "Ticket to Ride: Europe",
+      "bgg_id": 14996,
+      "bgg_url": "https://boardgamegeek.com/boardgame/14996",
+      "description": "2005 · Настольная игра",
+      "cover": "assets/ticket-to-ride-europe.jpg"
+    },
+    {
+      "id": "game-trains",
+      "name": "Trains",
+      "original_name": "Trains",
+      "bgg_id": 121408,
+      "bgg_url": "https://boardgamegeek.com/boardgame/121408",
+      "description": "2012 · Настольная игра",
+      "cover": "assets/trains.jpg"
+    },
+    {
+      "id": "game-wow-tcg",
+      "name": "World of Warcraft: Коллекционная карточная игра",
+      "original_name": "World of Warcraft Trading Card Game",
+      "bgg_id": 19643,
+      "bgg_url": "https://boardgamegeek.com/boardgame/19643",
+      "description": "2006 · Настольная игра",
+      "cover": "assets/wow-tcg.jpg"
+    },
+    {
+      "id": "game-agricola",
+      "name": "Агрикола",
+      "original_name": "Agricola",
+      "bgg_id": 31260,
+      "bgg_url": "https://boardgamegeek.com/boardgame/31260",
+      "description": "2007 · Настольная игра",
+      "cover": "assets/agricola.jpg"
+    },
+    {
+      "id": "game-legends-andor",
+      "name": "Андор",
+      "original_name": "Legends of Andor",
+      "bgg_id": 127398,
+      "bgg_url": "https://boardgamegeek.com/boardgame/127398",
+      "description": "2012 · Настольная игра",
+      "cover": "assets/legends-andor.jpg"
+    },
+    {
+      "id": "game-azteka",
+      "name": "Ацтека",
+      "original_name": "Azteka",
+      "bgg_id": 153496,
+      "bgg_url": "https://boardgamegeek.com/boardgame/153496",
+      "description": "2014 · Настольная игра",
+      "cover": "assets/azteka.jpg"
+    },
+    {
+      "id": "game-geistesblitz",
+      "name": "Барабашка",
+      "original_name": "Ghost Blitz",
+      "bgg_id": 83195,
+      "bgg_url": "https://boardgamegeek.com/boardgame/83195",
+      "description": "2010 · Настольная игра",
+      "cover": "assets/geistesblitz.jpg"
+    },
+    {
+      "id": "game-berserk",
+      "name": "Берсерк",
+      "original_name": "Berserk: Trading Card Game",
+      "bgg_id": 19544,
+      "bgg_url": "https://boardgamegeek.com/boardgame/19544",
+      "description": "2003 · Настольная игра",
+      "cover": "assets/berserk.jpg"
+    },
+    {
+      "id": "game-rubbish-party",
+      "name": "Большая уборка",
+      "original_name": "Mountain 53",
+      "bgg_id": 136416,
+      "bgg_url": "https://boardgamegeek.com/boardgame/136416",
+      "description": "2013 · Настольная игра",
+      "cover": "assets/rubbish-party.jpg"
+    },
+    {
+      "id": "game-race-for-galaxy",
+      "name": "Борьба за галактику",
+      "original_name": "Race for the Galaxy",
+      "bgg_id": 28143,
+      "bgg_url": "https://boardgamegeek.com/boardgame/28143",
+      "description": "2007 · Настольная игра",
+      "cover": "assets/race-for-galaxy.jpg"
+    },
+    {
+      "id": "game-munchkin-bites",
+      "name": "Вампирский Манчкин",
+      "original_name": "Munchkin Bites!",
+      "bgg_id": 12194,
+      "bgg_url": "https://boardgamegeek.com/boardgame/12194",
+      "description": "2004 · Настольная игра",
+      "cover": "assets/munchkin-bites.jpg"
+    },
+    {
+      "id": "game-helsing",
+      "name": "Ван Хельсинг",
+      "original_name": "Van Helsing",
+      "bgg_id": 84173,
+      "bgg_url": "https://boardgamegeek.com/boardgame/84173",
+      "description": "2010 · Настольная игра",
+      "cover": "assets/helsing.jpg"
+    },
+    {
+      "id": "game-the-witches",
+      "name": "Ведьмы",
+      "original_name": "The Witches",
+      "bgg_id": 137095,
+      "bgg_url": "https://boardgamegeek.com/boardgame/137095",
+      "description": "2013 · Настольная игра",
+      "cover": "assets/the-witches.jpg"
+    },
+    {
+      "id": "game-lotr-deckbuilding",
+      "name": "Властелин колец: Братство кольца, колодостроительная игра",
+      "original_name": "The Lord of the Rings: The Fellowship of the Ring Deck-Building Game",
+      "bgg_id": 127127,
+      "bgg_url": "https://boardgamegeek.com/boardgame/127127",
+      "description": "2013 · Настольная игра",
+      "cover": "assets/lotr-deckbuilding.jpg"
+    },
+    {
+      "id": "game-lotr-lcg",
+      "name": "Властелин колец: Карточная игра",
+      "original_name": "The Lord of the Rings: The Card Game",
+      "bgg_id": 77423,
+      "bgg_url": "https://boardgamegeek.com/boardgame/77423",
+      "description": "2011 · Настольная игра",
+      "cover": "assets/lotr-lcg.jpg"
+    },
+    {
+      "id": "game-village",
+      "name": "Деревня",
+      "original_name": "Village",
+      "bgg_id": 104006,
+      "bgg_url": "https://boardgamegeek.com/boardgame/104006",
+      "description": "2011 · Настольная игра",
+      "cover": "assets/village.jpg"
+    },
+    {
+      "id": "game-jungle-speed",
+      "name": "Дикие джунгли",
+      "original_name": "Jungle Speed",
+      "bgg_id": 8098,
+      "bgg_url": "https://boardgamegeek.com/boardgame/8098",
+      "description": "1997 · Настольная игра",
+      "cover": "assets/jungle-speed.jpg"
+    },
+    {
+      "id": "game-dobble",
+      "name": "Доббль",
+      "original_name": "Spot it!",
+      "bgg_id": 63268,
+      "bgg_url": "https://boardgamegeek.com/boardgame/63268",
+      "description": "2009 · Настольная игра",
+      "cover": "assets/dobble.jpg"
+    },
+    {
       "id": "game-mammuz",
       "name": "Заврики",
       "original_name": "MammuZ",
@@ -3186,15 +3636,6 @@
       "cover": "assets/mammuz.JPG"
     },
     {
-      "id": "game-world-of-tanks-rush",
-      "name": "World of Tanks: Rush",
-      "original_name": "World of Tanks: Rush",
-      "bgg_id": 147030,
-      "bgg_url": "https://boardgamegeek.com/boardgame/147030",
-      "description": "Колодостроительная игра про танки",
-      "cover": "assets/world-of-tanks-rush.jpg"
-    },
-    {
       "id": "game-zapretnye-slova",
       "name": "Запретные слова",
       "original_name": null,
@@ -3202,6 +3643,276 @@
       "bgg_url": "https://boardgamegeek.com/boardgame/144305",
       "description": "Игра с буквами",
       "cover": "assets/zapretnye-slova.jpg"
+    },
+    {
+      "id": "game-zombies",
+      "name": "Зомби! Спасайся кто может!",
+      "original_name": "Zombies!!!",
+      "bgg_id": 2471,
+      "bgg_url": "https://boardgamegeek.com/boardgame/2471",
+      "description": "2001 · Настольная игра",
+      "cover": "assets/zombies.jpg"
+    },
+    {
+      "id": "game-ignis",
+      "name": "Игнис",
+      "original_name": "Ignis",
+      "bgg_id": 136240,
+      "bgg_url": "https://boardgamegeek.com/boardgame/136240",
+      "description": "2013 · Настольная игра",
+      "cover": "assets/ignis.jpg"
+    },
+    {
+      "id": "game-imaginarium",
+      "name": "Имаджинариум",
+      "original_name": "Имаджинариум (Imaginarium)",
+      "bgg_id": 146548,
+      "bgg_url": "https://boardgamegeek.com/boardgame/146548",
+      "description": "2011 · Настольная игра",
+      "cover": "assets/imaginarium.jpg"
+    },
+    {
+      "id": "game-innovation",
+      "name": "Инновация",
+      "original_name": "Innovation",
+      "bgg_id": 63888,
+      "bgg_url": "https://boardgamegeek.com/boardgame/63888",
+      "description": "2010 · Настольная игра",
+      "cover": "assets/innovation.jpg"
+    },
+    {
+      "id": "game-intrigue",
+      "name": "Интриги",
+      "original_name": "Intrigue",
+      "bgg_id": 265,
+      "bgg_url": "https://boardgamegeek.com/boardgame/265",
+      "description": "1994 · Настольная игра",
+      "cover": "assets/intrigue.jpg"
+    },
+    {
+      "id": "game-quarriors",
+      "name": "Кварриорс",
+      "original_name": "Quarriors!",
+      "bgg_id": 91536,
+      "bgg_url": "https://boardgamegeek.com/boardgame/91536",
+      "description": "2011 · Настольная игра",
+      "cover": "assets/quarriors.jpg"
+    },
+    {
+      "id": "game-medved",
+      "name": "Медвед",
+      "original_name": "Медвед",
+      "bgg_id": 83658,
+      "bgg_url": "https://boardgamegeek.com/boardgame/83658",
+      "description": "2009 · Настольная игра",
+      "cover": "assets/medved.jpg"
+    },
+    {
+      "id": "game-zombie-plague",
+      "name": "Нашествие зомби",
+      "original_name": "Zombie Plague",
+      "bgg_id": 7514,
+      "bgg_url": "https://boardgamegeek.com/boardgame/7514",
+      "description": "2001 · Настольная игра",
+      "cover": "assets/zombie-plague.jpg"
+    },
+    {
+      "id": "game-nizam",
+      "name": "Низам",
+      "original_name": "Nizam",
+      "bgg_id": 120801,
+      "bgg_url": "https://boardgamegeek.com/boardgame/120801",
+      "description": "2012 · Настольная игра",
+      "cover": "assets/nizam.jpg"
+    },
+    {
+      "id": "game-kolejka",
+      "name": "Очередь",
+      "original_name": "Kolejka",
+      "bgg_id": 85325,
+      "bgg_url": "https://boardgamegeek.com/boardgame/85325",
+      "description": "2011 · Настольная игра",
+      "cover": "assets/kolejka.jpg"
+    },
+    {
+      "id": "game-pandemic-on-the-brink",
+      "name": "Пандемия: На грани",
+      "original_name": "Pandemic: On the Brink",
+      "bgg_id": 40849,
+      "bgg_url": "https://boardgamegeek.com/boardgame/40849",
+      "description": "2009 · Дополнение",
+      "cover": "assets/pandemic-on-the-brink.jpg"
+    },
+    {
+      "id": "game-discworld-ankhmorpork",
+      "name": "Плоский мир: Анк-Морпорк",
+      "original_name": "Discworld: Ankh-Morpork",
+      "bgg_id": 91312,
+      "bgg_url": "https://boardgamegeek.com/boardgame/91312",
+      "description": "2011 · Настольная игра",
+      "cover": "assets/discworld-ankhmorpork.jpg"
+    },
+    {
+      "id": "game-last-night-on-earth",
+      "name": "Последняя ночь на Земле",
+      "original_name": "Last Night on Earth: The Zombie Game",
+      "bgg_id": 29368,
+      "bgg_url": "https://boardgamegeek.com/boardgame/29368",
+      "description": "2007 · Настольная игра",
+      "cover": "assets/last-night-on-earth.jpg"
+    },
+    {
+      "id": "game-puerto-rico",
+      "name": "Пуэрто-Рико",
+      "original_name": "Puerto Rico",
+      "bgg_id": 3076,
+      "bgg_url": "https://boardgamegeek.com/boardgame/3076",
+      "description": "Классика евроигр",
+      "cover": "assets/puerto-rico.jpg"
+    },
+    {
+      "id": "game-santiago-de-cuba",
+      "name": "Сантьяго де Куба",
+      "original_name": "Santiago de Cuba",
+      "bgg_id": 104347,
+      "bgg_url": "https://boardgamegeek.com/boardgame/104347",
+      "description": "2011 · Настольная игра",
+      "cover": "assets/santiago-de-cuba.jpg"
+    },
+    {
+      "id": "game-svintus-3d",
+      "name": "Свинтус в кубе",
+      "original_name": "Swintus 3D",
+      "bgg_id": 151089,
+      "bgg_url": "https://boardgamegeek.com/boardgame/151089",
+      "description": "Знакомые свинки, новые кубики",
+      "cover": "assets/svintus-3d.jpg"
+    },
+    {
+      "id": "game-twilight-struggle",
+      "name": "Сумеречная борьба",
+      "original_name": "Twilight Struggle",
+      "bgg_id": 12333,
+      "bgg_url": "https://boardgamegeek.com/boardgame/12333",
+      "description": "2005 · Настольная игра",
+      "cover": "assets/twilight-struggle.jpg"
+    },
+    {
+      "id": "game-taiga",
+      "name": "Тайга",
+      "original_name": "Taiga",
+      "bgg_id": 86542,
+      "bgg_url": "https://boardgamegeek.com/boardgame/86542",
+      "description": "2010 · Настольная игра",
+      "cover": "assets/taiga.jpg"
+    },
+    {
+      "id": "game-love-letter",
+      "name": "Тайное послание",
+      "original_name": "Love Letter",
+      "bgg_id": 129622,
+      "bgg_url": "https://boardgamegeek.com/boardgame/129622",
+      "description": "2012 · Настольная игра",
+      "cover": "assets/love-letter.jpg"
+    },
+    {
+      "id": "game-takenoko",
+      "name": "Такеноко",
+      "original_name": "Takenoko",
+      "bgg_id": 70919,
+      "bgg_url": "https://boardgamegeek.com/boardgame/70919",
+      "description": "2011 · Настольная игра",
+      "cover": "assets/takenoko.jpg"
+    },
+    {
+      "id": "game-hive",
+      "name": "Улей",
+      "original_name": "Hive",
+      "bgg_id": 2655,
+      "bgg_url": "https://boardgamegeek.com/boardgame/2655",
+      "description": "2001 · Настольная игра",
+      "cover": "assets/hive.jpg"
+    },
+    {
+      "id": "game-uno",
+      "name": "Уно",
+      "original_name": "UNO",
+      "bgg_id": 2223,
+      "bgg_url": "https://boardgamegeek.com/boardgame/2223",
+      "description": "Цвета, числа и специальные карты",
+      "cover": "assets/uno.png"
+    },
+    {
+      "id": "game-hobbit-desolation",
+      "name": "Хоббит: Пустошь Смауга",
+      "original_name": "The Hobbit: The Desolation of Smaug",
+      "bgg_id": 151310,
+      "bgg_url": "https://boardgamegeek.com/boardgame/151310",
+      "description": "2013 · Настольная игра",
+      "cover": "assets/hobbit-desolation.jpg"
+    },
+    {
+      "id": "game-civilization-fame-fortune",
+      "name": "Цивилизация: Удача и слава",
+      "original_name": "Sid Meier's Civilization: The Board Game – Fame and Fortune",
+      "bgg_id": 108415,
+      "bgg_url": "https://boardgamegeek.com/boardgame/108415",
+      "description": "2011 · Дополнение",
+      "cover": "assets/civilization-fame-fortune.jpg"
+    },
+    {
+      "id": "game-tsuro",
+      "name": "Цуро",
+      "original_name": "Tsuro",
+      "bgg_id": 16992,
+      "bgg_url": "https://boardgamegeek.com/boardgame/16992",
+      "description": "2005 · Настольная игра",
+      "cover": "assets/tsuro.jpg"
+    },
+    {
+      "id": "game-shakal",
+      "name": "Шакал",
+      "original_name": "Jackal",
+      "bgg_id": 42702,
+      "bgg_url": "https://boardgamegeek.com/boardgame/42702",
+      "description": "2009 · Настольная игра",
+      "cover": "assets/shakal.jpg"
+    },
+    {
+      "id": "game-evo",
+      "name": "Эво. Век динозавров",
+      "original_name": "Evo",
+      "bgg_id": 1159,
+      "bgg_url": "https://boardgamegeek.com/boardgame/1159",
+      "description": "2001 · Настольная игра",
+      "cover": "assets/evo.jpg"
+    },
+    {
+      "id": "game-evolution-time-fly",
+      "name": "Эволюция: Время летать",
+      "original_name": "Evolution: The Origin of Species – Time to Fly",
+      "bgg_id": 97277,
+      "bgg_url": "https://boardgamegeek.com/boardgame/97277",
+      "description": "2011 · Дополнение",
+      "cover": "assets/evolution-time-fly.jpg"
+    },
+    {
+      "id": "game-evolution-continents",
+      "name": "Эволюция: Континенты",
+      "original_name": "Evolution: Continents",
+      "bgg_id": 130196,
+      "bgg_url": "https://boardgamegeek.com/boardgame/130196",
+      "description": "2012 · Дополнение",
+      "cover": "assets/evolution-continents.jpg"
+    },
+    {
+      "id": "game-alias",
+      "name": "Элиас",
+      "original_name": "Alias",
+      "bgg_id": 3818,
+      "bgg_url": "https://boardgamegeek.com/boardgame/3818",
+      "description": "1990 · Настольная игра",
+      "cover": "assets/alias.jpg"
     }
   ],
   "quotes": [
@@ -3404,6 +4115,1054 @@
       "start": 2382.16,
       "end": 2394.32,
       "text": "World of Tanks: Rush — коллекционная… Не коллекционная, господи! Колодостроительная карточная игра про танки."
+    },
+    {
+      "id": "quote-e002-001",
+      "game_id": "game-civilization-2010",
+      "episode_id": "episode-6a3151b3-74ca-4a1f-a354-1ed291b5a0a8",
+      "start": 98.96,
+      "end": 122.84,
+      "text": "Мир Хобби анонсировало выпуск русской версии дополнения к настольной «Цивилизации» Сида Мейера. Оно вводит в игру пятого игрока: можно будет играть в «Цивилизацию» впятером."
+    },
+    {
+      "id": "quote-e002-002",
+      "game_id": "game-civilization-fame-fortune",
+      "episode_id": "episode-6a3151b3-74ca-4a1f-a354-1ed291b5a0a8",
+      "start": 106.72,
+      "end": 142.6,
+      "text": "Это первое дополнение. Оно вводит в игру пятого игрока. Всякие новые плюшки, новые технологии, новые чудеса, новые нации, которыми можно играть. Дополнение называется «Удача и слава»."
+    },
+    {
+      "id": "quote-e002-004",
+      "game_id": "game-desktopia",
+      "episode_id": "episode-6a3151b3-74ca-4a1f-a354-1ed291b5a0a8",
+      "start": 385.56,
+      "end": 403.64,
+      "text": "Она называется «Настолье» и похожа больше не на настольную игру, а на то, как в детстве играл в Чапаева. Там деревянные диски: их нужно стрелять друг в друга и убивать."
+    },
+    {
+      "id": "quote-e002-005",
+      "game_id": "game-desktopia",
+      "episode_id": "episode-6a3151b3-74ca-4a1f-a354-1ed291b5a0a8",
+      "start": 593.0,
+      "end": 620.84,
+      "text": "Мне это показалось игрой на один-два раза: поиграл, пощёлкал — ну прикольно, но не будешь всё время её раскладывать."
+    },
+    {
+      "id": "quote-e002-006",
+      "game_id": "game-catan",
+      "episode_id": "episode-6a3151b3-74ca-4a1f-a354-1ed291b5a0a8",
+      "start": 460.16,
+      "end": 488.56,
+      "text": "Кто-то хотел купить настольные игры в какой-то университет, чтобы на уроках экономики играть в «Колонизаторов»."
+    },
+    {
+      "id": "quote-e002-007",
+      "game_id": "game-activity",
+      "episode_id": "episode-6a3151b3-74ca-4a1f-a354-1ed291b5a0a8",
+      "start": 477.52,
+      "end": 488.56,
+      "text": "Какие-то люди хотели снимать известного музыканта на видеокамеру, как он с друзьями играет в «Активити»."
+    },
+    {
+      "id": "quote-e002-008",
+      "game_id": "game-carcassonne",
+      "episode_id": "episode-6a3151b3-74ca-4a1f-a354-1ed291b5a0a8",
+      "start": 570.52,
+      "end": 592.84,
+      "text": "Я людей призываю писать обзоры, желательно новинок, чтобы было интересно читать, а не в сотый раз про тех же «Колонизаторов» или «Каркассон»."
+    },
+    {
+      "id": "quote-e002-009",
+      "game_id": "game-magic",
+      "episode_id": "episode-6a3151b3-74ca-4a1f-a354-1ed291b5a0a8",
+      "start": 965.4,
+      "end": 974.28,
+      "text": "Я попробовал MTG, ходил в «Единорог» на Новослободскую поиграть."
+    },
+    {
+      "id": "quote-e002-010",
+      "game_id": "game-ticket-to-ride",
+      "episode_id": "episode-6a3151b3-74ca-4a1f-a354-1ed291b5a0a8",
+      "start": 1098.8,
+      "end": 1127.12,
+      "text": "Наш комплект, который в 2007 году был куплен: сбоку на колоду смотришь — она не белая, а серенькая, карты по периметру уже немножечко..."
+    },
+    {
+      "id": "quote-e002-011",
+      "game_id": "game-alias",
+      "episode_id": "episode-6a3151b3-74ca-4a1f-a354-1ed291b5a0a8",
+      "start": 1153.84,
+      "end": 1177.0,
+      "text": "За соседним столом сидят люди, играют в «Алиас» или «Активити» и объясняют друг другу слово «кошка», не употребляя однокоренные слова."
+    },
+    {
+      "id": "quote-e002-012",
+      "game_id": "game-hive",
+      "episode_id": "episode-6a3151b3-74ca-4a1f-a354-1ed291b5a0a8",
+      "start": 1183.8,
+      "end": 1215.56,
+      "text": "Возьми себе на iPad несколько игр, тех же «Колонизаторов», Hive. Пройди их на максимальной сложности, выложи картинки — у тебя будет достижение, что другие не прошли, а ты прошёл."
+    },
+    {
+      "id": "quote-e002-013",
+      "game_id": "game-dixit",
+      "episode_id": "episode-6a3151b3-74ca-4a1f-a354-1ed291b5a0a8",
+      "start": 1826.04,
+      "end": 1852.6,
+      "text": "Основная цель — найти хит, который можно не только в России выпускать, но и тиражировать во всём мире. Новый «Диксит» или новые «Колонизаторы», только родом из России."
+    },
+    {
+      "id": "quote-e003-001",
+      "game_id": "game-descent-2",
+      "episode_id": "episode-3236bb2c-8c2c-409f-85fd-718403d3f124",
+      "start": 231.12,
+      "end": 249.44,
+      "text": "Самые-самые в последнее время, мой топ-3: Eclipse, Descent — вторая редакция, и Mage Knight."
+    },
+    {
+      "id": "quote-e003-002",
+      "game_id": "game-eclipse-2011",
+      "episode_id": "episode-3236bb2c-8c2c-409f-85fd-718403d3f124",
+      "start": 283.04,
+      "end": 339.16,
+      "text": "В Eclipse мне очень понравились лаконичность и стройность правил. Очень элегантно и естественно. Дыры в балансе исправляются не дополнительными правилами, а самой системой. Очень удобные индикаторы, планшетики — вообще классная игра."
+    },
+    {
+      "id": "quote-e003-003",
+      "game_id": "game-mage-knight",
+      "episode_id": "episode-3236bb2c-8c2c-409f-85fd-718403d3f124",
+      "start": 339.64,
+      "end": 363.4,
+      "text": "А вот Mage Knight мне показался более громоздким. Он очень тяжёлый, и даунтайм, мне кажется, огромный."
+    },
+    {
+      "id": "quote-e003-004",
+      "game_id": "game-mage-knight",
+      "episode_id": "episode-3236bb2c-8c2c-409f-85fd-718403d3f124",
+      "start": 367.64,
+      "end": 397.72,
+      "text": "Мне очень нравятся большие длинные игры. Пять часов партия — отлично, ещё давайте. Поэтому я ищу такую игру: где же мой предел, какая игра меня утомит?"
+    },
+    {
+      "id": "quote-e003-005",
+      "game_id": "game-zombicide",
+      "episode_id": "episode-3236bb2c-8c2c-409f-85fd-718403d3f124",
+      "start": 576.2,
+      "end": 630.2,
+      "text": "Zombicide — игра про нашествие зомби, в которой можно до шести человек усадить за один стол. Они будут бегать по городу, убивать мертвецов, проходить всякие сценарии. Людям нравятся не только фигурки, но и правила, то, как ими играется."
+    },
+    {
+      "id": "quote-e003-006",
+      "game_id": "game-spartacus",
+      "episode_id": "episode-3236bb2c-8c2c-409f-85fd-718403d3f124",
+      "start": 670.32,
+      "end": 701.92,
+      "text": "Иногда это оправданно: когда мы обсуждали «Спартака», там много карточек, сложные правила, и ты не обратишься к товарищу по игре, не спросишь: что здесь написано, как эта карта играет?"
+    },
+    {
+      "id": "quote-e003-007",
+      "game_id": "game-last-night-on-earth",
+      "episode_id": "episode-3236bb2c-8c2c-409f-85fd-718403d3f124",
+      "start": 755.32,
+      "end": 781.72,
+      "text": "Я люблю америтрэш, хотелось ещё к Last Night on Earth какую-то зомби-игру, потому что тематика популярная. Читал обзоры, что Zombicide лучше, и она у меня в списке желаемого."
+    },
+    {
+      "id": "quote-e003-008",
+      "game_id": "game-azteka",
+      "episode_id": "episode-3236bb2c-8c2c-409f-85fd-718403d3f124",
+      "start": 913.28,
+      "end": 938.4,
+      "text": "Игра называется «Ацтека». Это абстракция для двух-трёх игроков: какие-то диски с дырками, куда надо вставлять разноцветные фигурки. Честно говоря, это всё, что я пока знаю про эту игру."
+    },
+    {
+      "id": "quote-e003-009",
+      "game_id": "game-maya",
+      "episode_id": "episode-3236bb2c-8c2c-409f-85fd-718403d3f124",
+      "start": 938.4,
+      "end": 951.44,
+      "text": "Помните, мы играли в «Майя», где такие разноцветные пирамидки? С «Майя» там один и тот же автор. Есть надежда, что будет что-то интересное, несмотря на внешний вид."
+    },
+    {
+      "id": "quote-e003-010",
+      "game_id": "game-kamisado",
+      "episode_id": "episode-3236bb2c-8c2c-409f-85fd-718403d3f124",
+      "start": 938.4,
+      "end": 948.64,
+      "text": "И «Камисадо» мне почему-то вспоминается. Ну, насчёт «Камисадо» не знаю."
+    },
+    {
+      "id": "quote-e003-011",
+      "game_id": "game-hobbit-unexpected",
+      "episode_id": "episode-3236bb2c-8c2c-409f-85fd-718403d3f124",
+      "start": 1076.48,
+      "end": 1157.92,
+      "text": "У меня она очень неплохо идёт, даже у хардкорных настольщиков. Она семейная, но не тупо ходилка. Пройти её довольно сложно: нужно просчитывать, кто куда пойдёт, как проходит приключения. Нужно точную сумму боевых карт выложить, чтобы победить противников."
+    },
+    {
+      "id": "quote-e003-012",
+      "game_id": "game-hobbit-unexpected",
+      "episode_id": "episode-3236bb2c-8c2c-409f-85fd-718403d3f124",
+      "start": 1215.96,
+      "end": 1249.64,
+      "text": "Игра оказалась очень неплохой семейкой. Если приходит семья с детьми, чтобы вместе играла — отлично идёт, одна из таких кооперативных."
+    },
+    {
+      "id": "quote-e003-013",
+      "game_id": "game-hobbit-desolation",
+      "episode_id": "episode-3236bb2c-8c2c-409f-85fd-718403d3f124",
+      "start": 1264.2,
+      "end": 1312.0,
+      "text": "В чём смысл второй части? Я так понимаю, соединили предыдущую карту и новых монстров добавили? На самом деле неизвестно: на русском ничего не написали, на английском игра не выходила, а полные правила немецкого издателя тоже на немецком."
+    },
+    {
+      "id": "quote-e003-015",
+      "game_id": "game-lotr-lcg",
+      "episode_id": "episode-3236bb2c-8c2c-409f-85fd-718403d3f124",
+      "start": 1362.16,
+      "end": 1384.04,
+      "text": "Больше всего он играет сейчас в карточного «Властелина колец»: разные колоды, проходит разные квесты. Хвалится, что интересно. Можно нескольким людям, можно одному играть."
+    },
+    {
+      "id": "quote-e003-016",
+      "game_id": "game-svintus",
+      "episode_id": "episode-3236bb2c-8c2c-409f-85fd-718403d3f124",
+      "start": 2432.2,
+      "end": 2449.8,
+      "text": "Наша аудитория пришла, познакомилась с играми у нас и прошла эволюцию от «Свинтуса» до Eclipse на наших игротеках."
+    },
+    {
+      "id": "quote-e003-017",
+      "game_id": "game-activity",
+      "episode_id": "episode-3236bb2c-8c2c-409f-85fd-718403d3f124",
+      "start": 2919.08,
+      "end": 2944.72,
+      "text": "Люди сидят, играют в какие-нибудь «Свинтусы», «Активити». Я уже не могу в такое сесть играть, мне надо что-нибудь посложнее."
+    },
+    {
+      "id": "quote-e003-018",
+      "game_id": "game-civilization-2010",
+      "episode_id": "episode-3236bb2c-8c2c-409f-85fd-718403d3f124",
+      "start": 2944.76,
+      "end": 2982.24,
+      "text": "Парни косятся глазами на «Цивилизацию» Сида Мейера или в 7 Wonders поиграть, а девушки: «Нет, давайте что-то весёлое». «Свинтус» играется быстрее, чем «Цивилизация», раза в четыре миллиарда."
+    },
+    {
+      "id": "quote-e003-019",
+      "game_id": "game-7-wonders",
+      "episode_id": "episode-3236bb2c-8c2c-409f-85fd-718403d3f124",
+      "start": 2944.76,
+      "end": 2959.6,
+      "text": "Парни косятся глазами на «Цивилизацию» Сида Мейера или в 7 Wonders поиграть, а девушки: «Нет, давайте что-то весёлое»."
+    },
+    {
+      "id": "quote-e004-001",
+      "game_id": "game-celebrity",
+      "episode_id": "episode-354d9788-ffb3-4acc-9037-80d330a49351",
+      "start": 216.44,
+      "end": 240.0,
+      "text": "Особенность игры в том, что это по сути викторина, но в викторине обычно бывают вопросы и ответы. В «Знаменитости» как таковых правильных ответов нет: нужно подобрать личность, которая отвечает заданным требованиям."
+    },
+    {
+      "id": "quote-e004-002",
+      "game_id": "game-celebrity",
+      "episode_id": "episode-354d9788-ffb3-4acc-9037-80d330a49351",
+      "start": 495.68,
+      "end": 532.48,
+      "text": "В ней не надо особо изучать правила, заморачиваться: смотришь, какие карточки вышли, и пытаешься придумать, кто под них подходит. Мне было бы интересно получить экземпляр, в том числе на Новый год, когда гости будут приходить."
+    },
+    {
+      "id": "quote-e004-003",
+      "game_id": "game-timeline",
+      "episode_id": "episode-354d9788-ffb3-4acc-9037-80d330a49351",
+      "start": 287.92,
+      "end": 350.44,
+      "text": "Если я сяду с младшей сестрой играть в Timeline, понятно, что у неё никаких шансов нет. Более начитанный, более эрудированный человек выигрывает. Игроки не поставлены в равные условия."
+    },
+    {
+      "id": "quote-e004-004",
+      "game_id": "game-activity",
+      "episode_id": "episode-354d9788-ffb3-4acc-9037-80d330a49351",
+      "start": 715.04,
+      "end": 744.4,
+      "text": "Для меня «Знаменитость» Николая Пегасова кажется круче, чем «Активити». В «Активити» переведены слова, и некоторых словосочетаний в русском языке просто нет, а ты их должен объяснить."
+    },
+    {
+      "id": "quote-e004-005",
+      "game_id": "game-pandemic",
+      "episode_id": "episode-354d9788-ffb3-4acc-9037-80d330a49351",
+      "start": 979.0,
+      "end": 1076.72,
+      "text": "«Пандемия» — действительно одна из самых хороших игр. Все игроки играют одной командой, сражаются против игры и проигрывают или выигрывают вместе. Игроки должны разговаривать, обсуждать действия и формировать глобальный план с прицелом на несколько ходов вперёд."
+    },
+    {
+      "id": "quote-e004-006",
+      "game_id": "game-pandemic-on-the-brink",
+      "episode_id": "episode-354d9788-ffb3-4acc-9037-80d330a49351",
+      "start": 1134.16,
+      "end": 1157.12,
+      "text": "Я играл только в первое дополнение, но оно вообще шикарное: без него уже просто не сажусь играть. Там появляются новые болезни и всякие мутации существующих заболеваний."
+    },
+    {
+      "id": "quote-e004-007",
+      "game_id": "game-evolution-random",
+      "episode_id": "episode-354d9788-ffb3-4acc-9037-80d330a49351",
+      "start": 1652.76,
+      "end": 1730.64,
+      "text": "Теперь животные эволюционируют случайно, и задача игрока изменилась: не сделать особенное животное и накачать отличными свойствами, а подстроиться. Животное с удачным набором свойств может увеличить свою популяцию и доминировать в экологической нише."
+    },
+    {
+      "id": "quote-e004-008",
+      "game_id": "game-evolution-random",
+      "episode_id": "episode-354d9788-ffb3-4acc-9037-80d330a49351",
+      "start": 1909.52,
+      "end": 1937.04,
+      "text": "Ребята говорят, что игра, наоборот, стала более стратегичной. При кажущемся рандоме, когда карты приходят случайно, возможностей выбора и продумывания ходов стало даже больше, чем в базовой «Эволюции»."
+    },
+    {
+      "id": "quote-e004-009",
+      "game_id": "game-evolution-origin",
+      "episode_id": "episode-354d9788-ffb3-4acc-9037-80d330a49351",
+      "start": 1554.4,
+      "end": 1607.96,
+      "text": "«Эволюция» моделирует появление видов животных, их развитие и взаимодействие в процессе естественного отбора. Животные с хорошими приспособлениями выживают, а с неудачными, не соответствующими окружающей среде, вымирают."
+    },
+    {
+      "id": "quote-e004-010",
+      "game_id": "game-evolution-time-fly",
+      "episode_id": "episode-354d9788-ffb3-4acc-9037-80d330a49351",
+      "start": 2256.12,
+      "end": 2275.0,
+      "text": "Можно добавлять карточки из дополнений к базовой «Эволюции» — «Время летать», «Континенты» — в «Случайные мутации» и играть с этим."
+    },
+    {
+      "id": "quote-e004-011",
+      "game_id": "game-evolution-continents",
+      "episode_id": "episode-354d9788-ffb3-4acc-9037-80d330a49351",
+      "start": 2256.12,
+      "end": 2275.0,
+      "text": "Можно добавлять карточки из дополнений к базовой «Эволюции» — «Время летать», «Континенты» — в «Случайные мутации» и играть с этим."
+    },
+    {
+      "id": "quote-e004-012",
+      "game_id": "game-potion-making",
+      "episode_id": "episode-354d9788-ffb3-4acc-9037-80d330a49351",
+      "start": 2674.76,
+      "end": 2695.8,
+      "text": "Спасибо за моё счастливое настольное детство: в 2005 году, когда не было никаких настольных игр, я уже с удовольствием играл в ваше «Зельеварение»."
+    },
+    {
+      "id": "quote-e004-013",
+      "game_id": "game-ordonnance",
+      "episode_id": "episode-354d9788-ffb3-4acc-9037-80d330a49351",
+      "start": 2688.2,
+      "end": 2699.24,
+      "text": "Потом я с не меньшим удовольствием играл в «Ордонанс». Потом появилась «Эволюция»."
+    },
+    {
+      "id": "quote-e004-014",
+      "game_id": "game-rockband-manager",
+      "episode_id": "episode-354d9788-ffb3-4acc-9037-80d330a49351",
+      "start": 2821.92,
+      "end": 2849.04,
+      "text": "В ней игроку нужно собрать рок-группу из пяти человек, потом давать концерты, записывать диски и выпускать альбомы. Игрушка несложная, карточная, но очень приятная. Здорово, что она будет издаваться на русском языке."
+    },
+    {
+      "id": "quote-e005-003",
+      "game_id": "game-monopoly",
+      "episode_id": "episode-723cf185-21b5-475b-8623-02d841019e56",
+      "start": 225.28,
+      "end": 241.92,
+      "text": "Сам «Рынок» напоминал отчасти модифицированную «Монополию», время которой уже ушло."
+    },
+    {
+      "id": "quote-e005-004",
+      "game_id": "game-eclipse-2011",
+      "episode_id": "episode-723cf185-21b5-475b-8623-02d841019e56",
+      "start": 473.68,
+      "end": 515.44,
+      "text": "Я считаю себя поклонником этой игры. Основной критерий, по которому мы её превозносим, — лаконичность, стройность правил, замкнутость системы, элегантность. Eclipse — действительно очень хороший."
+    },
+    {
+      "id": "quote-e005-008",
+      "game_id": "game-magic",
+      "episode_id": "episode-723cf185-21b5-475b-8623-02d841019e56",
+      "start": 1445.72,
+      "end": 1483.56,
+      "text": "Нельзя отрицать наличие в MTG определённого удовольствия. Даже вечером посидеть, карточки пораскладывать, посмотреть, что есть. Когда интересная карточка приходит в бустере — это действительно прикольно. Собираешь, это твоё богатство, карточки перебираешь — в этом есть своя прелесть."
+    },
+    {
+      "id": "quote-e005-009",
+      "game_id": "game-wow-tcg",
+      "episode_id": "episode-723cf185-21b5-475b-8623-02d841019e56",
+      "start": 1653.56,
+      "end": 1673.96,
+      "text": "Warcraft карточный умер, коллекционный. Можно уже время смерти записать."
+    },
+    {
+      "id": "quote-e005-010",
+      "game_id": "game-berserk",
+      "episode_id": "episode-723cf185-21b5-475b-8623-02d841019e56",
+      "start": 1861.96,
+      "end": 1890.76,
+      "text": "Тот же «Берсерк», самый известный российский проект ККИ, тоже переходит на новый формат: больше не покупаешь бустеры с неизвестными карточками, покупаешь коробку с заранее известным составом. Фактор случайности уходит: знаешь, что берёшь."
+    },
+    {
+      "id": "quote-e005-011",
+      "game_id": "game-pokemon-tcg",
+      "episode_id": "episode-723cf185-21b5-475b-8623-02d841019e56",
+      "start": 2101.88,
+      "end": 2116.88,
+      "text": "«Покемоны», кстати: я недавно узнал, что до сих пор жива игра."
+    },
+    {
+      "id": "quote-e005-012",
+      "game_id": "game-dobble",
+      "episode_id": "episode-723cf185-21b5-475b-8623-02d841019e56",
+      "start": 3137.08,
+      "end": 3168.16,
+      "text": "«Доббль» — стопка карточек, на каждой куча предметов. Какие две карты ни возьми, есть одинаковые картинки. Игра идёт на скорость: кто первый крикнет, что здесь одинаковые свечки или что-нибудь ещё."
+    },
+    {
+      "id": "quote-e005-013",
+      "game_id": "game-dominion",
+      "episode_id": "episode-723cf185-21b5-475b-8623-02d841019e56",
+      "start": 3615.04,
+      "end": 3635.92,
+      "text": "«Доминион» начался как абсолютно абстрактная игра. Ты с помощью карточек накачивал колоду деньгами, а потом за эти деньги покупал карточки, которые приносят победные очки."
+    },
+    {
+      "id": "quote-e005-014",
+      "game_id": "game-ascension",
+      "episode_id": "episode-723cf185-21b5-475b-8623-02d841019e56",
+      "start": 3547.8,
+      "end": 3582.92,
+      "text": "Как пошли колодостроительные игры — Ascension, Thunderstone и так далее. В этом году и до России добралась тенденция."
+    },
+    {
+      "id": "quote-e005-015",
+      "game_id": "game-thunderstone",
+      "episode_id": "episode-723cf185-21b5-475b-8623-02d841019e56",
+      "start": 3547.8,
+      "end": 3582.92,
+      "text": "Как пошли колодостроительные игры — Ascension, Thunderstone и так далее. В этом году и до России добралась тенденция."
+    },
+    {
+      "id": "quote-e005-016",
+      "game_id": "game-world-of-tanks-rush",
+      "episode_id": "episode-723cf185-21b5-475b-8623-02d841019e56",
+      "start": 3582.92,
+      "end": 3606.24,
+      "text": "У нас появился карточный World of Tanks, тоже на колодостроительной механике. Игрок начинает с небольшой колодой и прямо в ходе партии пополняет её картами, которые сам выбирает."
+    },
+    {
+      "id": "quote-e005-017",
+      "game_id": "game-few-acres-snow",
+      "episode_id": "episode-723cf185-21b5-475b-8623-02d841019e56",
+      "start": 3631.36,
+      "end": 3685.6,
+      "text": "Мне очень нравится игрушка Мартина Уоллеса A Few Acres of Snow — «Несколько акров снега». Там есть поле, города можно захватывать, колонизировать, воевать друг с другом. Но всё делается с помощью карточек: в зависимости от того, какие покупаешь, получается военная колода, торговая или колонизаторская."
+    },
+    {
+      "id": "quote-e005-018",
+      "game_id": "game-ticket-to-ride",
+      "episode_id": "episode-723cf185-21b5-475b-8623-02d841019e56",
+      "start": 3687.12,
+      "end": 3715.16,
+      "text": "В Ticket to Ride собираешь цветные карточки и строишь дороги. А в этом году вышла Trains: тоже надо строить железные дороги, но строительство реализовано через карточки."
+    },
+    {
+      "id": "quote-e005-019",
+      "game_id": "game-trains",
+      "episode_id": "episode-723cf185-21b5-475b-8623-02d841019e56",
+      "start": 3687.12,
+      "end": 3715.16,
+      "text": "В этом году вышла Trains, где тоже нужно строить железные дороги. Строительство реализовано через карточки."
+    },
+    {
+      "id": "quote-e006-001",
+      "game_id": "game-nations",
+      "episode_id": "episode-74cf5740-1fb5-47a1-b850-837147a36a93",
+      "start": 100.8,
+      "end": 163.4,
+      "text": "Nations — большая глобальная стратегия, настольная цивилизация от античности до XIX века. Покупаешь улучшения, нанимаешь советников, строишь чудеса света. Хорошая, мощная, масштабная евростратегия. Втроём уложились в полтора часа; хотелось бы, чтобы игра шла чуть быстрее."
+    },
+    {
+      "id": "quote-e006-002",
+      "game_id": "game-7-wonders",
+      "episode_id": "episode-74cf5740-1fb5-47a1-b850-837147a36a93",
+      "start": 173.64,
+      "end": 197.16,
+      "text": "Она мне напомнила 7 Wonders, только более мощную, раскачанную и с физическими ресурсами. Я бы в неё ещё поиграл."
+    },
+    {
+      "id": "quote-e006-003",
+      "game_id": "game-field-of-glory",
+      "episode_id": "episode-74cf5740-1fb5-47a1-b850-837147a36a93",
+      "start": 223.08,
+      "end": 338.68,
+      "text": "Field of Glory — карточная тактическая боёвка по временам античности. Строго на двоих. На столе пять виртуальных участков фронта; нужно в трёх из пяти добиться преимущества. Перед партией формируешь войско: можешь ориентироваться на пехоту, на конницу."
+    },
+    {
+      "id": "quote-e006-004",
+      "game_id": "game-ordonnance",
+      "episode_id": "episode-74cf5740-1fb5-47a1-b850-837147a36a93",
+      "start": 352.28,
+      "end": 366.44,
+      "text": "Она мне «Ордонанс» немного напомнила. Только в «Ордонансе» надо собирать комбинацию из пяти карт в каждой локации, а в Field of Glory в каждую зону можно положить максимум две."
+    },
+    {
+      "id": "quote-e006-005",
+      "game_id": "game-eight-minute-empire",
+      "episode_id": "episode-74cf5740-1fb5-47a1-b850-837147a36a93",
+      "start": 425.48,
+      "end": 460.32,
+      "text": "Приятная такая. Единственное ощущение: игра уже закончилась, а ты вроде ничего ещё не успел сделать. Мы три раза подряд сыграли, не заметили, как прошли три партии. Пока у тебя пицца разогревается в микроволновке — пошёл, поиграл."
+    },
+    {
+      "id": "quote-e006-006",
+      "game_id": "game-ticket-to-ride-europe",
+      "episode_id": "episode-74cf5740-1fb5-47a1-b850-837147a36a93",
+      "start": 626.44,
+      "end": 648.08,
+      "text": "Играть будут в версию Ticket to Ride: Европа. Мне интересно, лично я хочу поиграть. Ticket to Ride мне нравится, это хорошая игра, хоть я и переиграл в неё очень много партий."
+    },
+    {
+      "id": "quote-e006-007",
+      "game_id": "game-carcassonne",
+      "episode_id": "episode-74cf5740-1fb5-47a1-b850-837147a36a93",
+      "start": 703.04,
+      "end": 722.24,
+      "text": "На турнире по «Каркассону» один из финалистов говорил, что целенаправленно играл в цифровую версию, тренировался, рубился и что-то выиграл."
+    },
+    {
+      "id": "quote-e006-008",
+      "game_id": "game-spartacus",
+      "episode_id": "episode-74cf5740-1fb5-47a1-b850-837147a36a93",
+      "start": 838.28,
+      "end": 884.08,
+      "text": "Можно практически новичка посадить, и он осваивается. Единственное — партии достаточно длительные, примерно до двух часов, но это можно варьировать: играть до десяти или семи очков, тогда в полтора часа уложишься."
+    },
+    {
+      "id": "quote-e006-009",
+      "game_id": "game-takenoko",
+      "episode_id": "episode-74cf5740-1fb5-47a1-b850-837147a36a93",
+      "start": 1137.2,
+      "end": 1170.92,
+      "text": "Победитель попросил себе игру, если я не ошибаюсь, «Такеноко». Она будет ему в ближайшее время отправлена."
+    },
+    {
+      "id": "quote-e006-010",
+      "game_id": "game-desktopia",
+      "episode_id": "episode-74cf5740-1fb5-47a1-b850-837147a36a93",
+      "start": 1161.28,
+      "end": 1173.72,
+      "text": "И был второй приз: среди всех участников случайным образом разыграл экземпляр «Настолья»."
+    },
+    {
+      "id": "quote-e006-011",
+      "game_id": "game-jungle-speed",
+      "episode_id": "episode-74cf5740-1fb5-47a1-b850-837147a36a93",
+      "start": 1286.88,
+      "end": 1306.32,
+      "text": "В Jungle Speed карточки с похожими символами. Все по одной открывают. Если кто-то углядел совпавший элемент — звёздочку или кружочек — нужно первым схватить со стола деревянный тотем."
+    },
+    {
+      "id": "quote-e006-012",
+      "game_id": "game-medved",
+      "episode_id": "episode-74cf5740-1fb5-47a1-b850-837147a36a93",
+      "start": 1302.72,
+      "end": 1327.04,
+      "text": "В «Медведе» вместо разноцветных символов медведь лезет по берёзе, лапы у него с разных сторон, и нужно хватать шишку со стола. Немножко другой антураж, но в принципе всё то же самое."
+    },
+    {
+      "id": "quote-e006-013",
+      "game_id": "game-dixit",
+      "episode_id": "episode-74cf5740-1fb5-47a1-b850-837147a36a93",
+      "start": 1320.64,
+      "end": 1349.04,
+      "text": "В Dixit нужно выкладывать карточки, говорить к ним ассоциации, и остальные должны выложить карточку, подходящую под эту ассоциацию. Есть российская игрушка «Имаджинариум»: правила примерно те же, только карточки с другими рисунками."
+    },
+    {
+      "id": "quote-e006-014",
+      "game_id": "game-imaginarium",
+      "episode_id": "episode-74cf5740-1fb5-47a1-b850-837147a36a93",
+      "start": 1336.56,
+      "end": 1349.04,
+      "text": "Есть российская игрушка «Имаджинариум». Правила примерно те же, только карточки с другими рисунками."
+    },
+    {
+      "id": "quote-e006-016",
+      "game_id": "game-timeline",
+      "episode_id": "episode-74cf5740-1fb5-47a1-b850-837147a36a93",
+      "start": 1389.4,
+      "end": 1408.84,
+      "text": "Есть игрушка Timeline, в которую даже ты играл, где нужно выкладывать в ряд карточки с историческими событиями."
+    },
+    {
+      "id": "quote-e006-017",
+      "game_id": "game-activity",
+      "episode_id": "episode-74cf5740-1fb5-47a1-b850-837147a36a93",
+      "start": 1589.28,
+      "end": 1629.24,
+      "text": "В «Активити» кидаешь кубик, и фишка останавливается на клеточке: должен либо объяснить слово другими словами, либо нарисовать, либо показать пантомимой."
+    },
+    {
+      "id": "quote-e006-020",
+      "game_id": "game-zombie-plague",
+      "episode_id": "episode-74cf5740-1fb5-47a1-b850-837147a36a93",
+      "start": 2110.04,
+      "end": 2144.48,
+      "text": "Была игра «Нашествие зомби», Zombie Plague, которую американцы придумали и опубликовали набор файлов в интернете. Любой мог скачать, сам напечатать. Я её немножко модифицировал, придумал новые правила и карточки."
+    },
+    {
+      "id": "quote-e007-001",
+      "game_id": "game-evolution-random",
+      "episode_id": "episode-a020f188-38ae-4272-b2db-013899f2c066",
+      "start": 316.16,
+      "end": 340.04,
+      "text": "В комплекте набор рассчитан не на четырёх игроков, а на шесть: там существенно больше карточек и всех дополнительных фишек."
+    },
+    {
+      "id": "quote-e007-002",
+      "game_id": "game-shakal",
+      "episode_id": "episode-a020f188-38ae-4272-b2db-013899f2c066",
+      "start": 384.44,
+      "end": 423.64,
+      "text": "Обычный «Шакал» стоит 900 рублей, а делюкс-версия — семь тысяч. Она не настолько богата по компонентам: всё то же самое, только из пластика, а некоторые жетончики из металла."
+    },
+    {
+      "id": "quote-e007-003",
+      "game_id": "game-starcraft",
+      "episode_id": "episode-a020f188-38ae-4272-b2db-013899f2c066",
+      "start": 423.88,
+      "end": 470.08,
+      "text": "В предыдущие годы за три с половиной тысячи можно было купить большие гробы от Fantasy Flight Games: StarCraft, Warcraft настольный. Огромная коробка, огромный комплект компонентов, миниатюрок, карточек."
+    },
+    {
+      "id": "quote-e007-004",
+      "game_id": "game-zombicide",
+      "episode_id": "episode-a020f188-38ae-4272-b2db-013899f2c066",
+      "start": 615.32,
+      "end": 689.52,
+      "text": "По поводу сценариев говорят: есть хорошие, а есть такие, где либо слишком легко, либо слишком тяжело. Люди сами их допиливают и что-то придумывают."
+    },
+    {
+      "id": "quote-e007-005",
+      "game_id": "game-taiga",
+      "episode_id": "episode-a020f188-38ae-4272-b2db-013899f2c066",
+      "start": 723.04,
+      "end": 802.12,
+      "text": "«Тайга» — детская игра, от шести лет. Нужно собирать разноцветных зверушек. Наверное, одна из самых детских игр, которые выпускает «Мир Хобби»."
+    },
+    {
+      "id": "quote-e007-007",
+      "game_id": "game-manhattan-project",
+      "episode_id": "episode-a020f188-38ae-4272-b2db-013899f2c066",
+      "start": 1608.52,
+      "end": 1625.72,
+      "text": "Совершенно неожиданно издан «Манхэттенский проект» — вполне достойная современная игра."
+    },
+    {
+      "id": "quote-e007-008",
+      "game_id": "game-nefarious",
+      "episode_id": "episode-a020f188-38ae-4272-b2db-013899f2c066",
+      "start": 1776.88,
+      "end": 1838.92,
+      "text": "Nefarious — игра от автора «Доминиона», Дональда Ваккарино. В 2014 году обещают выпустить. Это карточная игра про учёных, которые занимаются какими-то проектами и что-то за них зарабатывают."
+    },
+    {
+      "id": "quote-e007-010",
+      "game_id": "game-catan",
+      "episode_id": "episode-a020f188-38ae-4272-b2db-013899f2c066",
+      "start": 3267.68,
+      "end": 3325.0,
+      "text": "По «Колонизаторам» проходят турниры: есть региональные отборочные и большой финал."
+    },
+    {
+      "id": "quote-e007-011",
+      "game_id": "game-carcassonne",
+      "episode_id": "episode-a020f188-38ae-4272-b2db-013899f2c066",
+      "start": 3311.16,
+      "end": 3330.36,
+      "text": "Может быть, «Мир Хобби» организует такие турниры по «Каркассону». Не обязательно ждать кого-то сверху — можно собраться и самим организовать."
+    },
+    {
+      "id": "quote-e008-002",
+      "game_id": "game-kolejka",
+      "episode_id": "episode-7ec84b60-2396-4018-9421-0dced7749a3b",
+      "start": 762.04,
+      "end": 779.32,
+      "text": "Игра про очередь: нужно стоять в магазинах, пытаться выбить товары."
+    },
+    {
+      "id": "quote-e008-003",
+      "game_id": "game-ignis",
+      "episode_id": "episode-7ec84b60-2396-4018-9421-0dced7749a3b",
+      "start": 605.72,
+      "end": 730.4,
+      "text": "В Ignis поле шесть на шесть, на нём фишки четырёх стихий. Поле постепенно сужается. Посмотрел видео — всё красиво, всё интересно. Жду, когда она появится."
+    },
+    {
+      "id": "quote-e008-004",
+      "game_id": "game-maya",
+      "episode_id": "episode-7ec84b60-2396-4018-9421-0dced7749a3b",
+      "start": 703.04,
+      "end": 730.4,
+      "text": "Мне такие быстрые абстрактные игрушки нравятся: «Майя», «Камисадо», «Цуро»."
+    },
+    {
+      "id": "quote-e008-005",
+      "game_id": "game-kamisado",
+      "episode_id": "episode-7ec84b60-2396-4018-9421-0dced7749a3b",
+      "start": 703.04,
+      "end": 730.4,
+      "text": "Мне такие быстрые абстрактные игрушки нравятся: «Майя», «Камисадо», «Цуро»."
+    },
+    {
+      "id": "quote-e008-006",
+      "game_id": "game-tsuro",
+      "episode_id": "episode-7ec84b60-2396-4018-9421-0dced7749a3b",
+      "start": 703.04,
+      "end": 730.4,
+      "text": "Мне такие быстрые абстрактные игрушки нравятся: «Майя», «Камисадо», «Цуро»."
+    },
+    {
+      "id": "quote-e008-007",
+      "game_id": "game-zombies",
+      "episode_id": "episode-7ec84b60-2396-4018-9421-0dced7749a3b",
+      "start": 951.04,
+      "end": 984.52,
+      "text": "На сайте Fan City появляются обзоры старых игр. Из настольных — «Зомби! Спасайся кто может!»."
+    },
+    {
+      "id": "quote-e008-008",
+      "game_id": "game-helsing",
+      "episode_id": "episode-7ec84b60-2396-4018-9421-0dced7749a3b",
+      "start": 960.36,
+      "end": 984.52,
+      "text": "Есть обзор «Хельсинга» и «Вампирского Манчкина». «Вампирский Манчкин» — достаточно свежая игра."
+    },
+    {
+      "id": "quote-e008-009",
+      "game_id": "game-munchkin-bites",
+      "episode_id": "episode-7ec84b60-2396-4018-9421-0dced7749a3b",
+      "start": 960.36,
+      "end": 984.52,
+      "text": "«Вампирский Манчкин» — достаточно свежая игра."
+    },
+    {
+      "id": "quote-e008-011",
+      "game_id": "game-nizam",
+      "episode_id": "episode-7ec84b60-2396-4018-9421-0dced7749a3b",
+      "start": 1559.84,
+      "end": 1611.56,
+      "text": "«Низам» напоминает игры «три в ряд»: нужно собирать комбинации из драгоценных камней."
+    },
+    {
+      "id": "quote-e008-012",
+      "game_id": "game-santiago-de-cuba",
+      "episode_id": "episode-7ec84b60-2396-4018-9421-0dced7749a3b",
+      "start": 1669.8,
+      "end": 1689.44,
+      "text": "На iPad он показывал «Сантьяго де Куба». Это такая достаточно сложная, именно настольная игра."
+    },
+    {
+      "id": "quote-e008-013",
+      "game_id": "game-geistesblitz",
+      "episode_id": "episode-7ec84b60-2396-4018-9421-0dced7749a3b",
+      "start": 2607.6,
+      "end": 2667.48,
+      "text": "Одна девушка на форуме опубликовала фотографии: она эту игру сделала своими руками. Карточки на цветном принтере отпечатаны, а все эти вещи она связала: креслице, мышку с ушами и хвостом, бутылочку, книгу и привидение. Молодец."
+    },
+    {
+      "id": "quote-e008-014",
+      "game_id": "game-pandemic",
+      "episode_id": "episode-7ec84b60-2396-4018-9421-0dced7749a3b",
+      "start": 3346.04,
+      "end": 3359.72,
+      "text": "Можно хорошо провести время с друзьями и сыграть вместе против игры, как в «Пандемию», либо друг против друга, как в «Интриги». Это очень классно."
+    },
+    {
+      "id": "quote-e008-015",
+      "game_id": "game-intrigue",
+      "episode_id": "episode-7ec84b60-2396-4018-9421-0dced7749a3b",
+      "start": 3346.04,
+      "end": 3359.72,
+      "text": "Можно хорошо провести время с друзьями и сыграть вместе против игры, как в «Пандемию», либо друг против друга, как в «Интриги», где работников мы распределяли."
+    },
+    {
+      "id": "quote-e008-016",
+      "game_id": "game-city-of-horror",
+      "episode_id": "episode-7ec84b60-2396-4018-9421-0dced7749a3b",
+      "start": 3432.88,
+      "end": 3489.64,
+      "text": "В City of Horror дом осаждают зомби, и нужно кого-то одного выдать. Его зомби съедают и уходят, оставляют остальных в покое. Люди должны голосованием решить, кого."
+    },
+    {
+      "id": "quote-e008-017",
+      "game_id": "game-catan",
+      "episode_id": "episode-7ec84b60-2396-4018-9421-0dced7749a3b",
+      "start": 5500.08,
+      "end": 5526.96,
+      "text": "Мы с женой купили «Колонизаторов», сыграли два раза и забросили, потому что нельзя друг друга мочить."
+    },
+    {
+      "id": "quote-e009-001",
+      "game_id": "game-evo",
+      "episode_id": "episode-3d31fb32-1f5e-40de-a794-83056c5e9203",
+      "start": 600.04,
+      "end": 623.32,
+      "text": "В качестве бонуса — запечатанная коробка «Эво. Век динозавров»."
+    },
+    {
+      "id": "quote-e009-003",
+      "game_id": "game-the-witches",
+      "episode_id": "episode-3d31fb32-1f5e-40de-a794-83056c5e9203",
+      "start": 1075.76,
+      "end": 1164.96,
+      "text": "Люди, которые успели поиграть, пишут, что очень просто. Я надеюсь, фирменный юмор Плоского мира нивелирует эти недостатки."
+    },
+    {
+      "id": "quote-e009-004",
+      "game_id": "game-discworld-ankhmorpork",
+      "episode_id": "episode-3d31fb32-1f5e-40de-a794-83056c5e9203",
+      "start": 1088.24,
+      "end": 1144.8,
+      "text": "«Анк-Морпорк» был принят очень хорошо, в России в том числе. Игра очень доступна даже новичкам."
+    },
+    {
+      "id": "quote-e009-005",
+      "game_id": "game-twilight-struggle",
+      "episode_id": "episode-3d31fb32-1f5e-40de-a794-83056c5e9203",
+      "start": 1456.52,
+      "end": 1609.88,
+      "text": "Twilight Struggle — игра про холодную войну. Очень глубокая, но доступная: играют двое, партия занимает около двух часов. Хотелось бы, чтобы её локализовали."
+    },
+    {
+      "id": "quote-e009-006",
+      "game_id": "game-race-for-galaxy",
+      "episode_id": "episode-3d31fb32-1f5e-40de-a794-83056c5e9203",
+      "start": 1803.08,
+      "end": 1882.6,
+      "text": "Я переписывал перевод правил «Борьбы за галактику», чтобы он был понятным. Там приходится адаптировать термины."
+    },
+    {
+      "id": "quote-e009-007",
+      "game_id": "game-innovation",
+      "episode_id": "episode-3d31fb32-1f5e-40de-a794-83056c5e9203",
+      "start": 1715.92,
+      "end": 1746.48,
+      "text": "«Инновацию» даже я осилить не могу."
+    },
+    {
+      "id": "quote-e009-008",
+      "game_id": "game-descent-2",
+      "episode_id": "episode-3d31fb32-1f5e-40de-a794-83056c5e9203",
+      "start": 1749.44,
+      "end": 1768.4,
+      "text": "Планируют локализовать Descent второй редакции."
+    },
+    {
+      "id": "quote-e009-009",
+      "game_id": "game-robinson-crusoe",
+      "episode_id": "episode-3d31fb32-1f5e-40de-a794-83056c5e9203",
+      "start": 1758.4,
+      "end": 1788.24,
+      "text": "Очень хорошая игра, сам жду. Внёс свой скромный вклад в русский перевод. Интересно пощупать."
+    },
+    {
+      "id": "quote-e010-001",
+      "game_id": "game-evolution-random",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 93.76,
+      "end": 141.4,
+      "text": "Неожиданность года для меня — «Эволюция: Случайные мутации». Мы в неё ещё не играли, не знаем, что это такое, но ожидания я связываю самые большие."
+    },
+    {
+      "id": "quote-e010-002",
+      "game_id": "game-ordonnance",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 163.08,
+      "end": 176.6,
+      "text": "В 2007 году был замечательный «Ордонанс»: для двух игроков, абстрактная игра."
+    },
+    {
+      "id": "quote-e010-003",
+      "game_id": "game-potion-making",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 137.96,
+      "end": 162.92,
+      "text": "Ещё в 2005 году они выпустили суперхит «Зельеварение»."
+    },
+    {
+      "id": "quote-e010-004",
+      "game_id": "game-evolution-origin",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 163.08,
+      "end": 181.08,
+      "text": "В 2010 появилась «Эволюция». А потом наступило какое-то затишье."
+    },
+    {
+      "id": "quote-e010-005",
+      "game_id": "game-russian-railroads",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 725.84,
+      "end": 757.96,
+      "text": "Russian Railroads, Nations — хорошие игры с Эссена. Но такого открытия, чтобы совершенно новая игра, нет."
+    },
+    {
+      "id": "quote-e010-006",
+      "game_id": "game-nations",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 4183.16,
+      "end": 4203.24,
+      "text": "Nations — хорошая игра, но я в неё всего один раз поиграл. Этого недостаточно, чтобы её оценивать."
+    },
+    {
+      "id": "quote-e010-007",
+      "game_id": "game-legends-andor",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 905.52,
+      "end": 941.04,
+      "text": "«Андор» вышел практически одновременно с мировой премьерой. Это кооперативная игра."
+    },
+    {
+      "id": "quote-e010-008",
+      "game_id": "game-quarriors",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 905.52,
+      "end": 941.04,
+      "text": "В 2013 году вышел «Кварриорс» — игра с кубиками."
+    },
+    {
+      "id": "quote-e010-009",
+      "game_id": "game-village",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 941.04,
+      "end": 970.2,
+      "text": "«Деревня» — хорошая локализация, игра, которая получила награду в 2012 году."
+    },
+    {
+      "id": "quote-e010-010",
+      "game_id": "game-eclipse-2011",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 2105.0,
+      "end": 2169.28,
+      "text": "Eclipse и «Агрикола» появились в цифровом виде. Это уже сложные настольные игры."
+    },
+    {
+      "id": "quote-e010-011",
+      "game_id": "game-agricola",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 2105.0,
+      "end": 2169.28,
+      "text": "Eclipse и «Агрикола» появились в цифровом виде. Это уже сложные настольные игры."
+    },
+    {
+      "id": "quote-e010-012",
+      "game_id": "game-eight-minute-empire",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 2569.12,
+      "end": 2618.72,
+      "text": "«Восьмиминутная империя» — пример этой тенденции: всё должно быть коротко, быстро."
+    },
+    {
+      "id": "quote-e010-013",
+      "game_id": "game-hollywood-2013",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 3203.44,
+      "end": 3233.36,
+      "text": "С «Голливудом» он успешно появился на «Игросфере» и получил заслуженную награду как за одну из лучших игр."
+    },
+    {
+      "id": "quote-e010-014",
+      "game_id": "game-world-of-tanks-rush",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 3328.44,
+      "end": 3359.32,
+      "text": "World of Tanks: Rush — игра по мотивам онлайн-стрелялки про танчики. Она получилась очень удачной. Сразу весь тираж улетел."
+    },
+    {
+      "id": "quote-e010-015",
+      "game_id": "game-few-acres-snow",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 3674.8,
+      "end": 3721.56,
+      "text": "Лучшая игра для двух игроков у меня — A Few Acres of Snow. Прекрасная колодостроительная игрушка, предлагает несколько совершенно разных стратегий, достаточно сложная для освоения. Но игра очень классная. Кто не играл, всем рекомендую."
+    },
+    {
+      "id": "quote-e010-016",
+      "game_id": "game-city-of-horror",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 3791.16,
+      "end": 3842.96,
+      "text": "Ты сидишь с людьми и должен договориться, кого из вас съедят. Можно торговаться, договариваться, сговариваться. Этот момент очень классный. Игрушка просто шикарная. Но в неё не каждый сможет играть."
+    },
+    {
+      "id": "quote-e010-017",
+      "game_id": "game-love-letter",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 3856.4,
+      "end": 3879.68,
+      "text": "«Тайное послание», Love Letter — минималистическая игрушка из шестнадцати карт."
+    },
+    {
+      "id": "quote-e010-018",
+      "game_id": "game-android-netrunner",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 3873.84,
+      "end": 3887.84,
+      "text": "Привозили в Россию английскую версию Android: Netrunner. Очень мощная игра, многим поклонникам Magic: The Gathering нравится."
+    },
+    {
+      "id": "quote-e010-019",
+      "game_id": "game-lotr-deckbuilding",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 3884.88,
+      "end": 3911.56,
+      "text": "Больше всего запомнился колодостроительный «Властелин колец». Ненавязчивая, очень простая игрушка: играешь карты из руки, докупаешь в колоду новые. Всё в антураже «Властелина колец», с графикой из фильма. Красивая, простая, хорошая игра. Только самые хорошие впечатления."
+    },
+    {
+      "id": "quote-e010-020",
+      "game_id": "game-rubbish-party",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 3915.0,
+      "end": 3960.84,
+      "text": "Лучший филлер — «Большая уборка». В ней есть картонная мусорная урна, в которую нужно засыпать деревянный мусор. Все по очереди докладывают эти помои, и нужно, чтобы ничего не упало наружу. Мы сами с удовольствием играем."
+    },
+    {
+      "id": "quote-e010-021",
+      "game_id": "game-world-of-tanks-rush",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 3959.64,
+      "end": 3979.4,
+      "text": "Лучшая отечественная игра — без разговоров World of Tanks: Rush. Ничего, что издалось в России в этом году, сравниться не может. Абсолютный победитель."
+    },
+    {
+      "id": "quote-e010-022",
+      "game_id": "game-manhattan-project",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 3980.92,
+      "end": 4003.08,
+      "text": "Из того, во что я играл, самая лучшая локализация — «Манхэттенский проект»."
+    },
+    {
+      "id": "quote-e010-023",
+      "game_id": "game-eclipse-rise",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 4015.44,
+      "end": 4037.84,
+      "text": "Лучшее дополнение — дополнение к Eclipse. Просто супер: куча всего нового, модульный принцип. Можно одну фишку добавить, можно другую, можно всё вместе."
+    },
+    {
+      "id": "quote-e010-026",
+      "game_id": "game-robinson-crusoe",
+      "episode_id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
+      "start": 4089.04,
+      "end": 4118.6,
+      "text": "Лучшая игра для опытных игроков — однозначно «Робинзон Крузо». Очень интересная настолка про выживание на необитаемом острове, построена на системе сценариев. В каждой игре свои цели, задачи, условия победы. Всегда интересно: неповторяющиеся события выпадают."
     }
   ]
 }
