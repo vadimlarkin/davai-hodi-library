@@ -3,6 +3,11 @@ let database;
 let selectedId;
 let selectedEpisode = null;
 let previouslyFocused;
+let cardOpen = false;
+let selectedQuote = null;
+let shareNoticeTimer;
+let nativeSharePending = false;
+const shareDialog = document.getElementById('share-dialog');
 const grid = document.getElementById('games');
 const panel = document.getElementById('details');
 const content = document.getElementById('detail-content');
@@ -42,42 +47,134 @@ function renderLibrary() {
     content.innerHTML = '<h2 id="detail-title" class="empty-detail-title">Цитаты появятся здесь</h2><p class="game-description">Выберите другой выпуск или вернитесь ко всем играм.</p>';
   }
 }
-function updateUrl(push = false) {
+function libraryUrl() {
   const url = new URL(location.href);
   if (selectedEpisode) url.searchParams.set('episode',selectedEpisode); else url.searchParams.delete('episode');
-  url.hash = selectedId || '';
-  history[push?'pushState':'replaceState'](null,'',url);
+  url.searchParams.delete('quote');
+  url.hash = '';
+  return url;
+}
+function updateUrl(push = false) {
+  const url = libraryUrl();
+  if (cardOpen) {
+    url.hash = selectedId;
+    if (selectedQuote) url.searchParams.set('quote',selectedQuote);
+  }
+  history[push?'pushState':'replaceState']({libraryCard:cardOpen},'',url);
+}
+function syncPanel() {
+  const open = narrow.matches && cardOpen;
+  if (open) {
+    if (!panel.classList.contains('is-open')) previouslyFocused = document.activeElement;
+    panel.classList.add('is-open');
+    panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');
+    document.querySelector('.library').inert=true;
+    document.querySelector('.masthead').inert=true;
+    document.body.classList.add('card-open');
+  } else closePanel();
 }
 function selectGame(id, userAction = false) {
   const game = database.games.find(g => g.id === id);
   const quotes = gameQuotes(id);
   if (!game || !quotes.length) return;
+  const wasOpen = cardOpen;
+  if (userAction) {cardOpen = true;selectedQuote = null;}
   selectedId = id;
   const episodes = [...new Set(quotes.map(q => q.episode_id))];
   grid.querySelectorAll('[data-game]').forEach(card => card.setAttribute('aria-pressed', card.dataset.game === id));
-  content.innerHTML = `<div class="details-topline"><p class="eyebrow">ЧТО МЫ ГОВОРИЛИ</p><button type="button" class="icon-button close-details" aria-label="Вернуться к библиотеке">×</button></div>
+  content.innerHTML = `<div class="details-topline"><button type="button" class="back-details" aria-label="Вернуться к библиотеке">← Все игры</button><p class="eyebrow">ЧТО МЫ ГОВОРИЛИ</p><button type="button" class="icon-button close-details" aria-label="Закрыть карточку">×</button></div>
     <div class="game-profile"><div class="detail-cover">${image(game,true)}</div><div><h2 id="detail-title">${escapeHtml(game.name)}</h2>
     ${game.original_name&&game.original_name!==game.name?`<p class="original-name">${escapeHtml(game.original_name)}</p>`:''}
     <a class="bgg-link" href="${escapeHtml(game.bgg_url)}" target="_blank" rel="noopener">Карточка на BGG</a></div></div>
     <p class="game-description">${escapeHtml(game.description)}</p>
     <div class="quotes-summary"><strong>${quotes.length} ${plural(quotes.length,'цитата','цитаты','цитат')}</strong><span>${episodes.length} ${plural(episodes.length,'выпуск','выпуска','выпусков')}</span></div>
-    ${episodes.map(epId => {const ep=database.episodes.find(ep=>ep.id===epId);return quotes.filter(q=>q.episode_id===epId).map(q => `<article class="quote-item" id="${escapeHtml(q.id)}"><blockquote>«${escapeHtml(q.text)}»</blockquote>
-    <p class="quote-source"><button type="button" class="quote-episode" data-episode="${escapeHtml(ep.id)}" aria-label="Показать игры из ${ep.number==null?'этого выпуска':`выпуска ${ep.number}`}">${escapeHtml(quoteEpisodeName(ep))}</button> · ${time(q.start)}</p></article>`).join('');}).join('')}`;
+    ${episodes.map(epId => {const ep=database.episodes.find(ep=>ep.id===epId);return quotes.filter(q=>q.episode_id===epId).map(q => `<article class="quote-item${q.id===selectedQuote?' is-highlighted':''}" id="${escapeHtml(q.id)}" tabindex="-1" aria-label="Цитата: ${escapeHtml(quoteEpisodeName(ep))}, ${time(q.start)}"><blockquote>«${escapeHtml(q.text)}»</blockquote>
+    <div class="quote-footer"><p class="quote-source"><button type="button" class="quote-episode" data-episode="${escapeHtml(ep.id)}" aria-label="Показать игры из ${ep.number==null?'этого выпуска':`выпуска ${ep.number}`}">${escapeHtml(quoteEpisodeName(ep))}</button> · ${time(q.start)}</p><button type="button" class="share-quote" data-share-quote="${escapeHtml(q.id)}" aria-label="Поделиться цитатой: ${escapeHtml(quoteEpisodeName(ep))}, ${time(q.start)}"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 16V3m-5 5 5-5 5 5M5 13v7h14v-7"/></svg>Поделиться</button></div></article>`).join('');}).join('')}`;
   panel.scrollTop = 0;
-  if (userAction && narrow.matches) {
-    previouslyFocused = document.activeElement;
-    panel.classList.add('is-open');
-    panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');
-    document.querySelector('.library').inert=true;
-    document.querySelector('.masthead').inert=true;
-    content.querySelector('.close-details').focus();
+  syncPanel();
+  if (userAction) {
+    updateUrl(!wasOpen);
+    if (narrow.matches) content.querySelector('.back-details').focus({preventScroll:true});
+    document.getElementById('announcement').textContent=`Открыта игра ${game.name}, ${quotes.length} ${plural(quotes.length,'цитата','цитаты','цитат')}.`;
   }
-  if(userAction){updateUrl();document.getElementById('announcement').textContent=`Открыта игра ${game.name}, ${quotes.length} ${plural(quotes.length,'цитата','цитаты','цитат')}.`;}
+  const target = selectedQuote && document.getElementById(selectedQuote);
+  if (target) requestAnimationFrame(()=>{
+    if (selectedQuote !== target.id || !target.isConnected) return;
+    panel.scrollTop = target.offsetTop - content.offsetTop - 80;
+    target.focus({preventScroll:true});
+  });
 }
-function closePanel(){panel.classList.remove('is-open');panel.removeAttribute('role');panel.removeAttribute('aria-modal');document.querySelector('.library').inert=false;document.querySelector('.masthead').inert=false;if(previouslyFocused?.isConnected)previouslyFocused.focus();}
+function closePanel() {
+  const wasOpen = panel.classList.contains('is-open');
+  panel.classList.remove('is-open');panel.removeAttribute('role');panel.removeAttribute('aria-modal');
+  document.querySelector('.library').inert=false;document.querySelector('.masthead').inert=false;
+  document.body.classList.remove('card-open');
+  if (wasOpen) {
+    const focusTarget = previouslyFocused?.isConnected ? previouslyFocused : grid.querySelector(`[data-game="${selectedId}"]`);
+    const gameToFocus=focusTarget?.dataset?.game;
+    requestAnimationFrame(()=>{
+      if (panel.classList.contains('is-open')) return;
+      const target=focusTarget?.isConnected ? focusTarget : grid.querySelector(`[data-game="${gameToFocus || selectedId}"]`);
+      target?.focus({preventScroll:true});
+    });
+    previouslyFocused = null;
+  }
+}
+function dismissCard() {
+  cardOpen=false;selectedQuote=null;
+  if (shareDialog.open) shareDialog.close();
+  closePanel();
+  if (history.state?.libraryCard) history.back(); else updateUrl();
+}
+function quoteUrl(quote) {
+  const url = libraryUrl();
+  // A quote link always names its episode, regardless of the sender's filter.
+  url.searchParams.set('episode',quote.episode_id);
+  url.searchParams.set('quote',quote.id);
+  url.hash = quote.game_id;
+  return url.href;
+}
+function notifyShare(message) {
+  const notice=document.getElementById('share-notice');
+  notice.textContent=message;notice.hidden=false;
+  clearTimeout(shareNoticeTimer);
+  shareNoticeTimer=setTimeout(()=>{notice.hidden=true;},4000);
+}
+async function copyQuoteLink(url) {
+  try {
+    await navigator.clipboard.writeText(url);
+    notifyShare('Ссылка на цитату скопирована');
+    return true;
+  } catch {
+    const field=document.getElementById('share-link');
+    field.value=url;
+    if (!shareDialog.open) shareDialog.showModal();
+    field.focus();field.select();
+    document.getElementById('copy-link-note').textContent='Скопируйте выделенную ссылку и отправьте её.';
+    return false;
+  }
+}
+async function shareQuote(id, button) {
+  const quote=database.quotes.find(q=>q.id===id);
+  if (!quote || button.disabled) return;
+  const game=database.games.find(g=>g.id===quote.game_id);
+  const episode=database.episodes.find(ep=>ep.id===quote.episode_id);
+  const payload={title:`${game.name} — Давай ходи`,text:`«${quote.text}»\n${game.name} · ${quoteEpisodeName(episode)} · ${time(quote.start)}`,url:quoteUrl(quote)};
+  button.disabled=true;
+  try {
+    if (navigator.share && (!navigator.canShare || navigator.canShare(payload))) {
+      try {nativeSharePending=true;await navigator.share(payload);return;}
+      catch(error) {if(error.name==='AbortError')return;}
+      finally {nativeSharePending=false;}
+    }
+    await copyQuoteLink(payload.url);
+  } finally {button.disabled=false;}
+}
 function selectEpisode(id, userAction = true) {
   if (id && !database.episodes.some(ep=>ep.id===id)) return;
+  if (userAction) {cardOpen=false;selectedQuote=null;}
   closePanel();
+  if (shareDialog.open) shareDialog.close();
   if (picker.open) picker.close();
   selectedEpisode = id || null;
   const games = visibleGames();
@@ -105,10 +202,33 @@ search.addEventListener('input',renderEpisodeOptions);
 document.getElementById('close-episode-picker').addEventListener('click',()=>picker.close());
 picker.addEventListener('click',e=>{const choice=e.target.closest('[data-select-episode]');if(choice)selectEpisode(choice.dataset.selectEpisode);else if(e.target===picker){const r=picker.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)picker.close();}});
 grid.addEventListener('click',e=>{const card=e.target.closest('[data-game]');if(card)selectGame(card.dataset.game,true);else if(e.target.closest('.show-all-episodes'))selectEpisode(null);});
-content.addEventListener('click',e=>{if(e.target.closest('.close-details'))closePanel();const episode=e.target.closest('[data-episode]');if(episode)selectEpisode(episode.dataset.episode);});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'&&panel.classList.contains('is-open'))closePanel();if(e.key==='Tab'&&panel.classList.contains('is-open')){const links=[...content.querySelectorAll('button,a[href]')].filter(el=>el.getClientRects().length);const last=links[links.length-1],first=links[0];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}});
-narrow.addEventListener('change',()=>{if(!narrow.matches)closePanel();});
-function restoreLocation(){const id=new URL(location.href).searchParams.get('episode');selectedId=location.hash.slice(1);selectEpisode(database.episodes.some(ep=>ep.id===id)?id:null,false);}
+content.addEventListener('click',e=>{
+  if(e.target.closest('.close-details,.back-details')) {dismissCard();return;}
+  const share=e.target.closest('[data-share-quote]');
+  if(share) {shareQuote(share.dataset.shareQuote,share);return;}
+  const episode=e.target.closest('[data-episode]');if(episode)selectEpisode(episode.dataset.episode);
+});
+document.getElementById('close-share-dialog').addEventListener('click',()=>shareDialog.close());
+document.getElementById('copy-share-link').addEventListener('click',async()=>{
+  if (await copyQuoteLink(document.getElementById('share-link').value)) shareDialog.close();
+});
+document.addEventListener('keydown',e=>{if(shareDialog.open || nativeSharePending)return;if(e.key==='Escape'&&panel.classList.contains('is-open'))dismissCard();if(e.key==='Tab'&&panel.classList.contains('is-open')){const links=[...content.querySelectorAll('button,a[href]')].filter(el=>el.getClientRects().length);const last=links[links.length-1],first=links[0];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}});
+narrow.addEventListener('change',syncPanel);
+function restoreLocation(initial = false) {
+  const url=new URL(location.href);
+  const quote=database.quotes.find(q=>q.id===url.searchParams.get('quote'));
+  const episode=quote?.episode_id || url.searchParams.get('episode');
+  const gameId=quote?.game_id || url.hash.slice(1);
+  const validGame=database.games.some(g=>g.id===gameId) && database.quotes.some(q=>q.game_id===gameId && (!episode || q.episode_id===episode));
+  cardOpen=validGame;selectedQuote=validGame && quote ? quote.id : null;
+  selectedId=validGame ? gameId : selectedId;
+  selectEpisode(database.episodes.some(ep=>ep.id===episode)?episode:null,false);
+  // Fresh shared links receive a library entry so Back stays on the site.
+  if (initial && cardOpen && !history.state?.libraryCard) {
+    history.replaceState({libraryCard:false},'',libraryUrl());
+    updateUrl(true);
+  }
+}
 window.addEventListener('popstate',()=>{if(database)restoreLocation();});
 window.addEventListener('hashchange',()=>{if(database)restoreLocation();});
-fetch('data.json?v=0.2.1').then(r=>{if(!r.ok)throw new Error('data');return r.json();}).then(d=>{database=d;restoreLocation();trigger.disabled=false;}).catch(()=>{document.getElementById('error').hidden=false;document.getElementById('error').textContent='Не удалось открыть библиотеку. Обновите страницу.';});
+fetch('data.json?v=0.3.0').then(r=>{if(!r.ok)throw new Error('data');return r.json();}).then(d=>{database=d;restoreLocation(true);trigger.disabled=false;}).catch(()=>{document.getElementById('error').hidden=false;document.getElementById('error').textContent='Не удалось открыть библиотеку. Обновите страницу.';});

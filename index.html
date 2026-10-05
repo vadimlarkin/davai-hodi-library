@@ -8,8 +8,8 @@
   <meta name="description" content="Настольные игры в подкасте «Давай ходи»: цитаты, выпуски и тайминги.">
   <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png?v=2">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=0.2.1">
-  <script defer src="app.js?v=0.2.1"></script>
+  <link rel="stylesheet" href="style.css?v=0.3.0">
+  <script defer src="app.js?v=0.3.0"></script>
 </head>
 <body>
   <header class="masthead">
@@ -53,6 +53,14 @@
     <p class="episode-picker-note" id="episode-picker-note"></p>
   </dialog>
 
+  <dialog id="share-dialog" class="share-dialog" aria-labelledby="share-dialog-title">
+    <div class="share-dialog-heading"><h2 id="share-dialog-title">Ссылка на цитату</h2><button type="button" class="icon-button" id="close-share-dialog" aria-label="Закрыть отправку ссылки">×</button></div>
+    <label class="sr-only" for="share-link">Ссылка на выбранную цитату</label>
+    <input id="share-link" type="text" readonly>
+    <p id="copy-link-note">Скопируйте ссылку и отправьте её.</p>
+    <button type="button" id="copy-share-link" class="share-copy">Копировать ссылку</button>
+  </dialog>
+  <div id="share-notice" class="share-notice" role="status" hidden></div>
   <div id="announcement" class="sr-only" aria-live="polite"></div>
   <div id="error" role="alert" hidden></div>
 </body>
