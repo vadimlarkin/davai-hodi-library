@@ -22,6 +22,18 @@ const time = value => `${Math.floor(value / 60).toString().padStart(2, '0')}:${M
 const normalize = value => String(value ?? '').toLocaleLowerCase('ru').replace(/ё/g,'е').trim();
 const episodeName = ep => `${ep.number == null ? 'Без номера' : ep.number}. ${ep.title}`;
 const quoteEpisodeName = ep => ep.number == null ? 'Без номера' : `Выпуск ${ep.number}`;
+const quoteImageTime = value => {
+  const seconds=Math.max(0,Math.floor(value));
+  const minutes=Math.floor(seconds/60)%60;
+  const tail=`${minutes.toString().padStart(2,'0')}:${(seconds%60).toString().padStart(2,'0')}`;
+  return seconds>=3600?`${Math.floor(seconds/3600)}:${tail}`:tail;
+};
+const episodeDate = ep => {
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(ep.date || ''))return '';
+  const date=new Date(ep.date+'T12:00:00Z');
+  if(Number.isNaN(date.getTime()))return '';
+  return new Intl.DateTimeFormat('ru-RU',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(date).replace(/\s*г\.$/,' года');
+};
 function plural(n, one, few, many) {return n%10===1&&n%100!==11?one:n%10>=2&&n%10<=4&&(n%100<12||n%100>14)?few:many;}
 const currentQuotes = () => database.quotes.filter(q => !selectedEpisode || q.episode_id === selectedEpisode);
 const gameQuotes = id => currentQuotes().filter(q => q.game_id === id);
@@ -186,13 +198,13 @@ async function shareQuote(id, button) {
   if(!shareDialog.open)shareDialog.showModal();
   button.disabled=true;
   try {
-    const blob=await quoteCard.create({text:quote.text,game:game.name,episode:quoteEpisodeName(episode),timestamp:time(quote.start)});
+    const blob=await quoteCard.create({text:quote.text,game:game.name,episode:quoteEpisodeName(episode),episodeTitle:episode.title,date:episodeDate(episode),timestamp:quoteImageTime(quote.start)});
     if(generation!==shareGeneration || !shareDialog.open)return;
     const filename=`davai-hodi-${quote.episode_id}-${quote.id}.png`;
     const file=new File([blob],filename,{type:'image/png'});
     const url=URL.createObjectURL(blob);
     sharePreview={file,url,quote};
-    preview.src=url;preview.alt=`${game.name}. «${quote.text}» — Давай ходи, ${quoteEpisodeName(episode)}, ${time(quote.start)}`;
+    preview.src=url;preview.alt=`${game.name}. «${quote.text}» — Давай ходи, ${quoteEpisodeName(episode)}. ${episode.title}, ${episodeDate(episode)}, ${quoteImageTime(quote.start)}`;
     preview.hidden=false;send.disabled=false;download.href=url;download.download=filename;download.hidden=false;
     const canSend=canShareImage(file);
     send.hidden=!canSend;
