@@ -8,8 +8,9 @@
   <meta name="description" content="Настольные игры в подкасте «Давай ходи»: цитаты, выпуски и тайминги.">
   <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png?v=2">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=0.4.0">
-  <script defer src="app.js?v=0.4.0"></script>
+  <link rel="stylesheet" href="style.css?v=0.4.1">
+  <script defer src="quote-card.js?v=0.4.1"></script>
+  <script defer src="app.js?v=0.4.1"></script>
 </head>
 <body>
   <header class="masthead">
@@ -54,11 +55,12 @@
   </dialog>
 
   <dialog id="share-dialog" class="share-dialog" aria-labelledby="share-dialog-title">
-    <div class="share-dialog-heading"><h2 id="share-dialog-title">Ссылка на цитату</h2><button type="button" class="icon-button" id="close-share-dialog" aria-label="Закрыть отправку ссылки">×</button></div>
-    <label class="sr-only" for="share-link">Ссылка на выбранную цитату</label>
-    <input id="share-link" type="text" readonly>
-    <p id="copy-link-note">Скопируйте ссылку и отправьте её.</p>
-    <button type="button" id="copy-share-link" class="share-copy">Копировать ссылку</button>
+    <div class="share-dialog-heading"><h2 id="share-dialog-title">Цитата картинкой</h2><button type="button" class="icon-button" id="close-share-dialog" aria-label="Закрыть отправку цитаты">×</button></div>
+    <img id="quote-image-preview" class="quote-image-preview" alt="" hidden>
+    <p id="image-share-note" role="status">Готовим картинку…</p>
+    <div class="image-share-actions"><button type="button" id="share-quote-image" class="share-copy" disabled>Поделиться картинкой</button><a id="download-quote-image" class="image-download" download hidden>Сохранить картинку</a></div>
+    <button type="button" id="copy-share-link" class="copy-link-secondary">Копировать ссылку на цитату</button>
+    <div id="manual-share-link" hidden><label class="sr-only" for="share-link">Ссылка на выбранную цитату</label><input id="share-link" type="text" readonly><p id="copy-link-note">Скопируйте выделенную ссылку и отправьте её.</p></div>
   </dialog>
   <div id="share-notice" class="share-notice" role="status" hidden></div>
   <div id="announcement" class="sr-only" aria-live="polite"></div>
