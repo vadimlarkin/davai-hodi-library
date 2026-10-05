@@ -7,8 +7,6 @@ let cardOpen = false;
 let selectedQuote = null;
 let shareNoticeTimer;
 let nativeSharePending = false;
-let sharePreview = null;
-let shareGeneration = 0;
 const shareDialog = document.getElementById('share-dialog');
 const grid = document.getElementById('games');
 const panel = document.getElementById('details');
@@ -149,7 +147,6 @@ async function copyQuoteLink(url) {
     return true;
   } catch {
     const field=document.getElementById('share-link');
-    document.getElementById('manual-share-link').hidden=false;
     field.value=url;
     if (!shareDialog.open) shareDialog.showModal();
     field.focus();field.select();
@@ -157,60 +154,21 @@ async function copyQuoteLink(url) {
     return false;
   }
 }
-function canShareImage(file) {
-  try {return Boolean(navigator.share && navigator.canShare && navigator.canShare({files:[file]}));}
-  catch {return false;}
-}
-function releaseSharePreview() {
-  shareGeneration++;
-  if(sharePreview) URL.revokeObjectURL(sharePreview.url);
-  sharePreview=null;
-  document.getElementById('quote-image-preview').removeAttribute('src');
-}
 async function shareQuote(id, button) {
   const quote=database.quotes.find(q=>q.id===id);
   if (!quote || button.disabled) return;
   const game=database.games.find(g=>g.id===quote.game_id);
   const episode=database.episodes.find(ep=>ep.id===quote.episode_id);
-  releaseSharePreview();
-  const generation=shareGeneration;
-  const preview=document.getElementById('quote-image-preview');
-  const send=document.getElementById('share-quote-image');
-  const download=document.getElementById('download-quote-image');
-  const note=document.getElementById('image-share-note');
-  preview.hidden=true;send.disabled=true;send.hidden=true;download.hidden=true;
-  document.getElementById('share-link').value=quoteUrl(quote);
-  document.getElementById('manual-share-link').hidden=true;
-  document.getElementById('share-dialog-title').textContent='Цитата картинкой';
-  note.textContent='Готовим картинку…';
-  if(!shareDialog.open)shareDialog.showModal();
+  const payload={title:`${game.name} — Давай ходи`,text:`«${quote.text}»\n${game.name} · ${quoteEpisodeName(episode)} · ${time(quote.start)}`,url:quoteUrl(quote)};
   button.disabled=true;
   try {
-    const blob=await quoteCard.create({text:quote.text,game:game.name,episode:quoteEpisodeName(episode),timestamp:time(quote.start)});
-    if(generation!==shareGeneration || !shareDialog.open)return;
-    const filename=`davai-hodi-${quote.episode_id}-${quote.id}.png`;
-    const file=new File([blob],filename,{type:'image/png'});
-    const url=URL.createObjectURL(blob);
-    sharePreview={file,url,quote};
-    preview.src=url;preview.alt=`${game.name}. «${quote.text}» — Давай ходи, ${quoteEpisodeName(episode)}, ${time(quote.start)}`;
-    preview.hidden=false;send.disabled=false;download.href=url;download.download=filename;download.hidden=false;
-    const canSend=canShareImage(file);
-    send.hidden=!canSend;
-    note.textContent=canSend?'Отправьте картинку или сохраните её себе.':'Сохраните картинку и отправьте её в любой мессенджер.';
-  } catch {
-    if(generation===shareGeneration)note.textContent='Не удалось подготовить картинку. Закройте окно и попробуйте ещё раз.';
+    if (navigator.share && (!navigator.canShare || navigator.canShare(payload))) {
+      try {nativeSharePending=true;await navigator.share(payload);return;}
+      catch(error) {if(error.name==='AbortError')return;}
+      finally {nativeSharePending=false;}
+    }
+    await copyQuoteLink(payload.url);
   } finally {button.disabled=false;}
-}
-async function shareQuoteImage() {
-  if(!sharePreview || nativeSharePending)return;
-  const send=document.getElementById('share-quote-image');
-  send.disabled=true;
-  try {
-    nativeSharePending=true;
-    await navigator.share({files:[sharePreview.file]});
-  } catch(error) {
-    if(error.name!=='AbortError')document.getElementById('image-share-note').textContent='Отправка недоступна. Сохраните картинку и прикрепите её в мессенджере.';
-  } finally {nativeSharePending=false;send.disabled=false;}
 }
 function selectEpisode(id, userAction = true) {
   if (id && !database.episodes.some(ep=>ep.id===id)) return;
@@ -231,7 +189,7 @@ function selectEpisode(id, userAction = true) {
 }
 function renderEpisodeOptions() {
   const query = normalize(search.value);
-  const episodes = database.episodes.filter(ep=>/^\d+$/.test(query) ? String(ep.number)===String(Number(query)) : normalize(episodeName(ep)).includes(query));
+  const episodes = [...database.episodes].sort((a,b)=>(a.number??Infinity)-(b.number??Infinity)).filter(ep=>/^\d+$/.test(query) ? String(ep.number)===String(Number(query)) : normalize(episodeName(ep)).includes(query));
   document.getElementById('episode-options').innerHTML = `<button type="button" class="episode-option all-episodes" data-select-episode="" aria-pressed="${!selectedEpisode}"><span><strong>Все выпуски</strong><small>Все игры и цитаты картотеки</small></span><span aria-hidden="true">${!selectedEpisode?'✓':''}</span></button>` + episodes.map(ep=>{
     const quotes=database.quotes.filter(q=>q.episode_id===ep.id);
     const count=new Set(quotes.map(q=>q.game_id)).size;
@@ -250,12 +208,9 @@ content.addEventListener('click',e=>{
   if(share) {shareQuote(share.dataset.shareQuote,share);return;}
   const episode=e.target.closest('[data-episode]');if(episode)selectEpisode(episode.dataset.episode);
 });
-shareDialog.addEventListener('close',releaseSharePreview);
-shareDialog.addEventListener('cancel',e=>{if(nativeSharePending)e.preventDefault();});
-document.getElementById('share-quote-image').addEventListener('click',shareQuoteImage);
 document.getElementById('close-share-dialog').addEventListener('click',()=>shareDialog.close());
 document.getElementById('copy-share-link').addEventListener('click',async()=>{
-  await copyQuoteLink(document.getElementById('share-link').value);
+  if (await copyQuoteLink(document.getElementById('share-link').value)) shareDialog.close();
 });
 document.addEventListener('keydown',e=>{if(shareDialog.open || nativeSharePending)return;if(e.key==='Escape'&&panel.classList.contains('is-open'))dismissCard();if(e.key==='Tab'&&panel.classList.contains('is-open')){const links=[...content.querySelectorAll('button,a[href]')].filter(el=>el.getClientRects().length);const last=links[links.length-1],first=links[0];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}});
 narrow.addEventListener('change',syncPanel);
