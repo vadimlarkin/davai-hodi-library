@@ -8,8 +8,8 @@
   <meta name="description" content="Настольные игры в подкасте «Давай ходи»: цитаты, выпуски и тайминги.">
   <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png?v=2">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="app.js"></script>
+  <link rel="stylesheet" href="style.css?v=0.2.0">
+  <script defer src="app.js?v=0.2.0"></script>
 </head>
 <body>
   <header class="masthead">
@@ -26,10 +26,14 @@
       <div class="library-heading">
         <p class="eyebrow">НАСТОЛЬНЫЕ ИГРЫ В НАШИХ РАЗГОВОРАХ</p>
         <h1 id="library-title">Игры на слух<span>.</span></h1>
-        <div class="library-meta"><span id="game-total">18 игр</span><span class="meta-dot">·</span><span>Первый выпуск</span><span class="meta-dot">·</span><span>2 ноября 2013</span></div>
+        <div class="library-meta">
+          <span id="game-total">18 игр</span><span class="meta-dot">·</span>
+          <button type="button" id="episode-trigger" class="episode-trigger" aria-haspopup="dialog" aria-controls="episode-picker" disabled><span id="episode-label">Все выпуски</span><span aria-hidden="true">⌄</span></button>
+          <span id="episode-meta"></span>
+        </div>
       </div>
       <div class="grid" id="games" aria-label="Библиотека игр"></div>
-      <p class="library-note">Ещё четыре названия из выпуска требуют уточнения. Они появятся здесь после проверки.</p>
+      <p class="library-note" id="library-note">Ещё четыре названия из выпуска требуют уточнения. Они появятся здесь после проверки.</p>
       <footer class="library-footer">
         <span>Карточки игр — <a href="https://boardgamegeek.com" target="_blank" rel="noopener">BoardGameGeek</a>.</span>
         <span>Цитаты вычитаны по расшифровке; сверка с записью впереди.</span>
@@ -40,6 +44,14 @@
       <div class="details-content" id="detail-content"><p class="loading">Открываем первый выпуск…</p></div>
     </aside>
   </main>
+
+  <dialog id="episode-picker" class="episode-picker" aria-labelledby="episode-picker-title">
+    <div class="episode-picker-heading"><h2 id="episode-picker-title">Выберите выпуск</h2><button type="button" class="icon-button" id="close-episode-picker" aria-label="Закрыть список выпусков">×</button></div>
+    <label class="sr-only" for="episode-search">Поиск по номеру или названию выпуска</label>
+    <input type="search" id="episode-search" class="episode-search" placeholder="Номер или название выпуска" autocomplete="off">
+    <div class="episode-options" id="episode-options" aria-label="Список выпусков"></div>
+    <p class="episode-picker-note" id="episode-picker-note"></p>
+  </dialog>
 
   <div id="announcement" class="sr-only" aria-live="polite"></div>
   <div id="error" role="alert" hidden></div>
