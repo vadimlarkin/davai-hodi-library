@@ -1,3043 +1,3477 @@
 {
-  "version": "0.4.3",
+  "version": "0.5.0",
   "episodes": [
     {
       "id": "episode-001",
       "number": 1,
       "title": "Пилотный",
       "date": "2013-11-02",
-      "duration": 2661.598313
+      "duration": 2661.598313,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233523_10f83a0187ee710c1976.mp3"
     },
     {
       "id": "episode-6a3151b3-74ca-4a1f-a354-1ed291b5a0a8",
       "number": 2,
       "title": "О настоящих настольщиках, грантах и конкурсах",
       "date": "2013-11-09",
-      "duration": 1972
+      "duration": 1972,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233535_53cff8f18bc16aa1712d.mp3"
     },
     {
       "id": "episode-3236bb2c-8c2c-409f-85fd-718403d3f124",
       "number": 3,
       "title": "О клубах настольщиков, игротеках, превращении хобби в работу и многом другом",
       "date": "2013-11-16",
-      "duration": 3401
+      "duration": 3401,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233545_319e64cda4ad0ba54021.mp3"
     },
     {
       "id": "episode-354d9788-ffb3-4acc-9037-80d330a49351",
       "number": 4,
       "title": "О новой Эволюции, Знаменитости и переиздании Пандемии",
       "date": "2013-11-24",
-      "duration": 3077
+      "duration": 3077,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233557_ece9afacaea7efb567e3.mp3"
     },
     {
       "id": "episode-723cf185-21b5-475b-8623-02d841019e56",
       "number": 5,
       "title": "В котором мы обсуждаем сомнительные игры",
       "date": "2013-12-02",
-      "duration": 3860
+      "duration": 3860,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233567_affc1beee2f9b6d661d0.mp3"
     },
     {
       "id": "episode-74cf5740-1fb5-47a1-b850-837147a36a93",
       "number": 6,
       "title": "Secret Santa, МИПЛ-2013, конкурс обзоров, Хронология и Воображарий",
       "date": "2013-12-08",
-      "duration": 3374
+      "duration": 3374,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233580_4f5b1ef78ba2063a8a96.mp3"
     },
     {
       "id": "episode-a020f188-38ae-4272-b2db-013899f2c066",
       "number": 7,
       "title": "Юбилеи, ассоциации, фестивали и паразиты",
       "date": "2013-12-16",
-      "duration": 3498
+      "duration": 3498,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233592_fd4dce1745b7a505e4d7.mp3"
     },
     {
       "id": "episode-7ec84b60-2396-4018-9421-0dced7749a3b",
       "number": 8,
       "title": "Мухобойка, Мазайцы, Игнис, Фан Сити, АКНИ и место настольных игр в жизни",
       "date": "2013-12-21",
-      "duration": 6754
+      "duration": 6754,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233608_3c8bf40ec9348a98eab2.mp3"
     },
     {
       "id": "episode-3d31fb32-1f5e-40de-a794-83056c5e9203",
       "number": 9,
       "title": "Новогодние конкурсы, семилетие Boardgamer.ru и новая игра про Плоский мир",
       "date": "2013-12-30",
-      "duration": 2866
+      "duration": 2866,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233623_5a52f229502613e7b5fe.mp3"
     },
     {
       "id": "episode-496b00f7-f897-435c-9f1c-021158b3088b",
       "number": 11,
       "title": "В ожидании Игрокона",
       "date": "2014-01-12",
-      "duration": 3239
+      "duration": 3239,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233633_c95d9e942bcfdcac8891.mp3"
     },
     {
       "id": "episode-a9272f23-d63d-498a-a86f-52b37b3cf7ef",
       "number": 12,
       "title": "Игрокон",
       "date": "2014-01-20",
-      "duration": 3447
+      "duration": 3447,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233643_48b444395c19b5026aff.mp3"
     },
     {
       "id": "episode-6475c806-69e7-405a-b7d5-d97481ff2a22",
       "number": 13,
       "title": "Пост-Игрокон, журнал ФанСити и Спартак",
       "date": "2014-01-27",
-      "duration": 3474
+      "duration": 3474,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233654_3bfc6ed725be8d463a1c.mp3"
     },
     {
       "id": "episode-e2d7d4ef-20de-4ffe-9629-22d9838ebf4b",
       "number": 10,
       "title": "Итоги 2013 года",
       "date": "2014-01-31",
-      "duration": 4508
+      "duration": 4508,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233666_c4b3ce2a0ee542dd4320.mp3"
     },
     {
       "id": "episode-3bbe40b2-ca5b-4f2d-a146-fabd85fe9fcc",
       "number": 14,
       "title": "Эволюция, Свержение мутантов, релизы Звезды и другие новости мира настольных игр",
       "date": "2014-02-05",
-      "duration": 4560
+      "duration": 4560,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233679_a44fd83749c5d29cb7b2.mp3"
     },
     {
       "id": "episode-910a5e8b-1a16-4cac-95f6-8e3de4b0452c",
       "number": 15,
       "title": "Legendary, Coup и ГРаНИ",
       "date": "2014-02-10",
-      "duration": 4438
+      "duration": 4438,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233693_b2ca1a1b24249acecc7f.mp3"
     },
     {
       "id": "episode-c523ef0f-e15a-416f-a220-4bdce63594e6",
       "number": 16,
       "title": "Hot Day, Blue Moon, маёвки, личная гигиена и Hearthstone",
       "date": "2014-02-21",
-      "duration": 5544
+      "duration": 5544,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233707_a1303fed6de05c00ee2b.mp3"
     },
     {
       "id": "episode-7cdaf268-8b2b-4d0f-9a62-f1a872d10b3d",
       "number": 17,
       "title": "Настольщики и ролевики, как заманить к себе настольных игроков, Homeland, Токайдо и Наруто",
       "date": "2014-02-26",
-      "duration": 5201
+      "duration": 5201,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233721_a6debd01cb370a7e2123.mp3"
     },
     {
       "id": "episode-ea1b1490-a009-4d2a-be48-3d15508bb6b8",
       "number": 18,
       "title": "Краудфандинг, Премия Boardgamegeek, Игросфера и много другое",
       "date": "2014-03-03",
-      "duration": 5703
+      "duration": 5703,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233740_8fb259d618af3edfaf8a.mp3"
     },
     {
       "id": "episode-60f09bc7-50de-4883-ab5b-d517ee303b9f",
       "number": 19,
       "title": "Выпуск в котором вы так и не услышите Тима Керби",
       "date": "2014-03-22",
-      "duration": 3144
+      "duration": 3144,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233752_05df8b239478808ac7b3.mp3"
     },
     {
       "id": "episode-0d547a3d-55b6-4a34-ada4-43147acc955c",
       "number": 20,
       "title": "Райнер Книция и Зигующий Медведь",
       "date": "2014-03-31",
-      "duration": 4608
+      "duration": 4608,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233763_bd3f9190d784f2e1ac11.mp3"
     },
     {
       "id": "episode-1ffad302-b09e-4f8b-b545-825583aa372c",
       "number": 21,
       "title": "Перед Игроконом",
       "date": "2014-04-19",
-      "duration": 3291
+      "duration": 3291,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233777_dbda4bdaae78d66c1f87.mp3"
     },
     {
       "id": "episode-0798ca24-3ae4-42a5-bfc2-fbafcdd94ec7",
       "number": 22,
       "title": "После Игрокона",
       "date": "2014-05-10",
-      "duration": 4236
+      "duration": 4236,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233786_da9d583901c23c32b9d7.mp3"
     },
     {
       "id": "episode-bc9c42a6-cb6e-4be0-a577-f782552e6a70",
       "number": 23,
       "title": "Хобби которым можно и нужно гордиться",
       "date": "2014-05-14",
-      "duration": 4063
+      "duration": 4063,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233799_301670ce83ec6163aa07.mp3"
     },
     {
       "id": "episode-0057febe-0391-4c43-8247-a7c8a2a7d3c9",
       "number": 24,
       "title": "Интервью и репортажи с Питерского Игрокона. Экскурсия с Машей Веселковой",
       "date": "2014-06-09",
-      "duration": 2012
+      "duration": 2012,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233810_723f04117c4010c6e455.mp3"
     },
     {
       "id": "episode-0bbb539f-2165-4d20-8b58-390a23bd78c9",
       "number": 24,
       "title": "Интервью и репортажи с Питерского Игрокона. Интервью с Максимом Верещагиным (Компания Звезда)",
       "date": "2014-06-11",
-      "duration": 154
+      "duration": 154,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233816_6c7ae39923b262cc1c29.mp3"
     },
     {
       "id": "episode-248708f1-78d2-4048-906b-6a0a13cc47db",
       "number": 24,
       "title": "Интервью и репортажи с Питерского Игрокона. Интервью с Pandoras Box",
       "date": "2014-06-11",
-      "duration": 646
+      "duration": 646,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233824_8764c0ba2ba213df338d.mp3"
     },
     {
       "id": "episode-af317121-46f3-43fc-b5bc-ef86f40288f0",
       "number": 24,
       "title": "Интервью и репортажи с Питерского Игрокона. Интервью с Гравицапой",
       "date": "2014-06-11",
-      "duration": 335
+      "duration": 335,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233819_97155e2028a99283c944.mp3"
     },
     {
       "id": "episode-14da4f0f-fbb2-4f49-b2f6-ac97a6367383",
       "number": 24,
       "title": "Интервью и репортажи с Питерского Игрокона. Интервью с Питерской ячейкой Гильдии Разработчиков",
       "date": "2014-06-13",
-      "duration": 2496
+      "duration": 2496,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233831_cac11abb0bc878998282.mp3"
     },
     {
       "id": "episode-8212091d-9296-45bb-a1e9-af0d21837e77",
       "number": 24,
       "title": "Интервью и репортажи с Питерского Игрокона. Интервью с Премьер Тойз",
       "date": "2014-06-15",
-      "duration": 755
+      "duration": 755,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233837_ec20fa4b6d3372a9690a.mp3"
     },
     {
       "id": "episode-1604e7d5-064e-4c0f-97e4-85232097aaa4",
       "number": 24,
       "title": "Интервью и репортажи с Питерского Игрокона. Интервью со Step Puzzle",
       "date": "2014-06-17",
-      "duration": 1199
+      "duration": 1199,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233842_dad5017e14d7f23455d0.mp3"
     },
     {
       "id": "episode-1b5a8162-ed59-4f1d-9118-56d47e94e2ee",
       "number": 24,
       "title": "Интервью и репортажи с Питерского Игрокона. Интервью с Николаем Пегасовым",
       "date": "2014-06-18",
-      "duration": 1920
+      "duration": 1920,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233849_3129015ec0c6e3ac91e0.mp3"
     },
     {
       "id": "episode-47c2b9eb-8f54-4537-97dd-c696b38af561",
       "number": 25,
       "title": "В котором мы просто обсуждаем новости",
       "date": "2014-06-22",
-      "duration": 5520
+      "duration": 5520,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233861_6385b05bd68e91f7c066.mp3"
     },
     {
       "id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
       "number": 26,
       "title": "Подземелье раллийных покемонов",
       "date": "2014-06-25",
-      "duration": 5733
+      "duration": 5733,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233877_de0b9f215c2e9a42641c.mp3"
     },
     {
       "id": "episode-e7e4a124-c587-45dd-94c6-ee83c56f97c1",
       "number": 27,
       "title": "Риск, риск и немного обо всём остальном",
       "date": "2014-07-07",
-      "duration": 4144
+      "duration": 4144,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233892_6bc085d54df5634f08dc.mp3"
     },
     {
       "id": "episode-5a60120d-be22-4f84-88f9-922778d51194",
       "number": 28,
       "title": "Эссен, Игромир и Комик Кон",
       "date": "2014-11-04",
-      "duration": 3275
+      "duration": 3275,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233904_dabce8d494099b82a311.mp3"
     },
     {
       "id": "episode-a8df6075-f0b7-427f-8b5d-068f9962b1a6",
       "number": 29,
       "title": "Репортажи с Игрокона (лучше поздно чем никогда)",
       "date": "2014-11-05",
-      "duration": 1200
+      "duration": 1200,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233912_bf1cff1d512c8d5308c0.mp3"
     },
     {
       "id": "episode-531f626e-7ae6-4323-8074-7e0ddef5720b",
       "number": 30,
       "title": "Аутизм и Рисование",
       "date": "2014-11-29",
-      "duration": 4856
+      "duration": 4856,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233922_7e5b2d63503b457c5aae.mp3"
     },
     {
       "id": "episode-23ab4b53-86d0-453a-ba05-adbab2d7d8a0",
       "number": 31,
       "title": "Дурак и Ягель",
       "date": "2014-12-14",
-      "duration": 3762
+      "duration": 3762,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233936_9ffdbf41a34084a7291a.mp3"
     },
     {
       "id": "episode-c94d4ba9-07ca-42e5-a1e2-b9ca8b2b1600",
       "number": 32,
       "title": "Запоздалые итоги 2014 года и робкие надежды на 2015 год. (32)",
       "date": "2015-02-17",
-      "duration": 4942
+      "duration": 4942,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233951_6df4126f66c64e7833e2.mp3"
     },
     {
       "id": "episode-31dd0497-f320-49ac-b48d-7f54786a0ba3",
       "number": 33,
       "title": "Экскурсия по зимнему Игрокону с Машей Веселковой (33)",
       "date": "2015-03-07",
-      "duration": 898
+      "duration": 898,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233961_bb1d12fc87835a5a00ce.mp3"
     },
     {
       "id": "episode-f3a8ab87-8416-4400-a8ce-14a16abb6a16",
       "number": 34,
       "title": "После долгого перерыва (34)",
       "date": "2015-09-30",
-      "duration": 4223
+      "duration": 4223,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233968_2bf7537345300537d34d.mp3"
     },
     {
       "id": "episode-9cde4401-82a8-4069-a0e5-d89994429606",
       "number": 35,
       "title": "Эссен, Игромир, Комиккон и проездной на метро. (35)",
       "date": "2015-10-08",
-      "duration": 4780
+      "duration": 4780,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233981_cc7358c182ce068d2f83.mp3"
     },
     {
       "id": "episode-319fb859-8f96-49e8-a515-bd83197dc1e4",
       "number": 36,
       "title": "Эссен",
       "date": "2015-10-15",
-      "duration": 3281
+      "duration": 3281,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233992_382f4aac265ea91ba898.mp3"
     },
     {
       "id": "episode-ba4c1fff-16d8-46b2-8aa6-431da45e99a4",
       "number": null,
       "title": "Специальный выпуск про игру Бастион",
       "date": "2015-10-19",
-      "duration": 2104
+      "duration": 2104,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234001_8c4080b6ce63ab605c0a.mp3"
     },
     {
       "id": "episode-7932a36d-8e4a-4b4a-becc-cf3ea6b4abee",
       "number": 38,
       "title": "Игрокон. Маттрейд. Новинки Бумстартера. (38)",
       "date": "2015-11-13",
-      "duration": 3930
+      "duration": 3930,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234022_01da1cc6a57832bfc48f.mp3"
     },
     {
       "id": "episode-ef55a502-bb57-44b3-a114-444520899e22",
       "number": 37,
       "title": "Обсуждаем последние новинки и осуждаем Вадима с Halo 5 (37)",
       "date": "2015-11-13",
-      "duration": 4876
+      "duration": 4876,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234011_ffe7ff83a9dc82fad505.mp3"
     },
     {
       "id": "episode-5dd5390b-f926-4dc6-80e3-1568511e176e",
       "number": 39,
       "title": "После Игрокона-2015. (39)",
       "date": "2015-11-29",
-      "duration": 4914
+      "duration": 4914,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234031_5f7c8f7a2aee76352ae0.mp3"
     },
     {
       "id": "episode-55837b0b-dc40-4e20-922a-dc4b017fab56",
       "number": 40,
       "title": "Перед Игроконом 2016",
       "date": "2016-09-27",
-      "duration": 4201
+      "duration": 4201,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234042_799d5bd73157603502d4.mp3"
     },
     {
       "id": "episode-392527cc-755a-4f27-a7ce-dd62e3b3e32f",
       "number": 41,
       "title": "После Игрокона 2016",
       "date": "2016-09-28",
-      "duration": 2658
+      "duration": 2658,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234052_1ecd6e15777ea23fd8a8.mp3"
     },
     {
       "id": "episode-68a16e6a-dd2c-40b0-aea6-ce548d987c10",
       "number": 42,
       "title": "Долгожданный",
       "date": "2016-12-15",
-      "duration": 6760
+      "duration": 6760,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234064_26c6f1e933581cf604fe.mp3"
     },
     {
       "id": "episode-5d81b109-05a8-4707-87c8-cc5c0efbd1ee",
       "number": 43,
       "title": "Начало второго сезона",
       "date": "2019-01-05",
-      "duration": 4533
+      "duration": 4533,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234083_8b33041bc06fdc151881.mp3"
     },
     {
       "id": "episode-9c1f53d1-42a1-4385-9403-b3bcaef4098b",
       "number": 44,
       "title": "Потерянный эпизод. Едем на — Игрокон-2017 —",
       "date": "2019-01-29",
-      "duration": 2780
+      "duration": 2780,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234097_ec49122d12acd3d64664.mp3"
     },
     {
       "id": "episode-73fd4cee-dae9-456c-bf24-cdf88d577227",
       "number": 45,
       "title": "Чем плохи новости, кубики, — Генералы — и — Амбиции космоса —",
       "date": "2019-02-12",
-      "duration": 2430
+      "duration": 2430,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234107_17f12a38313460830dd3.mp3"
     },
     {
       "id": "episode-34061a50-199d-478a-bb97-10e70d26da29",
       "number": 48,
       "title": "Игры про космос — не продаются или нет —",
       "date": "2019-02-19",
-      "duration": 4040
+      "duration": 4040,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234121_15fb0be3c7b065d4b094.mp3"
     },
     {
       "id": "episode-66d2eddf-edd5-4c48-9610-d0131b5c5359",
       "number": 46,
       "title": "Потерянный эпизод. Осенние ожидания, краудфайтинг и культисты",
       "date": "2019-03-05",
-      "duration": 5452
+      "duration": 5452,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234135_bab8f508a20a6e500d62.mp3"
     },
     {
       "id": "episode-8f4337b3-87c9-460c-9290-e0f6849035af",
       "number": 47,
       "title": "Возвращение Вадима — что произошло с настольными играми за последние три года",
       "date": "2019-03-12",
-      "duration": 3374
+      "duration": 3374,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234152_db94ef012e2d0b91ff37.mp3"
     },
     {
       "id": "episode-ff9a06ae-405d-485c-8c3b-631ae6cef556",
       "number": 49,
       "title": "Десять хороших игр (1 из 2)",
       "date": "2019-03-19",
-      "duration": 4248
+      "duration": 4248,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234167_b97f2d81a9f4a6f28bf4.mp3"
     },
     {
       "id": "episode-77a1628b-7990-4a59-be56-a96e229e38b6",
       "number": 50,
       "title": "Десять хороших игр (часть 2 — 2)",
       "date": "2019-03-26",
-      "duration": 4217
+      "duration": 4217,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234182_d9e47d8e5a895de2bacd.mp3"
     },
     {
       "id": "episode-5d2c508e-68cf-458a-a553-454d8e4f9388",
       "number": 51,
       "title": "Кассиопея и Ужас Аркхэма. Карточная игра",
       "date": "2019-04-02",
-      "duration": 3747
+      "duration": 3747,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234198_13af79d08974e2a8410d.mp3"
     },
     {
       "id": "episode-c293e9df-d4e1-40a1-9fca-de474ae5378b",
       "number": 52,
       "title": "Новостной",
       "date": "2019-04-09",
-      "duration": 4614
+      "duration": 4614,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234215_baa1421db76fe1d58a8f.mp3"
     },
     {
       "id": "episode-0344aa3f-0aff-4634-b53a-d90f55f1d7e1",
       "number": 53,
       "title": "Коллекционные карточные игры",
       "date": "2019-04-16",
-      "duration": 5901
+      "duration": 5901,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234231_ab1b9ccc7ae9a097435f.mp3"
     },
     {
       "id": "episode-19e87b45-8fcb-4b8a-84c2-8bc9a1986858",
       "number": 54,
       "title": "Граникон и всё-всё-всё",
       "date": "2019-04-23",
-      "duration": 5249
+      "duration": 5249,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234246_58be6861ad0c87c61faf.mp3"
     },
     {
       "id": "episode-09dd85be-3ba1-4fd2-9cca-144596190c47",
       "number": 55,
       "title": "— Мир Хобби — покупает — Мосигру — и хорошие игры, в которые мы не играем",
       "date": "2019-05-07",
-      "duration": 4246
+      "duration": 4246,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234257_75100b5d43fbc25a4810.mp3"
     },
     {
       "id": "episode-22f66593-f1df-4422-99dd-65423e35343d",
       "number": 56,
       "title": "Детские настольные игры",
       "date": "2019-05-14",
-      "duration": 4331
+      "duration": 4331,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234269_f4cbe798baf9fc99be5c.mp3"
     },
     {
       "id": "episode-91880c8e-30bd-4802-9ccb-2c261f174274",
       "number": 57,
       "title": "Беседа с Федором Корженковом ( — Экономикус — )",
       "date": "2019-05-21",
-      "duration": 3685
+      "duration": 3685,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234283_39e84a62509dbc232219.mp3"
     },
     {
       "id": "episode-7799bd1c-0bcf-4d42-ab28-a88183512d7f",
       "number": 58,
       "title": "Сюжет в настольных играх",
       "date": "2019-05-28",
-      "duration": 4595
+      "duration": 4595,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234298_f8d85b47c08e7e811fb7.mp3"
     },
     {
       "id": "episode-e882e540-97c8-4716-aabf-16437d090702",
       "number": 59,
       "title": "Просто болтовня о случайных играх",
       "date": "2019-06-04",
-      "duration": 5665
+      "duration": 5665,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234318_8c9ca51d0544eaa3fe16.mp3"
     },
     {
       "id": "episode-2506104a-85cd-4473-a0f5-643daa980742",
       "number": 60,
       "title": "Guildhall, Trains, Одним словом, Fallout, Эволюция — Трава и грибы",
       "date": "2019-06-18",
-      "duration": 3771
+      "duration": 3771,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234335_6eb15a95365b7304d599.mp3"
     },
     {
       "id": "episode-ffea3243-2802-413a-8706-8cc208ff0ecd",
       "number": 61,
       "title": "Что такое — сложная игра — —",
       "date": "2019-06-25",
-      "duration": 4272
+      "duration": 4272,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234349_6650bb43eb55e45a3730.mp3"
     },
     {
       "id": "episode-c99dab8d-e511-4f6c-a14e-3f60e1e2605f",
       "number": 62,
       "title": "Какими должны быть компоненты",
       "date": "2019-07-02",
-      "duration": 3682
+      "duration": 3682,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234363_444a99ab162bf864d005.mp3"
     },
     {
       "id": "episode-76dcdda3-bf9e-4b68-887b-2c7b84b91b12",
       "number": 63,
       "title": "Как оценивают настольные игры",
       "date": "2019-07-09",
-      "duration": 4607
+      "duration": 4607,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234376_a847f515ce0670427dcb.mp3"
     },
     {
       "id": "episode-ac4700d8-b481-4759-aecf-1175587908c8",
       "number": 64,
       "title": "Чудовище Джио-Джанга, Ахимики, Голливуд и Детектор правды",
       "date": "2019-07-16",
-      "duration": 4072
+      "duration": 4072,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234393_5c5339c6cc09ebe22233.mp3"
     },
     {
       "id": "episode-311f3f9b-f0d7-4bcb-8cc5-f4f26fd936f5",
       "number": 65,
       "title": "Настолкэмп-2019",
       "date": "2019-07-23",
-      "duration": 5706
+      "duration": 5706,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234408_522dd6bf5a9c5803ec4e.mp3"
     },
     {
       "id": "episode-200fd3c1-db2c-46c1-bbb3-62d39815b99a",
       "number": 66,
       "title": "Встреча с Дмитрием Шугаевым",
       "date": "2019-07-30",
-      "duration": 3505
+      "duration": 3505,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234421_f9da231b7e2969ab3224.mp3"
     },
     {
       "id": "episode-e56f1d55-8fc4-40fe-9f93-6a2082ab96f6",
       "number": 67,
       "title": "Воспоминания о Настолкэмпе – 2019",
       "date": "2019-08-06",
-      "duration": 4053
+      "duration": 4053,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234432_3db9078ffb518778bb38.mp3"
     },
     {
       "id": "episode-da1d4230-fdf3-4a2a-ba09-f9bd7e523342",
       "number": 68,
       "title": "Беседа с Михаилом Соколовым",
       "date": "2019-08-13",
-      "duration": 5056
+      "duration": 5056,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234443_68d4699d3548a5eb66a8.mp3"
     },
     {
       "id": "episode-aea2341b-87eb-4881-b780-555e81118bb2",
       "number": 69,
       "title": "— Лондон — , Figutive и — Ганимед — с дополнением",
       "date": "2019-08-20",
-      "duration": 5598
+      "duration": 5598,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234458_e19b8b6c075d1ee5a682.mp3"
     },
     {
       "id": "episode-c598b61a-c70f-4643-b6d9-889fb31cf675",
       "number": 70,
       "title": "Краткий курс молодого настольщика",
       "date": "2019-08-27",
-      "duration": 6407
+      "duration": 6407,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234472_ab12a32368c729d12b5d.mp3"
     },
     {
       "id": "episode-97aacf6e-1aec-4200-ac89-064ad169a4f4",
       "number": 71,
       "title": "О жанрах вообще и цивилизационных играх в частности",
       "date": "2019-09-03",
-      "duration": 3890
+      "duration": 3890,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234487_9580170fea3db29698f7.mp3"
     },
     {
       "id": "episode-5a968e4c-adf8-4b23-88b7-89a0c46b55f0",
       "number": 72,
       "title": "Periodic, Star Realms, Era, Doodle Battle, Siege Storm и другие игры",
       "date": "2019-09-10",
-      "duration": 4377
+      "duration": 4377,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234497_c00dace2900d1a17a0a9.mp3"
     },
     {
       "id": "episode-d8d63bf0-f3a1-4c98-9010-34f512e82d7c",
       "number": 73,
       "title": "Технологии и инновации в настольных играх",
       "date": "2019-09-17",
-      "duration": 5066
+      "duration": 5066,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234510_a334eb7256a538084778.mp3"
     },
     {
       "id": "episode-8f7b2cbf-41d1-4a96-8e41-475d2b2ff27e",
       "number": 74,
       "title": "Новости и впечатления — No Retreat, Tapestry, Dungeoneer. One Deck Dungeon и A Few Acres of Snow",
       "date": "2019-09-24",
-      "duration": 3698
+      "duration": 3698,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234522_e10c7d0f84c9eb83668c.mp3"
     },
     {
       "id": "episode-4179c062-715a-4115-8f1d-75a574add801",
       "number": 75,
       "title": "Одноразовые, конечные, проходимые игры",
       "date": "2019-10-01",
-      "duration": 4470
+      "duration": 4470,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234532_95b71e8620335c253239.mp3"
     },
     {
       "id": "episode-b74b5260-00f8-4066-9f48-60f37f31a640",
       "number": 76,
       "title": "Новости, а также 30 Rails, — Санта-Мария — , — Клаустрофобия. Пробуждение —",
       "date": "2019-10-08",
-      "duration": 4524
+      "duration": 4524,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234544_c158d7fdd1e558393a3a.mp3"
     },
     {
       "id": "episode-18a223f6-f01e-4222-97b5-6f5813be473e",
       "number": 77,
       "title": "О(б)суждение ТОП-100 BGG",
       "date": "2019-10-15",
-      "duration": 4436
+      "duration": 4436,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234556_2e8f73ad1a3cda017654.mp3"
     },
     {
       "id": "episode-5b55f835-4012-4d03-a88b-6c5714804d8c",
       "number": 78,
       "title": "Эссен-2019",
       "date": "2019-10-22",
-      "duration": 4607
+      "duration": 4607,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234569_cabde83b9a8820d40c50.mp3"
     },
     {
       "id": "episode-97764872-5a9d-47ce-99fc-e6e01d26966c",
       "number": 79,
       "title": "Secret Santa - 2019",
       "date": "2019-10-29",
-      "duration": 3831
+      "duration": 3831,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234582_87df47158b3aa7bc88dc.mp3"
     },
     {
       "id": "episode-a1ff91c2-5b95-4f2d-adb9-f41c3f0ffe20",
       "number": 80,
       "title": "На носу — Игрокон-2019 —",
       "date": "2019-11-12",
-      "duration": 3984
+      "duration": 3984,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234594_4199e7981eec3500142a.mp3"
     },
     {
       "id": "episode-d670e023-3e89-4e27-9b06-dae27bd9a33b",
       "number": 81,
       "title": "Игрокон-2019 (часть 1)",
       "date": "2019-11-19",
-      "duration": 2494
+      "duration": 2494,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234604_6fa0658405a92197bdae.mp3"
     },
     {
       "id": "episode-92196988-cb97-415f-a642-2682fbf87224",
       "number": 82,
       "title": "Игрокон-2019 (часть 2)",
       "date": "2019-11-20",
-      "duration": 2940
+      "duration": 2940,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234614_9ad3b0a4a7b6091be8fc.mp3"
     },
     {
       "id": "episode-654fdf21-d13e-4480-8d2f-b7746df18f94",
       "number": 84,
       "title": "Игрокон-2019 (часть 4)",
       "date": "2019-11-22",
-      "duration": 2791
+      "duration": 2791,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234624_8c3141d46108fff0dc76.mp3"
     },
     {
       "id": "episode-bcfa9a9e-4f25-4a0a-8000-093bb482d971",
       "number": 83,
       "title": "Игрокон-2019 (часть 3)",
       "date": "2019-11-23",
-      "duration": 4478
+      "duration": 4478,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234636_41d7b9dbe8982874f9e8.mp3"
     },
     {
       "id": "episode-05f3d893-2747-4d97-be8a-e80bacc9db57",
       "number": 85,
       "title": "Игрокон-2019 (часть 5)",
       "date": "2019-11-26",
-      "duration": 4136
+      "duration": 4136,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234649_dfee72242a69a989c712.mp3"
     },
     {
       "id": "episode-a1da2761-6140-4bf7-bce9-71e121f3c95d",
       "number": 86,
       "title": "Настольная игра — Одержимость —",
       "date": "2019-12-04",
-      "duration": 6081
+      "duration": 6081,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234665_d3ac36963d860bfb8fda.mp3"
     },
     {
       "id": "episode-4e29aa49-298a-48a5-9d17-0a200afa57a4",
       "number": 87,
       "title": "Новости, — Берсерк — Чёрные паруса — и — Карманный детектив —",
       "date": "2019-12-10",
-      "duration": 3827
+      "duration": 3827,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234680_649fc024e575ce707501.mp3"
     },
     {
       "id": "episode-392fc190-d2fe-424f-8116-9b8d48a159e3",
       "number": 88,
       "title": "Ужас Аркхэма (третья редакция), Бестиарий Сигиллума и некоторые новости",
       "date": "2019-12-17",
-      "duration": 4779
+      "duration": 4779,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234692_6197e31285066424d84a.mp3"
     },
     {
       "id": "episode-67ed6818-09bc-4e80-848b-7d62a4d09f08",
       "number": 89,
       "title": "Новогодний выпуск 2020",
       "date": "2019-12-24",
-      "duration": 4170
+      "duration": 4170,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234706_68b28f51ebe4d76c65d0.mp3"
     },
     {
       "id": "episode-5d4f45ff-bc7c-48f3-bd5b-4ec14afce54f",
       "number": 90,
       "title": "Первые игры 2020 года. Undaunted — Normandy, Century — Eastern Wonders, — Сабурбия — , Zombie '15, второй сезон — Пандемии — Наследие —",
       "date": "2020-01-14",
-      "duration": 4684
+      "duration": 4684,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234719_9eba4e92ad22d62306c2.mp3"
     },
     {
       "id": "episode-1edf4834-482c-4b6d-9ab5-c87349fee2f0",
       "number": 91,
       "title": "Ожидания Аганова - 2020",
       "date": "2020-01-21",
-      "duration": 4557
+      "duration": 4557,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234734_53d50b44c5fd668b4bd0.mp3"
     },
     {
       "id": "episode-387b31e5-b8e6-426d-a331-c225f178bfc3",
       "number": 92,
       "title": "Впечатления от Tapestry и диалоги о хранении компонентов",
       "date": "2020-01-30",
-      "duration": 5932
+      "duration": 5932,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234748_10a7b6a1d46092ce9f09.mp3"
     },
     {
       "id": "episode-7c7d4d72-d55f-4ccc-8f15-fb1a74b0ae50",
       "number": 93,
       "title": "Анонсы, Арктика, Альгамбра",
       "date": "2020-02-04",
-      "duration": 4552
+      "duration": 4552,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234764_c9497c55210729619f63.mp3"
     },
     {
       "id": "episode-90f44038-a036-4eec-8ed7-b4e358656655",
       "number": 94,
       "title": "Новости. Пандемия. Игры в отпуске",
       "date": "2020-02-11",
-      "duration": 4010
+      "duration": 4010,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234778_02b74d2548526ca290b2.mp3"
     },
     {
       "id": "episode-cc72c011-3921-4184-920a-369b21838bce",
       "number": 95,
       "title": "Сольное выступление — Поиграл бы",
       "date": "2020-02-18",
-      "duration": 3475
+      "duration": 3475,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234790_b959a03acd70d0896c24.mp3"
     },
     {
       "id": "episode-48e41502-d5de-4e92-a276-988659a54fb0",
       "number": 96,
       "title": "Микро-игры",
       "date": "2020-03-03",
-      "duration": 4381
+      "duration": 4381,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234801_cfc3fe9748c64532a94d.mp3"
     },
     {
       "id": "episode-e74e6ce9-3802-4825-8a5b-77d0da828c68",
       "number": 97,
       "title": "Восьмимартовский выпуск",
       "date": "2020-03-11",
-      "duration": 4166
+      "duration": 4166,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234814_15307b714625ada3de0e.mp3"
     },
     {
       "id": "episode-3510147f-c828-4ab9-8064-aa2df9eb2116",
       "number": 98,
       "title": "Игры про вирусы и болезни",
       "date": "2020-03-17",
-      "duration": 3417
+      "duration": 3417,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234827_00bedd91a9570a66105d.mp3"
     },
     {
       "id": "episode-229bb32d-f02f-4e51-bf1f-4c8a061930b1",
       "number": 99,
       "title": "Последние известия (март 2020)",
       "date": "2020-03-24",
-      "duration": 3886
+      "duration": 3886,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234838_72cd575211ea92c5fdf9.mp3"
     },
     {
       "id": "episode-aef9b912-7fff-4209-9871-3e2c670d79ae",
       "number": 101,
       "title": "Настолки в самоизоляции",
       "date": "2020-04-08",
-      "duration": 4024
+      "duration": 4024,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234850_e77723f4f7dc6c76ae51.mp3"
     },
     {
       "id": "episode-9124b8f8-7f17-485e-a4a2-6f37d73377c8",
       "number": 102,
       "title": "Настолки в самоизоляции 2",
       "date": "2020-04-14",
-      "duration": 4417
+      "duration": 4417,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234862_c44848a515e1c237a121.mp3"
     },
     {
       "id": "episode-0f094de9-e43d-41b7-9622-3bcbe43042a9",
       "number": 103,
       "title": "Настолки в самоизоляции 3",
       "date": "2020-04-21",
-      "duration": 3869
+      "duration": 3869,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234874_a6c47925ee355a2d93d1.mp3"
     },
     {
       "id": "episode-4793929a-50bb-490b-8bc6-127c3b50a8a6",
       "number": 104,
       "title": "Настолки в самоизоляции 4",
       "date": "2020-04-28",
-      "duration": 4082
+      "duration": 4082,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234887_28c634cd430c5d6a981e.mp3"
     },
     {
       "id": "episode-c302effc-843a-42b8-a48e-1007155742bb",
       "number": 105,
       "title": "Граникон-2020",
       "date": "2020-05-07",
-      "duration": 4143
+      "duration": 4143,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234899_3c7342e340443f32209a.mp3"
     },
     {
       "id": "episode-f060bea5-8ec1-4b4e-a715-ffaca31c5b96",
       "number": 108,
       "title": "Свежие новости и впечатления (май 2020)",
       "date": "2020-05-26",
-      "duration": 4124
+      "duration": 4124,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234912_c785ecd80b31f8047114.mp3"
     },
     {
       "id": "episode-d5c6ccd1-f500-48af-8586-ed389fb63cd5",
       "number": 109,
       "title": "Кандидаты на локализацию",
       "date": "2020-06-02",
-      "duration": 4317
+      "duration": 4317,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234925_b81bd2db738069142ff6.mp3"
     },
     {
       "id": "episode-eed94ad0-6b5e-445a-975e-ae02721356ab",
       "number": 110,
       "title": "Новости и впечатления (июнь 2020)",
       "date": "2020-06-09",
-      "duration": 3660
+      "duration": 3660,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234937_b40e0f379fecf33cdac5.mp3"
     },
     {
       "id": "episode-3abf1aa9-7311-4b4a-b031-08fa6dd99f19",
       "number": 111,
       "title": "Варгеймы и теория трёх китов",
       "date": "2020-06-17",
-      "duration": 4244
+      "duration": 4244,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234949_754899988e3eca52ebe6.mp3"
     },
     {
       "id": "episode-6aff80bd-5ebe-4c6b-91b5-1a3c640a8a7e",
       "number": 112,
       "title": "Где и с кем играть и впечатления от — Великого западного пути —",
       "date": "2020-06-23",
-      "duration": 3632
+      "duration": 3632,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234962_39a37706f6d86feb09a9.mp3"
     },
     {
       "id": "episode-613dd987-55dd-4194-a687-8cde235c4441",
       "number": 113,
       "title": "Агитационный выпуск",
       "date": "2020-06-30",
-      "duration": 2869
+      "duration": 2869,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234975_1fd3d08913a071206a42.mp3"
     },
     {
       "id": "episode-7df94905-2817-4a32-9a4c-45dc68bf4d57",
       "number": 114,
       "title": "Новости (июль 2020)",
       "date": "2020-07-07",
-      "duration": 3642
+      "duration": 3642,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234986_ae65ad9006383fd5485c.mp3"
     },
     {
       "id": "episode-ca317444-465d-42e2-b84e-7f8debf4246e",
       "number": 115,
       "title": "Пандемия, StarCraft — Roll & Write и P.I",
       "date": "2020-07-14",
-      "duration": 4125
+      "duration": 4125,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791234998_16c22362c468e60bf90f.mp3"
     },
     {
       "id": "episode-d9186783-fb23-4d5b-9a0b-3ac6efd980e3",
       "number": 116,
       "title": "Тематика и абстрактность",
       "date": "2020-07-21",
-      "duration": 6711
+      "duration": 6711,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235012_ebb0eb697a6e32575906.mp3"
     },
     {
       "id": "episode-186b10ff-91fa-4866-95e3-727ab467f4e5",
       "number": 117,
       "title": "Игры, не оправдавшие ожиданий",
       "date": "2020-07-28",
-      "duration": 4376
+      "duration": 4376,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235026_9a2cd1bf8746a356d844.mp3"
     },
     {
       "id": "episode-f08ffb1f-665c-4c73-bc5c-acd1c8824e23",
       "number": 118,
       "title": "Новости и новинки (август 2020 года)",
       "date": "2020-08-04",
-      "duration": 3328
+      "duration": 3328,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235037_3921ded76614a132caaf.mp3"
     },
     {
       "id": "episode-ae1c4087-cfe6-4a60-94c8-14c03b81187d",
       "number": 119,
       "title": "Эволюция и Экипаж",
       "date": "2020-08-11",
-      "duration": 4185
+      "duration": 4185,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235047_d79a914b6d92780d7ca0.mp3"
     },
     {
       "id": "episode-8c3a7dcf-d1c0-4cec-8125-b03ec5658fa6",
       "number": 120,
       "title": "Закон убывающей предельной полезности",
       "date": "2020-08-18",
-      "duration": 3980
+      "duration": 3980,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235058_da19d6b6953bfa5a682b.mp3"
     },
     {
       "id": "episode-f00ac421-39e0-47bb-9bc9-43ecde84a741",
       "number": 121,
       "title": "Настолкэмп-2020 (1 из 2)",
       "date": "2020-09-08",
-      "duration": 3665
+      "duration": 3665,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235068_8143d6fec2d581ad2a7a.mp3"
     },
     {
       "id": "episode-76534239-d4f3-4bfe-b2e6-5713a2fce2bd",
       "number": 122,
       "title": "Настолкэмп-2020 (2 из 2)",
       "date": "2020-09-15",
-      "duration": 2637
+      "duration": 2637,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235077_585cbe66d9f0ef3d0027.mp3"
     },
     {
       "id": "episode-5a097862-be19-44e1-a6f2-8e94153f3d57",
       "number": 123,
       "title": "Хорошие игры с кэмпа (1 из 2)",
       "date": "2020-09-22",
-      "duration": 4199
+      "duration": 4199,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235086_aeba97da1d3ec1dc19ff.mp3"
     },
     {
       "id": "episode-af54bb95-b63b-4a17-a3af-b93eafbae288",
       "number": 124,
       "title": "Хорошие игры с кэмпа (2 из 2)",
       "date": "2020-09-29",
-      "duration": 5169
+      "duration": 5169,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235097_adb2164fa73d0ff46145.mp3"
     },
     {
       "id": "episode-7b48a07d-c231-41cf-88f8-e5f04266fcfa",
       "number": 125,
       "title": "Шакал-Архипелаг",
       "date": "2020-10-06",
-      "duration": 3404
+      "duration": 3404,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235108_254a525316c83ed6fd49.mp3"
     },
     {
       "id": "episode-e2549cee-f68d-47cc-87c1-9252f79348bd",
       "number": 126,
       "title": "Час нашей жизни",
       "date": "2020-10-19",
-      "duration": 3403
+      "duration": 3403,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235118_1b4a297e0af0f4210a0f.mp3"
     },
     {
       "id": "episode-c283f048-61a6-4449-aee7-91ac217392d1",
       "number": 127,
       "title": "Secret Santa - 2020",
       "date": "2020-10-26",
-      "duration": 3547
+      "duration": 3547,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235130_82e21ba28da7c4114ef4.mp3"
     },
     {
       "id": "episode-b134060d-4172-4ac9-8fd8-ee4379104b54",
       "number": 128,
       "title": "Ужастики в настольных играх",
       "date": "2020-11-02",
-      "duration": 4034
+      "duration": 4034,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235141_417fe5ff37204f4419ed.mp3"
     },
     {
       "id": "episode-66015f99-544c-421d-a6c1-ca265e682234",
       "number": 129,
       "title": "N7, Pax Pamir, Cutterland и всякие новости",
       "date": "2020-11-09",
-      "duration": 3866
+      "duration": 3866,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235152_0f906a91c0b0eb2b58df.mp3"
     },
     {
       "id": "episode-0bb3be7e-3fd0-4ad6-9aeb-d43527687086",
       "number": 130,
       "title": "Криптид",
       "date": "2020-11-16",
-      "duration": 3120
+      "duration": 3120,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235163_6d4146c6cd91580fd660.mp3"
     },
     {
       "id": "episode-ba2eca61-1e44-4be5-96c9-7e6c9fd7fcf1",
       "number": 131,
       "title": "Бомбический выпуск",
       "date": "2020-11-23",
-      "duration": 3610
+      "duration": 3610,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235175_27bfa11b2cb31a53b3b7.mp3"
     },
     {
       "id": "episode-282d0397-f3cd-4efa-889c-53765a7baee3",
       "number": 132,
       "title": "Блеск и нищета евроигр",
       "date": "2020-11-30",
-      "duration": 4955
+      "duration": 4955,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235189_aff3e72629313f762ae3.mp3"
     },
     {
       "id": "episode-12659998-1516-4340-ab71-22e5e70375b1",
       "number": 133,
       "title": "Сквайр упущенных возможностей",
       "date": "2020-12-07",
-      "duration": 4032
+      "duration": 4032,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235202_5aaf79831318fe588e1c.mp3"
     },
     {
       "id": "episode-b405a223-5731-4008-b697-8481e7030f7d",
       "number": 134,
       "title": "Болезненное наследие «Маракайбо»",
       "date": "2020-12-14",
-      "duration": 3663
+      "duration": 3663,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235215_493412fe0a9dcac6651a.mp3"
     },
     {
       "id": "episode-a5fcdc13-93b3-4d7f-9cdb-cc286aa149bb",
       "number": 134,
       "title": "1 Розыгрыш «Подводных городов»",
       "date": "2020-12-16",
-      "duration": 334
+      "duration": 334,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235224_eceb47ce5736b7b7e607.mp3"
     },
     {
       "id": "episode-af3564b6-f2d9-4d1e-b420-8a276736c7a6",
       "number": 135,
       "title": "Предновогодние ожидания",
       "date": "2020-12-21",
-      "duration": 4016
+      "duration": 4016,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235232_eafa2c320529303694b1.mp3"
     },
     {
       "id": "episode-3dda732f-f2d8-4696-815b-ddf3582d729b",
       "number": 136,
       "title": "Новогодний выпуск 2021",
       "date": "2020-12-29",
-      "duration": 5062
+      "duration": 5062,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235245_58187c17233e3bfb5e2a.mp3"
     },
     {
       "id": "episode-c4dad22c-82dc-4600-b8ac-12935dfc8306",
       "number": 137,
       "title": "Новые игры Нового 2021 года (1 из 2)",
       "date": "2021-01-12",
-      "duration": 4166
+      "duration": 4166,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235259_afd6d4c01c98fa09f7d3.mp3"
     },
     {
       "id": "episode-926b7386-f25c-45a0-aa50-944b5c4401c4",
       "number": 138,
       "title": "Новые игры Нового 2021 года (2 из 2)",
       "date": "2021-01-19",
-      "duration": 5153
+      "duration": 5153,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235271_74dfd73e4e09711ea444.mp3"
     },
     {
       "id": "episode-b6dd1a3d-6905-4117-ba87-b260c740c678",
       "number": 139,
       "title": "Ретроградная эволюция с Андреем Агановым",
       "date": "2021-01-26",
-      "duration": 5373
+      "duration": 5373,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235285_0f2a46a4e35c7d9046bf.mp3"
     },
     {
       "id": "episode-0201e2b7-48d3-49b3-a1f7-cb452f0a0833",
       "number": 140,
       "title": "Санктум и Мифотопия",
       "date": "2021-02-02",
-      "duration": 3780
+      "duration": 3780,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235299_ac3bb1a18ef632476453.mp3"
     },
     {
       "id": "episode-a5bce852-04b7-4ab0-a6d9-fb8abd8a859b",
       "number": 141,
       "title": "Игры, заслуживающие второго шанса",
       "date": "2021-02-09",
-      "duration": 4260
+      "duration": 4260,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235311_2a11fc24baed08726883.mp3"
     },
     {
       "id": "episode-1739bc1f-698a-42e2-a5a0-d7f47dc650a8",
       "number": 142,
       "title": "Колодостроительно-воркерплейсментные новости",
       "date": "2021-02-15",
-      "duration": 3565
+      "duration": 3565,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235323_9f4e5ccb4f2518347fdd.mp3"
     },
     {
       "id": "episode-e4b87e48-3084-4a54-930b-b60c39fb0735",
       "number": 143,
       "title": "Михаил Соколов и игры Джейми Стигмайера",
       "date": "2021-03-02",
-      "duration": 4212
+      "duration": 4212,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235335_fa08972a865d97a73b13.mp3"
     },
     {
       "id": "episode-61b3f304-9b3e-4aee-a71c-b7abf462ae24",
       "number": 144,
       "title": "Дуэт Михаила и Олега",
       "date": "2021-03-10",
-      "duration": 4647
+      "duration": 4647,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235348_1ddb7ed3ec149c83f933.mp3"
     },
     {
       "id": "episode-64a330f1-3d0b-4bbe-8546-531790e6ce69",
       "number": 145,
       "title": "Индустриально-космическое Алое восстание",
       "date": "2021-03-16",
-      "duration": 4149
+      "duration": 4149,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235363_5484f2c31f4e31711745.mp3"
     },
     {
       "id": "episode-f411c3d3-d33c-4a6f-ad9e-9bbcb2026840",
       "number": 146,
       "title": "Происхождение «Зельеварения»",
       "date": "2021-03-23",
-      "duration": 3985
+      "duration": 3985,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235375_17b230fb6ced184c757d.mp3"
     },
     {
       "id": "episode-7904a963-0d12-425a-b3dc-ad475cfe25cb",
       "number": 147,
       "title": "Снова с Вадимом сто эпизодов спустя",
       "date": "2021-03-30",
-      "duration": 4113
+      "duration": 4113,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235387_32d9fc457749c7bff7d8.mp3"
     },
     {
       "id": "episode-c22bd10c-083b-432a-905c-39b13a36a029",
       "number": 148,
       "title": "О(б)суждение KeyForge",
       "date": "2021-04-06",
-      "duration": 6153
+      "duration": 6153,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235401_7c18a400fb8d8c1d6f64.mp3"
     },
     {
       "id": "episode-e8f71fc9-0c82-41b6-aca5-2668bf82df51",
       "number": 149,
       "title": "Мрачный ужас «Нидавеллира»",
       "date": "2021-04-13",
-      "duration": 4044
+      "duration": 4044,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235419_258deb66c28f965d4484.mp3"
     },
     {
       "id": "episode-db9462d4-fcd0-4440-bdbb-9d1e7dc839b0",
       "number": 150,
       "title": "Однажды в Чикаго",
       "date": "2021-04-19",
-      "duration": 3271
+      "duration": 3271,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235429_52dfc5012b1781c956c0.mp3"
     },
     {
       "id": "episode-fbeb8309-a560-4809-807f-d3489cbad927",
       "number": 151,
       "title": "Весеннее обострение локализаторов",
       "date": "2021-04-27",
-      "duration": 3648
+      "duration": 3648,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235439_fd30dd99e909c1119999.mp3"
     },
     {
       "id": "episode-244935fc-437e-42e4-99b7-2acf6677d1ee",
       "number": 152,
       "title": "Pan Am, Keyforge, Тортуга 2199, Котики",
       "date": "2021-05-05",
-      "duration": 3395
+      "duration": 3395,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235452_f54f757668afdd52b5d7.mp3"
     },
     {
       "id": "episode-dbbe5dcb-6834-496a-bccb-9c8680728542",
       "number": 153,
       "title": "Golden Geek Award 2020",
       "date": "2021-05-12",
-      "duration": 3365
+      "duration": 3365,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235462_aca2657df6b991dbaf65.mp3"
     },
     {
       "id": "episode-5e519f2c-8097-4f03-9c52-14c15ae81878",
       "number": 154,
       "title": "Ни шагу назад от начала Сибири!",
       "date": "2021-05-18",
-      "duration": 3906
+      "duration": 3906,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235475_1d4ed21743edefca5254.mp3"
     },
     {
       "id": "episode-0afc839b-8c6f-4f33-be95-dfff6fc504d6",
       "number": 155,
       "title": "Двадцать семь минут Кубы",
       "date": "2021-05-25",
-      "duration": 3221
+      "duration": 3221,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235488_f3f563411a9db791260c.mp3"
     },
     {
       "id": "episode-979c8e50-397d-4a7f-97bc-7712f3a364bb",
       "number": 156,
       "title": "Предупредительно-критический выпуск",
       "date": "2021-06-03",
-      "duration": 4299
+      "duration": 4299,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235500_ce19ef9aa2f543ed2981.mp3"
     },
     {
       "id": "episode-a225a5ba-a87b-426f-a9f1-866867e7c5b4",
       "number": 157,
       "title": "Любимые и нелюбимые механики",
       "date": "2021-06-09",
-      "duration": 4774
+      "duration": 4774,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235511_08c8185e4c0933cdcb97.mp3"
     },
     {
       "id": "episode-0d104b33-f5cc-44e6-950d-a5de150d36d2",
       "number": 158,
       "title": "Крылья, дворяне и деревни",
       "date": "2021-06-22",
-      "duration": 4449
+      "duration": 4449,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235527_c8b422d088fbcbf0795f.mp3"
     },
     {
       "id": "episode-0b154347-8c8a-43c2-a96b-63950a1e8514",
       "number": 159,
       "title": "Игры, которые есть у всех",
       "date": "2021-06-29",
-      "duration": 3217
+      "duration": 3217,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235539_526fc0985c0b8a4c91af.mp3"
     },
     {
       "id": "episode-30807b80-695f-4149-be93-9173ece47b1e",
       "number": 160,
       "title": "Поздравительный эпизод. «Миру Хобби» - 20 лет, «Звезде» - 31!",
       "date": "2021-07-06",
-      "duration": 3662
+      "duration": 3662,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235549_f1639a367c94c6a3aa20.mp3"
     },
     {
       "id": "episode-24e43b36-6f38-44fc-951a-831322b91099",
       "number": 161,
       "title": "Настолкэмп-2021 (1 из 3)",
       "date": "2021-07-27",
-      "duration": 2873
+      "duration": 2873,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235560_9436e2e1d1a945e0aa1c.mp3"
     },
     {
       "id": "episode-37a476e9-5bcf-4b01-b6c7-971eebff037b",
       "number": 162,
       "title": "Настолкэмп-2021 (2 из 3)",
       "date": "2021-08-03",
-      "duration": 3053
+      "duration": 3053,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235571_13c4ec56880ea537f8be.mp3"
     },
     {
       "id": "episode-1d86069b-76f8-4d9d-8e36-df10b0bb7fb3",
       "number": 163,
       "title": "Настолкэмп-2021 (3 из 3)",
       "date": "2021-08-10",
-      "duration": 3729
+      "duration": 3729,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235583_46a7df302db4d049538e.mp3"
     },
     {
       "id": "episode-42b8f5b2-09d4-46ab-9269-12c1406578df",
       "number": 164,
       "title": "Посткоронавирусная беседа с Дмитрием Шугаевым",
       "date": "2021-08-17",
-      "duration": 3541
+      "duration": 3541,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235596_9a92cfcc0c2c74852ed0.mp3"
     },
     {
       "id": "episode-33b93da3-4667-4699-b1e0-c3b75c234dcb",
       "number": 165,
       "title": "Свежие летние впечатления",
       "date": "2021-08-24",
-      "duration": 3725
+      "duration": 3725,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235609_39fcbe13ae388a4eeaa6.mp3"
     },
     {
       "id": "episode-c5b30436-0925-4990-a31d-1733172414ce",
       "number": 166,
       "title": "Первая игра в коллекции",
       "date": "2021-08-31",
-      "duration": 3463
+      "duration": 3463,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235620_d20fe29f0aca51014c3a.mp3"
     },
     {
       "id": "episode-9185fe7e-7b6f-4dd1-86b9-d1ac58bd165e",
       "number": 167,
       "title": "Беседа с Михаилом Лойко",
       "date": "2021-09-07",
-      "duration": 4882
+      "duration": 4882,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235633_aa0be7d52c564b0b98f9.mp3"
     },
     {
       "id": "episode-a28f1484-befe-4c51-befa-1536ff82acf0",
       "number": 168,
       "title": "Карточные, лесные и другие игры",
       "date": "2021-09-14",
-      "duration": 4082
+      "duration": 4082,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235649_cbd5c3aaba4b4c398ce3.mp3"
     },
     {
       "id": "episode-663f13e0-3c30-410a-913d-6b4b108bda43",
       "number": 169,
       "title": "Необычные темы в настольных играх",
       "date": "2021-09-21",
-      "duration": 3897
+      "duration": 3897,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235662_fb1e85d0ac15c91935e4.mp3"
     },
     {
       "id": "episode-99d38b23-20cb-4c8e-8601-b8ab61f2239d",
       "number": 170,
       "title": "Экипаж лазурной биржи",
       "date": "2021-09-28",
-      "duration": 3834
+      "duration": 3834,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235672_0dabbdc8e198c80bc87a.mp3"
     },
     {
       "id": "episode-ffee02ee-b094-45b5-b363-82252ddc831d",
       "number": 171,
       "title": "Беседа со Славой Юминым",
       "date": "2021-10-05",
-      "duration": 3257
+      "duration": 3257,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235685_a916ae2aa54e28dcf5d7.mp3"
     },
     {
       "id": "episode-f1cca249-d9b2-48e0-b5d8-699a5045cd8a",
       "number": 172,
       "title": "30 игр в одном флаконе",
       "date": "2021-10-12",
-      "duration": 3433
+      "duration": 3433,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235694_7f11ee0a295090b2a9b6.mp3"
     },
     {
       "id": "episode-9ed8dbf8-daf0-42e4-bc35-51097306d92f",
       "number": 173,
       "title": "Необычные темы в настольных играх 2",
       "date": "2021-10-19",
-      "duration": 3545
+      "duration": 3545,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235704_2cae0a0a25b06935c107.mp3"
     },
     {
       "id": "episode-fbbdd25c-8b76-442e-980f-cd564715c56d",
       "number": 174,
       "title": "Тоска, доска, треска, петроп и укрушка — Беседа с Алексеем Юшиным",
       "date": "2021-10-26",
-      "duration": 4328
+      "duration": 4328,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235715_f6f0eeea3c76c1d526d1.mp3"
     },
     {
       "id": "episode-341db86d-ea27-454f-bdd1-bd71dd7d3d86",
       "number": 175,
       "title": "Пятёрка ретро-игр",
       "date": "2021-11-02",
-      "duration": 3549
+      "duration": 3549,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235725_ffa2c01b193e18369f8d.mp3"
     },
     {
       "id": "episode-d47c8013-ebab-4b80-af90-cd6d21327f59",
       "number": 176,
       "title": "Дополнения, которых нет на русском",
       "date": "2021-11-09",
-      "duration": 4484
+      "duration": 4484,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235737_82da0eab06017d7bf79f.mp3"
     },
     {
       "id": "episode-2a91cc4e-3a94-4f02-9ac9-de19ac13e155",
       "number": 177,
       "title": "Опасные гости чипированного Свинтуса",
       "date": "2021-11-16",
-      "duration": 3525
+      "duration": 3525,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235750_449e7874f7d39be22d26.mp3"
     },
     {
       "id": "episode-d9a3d5b6-26c0-4432-999b-c7f35cc8f7d8",
       "number": 178,
       "title": "Что мы говорим новой игре —",
       "date": "2021-11-23",
-      "duration": 5272
+      "duration": 5272,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235760_554da4a747707e0c737a.mp3"
     },
     {
       "id": "episode-9b234162-fd1f-47e1-84fc-b2877502cadf",
       "number": 179,
       "title": "Чёрная пятница Ковбоя Бибопа",
       "date": "2021-11-30",
-      "duration": 3529
+      "duration": 3529,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235772_fbf6850d027057e64406.mp3"
     },
     {
       "id": "episode-d65187a9-d94d-4074-af97-ec5171d20503",
       "number": 180,
       "title": "Райнер Книциа, разработчик-рекордсмен",
       "date": "2021-12-07",
-      "duration": 4210
+      "duration": 4210,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235783_fb19ff6a63f1221be37b.mp3"
     },
     {
       "id": "episode-6fe4de51-f524-47c9-bbce-874a45a4b01b",
       "number": 181,
       "title": "Битва легенд в долине Амона Ра",
       "date": "2021-12-14",
-      "duration": 3332
+      "duration": 3332,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235794_80ee9baeb4b1b9191e4d.mp3"
     },
     {
       "id": "episode-dc128322-965d-49d3-9cad-f9cfa4b7dffe",
       "number": 182,
       "title": "Запомнившиеся партии 2021 года",
       "date": "2021-12-21",
-      "duration": 3239
+      "duration": 3239,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235803_efb31a5b3d509839ffa8.mp3"
     },
     {
       "id": "episode-e76282ce-b35f-4cff-a928-312f6bdabc10",
       "number": 183,
       "title": "Новогодний выпуск 2022",
       "date": "2021-12-28",
-      "duration": 5735
+      "duration": 5735,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235816_2fd5bf17903d160faf56.mp3"
     },
     {
       "id": "episode-e3e22662-7577-4647-8746-67fe4368f890",
       "number": 184,
       "title": "Новогодние каникулы, Арнак и Рес Аркана",
       "date": "2022-01-11",
-      "duration": 3422
+      "duration": 3422,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235830_9be3225f7ad3a56c578b.mp3"
     },
     {
       "id": "episode-8fabce5e-1a4e-4b78-9052-80abcbcb1629",
       "number": 185,
       "title": "Подкаст о суровых варгеймах",
       "date": "2022-01-18",
-      "duration": 5273
+      "duration": 5273,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235843_b2a53d224c220cd2bb0d.mp3"
     },
     {
       "id": "episode-d702271e-f93b-4204-8717-a22aa54939d4",
       "number": 186,
       "title": "Зима, холода и настольная игра",
       "date": "2022-01-25",
-      "duration": 3492
+      "duration": 3492,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235856_34d63143c258fc908ec0.mp3"
     },
     {
       "id": "episode-b18dca53-9a81-4d29-ada9-640fa857fae4",
       "number": 187,
       "title": "Инициатива, Челюсти льва и забавный случай с новичками",
       "date": "2022-02-01",
-      "duration": 4006
+      "duration": 4006,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235867_8ce300fea3682803dc6a.mp3"
     },
     {
       "id": "episode-0ef01879-9343-4a9d-9498-981130d82444",
       "number": 188,
       "title": "Тематическая игра - что это такое",
       "date": "2022-02-08",
-      "duration": 4700
+      "duration": 4700,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235879_0365ccb2187815fbb50d.mp3"
     },
     {
       "id": "episode-6708cba6-b2da-4a7d-88cb-3a62829bf319",
       "number": 189,
       "title": "Илья Кудряшов, варгеймер-иллюстратор",
       "date": "2022-02-15",
-      "duration": 4232
+      "duration": 4232,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235892_06e6b1383ad2fc8a6a9f.mp3"
     },
     {
       "id": "episode-7dff2933-fb8b-44a2-885c-63b9293f4f70",
       "number": 190,
       "title": "«Натиск!», юбилейный «Каркассон» и куча новостей",
       "date": "2022-02-22",
-      "duration": 3648
+      "duration": 3648,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235904_c0c85852eecb82240ea8.mp3"
     },
     {
       "id": "episode-13fa75f0-f3dc-496a-a3aa-e51d44dc2093",
       "number": 191,
       "title": "«Мрачная гавань — Челюсти льва» и жанр Dungeon Crawler",
       "date": "2022-03-01",
-      "duration": 4657
+      "duration": 4657,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235916_f661ed88db0b26b064a8.mp3"
     },
     {
       "id": "episode-1f064001-9715-48e3-89ad-a9c423ba98e0",
       "number": 192,
       "title": "The Lost Expedition, Свинтус Неон и Последнее послание",
       "date": "2022-03-15",
-      "duration": 3457
+      "duration": 3457,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235928_69b226488ff3d33b5ce8.mp3"
     },
     {
       "id": "episode-34fd73f1-8d47-4aeb-9e26-cc92ef4d37c4",
       "number": 193,
       "title": "Воспоминания о первых играх",
       "date": "2022-03-22",
-      "duration": 4872
+      "duration": 4872,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235940_0d1274e66b245292959e.mp3"
     },
     {
       "id": "episode-5bc972f7-f882-43ea-8bfa-afa6c655aea7",
       "number": 194,
       "title": "Беседа с Никитой Тхоржевским",
       "date": "2022-03-29",
-      "duration": 3995
+      "duration": 3995,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235953_6e830ca7e2f2adf3f797.mp3"
     },
     {
       "id": "episode-0c8718ea-b645-44d2-8217-2cb4b7dfb247",
       "number": 195,
       "title": "Привет из Надыма",
       "date": "2022-04-05",
-      "duration": 3249
+      "duration": 3249,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235962_4e56cbfdcb21985bf0ca.mp3"
     },
     {
       "id": "episode-56fc03c6-1850-4e75-9216-297236697537",
       "number": 196,
       "title": "Настольные игры с предателем",
       "date": "2022-04-12",
-      "duration": 3129
+      "duration": 3129,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235973_485ad1c7e4f4711f1246.mp3"
     },
     {
       "id": "episode-075caa24-a518-44f1-bcd1-af0e3f302e80",
       "number": 197,
       "title": "Граникон-2022. Часть первая. Интервью с участниками",
       "date": "2022-04-26",
-      "duration": 7777
+      "duration": 7777,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791235988_f7d82ff1278a79f0461c.mp3"
     },
     {
       "id": "episode-42f8f454-b222-40e1-b51b-0bce4c777712",
       "number": 198,
       "title": "«Гранинкон-2022». Часть вторая. Интервью с издателями",
       "date": "2022-05-05",
-      "duration": 8590
+      "duration": 8590,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236010_cec343d9c942c7689308.mp3"
     },
     {
       "id": "episode-76eecf1a-fc14-4579-8563-256bfb058966",
       "number": 199,
       "title": "Холст, Доминион, Этнос, Остров кошек и Акватика",
       "date": "2022-05-12",
-      "duration": 4325
+      "duration": 4325,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236027_630aefcc257c818e7365.mp3"
     },
     {
       "id": "episode-d215e061-ad6f-4c7f-895e-e3178f691c43",
       "number": 201,
       "title": "Pax Pamir, Unmatched, Kraftwagen, Экосистема, So Clover!, Small World of Warcraft",
       "date": "2022-05-17",
-      "duration": 4573
+      "duration": 4573,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236041_0d9401cd6010aaaf2075.mp3"
     },
     {
       "id": "episode-7fd9013b-043a-4bb9-a0fc-a5838bd095bf",
       "number": 200,
       "title": "Внезапный! Двухсотый! Юбилейный!",
       "date": "2022-05-24",
-      "duration": 5749
+      "duration": 5749,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236057_42a9276a183386930cf8.mp3"
     },
     {
       "id": "episode-f63d8f54-ae2f-4a34-98bf-2468aacf5fd9",
       "number": 202,
       "title": "Премия Spiel des Jahres 2022 и другие новости",
       "date": "2022-05-31",
-      "duration": 4617
+      "duration": 4617,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236072_e6b4615ac954bfaa3103.mp3"
     },
     {
       "id": "episode-30532ca5-3f8a-4287-8f4c-bb6de2c69b20",
       "number": 203,
       "title": "Игры с цветными циферками",
       "date": "2022-06-07",
-      "duration": 3648
+      "duration": 3648,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236084_d0b780139bb5c87aa515.mp3"
     },
     {
       "id": "episode-004e2630-2732-4816-801d-9614e9072b75",
       "number": 204,
       "title": "Холодная статистика 21-го",
       "date": "2022-06-15",
-      "duration": 4368
+      "duration": 4368,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236097_9c4e271926af265ece2f.mp3"
     },
     {
       "id": "episode-71ebec24-7b97-4695-8efc-6d4700fd6070",
       "number": 205,
       "title": "5211, Kingdom Builder, Поляна, Финикийцы",
       "date": "2022-06-21",
-      "duration": 3940
+      "duration": 3940,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236124_c46f59ef07ea733930fc.mp3"
     },
     {
       "id": "episode-d09f7461-2cd4-4c04-8550-d0419aa29ae1",
       "number": 206,
       "title": "Случайные разговоры о настольных и компьютерных играх",
       "date": "2022-06-28",
-      "duration": 3516
+      "duration": 3516,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236137_ad38d25e4f06f2dd7dd7.mp3"
     },
     {
       "id": "episode-cf282261-867f-4bee-919e-d1eeb5255468",
       "number": 207,
       "title": "ТОП игр для дачных посиделок",
       "date": "2022-07-05",
-      "duration": 4753
+      "duration": 4753,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236151_92bd468b27b12c0da9b4.mp3"
     },
     {
       "id": "episode-ff46dceb-06ae-4dbd-b56a-8019612aad6c",
       "number": 208,
       "title": "Брасс — Бримингем, Tiny Epic Dinosaurus и Дорога приключений",
       "date": "2022-07-12",
-      "duration": 3201
+      "duration": 3201,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236165_6f13ca95c282dcf62a58.mp3"
     },
     {
       "id": "episode-d11fad89-1dfa-4b94-b5e2-d06613426cf1",
       "number": 209,
       "title": "Артём и Наташа из Архангельска",
       "date": "2022-07-19",
-      "duration": 3349
+      "duration": 3349,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236176_395767ba44fb7f6cdeb8.mp3"
     },
     {
       "id": "episode-07e38dac-be27-434b-9d9d-f64045a9c57d",
       "number": 210,
       "title": "Настолкэмп-2022 (1 из 2)",
       "date": "2022-07-26",
-      "duration": 4549
+      "duration": 4549,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236190_870d112701b896142328.mp3"
     },
     {
       "id": "episode-a157104a-0933-4fb1-8562-c0ee25749e08",
       "number": 211,
       "title": "Настолкэмп-2022 (2 из 2)",
       "date": "2022-08-02",
-      "duration": 4802
+      "duration": 4802,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236203_53dcb70c81b7bb2bf9d9.mp3"
     },
     {
       "id": "episode-c0b6d0ba-f956-4156-99bd-6bdbafeab845",
       "number": 212,
       "title": "Беседа с Романом Шамолиным («Лавка игр»)",
       "date": "2022-08-09",
-      "duration": 3646
+      "duration": 3646,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236217_e0433c019ea8586c911b.mp3"
     },
     {
       "id": "episode-26b03bd7-a121-4555-831e-0b98afe0de18",
       "number": 213,
       "title": "Каскадия, Similo, Rolling Realms, Артишоки в шоке",
       "date": "2022-08-16",
-      "duration": 3323
+      "duration": 3323,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236229_2535f6b0955b9bf80999.mp3"
     },
     {
       "id": "episode-2ab3b21a-5c9a-4624-957f-5bee53a24ce7",
       "number": 214,
       "title": "Адель и Немезида",
       "date": "2022-08-23",
-      "duration": 3624
+      "duration": 3624,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236242_6e7e7c30f88a7587fab6.mp3"
     },
     {
       "id": "episode-7a806f2d-2aee-4216-a7b8-ccee54e2ec6b",
       "number": 215,
       "title": "ТОП-10. Игры, которые я никогда не продам",
       "date": "2022-08-30",
-      "duration": 3968
+      "duration": 3968,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236256_d08650841c895d0bcbf4.mp3"
     },
     {
       "id": "episode-56f3658f-beda-4226-82d2-0da3966d8651",
       "number": 216,
       "title": "Ольтре и Предназначение",
       "date": "2022-09-06",
-      "duration": 3909
+      "duration": 3909,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236270_a5c24dc056e75e804bb2.mp3"
     },
     {
       "id": "episode-b685400e-aeac-4cff-8237-feb38e2b11f6",
       "number": 217,
       "title": "ТОП-10 - Что бесит в настольных играх",
       "date": "2022-09-13",
-      "duration": 4589
+      "duration": 4589,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236282_40221734e3c85a1c16c1.mp3"
     },
     {
       "id": "episode-3a2bce59-960b-437f-9ecf-6ca227f3cb01",
       "number": 218,
       "title": "Ностальгическое превозмогание",
       "date": "2022-09-20",
-      "duration": 3373
+      "duration": 3373,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236294_35e25f4597734c5f42ac.mp3"
     },
     {
       "id": "episode-6529d25a-f532-4c22-9acc-e7b545a3e753",
       "number": 219,
       "title": "GMA-2022, новости и впечатления про Star Wars",
       "date": "2022-09-27",
-      "duration": 4250
+      "duration": 4250,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236307_6dcf3d9b3d85959b5ad9.mp3"
     },
     {
       "id": "episode-42ee0639-e82b-4e1f-9b96-e4984057314a",
       "number": 220,
       "title": "Красный собор и Bullet",
       "date": "2022-10-04",
-      "duration": 3470
+      "duration": 3470,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236320_6f6ea51e048ca85cfb2f.mp3"
     },
     {
       "id": "episode-5987725d-d58b-41c1-938d-58f1b4617b17",
       "number": 221,
       "title": "Что такое кооперативные игры",
       "date": "2022-10-11",
-      "duration": 4144
+      "duration": 4144,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236333_8a79342a37f890987328.mp3"
     },
     {
       "id": "episode-5f7917e2-b320-49ee-b0c2-989ca0bcf3ab",
       "number": 222,
       "title": "Эссен-2022 и другие новости",
       "date": "2022-10-18",
-      "duration": 3518
+      "duration": 3518,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236345_0ee50cd68153506f56ea.mp3"
     },
     {
       "id": "episode-883c7840-327c-47f1-add9-3bd8f2f1fc43",
       "number": 223,
       "title": "Вадим Ларкин — «Немезида», игровые столы и «Дюна. Империя»",
       "date": "2022-10-25",
-      "duration": 4934
+      "duration": 4934,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236358_8237363d3c704ed71359.mp3"
     },
     {
       "id": "episode-aa6191f0-b56f-4088-b089-054b6d85b614",
       "number": 224,
       "title": "Крокинол, игры на Хэллоуин и Дюна. Империя",
       "date": "2022-11-01",
-      "duration": 4312
+      "duration": 4312,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236371_9c211eb9bf3f7361c698.mp3"
     },
     {
       "id": "episode-60c5a3cb-899f-423b-a916-585757ff4651",
       "number": 225,
       "title": "Secret Santa 2022 и Tragedy Looper",
       "date": "2022-11-08",
-      "duration": 3496
+      "duration": 3496,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236384_14fd2d772d13dd2aa2a8.mp3"
     },
     {
       "id": "episode-14dd343b-4b04-49eb-b481-9fc75c1a9dfe",
       "number": 226,
       "title": "Что купить для игры с семьёй",
       "date": "2022-11-15",
-      "duration": 4091
+      "duration": 4091,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236397_0b447d574b553b0dd2c2.mp3"
     },
     {
       "id": "episode-155be37d-549a-4196-9dc0-556ffbe3bd71",
       "number": 227,
       "title": "Советская кухня, По верблюдам и куча новостей",
       "date": "2022-11-22",
-      "duration": 3737
+      "duration": 3737,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236410_72f31c3752fcb03e7acb.mp3"
     },
     {
       "id": "episode-43c0a1c6-402d-4db2-9d4c-c8f5387808b3",
       "number": 228,
       "title": "Настольные игры про поезда и железные дороги",
       "date": "2022-11-29",
-      "duration": 5375
+      "duration": 5375,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236421_935978183d8e37b900e7.mp3"
     },
     {
       "id": "episode-c58e2bd6-13fc-4349-9e16-133e14d6d242",
       "number": 229,
       "title": "Как и зачем покупать новые игры и почему этого делать не надо",
       "date": "2022-12-06",
-      "duration": 3858
+      "duration": 3858,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236435_26aa72bdffe40309d2b6.mp3"
     },
     {
       "id": "episode-d5c632d3-fcf8-4fcb-8e6b-1c846f1c9461",
       "number": 230,
       "title": "Дополнения к «Ужасу Аркхэма» и «Дюне», «Долина торговцев» и «Мой город»",
       "date": "2022-12-13",
-      "duration": 3745
+      "duration": 3745,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236447_fa9a4c380cb946725827.mp3"
     },
     {
       "id": "episode-95806fb0-df82-4dcf-8701-46c22882b961",
       "number": 231,
       "title": "«Кубитос», Sylvion, «Вторжение с небес» и пара новостей",
       "date": "2022-12-20",
-      "duration": 3899
+      "duration": 3899,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236458_c2ea8c25e1cd1d812402.mp3"
     },
     {
       "id": "episode-1cfa644e-ffa6-4276-8ce3-6f939d4ea986",
       "number": 232,
       "title": "Новогодний выпуск - 2023",
       "date": "2022-12-27",
-      "duration": 6080
+      "duration": 6080,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236472_b4ebc322ede7908541b7.mp3"
     },
     {
       "id": "episode-03474ceb-81b2-423d-9a21-4533fd0f2e92",
       "number": 233,
       "title": "Настольный новогодний хронотоп",
       "date": "2023-01-10",
-      "duration": 4452
+      "duration": 4452,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236488_e655f8b608e5e24b6dcf.mp3"
     },
     {
       "id": "episode-31e18fe0-f94c-43b0-a1ba-c7d4214be082",
       "number": 234,
       "title": "Настольные ожидания 2023 года",
       "date": "2023-01-17",
-      "duration": 3350
+      "duration": 3350,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236501_e630fa77725d66ec1aa3.mp3"
     },
     {
       "id": "episode-e497909c-fc67-40ac-b6f1-c3166c64e1c8",
       "number": 235,
       "title": "Почти варгеймерский выпуск — Пробуждение медведя и Pocket Sub",
       "date": "2023-01-24",
-      "duration": 3733
+      "duration": 3733,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236512_8fc620d21e9ac702064c.mp3"
     },
     {
       "id": "episode-c6869acb-516f-44c3-8885-0bae598fde83",
       "number": 236,
       "title": "Крокинол за 15 тысяч, Каррамба и Револьвер Нуар",
       "date": "2023-01-31",
-      "duration": 3170
+      "duration": 3170,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236529_9befc9ac9417162bd3c3.mp3"
     },
     {
       "id": "episode-0b5df3d5-b6e6-4924-b530-226a9db4047b",
       "number": 237,
       "title": "Морок над Сызранью и таблетки для утюга",
       "date": "2023-02-07",
-      "duration": 4457
+      "duration": 4457,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236541_799dabbdec1801ffdd40.mp3"
     },
     {
       "id": "episode-8f1b0ecd-ccaf-4ff5-8583-e8b5360299e2",
       "number": 238,
       "title": "ТОП-10 настолок с выбыванием игроков",
       "date": "2023-02-14",
-      "duration": 4316
+      "duration": 4316,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236553_44d7736edc41a0a94fec.mp3"
     },
     {
       "id": "episode-0dfac26f-36c0-4a9b-a75e-621096e2fce7",
       "number": 239,
       "title": "Разговор с Олегом Мелешиным про механики, разработку игр и не только",
       "date": "2023-02-28",
-      "duration": 4687
+      "duration": 4687,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236566_07a88881e2a7127281d1.mp3"
     },
     {
       "id": "episode-363550e1-cca2-4dd1-8dfb-1409d135641e",
       "number": 240,
       "title": "Новости и впечатления о коричневых играх",
       "date": "2023-03-07",
-      "duration": 3526
+      "duration": 3526,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236580_748b17441f19925bc1b5.mp3"
     },
     {
       "id": "episode-2db75914-238f-4dd0-b5bc-f4d45ecd94bd",
       "number": 241,
       "title": "Женские секреты Алёны Мироновой",
       "date": "2023-03-14",
-      "duration": 4719
+      "duration": 4719,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236594_dcc84b4ecb61564b0492.mp3"
     },
     {
       "id": "episode-2aba2c19-4117-4ac7-bb59-bd1d393a3d90",
       "number": 242,
       "title": "Безумная лекция об «Особняках безумия»",
       "date": "2023-03-21",
-      "duration": 4509
+      "duration": 4509,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236610_20fd782369e0adfc1bed.mp3"
     },
     {
       "id": "episode-d1dbb61c-6060-4a4e-b440-639a24ff6082",
       "number": 243,
       "title": "Новости на букву «А», впечатления от «Анно 1800» и Level 10",
       "date": "2023-03-28",
-      "duration": 3448
+      "duration": 3448,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236627_164215c6d897f3252a01.mp3"
     },
     {
       "id": "episode-aad040ea-b2ac-4387-ab24-58892fd7e61c",
       "number": 244,
       "title": "Нешуточный выпуск про «Монополию»",
       "date": "2023-04-01",
-      "duration": 3563
+      "duration": 3563,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236641_ccb8b22afc50e34a29ca.mp3"
     },
     {
       "id": "episode-0ab0a057-342c-4040-a41b-c86387cffbb1",
       "number": 245,
       "title": "Граникон-2023. Часть первая. Геймдизайн вообще и «Зельеварение 2» в частности",
       "date": "2023-04-05",
-      "duration": 6932
+      "duration": 6932,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236655_960dd136e4dca5107e65.mp3"
     },
     {
       "id": "episode-2f958131-ecf3-45e2-aadd-176fa6cfe51b",
       "number": 246,
       "title": "Приключения на Граниконе и на варгеймерском стриме",
       "date": "2023-04-11",
-      "duration": 4469
+      "duration": 4469,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236671_44ca7be0023697721525.mp3"
     },
     {
       "id": "episode-cd91baa4-1b75-43c9-a955-076d9313d598",
       "number": 247,
       "title": "Граникон-2023. Часть вторая. Фестиваль глазами издателей",
       "date": "2023-04-18",
-      "duration": 6881
+      "duration": 6881,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236688_c1a33d78e5425a47b74a.mp3"
     },
     {
       "id": "episode-7c76eb26-1cd3-4dd7-b08d-49ecc4e69796",
       "number": 248,
       "title": "Вертолёт из палок и смолы",
       "date": "2023-04-25",
-      "duration": 3242
+      "duration": 3242,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236704_e7b1e0774d3218e77563.mp3"
     },
     {
       "id": "episode-f9666d84-ad6f-4ad5-8874-ba93187d09b0",
       "number": 249,
       "title": "Дуэльные впечатления",
       "date": "2023-05-03",
-      "duration": 3433
+      "duration": 3433,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236715_2681ad896941022230e2.mp3"
     },
     {
       "id": "episode-d031a889-0be7-4e6f-9c3a-8ce24a6d2c86",
       "number": 250,
       "title": "Четвертьтысячный выпуск",
       "date": "2023-05-11",
-      "duration": 3276
+      "duration": 3276,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236725_bc014fde1874589f4eb7.mp3"
     },
     {
       "id": "episode-b7b4c62a-e290-4cf8-a060-35d073afc477",
       "number": 251,
       "title": "Настольный этикет. Часть первая",
       "date": "2023-05-16",
-      "duration": 6212
+      "duration": 6212,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236742_4ed2c37aaf962a18d7f3.mp3"
     },
     {
       "id": "episode-b32aec5d-a676-417a-aef5-fdc2a976e28f",
       "number": 252,
       "title": "Огнетушитель с рисом и портал в ипотеку",
       "date": "2023-05-23",
-      "duration": 3505
+      "duration": 3505,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236761_7ad0eb89beb6317175b1.mp3"
     },
     {
       "id": "episode-0b80ef8a-ffbf-4d22-9146-13fd7ff6a973",
       "number": 253,
       "title": "Ужасные истории в поезде",
       "date": "2023-05-30",
-      "duration": 3886
+      "duration": 3886,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236773_ff763c97d8fcd22bf02f.mp3"
     },
     {
       "id": "episode-b3c3c4fe-e1f0-4b7d-ac47-ffe4cbd8eaf1",
       "number": 254,
       "title": "Оптимизация в локализации и впечатления от «Палео»",
       "date": "2023-06-06",
-      "duration": 3384
+      "duration": 3384,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236786_4e5d3b4e3001fa20dd76.mp3"
     },
     {
       "id": "episode-7533dc1f-a893-49d5-bc08-902ab3923a6b",
       "number": 255,
       "title": "Что взять с собой на кэмп —",
       "date": "2023-06-15",
-      "duration": 6519
+      "duration": 6519,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236799_198b22860b0a2cef152d.mp3"
     },
     {
       "id": "episode-f8fdb3e6-a9c0-4050-ab9c-b5ff64a68bc4",
       "number": 256,
       "title": "Наследники великих игр",
       "date": "2023-06-20",
-      "duration": 4960
+      "duration": 4960,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236815_e9591033061c6b736c71.mp3"
     },
     {
       "id": "episode-667903b5-42dd-4e52-869f-8f9574c9f999",
       "number": 257,
       "title": "Электронный слон в Арк Нове и полигры за 20 тысяч",
       "date": "2023-06-27",
-      "duration": 4802
+      "duration": 4802,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236830_e7829d1c29a57019a85f.mp3"
     },
     {
       "id": "episode-42e93ea5-ace4-4af7-89de-10386c1baaf6",
       "number": 258,
       "title": "Настольный этикет. Часть вторая",
       "date": "2023-07-04",
-      "duration": 7644
+      "duration": 7644,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236846_0a8dade322354c512eef.mp3"
     },
     {
       "id": "episode-8190c224-254f-44f7-b5d4-a4f0c0c54249",
       "number": 259,
       "title": "Выпуск о «лавочных» играх",
       "date": "2023-07-11",
-      "duration": 6338
+      "duration": 6338,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236874_f238135932bdc60527e4.mp3"
     },
     {
       "id": "episode-68d642c9-a2d8-46e2-8582-4e64179593c6",
       "number": 260,
       "title": "Make Novgorod Great Again!",
       "date": "2023-07-21",
-      "duration": 4723
+      "duration": 4723,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236893_fd0633941a037d079460.mp3"
     },
     {
       "id": "episode-49e63e45-756e-4bc9-a1ef-01d50ea90b49",
       "number": 261,
       "title": "Впечатления от Настолкэмпа-2023",
       "date": "2023-07-26",
-      "duration": 8856
+      "duration": 8856,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236907_d026bb1dad3dbd059033.mp3"
     },
     {
       "id": "episode-18c9a132-95d4-4d7b-8bcf-fa8f93e2cf39",
       "number": 262,
       "title": "Настолкэмп-2023 (1 из 2)",
       "date": "2023-08-01",
-      "duration": 4463
+      "duration": 4463,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236931_81adc58c8f550b07bf52.mp3"
     },
     {
       "id": "episode-966c52f5-9cc0-422d-85fb-ef046830d4a1",
       "number": 263,
       "title": "Настолкэмп-2023 (2 из 2)",
       "date": "2023-08-08",
-      "duration": 5120
+      "duration": 5120,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236948_d6f968a5616c3fe76c05.mp3"
     },
     {
       "id": "episode-bd957b1d-29e0-4aac-b8d7-2ad133205eb7",
       "number": 264,
       "title": "Удовольствия в настольных играх",
       "date": "2023-08-15",
-      "duration": 3348
+      "duration": 3348,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236961_40947ebb440aae6088e5.mp3"
     },
     {
       "id": "episode-32051fe7-6683-44e0-b97d-7f8d6eda3245",
       "number": 265,
       "title": "Процедурно-генерируемые негодяи нашего моря",
       "date": "2023-08-22",
-      "duration": 3871
+      "duration": 3871,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236972_7a8ff23510cf53aeeccd.mp3"
     },
     {
       "id": "episode-bce7005f-2718-40e9-9069-69083b7095fb",
       "number": 266,
       "title": "Предзаказы и дополнения",
       "date": "2023-08-29",
-      "duration": 4381
+      "duration": 4381,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791236986_dacbce5e4f544ea3a98a.mp3"
     },
     {
       "id": "episode-d91b7161-a26c-483a-964c-78fce459e91d",
       "number": 267,
       "title": "Космос, Луна и временные петли",
       "date": "2023-09-05",
-      "duration": 3420
+      "duration": 3420,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237000_c562c652217f694279be.mp3"
     },
     {
       "id": "episode-861b9b34-944d-4bed-9a88-825f3cb3d8ee",
       "number": 268,
       "title": "Fear Of Missing Out",
       "date": "2023-09-12",
-      "duration": 4884
+      "duration": 4884,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237015_a5f4d3e300e2a9d26e9a.mp3"
     },
     {
       "id": "episode-877edacf-3194-41e4-9647-26777bbcaddf",
       "number": 269,
       "title": "ТОП отечественных игр",
       "date": "2023-09-19",
-      "duration": 3317
+      "duration": 3317,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237028_5d4c7ff539cd0e0f4443.mp3"
     },
     {
       "id": "episode-40c1808d-0621-48b5-8c4b-9655640eb11e",
       "number": 270,
       "title": "Карточный апокалипсис Властелина колец",
       "date": "2023-09-26",
-      "duration": 3515
+      "duration": 3515,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237039_23c40798713e1a4982ba.mp3"
     },
     {
       "id": "episode-e717ca80-dac1-49d6-b3ab-8f62ef006c51",
       "number": 271,
       "title": "Дилемма Ticket to Ride и история Алексея Разыграева",
       "date": "2023-10-03",
-      "duration": 3302
+      "duration": 3302,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237050_ef5138ee45de9d146f7a.mp3"
     },
     {
       "id": "episode-3aa33483-ec35-4ee6-8aaf-1e5ff753d7f2",
       "number": 272,
       "title": "Spiel-2023 и хорошие игры",
       "date": "2023-10-10",
-      "duration": 3703
+      "duration": 3703,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237061_54813f026893e07d2147.mp3"
     },
     {
       "id": "episode-316fe34b-195c-4bc3-83f0-01248e6b9083",
       "number": 273,
       "title": "Новинки — Обет, Ики и Неон",
       "date": "2023-10-17",
-      "duration": 5613
+      "duration": 5613,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237073_bf0074a2cc91c8c2eda4.mp3"
     },
     {
       "id": "episode-5a209f90-f5ea-488b-8b5f-94514bcceb42",
       "number": 274,
       "title": "Старше Интернета. ТОП игр 1980-х",
       "date": "2023-10-24",
-      "duration": 4547
+      "duration": 4547,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237091_e30d391c1391cc517ec1.mp3"
     },
     {
       "id": "episode-ee923fc5-08f8-4400-a512-7fcfe15e03ca",
       "number": 275,
       "title": "Хэллоуин-2023. Ужасные вещи в настольных играх",
       "date": "2023-10-31",
-      "duration": 3140
+      "duration": 3140,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237107_930bfb0dc1a98aa98be9.mp3"
     },
     {
       "id": "episode-9d5f8533-10e3-4229-8807-88a4eec2f578",
       "number": 276,
       "title": "Юбилейный (настолки-free) эпизод",
       "date": "2023-11-10",
-      "duration": 8474
+      "duration": 8474,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237123_54fc8d61fed7e1e72a33.mp3"
     },
     {
       "id": "episode-bcc57eed-11bb-485a-b3ee-76d7fa2b9b58",
       "number": 277,
       "title": "Ики, Город удачи, Экспедиция-Трофи",
       "date": "2023-11-14",
-      "duration": 5151
+      "duration": 5151,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237144_70c9c9dfe41fc4d38e4a.mp3"
     },
     {
       "id": "episode-8072c168-ac6b-4394-ad2d-7afc85d2224d",
       "number": 278,
       "title": "Первым делом - самолёты!",
       "date": "2023-11-21",
-      "duration": 3636
+      "duration": 3636,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237160_1b6c2a9979750399bd7a.mp3"
     },
     {
       "id": "episode-142bc201-510b-46e0-aabe-4545d4fc7b56",
       "number": 279,
       "title": "Арнак, очереди и дефицит",
       "date": "2023-11-28",
-      "duration": 3368
+      "duration": 3368,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237173_204bc6972b20752935b1.mp3"
     },
     {
       "id": "episode-15c0ff19-bbb9-477b-991a-1e853d34019e",
       "number": 280,
       "title": "Замурованные двери и экономика умных игр",
       "date": "2023-12-05",
-      "duration": 3548
+      "duration": 3548,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237186_3a4edfb16707afba5ad9.mp3"
     },
     {
       "id": "episode-a7fb8c15-1d1b-453e-aa8d-db2b0cc994bd",
       "number": 281,
       "title": "Провалы и разочарования 2023 года",
       "date": "2023-12-12",
-      "duration": 3932
+      "duration": 3932,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237198_a9272372ae81e6a940d3.mp3"
     },
     {
       "id": "episode-f9cd27ad-39e6-4a31-823d-06d95a808f0f",
       "number": 282,
       "title": "Терминатор, Акрополис и Амазония",
       "date": "2023-12-19",
-      "duration": 3752
+      "duration": 3752,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237211_44537b61cd7e2827ae69.mp3"
     },
     {
       "id": "episode-4fc2f206-d6f6-4950-80ce-32a8e3e4edc4",
       "number": 283,
       "title": "Давай итоги '23",
       "date": "2023-12-26",
-      "duration": 3652
+      "duration": 3652,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237225_4e7a9d5904de07fa31bf.mp3"
     },
     {
       "id": "episode-cc3c9b97-4803-4580-b731-77ddd37261b9",
       "number": 284,
       "title": "Первые новинки 2024 — Ориньяк, Управление «Разум», Стражи Галактики для Marvel Legendary",
       "date": "2024-01-10",
-      "duration": 4603
+      "duration": 4603,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237241_340b8eed134100793b54.mp3"
     },
     {
       "id": "episode-0b1e8c6c-4171-4f2e-86f7-0295f0db4d8a",
       "number": 285,
       "title": "Евгений Жук и Барахолка настольных игр (БНИ)",
       "date": "2024-01-16",
-      "duration": 4117
+      "duration": 4117,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237254_0e17d3cf7e71ce5607b0.mp3"
     },
     {
       "id": "episode-e6686715-6eec-4960-ab9f-232aaba88e3c",
       "number": 286,
       "title": "10 ошибок начинающего настольщика",
       "date": "2024-01-23",
-      "duration": 4249
+      "duration": 4249,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237271_128c61390b91261f2523.mp3"
     },
     {
       "id": "episode-fac76427-ab1a-40f3-8cde-b4425f5d5882",
       "number": 287,
       "title": "Научная новизна и искры радости",
       "date": "2024-01-30",
-      "duration": 3613
+      "duration": 3613,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237288_760f901118777a73deb8.mp3"
     },
     {
       "id": "episode-842ce0e3-48c6-4a18-ad65-47a5f75d50de",
       "number": 288,
       "title": "Бомарше против Эвелины Блёданс",
       "date": "2024-02-06",
-      "duration": 4521
+      "duration": 4521,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237302_787a79f5fc45f272016f.mp3"
     },
     {
       "id": "episode-27a32880-1894-487d-9380-16fd85272901",
       "number": 289,
       "title": "Палео и Эверделл",
       "date": "2024-02-13",
-      "duration": 4940
+      "duration": 4940,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237316_53a5b5d1602cb1f19065.mp3"
     },
     {
       "id": "episode-14b5a345-909b-4382-acbb-2a50b1bf41a4",
       "number": 290,
       "title": "Сольная боль, Лимпопо и Это безумное королевство",
       "date": "2024-02-20",
-      "duration": 3410
+      "duration": 3410,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237330_01c47e74029cafe1cf9a.mp3"
     },
     {
       "id": "episode-e73b8e3a-5e45-4f2d-94d0-92a667a61614",
       "number": 291,
       "title": "Магическая уборка — Избавляемся от настольных игр",
       "date": "2024-02-27",
-      "duration": 4210
+      "duration": 4210,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237351_dd3205f1ba305ff21f1a.mp3"
     },
     {
       "id": "episode-17590c63-598a-4112-b616-9468f66d296c",
       "number": 292,
       "title": "Зельеварение 2",
       "date": "2024-03-05",
-      "duration": 4268
+      "duration": 4268,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237368_97232437918e04b074f3.mp3"
     },
     {
       "id": "episode-0e6d6965-ca3f-45e2-b2c2-e92326b4a0c0",
       "number": 293,
       "title": "Marvel United и Faraway",
       "date": "2024-03-12",
-      "duration": 3127
+      "duration": 3127,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237382_e20410d9230ff1fce1fa.mp3"
     },
     {
       "id": "episode-17d9fdb7-bc79-45d3-84a2-373e29b2fbc2",
       "number": 294,
       "title": "Интервью с Иваном Лашиным",
       "date": "2024-03-19",
-      "duration": 3967
+      "duration": 3967,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237393_ebc27d6bb6a6de659ff9.mp3"
     },
     {
       "id": "episode-cb9d3812-73a0-47e1-9d5c-efd07604a83c",
       "number": 295,
       "title": "Цветные грани и Operators",
       "date": "2024-03-26",
-      "duration": 3204
+      "duration": 3204,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237404_4f0da6d82499d1476d69.mp3"
     },
     {
       "id": "episode-e05279d3-0eee-4197-ad6d-5ccf7c1f7851",
       "number": 296,
       "title": "Механика наследия",
       "date": "2024-04-02",
-      "duration": 4131
+      "duration": 4131,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237417_6cd5eeb627cafa52023a.mp3"
     },
     {
       "id": "episode-b2b502ad-0c98-4703-8485-a99923634fd1",
       "number": 297,
       "title": "Граникон-2024 — Юрий Ямщиков, Николай Пегасов, Олег Мелешин",
       "date": "2024-04-09",
-      "duration": 5711
+      "duration": 5711,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237430_ce741130a44e9bb92488.mp3"
     },
     {
       "id": "episode-e581da69-6892-431e-8c84-dad3fd441e84",
       "number": 298,
       "title": "Граникон-2024 — Издатели (1 из 2)",
       "date": "2024-04-11",
-      "duration": 6167
+      "duration": 6167,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237448_ce6ea8f3024df422facc.mp3"
     },
     {
       "id": "episode-9efa6432-8df8-4786-aec6-a7401957dca8",
       "number": 299,
       "title": "Граникон-2024 — Издатели (2 из 2)",
       "date": "2024-04-16",
-      "duration": 5638
+      "duration": 5638,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237466_a2eff0248e73284da5dc.mp3"
     },
     {
       "id": "episode-16874e9b-ff78-4f07-bc86-a42d14035e6a",
       "number": 301,
       "title": "Алексей Зуйков и Андрей Колупаев",
       "date": "2024-04-18",
-      "duration": 2449
+      "duration": 2449,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237479_695590f48c016933f99d.mp3"
     },
     {
       "id": "episode-4cc42f1e-b248-46df-b09c-075c64d41f37",
       "number": 302,
       "title": "«Косточки», новая «Дюна» и старые «Мемуары»",
       "date": "2024-04-23",
-      "duration": 3644
+      "duration": 3644,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237492_3ad4a1cd1a8c28df5122.mp3"
     },
     {
       "id": "episode-c75ca86e-b36c-4a8f-8012-d73d0e118c0e",
       "number": 303,
       "title": "Алёна Миронова на «Граниконе-2024»",
       "date": "2024-04-25",
-      "duration": 3386
+      "duration": 3386,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237512_93d705cfd4f04225a1b6.mp3"
     },
     {
       "id": "episode-f72afa95-f371-4289-8826-f2d04d88d736",
       "number": 300,
       "title": "Отцовский и юбилейный эпизод",
       "date": "2024-05-07",
-      "duration": 5186
+      "duration": 5186,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237526_e58ef425d53d117d3aeb.mp3"
     },
     {
       "id": "episode-8ff4d58d-6452-441d-8b34-cb81dbfe802a",
       "number": 304,
       "title": "«Корпорация «Сны» против «Белого замка»",
       "date": "2024-05-14",
-      "duration": 4808
+      "duration": 4808,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237541_e49b4b21bd4781c160ef.mp3"
     },
     {
       "id": "episode-19c8a7a5-3b46-454f-9a28-0ed9f06509da",
       "number": 305,
       "title": "Расцвет настольных игр. ТОП игр 1990-х",
       "date": "2024-05-21",
-      "duration": 5447
+      "duration": 5447,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237556_cf7046043e5bd59163da.mp3"
     },
     {
       "id": "episode-f5e38ce9-c83d-4763-9453-c45a5d07ba6e",
       "number": 306,
       "title": "Жара. Трасса. Гонка",
       "date": "2024-05-28",
-      "duration": 3257
+      "duration": 3257,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237574_6181f2d2a8e2f9485826.mp3"
     },
     {
       "id": "episode-dc8f7045-5682-48a9-8ec9-0d637b689f20",
       "number": 307,
       "title": "День настольных игр и настольный Unlock",
       "date": "2024-06-04",
-      "duration": 3393
+      "duration": 3393,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237586_46a40a80505918e3905c.mp3"
     },
     {
       "id": "episode-efb06c78-1025-4abe-abd6-ce505f36e21b",
       "number": 308,
       "title": "Особенности Вала Адриана и игр с обычными людьми",
       "date": "2024-06-11",
-      "duration": 3394
+      "duration": 3394,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237598_f7592cae79f9b6afbb63.mp3"
     },
     {
       "id": "episode-777cb0a4-a90d-4962-bf66-09c621b53f3d",
       "number": 309,
       "title": "Три новинки — Управление «Разум», Хуанхэ и Янцзы и Прослушка",
       "date": "2024-06-18",
-      "duration": 4317
+      "duration": 4317,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237611_77f5b8a7b1df764a6fc6.mp3"
     },
     {
       "id": "episode-51970583-83d9-4991-a904-1ac1bcbdc388",
       "number": 310,
       "title": "Экспедиционный эпизод",
       "date": "2024-06-25",
-      "duration": 4334
+      "duration": 4334,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237625_9ada72bf8e3b7f3809ea.mp3"
     },
     {
       "id": "episode-1e8c83b3-99e0-47b8-991e-91ee95e8e290",
       "number": 311,
       "title": "Первые редакции против вторых",
       "date": "2024-07-02",
-      "duration": 5038
+      "duration": 5038,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237639_bded802806c8a231cc8a.mp3"
     },
     {
       "id": "episode-016e9494-bd78-424f-bfb4-8ad2dacf9d8c",
       "number": 312,
       "title": "Во что играют обычные люди",
       "date": "2024-07-09",
-      "duration": 3878
+      "duration": 3878,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237652_d6c0a202640287d7c2e0.mp3"
     },
     {
       "id": "episode-e616efa1-7c5f-4c13-bd30-09fd6b6cfbb6",
       "number": 313,
       "title": "Этот выпуск можно пропустить",
       "date": "2024-07-16",
-      "duration": 3694
+      "duration": 3694,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237665_75dc533ac613165bb84c.mp3"
     },
     {
       "id": "episode-a0ae24f6-0334-4507-ae76-aa82c1266599",
       "number": 314,
       "title": "Настолкэмп-2024 (1 из 2)",
       "date": "2024-07-23",
-      "duration": 4540
+      "duration": 4540,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237679_fc6ffc644b008a50dc63.mp3"
     },
     {
       "id": "episode-2ee796da-4b76-4f1f-b47c-76fd9feb75d4",
       "number": 315,
       "title": "Настолкэмп-2024 (2 из 2)",
       "date": "2024-07-30",
-      "duration": 4423
+      "duration": 4423,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237694_7b812e59ed2c4069a921.mp3"
     },
     {
       "id": "episode-2e41bde8-8a2c-4d8e-968b-2e57124e4581",
       "number": 316,
       "title": "Акриловые маркеры и повороты судьбы",
       "date": "2024-08-06",
-      "duration": 4545
+      "duration": 4545,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237708_cb3195c7def9f0ddc910.mp3"
     },
     {
       "id": "episode-f96ded9f-214b-48a4-8aab-6647885f5c4d",
       "number": 317,
       "title": "Змей Горыныч это динозавр —",
       "date": "2024-08-14",
-      "duration": 5220
+      "duration": 5220,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237723_3f2d2eedde8927549736.mp3"
     },
     {
       "id": "episode-0126e699-dadf-4d56-9092-5c296a4e67ff",
       "number": 318,
       "title": "Искусственный интеллект и пустые полки",
       "date": "2024-08-20",
-      "duration": 3146
+      "duration": 3146,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237738_dafcf72caefa20de2626.mp3"
     },
     {
       "id": "episode-c821fc08-8141-460c-b76b-faa262440f56",
       "number": 319,
       "title": "Алиса пропала в заповеднике Кахута",
       "date": "2024-08-27",
-      "duration": 4439
+      "duration": 4439,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237749_385ac3afbd1271ed6681.mp3"
     },
     {
       "id": "episode-1452a5f8-cb31-424d-9164-2cdda0a343f5",
       "number": 320,
       "title": "Правое нижнее яйцо",
       "date": "2024-09-03",
-      "duration": 4100
+      "duration": 4100,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237762_4f463e512f4913c584c7.mp3"
     },
     {
       "id": "episode-a6d2166c-f7ad-47d2-89ec-da96c2d19e4d",
       "number": 321,
       "title": "Настолкэмп-2024. Бонус-эпизод",
       "date": "2024-09-10",
-      "duration": 2586
+      "duration": 2586,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237774_2c3fa89de6b9f5e22604.mp3"
     },
     {
       "id": "episode-431b5a5e-8749-450a-bf12-34a894283036",
       "number": 322,
       "title": "Герои, Трио и Космобюро",
       "date": "2024-09-17",
-      "duration": 3703
+      "duration": 3703,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237785_b38b21d1e87297bdd257.mp3"
     },
     {
       "id": "episode-15f09fc5-8d0b-43e8-b28f-8fc907dda771",
       "number": 323,
       "title": "Японские игры и ещё Акрополис, Штиль и Radlands",
       "date": "2024-09-24",
-      "duration": 3532
+      "duration": 3532,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237796_fd591e32da957a191b12.mp3"
     },
     {
       "id": "episode-c1545f5f-46a9-4713-97f3-c4a895668f74",
       "number": 324,
       "title": "Негативные впечатления от разных игр",
       "date": "2024-10-01",
-      "duration": 3775
+      "duration": 3775,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237809_b29fa52bddcfdd6d6144.mp3"
     },
     {
       "id": "episode-aa08e252-2fb6-44af-836b-f8c21afdcd86",
       "number": 325,
       "title": "Прекрасная ролевая игра Critical и ужасная стратегия «Борьба империй»",
       "date": "2024-10-08",
-      "duration": 3624
+      "duration": 3624,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237823_f3b842581551b8d5262f.mp3"
     },
     {
       "id": "episode-a913fbf5-f04d-43d5-9e0c-82d4a81ae157",
       "number": 326,
       "title": "«Горячая картошка» против «Картофельной победюмбы»",
       "date": "2024-10-15",
-      "duration": 3030
+      "duration": 3030,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237835_b1e9a7378f1a5d1aceb9.mp3"
     },
     {
       "id": "episode-0375f355-bc2b-45c6-b9a4-a48c8cbc4fbc",
       "number": 327,
       "title": "Дилетантский взгляд на историю настольных игр",
       "date": "2024-10-22",
-      "duration": 5143
+      "duration": 5143,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237848_e9917294933501d098e9.mp3"
     },
     {
       "id": "episode-c4d66362-9fff-48be-94bb-01dfb5ade0fc",
       "number": 328,
       "title": "День отца",
       "date": "2024-10-29",
-      "duration": 3282
+      "duration": 3282,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237861_6ee702b0b69da02d7b92.mp3"
     },
     {
       "id": "episode-c0516d28-33e1-489a-b8c3-bf7c80877134",
       "number": 329,
       "title": "Масти власти, Зеро и Голливуд",
       "date": "2024-11-06",
-      "duration": 3879
+      "duration": 3879,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237873_36676aee6946ec776164.mp3"
     },
     {
       "id": "episode-1b78e6c3-22c9-4f5e-a8e0-fd91a14ea264",
       "number": 330,
       "title": "Живой лес, Грани судьбы и новости за 3000",
       "date": "2024-11-12",
-      "duration": 3673
+      "duration": 3673,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237884_fc7bc186ed5ba55595e6.mp3"
     },
     {
       "id": "episode-14a78502-1b9f-4694-a924-a27137f79835",
       "number": 331,
       "title": "Фестиваль настольных игр Games Day",
       "date": "2024-11-19",
-      "duration": 3958
+      "duration": 3958,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237896_5ef434256b1b177cc86a.mp3"
     },
     {
       "id": "episode-909a3b19-3e86-402f-968d-a88a8f18c491",
       "number": 332,
       "title": "Против проверок, варгеймов и жирных пятен",
       "date": "2024-11-26",
-      "duration": 3787
+      "duration": 3787,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237908_043b4f3789710ab81d19.mp3"
     },
     {
       "id": "episode-886b1bd2-c314-41be-9ee4-f798508dfcf6",
       "number": 333,
       "title": "Супер-мега долина гангстеров",
       "date": "2024-12-03",
-      "duration": 4637
+      "duration": 4637,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237921_5df2f426fedb5a1baacb.mp3"
     },
     {
       "id": "episode-d8cd3120-9133-4ac7-b3f5-9c1177afea1e",
       "number": 334,
       "title": "Кампанейский выпуск",
       "date": "2024-12-10",
-      "duration": 4007
+      "duration": 4007,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237935_4b91bbca09b2fba0cd90.mp3"
     },
     {
       "id": "episode-2cc757ca-3947-4800-a9a8-4ae41bfca8ec",
       "number": 335,
       "title": "Города, Брасс, Партизаны! и Александр Гусь",
       "date": "2024-12-17",
-      "duration": 4220
+      "duration": 4220,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237947_171d04e42d9a18f4083c.mp3"
     },
     {
       "id": "episode-fc784c76-cd44-4c40-a327-2918ab106fc8",
       "number": 336,
       "title": "Прикосновение к миру настольных игр",
       "date": "2024-12-24",
-      "duration": 3710
+      "duration": 3710,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237961_cb6b49e46fb041ae48fa.mp3"
     },
     {
       "id": "episode-8aef7474-705e-4872-8cfd-70c461f60cea",
       "number": 337,
       "title": "Последний в двадцать четвертом",
       "date": "2024-12-31",
-      "duration": 7804
+      "duration": 7804,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237977_c854c006a6c248ddb878.mp3"
     },
     {
       "id": "episode-615654b8-0407-4191-9de7-acac092b04a6",
       "number": 338,
       "title": "Настолки на новогодних каникулах",
       "date": "2025-01-14",
-      "duration": 4210
+      "duration": 4210,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791237994_823516c749befd6f724a.mp3"
     },
     {
       "id": "episode-a9cc3409-eeb6-4e3a-97cd-c1a92b1be95f",
       "number": 339,
       "title": "Крутое пике и Пандемия по Миру Варкрафта",
       "date": "2025-01-21",
-      "duration": 4173
+      "duration": 4173,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238010_0ec6c510d93648c6ccf7.mp3"
     },
     {
       "id": "episode-893d3158-9890-4dfa-b512-6fb5d03ccae0",
       "number": 340,
       "title": "Всякие новости и «Наследие Юя»",
       "date": "2025-01-28",
-      "duration": 4347
+      "duration": 4347,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238024_54ac11b452b49e4ee896.mp3"
     },
     {
       "id": "episode-30ba1485-e367-453c-9b39-fc2edc3d694c",
       "number": 341,
       "title": "Семён Пыхтеев - все о Берсерке",
       "date": "2025-02-04",
-      "duration": 5884
+      "duration": 5884,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238041_af305ddca978dfe81941.mp3"
     },
     {
       "id": "episode-d140102e-b7b4-4555-ac63-740e6553161a",
       "number": 342,
       "title": "Первые впечатления от Rallyman GT и Бразилии",
       "date": "2025-02-11",
-      "duration": 4411
+      "duration": 4411,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238056_fe8f58a87a9bb9da050c.mp3"
     },
     {
       "id": "episode-830f1d3e-f35d-443c-9ffd-1d693c6d680c",
       "number": 343,
       "title": "Игры семейства Commands & Colors (1 из 2)",
       "date": "2025-02-18",
-      "duration": 5323
+      "duration": 5323,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238071_95901269f752275b2190.mp3"
     },
     {
       "id": "episode-341b52f1-9c50-4439-8629-e34d59da669a",
       "number": 344,
       "title": "Интервью с Иваном Поповым о производстве настольных игр",
       "date": "2025-02-25",
-      "duration": 3438
+      "duration": 3438,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238085_c8937e32b45e21262b1c.mp3"
     },
     {
       "id": "episode-f5769db8-875f-403a-b965-2ffa48a3fb00",
       "number": 345,
       "title": "Blood of the Northmen, Дюна в цифре и соло-Доминион",
       "date": "2025-03-04",
-      "duration": 4037
+      "duration": 4037,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238098_88f5aff24b4140beb454.mp3"
     },
     {
       "id": "episode-febbe0ac-e3fb-46d6-9af5-ef9460f068a7",
       "number": 346,
       "title": "Игрокон-2025",
       "date": "2025-03-11",
-      "duration": 2518
+      "duration": 2518,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238110_dcd9f1d1b94a0186247d.mp3"
     },
     {
       "id": "episode-38c60b16-285f-47df-9a49-e4e42344c8f3",
       "number": 347,
       "title": "Михаил Акулов про «Игрокон-2025»",
       "date": "2025-03-12",
-      "duration": 1785
+      "duration": 1785,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238120_0810767d4fb5149a53b1.mp3"
     },
     {
       "id": "episode-a7613041-b307-4c74-8908-2e7d4a66fdfc",
       "number": 348,
       "title": "Настолки на «Игроконе-2025»",
       "date": "2025-03-18",
-      "duration": 5325
+      "duration": 5325,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238130_b6df1f3d881192198ffa.mp3"
     },
     {
       "id": "episode-6fd8e25f-718a-4d1b-b23b-8ce8c555cee0",
       "number": 349,
       "title": "Олег Мелешин о разработке настольных игр",
       "date": "2025-03-25",
-      "duration": 3510
+      "duration": 3510,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238142_41e942b10fddf6b19bce.mp3"
     },
     {
       "id": "episode-77cce16c-14d3-428e-8ae6-8c06b0f1a2c5",
       "number": 350,
       "title": "Анонсы GaGa Games и дуэльная «Индустрия»",
       "date": "2025-04-01",
-      "duration": 3953
+      "duration": 3953,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238156_c026310827ff8330ddeb.mp3"
     },
     {
       "id": "episode-b1de3768-a21d-4221-97fd-7020e27cc1c8",
       "number": 351,
       "title": "«51-й штат» и впечатления от «Чёрной книги»",
       "date": "2025-04-08",
-      "duration": 3939
+      "duration": 3939,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238168_fd7d98f4459d2cdbe21c.mp3"
     },
     {
       "id": "episode-a9229e5c-770f-4163-9d2e-b737385bf5ca",
       "number": 352,
       "title": "Анонсы «Мемуаров» и впечатления от «Придворных», «Бумеранга» и «Зоократии»",
       "date": "2025-04-15",
-      "duration": 3342
+      "duration": 3342,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238181_bec0af41f57c77660e6e.mp3"
     },
     {
       "id": "episode-5df32b29-4f58-42f7-9224-7f5064c87e3c",
       "number": 353,
       "title": "Уникальные вещи в настольных играх",
       "date": "2025-04-22",
-      "duration": 4681
+      "duration": 4681,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238194_b401456ab6a8bb7d2204.mp3"
     },
     {
       "id": "episode-d01dd23d-f74e-47f0-bacb-ac7fdb16863d",
       "number": 354,
       "title": "Вымученный эпизод",
       "date": "2025-04-28",
-      "duration": 3193
+      "duration": 3193,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238206_141d141015084eeba245.mp3"
     },
     {
       "id": "episode-994a068a-b1cd-4746-81b4-c5b60a10b681",
       "number": 355,
       "title": "Эверделл, Изнанка, Пандемия — WoW и Туман над Каркассоном",
       "date": "2025-05-06",
-      "duration": 3595
+      "duration": 3595,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238218_feb2679b5e087c73d4dd.mp3"
     },
     {
       "id": "episode-af22708c-09a9-42e6-a666-b53f287ed3ef",
       "number": 356,
       "title": "Ода «Агриколе»",
       "date": "2025-05-13",
-      "duration": 4003
+      "duration": 4003,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238230_3d834a8635082cce02d2.mp3"
     },
     {
       "id": "episode-d33db230-d0b9-4b8b-81fd-28c301782ff5",
       "number": 357,
       "title": "Настольные находки, Kingdom Legacy и Дурак",
       "date": "2025-05-20",
-      "duration": 3930
+      "duration": 3930,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238243_58b386872e6795e276b9.mp3"
     },
     {
       "id": "episode-dd047390-5725-4a0c-b1a3-6b2cf49f7dc8",
       "number": 358,
       "title": "«Кэмп на Волге» — интервью с Оксаной Емельяновой",
       "date": "2025-05-23",
-      "duration": 1858
+      "duration": 1858,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238253_ddf81d28755e5beaeeda.mp3"
     },
     {
       "id": "episode-12c9eed4-c956-41cc-93a8-4865043acfd0",
       "number": 359,
       "title": "Фанатское творчество и некоторые новости",
       "date": "2025-05-27",
-      "duration": 3635
+      "duration": 3635,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238265_b8acd9c086367045022d.mp3"
     },
     {
       "id": "episode-95cbd309-8349-4096-b549-f1684a716826",
       "number": 360,
       "title": "Психология в настольных играх - беседа с Анастасией Причисленко",
       "date": "2025-06-03",
-      "duration": 4340
+      "duration": 4340,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238278_3fb1731cf6914468e40a.mp3"
     },
     {
       "id": "episode-1be00b7f-4fba-4f22-8a2a-b9512e26cf8f",
       "number": 361,
       "title": "Филлерный эпизод",
       "date": "2025-06-10",
-      "duration": 3904
+      "duration": 3904,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238291_949c2f062390350368d5.mp3"
     },
     {
       "id": "episode-f15d9669-b0bf-4ecb-a591-2e6458cec191",
       "number": 362,
       "title": "Граникон-2025",
       "date": "2025-06-17",
-      "duration": 3252
+      "duration": 3252,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238303_7035533725d8fd58fbfa.mp3"
     },
     {
       "id": "episode-65115262-13df-430a-aba3-8fe01fdd4657",
       "number": 363,
       "title": "Альгамбра, FUSE, Это бомба!, Diceverse",
       "date": "2025-06-24",
-      "duration": 3797
+      "duration": 3797,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238318_88efd162c41c4850344c.mp3"
     },
     {
       "id": "episode-cbfc148d-db65-4635-863f-adcbed7d92ac",
       "number": 364,
       "title": "Оценочный эпизод — Оценки коробок, оценки игр, оценки оценок",
       "date": "2025-07-01",
-      "duration": 3579
+      "duration": 3579,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238330_7c550ad01349289d4aaf.mp3"
     },
     {
       "id": "episode-bebd1215-93e8-4216-a018-0cd71733cf0d",
       "number": 365,
       "title": "Зачарнованная, Акры, Взрывные котята, Дуэль за Средиземье",
       "date": "2025-07-08",
-      "duration": 3726
+      "duration": 3726,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238342_a4a1f881889fbe7cb6dd.mp3"
     },
     {
       "id": "episode-74bca2d5-fab4-4c3e-b693-35c0ef19cc07",
       "number": 366,
       "title": "Выпуск, который нужно перетерпеть",
       "date": "2025-07-16",
-      "duration": 3624
+      "duration": 3624,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238354_2265a34a58bf62b0d065.mp3"
     },
     {
       "id": "episode-426b9704-2ed7-482e-a82e-a3d32889a932",
       "number": 367,
       "title": "Настолкэмп-2025 (1 из 2)",
       "date": "2025-07-22",
-      "duration": 5649
+      "duration": 5649,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238368_abebcb7ea62253e71698.mp3"
     },
     {
       "id": "episode-b2fec74d-f964-4335-ba2a-12e98a5e8f0e",
       "number": 368,
       "title": "Настолкэмп-2025 (2 из 2)",
       "date": "2025-07-29",
-      "duration": 4837
+      "duration": 4837,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238386_5ce0869063406b2887fe.mp3"
     },
     {
       "id": "episode-c94c9bd7-16f4-4dbf-9526-147335ee5382",
       "number": 369,
       "title": "Аргент. Совет магов, Gloomhaven — Bugs & Buttons, Top Gun",
       "date": "2025-08-05",
-      "duration": 3818
+      "duration": 3818,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238401_1895744f2d0bed87b02e.mp3"
     },
     {
       "id": "episode-bdc6b540-df68-4d80-9651-bc1cf21f4c1c",
       "number": 370,
       "title": "Абстрактные игры",
       "date": "2025-08-12",
-      "duration": 3605
+      "duration": 3605,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238416_d9c2af45a369f3e64d6e.mp3"
     },
     {
       "id": "episode-b2c8180d-1717-460a-b722-c80c823eef3d",
       "number": 371,
       "title": "Помидоры, претензии, прозрачные игры",
       "date": "2025-08-19",
-      "duration": 3282
+      "duration": 3282,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238430_d3ea3459ce04ddff1d86.mp3"
     },
     {
       "id": "episode-29bbc2cb-bbfe-4afa-a300-67e50b153138",
       "number": 372,
       "title": "«Граникон-2025» с Алёной Мироновой",
       "date": "2025-08-26",
-      "duration": 3155
+      "duration": 3155,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238441_efe37b43150f73ef3b97.mp3"
     },
     {
       "id": "episode-128e8caa-bedf-4799-ba9f-c0430f29bae8",
       "number": 373,
       "title": "Настолкэмп-2025. Беседа с Михаилом Акуловым",
       "date": "2025-09-02",
-      "duration": 3287
+      "duration": 3287,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238453_de818acf2cbf822159bf.mp3"
     },
     {
       "id": "episode-fb5b3c24-7616-42e2-bb67-bd05b9a806f6",
       "number": 374,
       "title": "Поехали в Мордор! (LIVE)",
       "date": "2025-09-11",
-      "duration": 4726
+      "duration": 4726,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238469_ef6c73bb55054fb0ecae.mp3"
     },
     {
       "id": "episode-804da28a-9c0f-40ad-a5f1-170ecb27139e",
       "number": 375,
       "title": "Проект «Гайя», Finspan и ненастольные разговоры",
       "date": "2025-09-16",
-      "duration": 4032
+      "duration": 4032,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238484_727584a5b12c14ec5b9e.mp3"
     },
     {
       "id": "episode-2f87fd3e-a4af-4c94-8da0-cc754032e1f8",
       "number": 376,
       "title": "ТОП игр с Настолкэмпа-2025",
       "date": "2025-09-23",
-      "duration": 5626
+      "duration": 5626,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238498_974d3da814652d3c5b3d.mp3"
     },
     {
       "id": "episode-9834edd3-4708-42e3-8ab2-b8e8ed490379",
       "number": 377,
       "title": "Околонастольные истории и впечатления от «Рассвета»",
       "date": "2025-09-30",
-      "duration": 3225
+      "duration": 3225,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238513_99ac39c1f40569978b45.mp3"
     },
     {
       "id": "episode-fe263ac0-eebb-4df2-b46e-88d1f574d8c9",
       "number": 378,
       "title": "Баланс в настольных играх",
       "date": "2025-10-07",
-      "duration": 3939
+      "duration": 3939,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238524_05c13e90508a128f404c.mp3"
     },
     {
       "id": "episode-2794c39b-08a8-4eab-9e35-d41177997d6d",
       "number": 379,
       "title": "Немезида, The Gang, Тайное послание — Ужас Аркхэма",
       "date": "2025-10-14",
-      "duration": 3962
+      "duration": 3962,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238537_3335bd30da195fd7f26e.mp3"
     },
     {
       "id": "episode-51967ec3-70ee-47e0-81bf-3e9272e5aae6",
       "number": 380,
       "title": "Минус одиннадцать коробок",
       "date": "2025-10-21",
-      "duration": 4458
+      "duration": 4458,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238550_f4e7ef94d9f668de52c1.mp3"
     },
     {
       "id": "episode-d8ea7296-968d-4329-90b6-9c642b3dcb7a",
       "number": 381,
       "title": "Эссен-2025, Цветные королевства, Легенды морей, Идеальный кадр",
       "date": "2025-10-28",
-      "duration": 3452
+      "duration": 3452,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238563_a8eef9e71c714bec7be9.mp3"
     },
     {
       "id": "episode-c2a3fece-8c66-4580-a806-09f51e13e563",
       "number": 382,
       "title": "Secret Santa - 2025",
       "date": "2025-11-04",
-      "duration": 4267
+      "duration": 4267,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238575_8ea10d254c9a96e0525f.mp3"
     },
     {
       "id": "episode-d1e6fe2b-2e5a-4537-a5f2-438a2283c809",
       "number": 383,
       "title": "Три хорошие игры",
       "date": "2025-11-11",
-      "duration": 4083
+      "duration": 4083,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238586_6e93a7ee4d21437aac0c.mp3"
     },
     {
       "id": "episode-7313c416-b774-49fe-a3ba-fa0567c6e7a8",
       "number": 384,
       "title": "Выпуск, в котором всё не так",
       "date": "2025-11-18",
-      "duration": 3752
+      "duration": 3752,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238598_60ff7c463ad8d7704752.mp3"
     },
     {
       "id": "episode-97441eb0-3b2e-4062-b419-6f3f3d53292a",
       "number": 385,
       "title": "Игры GaGa Games — Шёпот леса, Лесные тропы, Под прицелом",
       "date": "2025-11-25",
-      "duration": 4535
+      "duration": 4535,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238610_c1395e4e7fe5022fb1f1.mp3"
     },
     {
       "id": "episode-475ab74d-892e-4c29-b848-f285bd561b7e",
       "number": 386,
       "title": "Избыток «Агриколы» и впечатления от «Кланка. Катакомбы»",
       "date": "2025-12-02",
-      "duration": 4216
+      "duration": 4216,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238624_6e13a515a375735344a5.mp3"
     },
     {
       "id": "episode-3dc7bc0f-e665-4a60-9d9e-ff24a90a173c",
       "number": 387,
       "title": "Разгадка «Формулы скорости»",
       "date": "2025-12-09",
-      "duration": 3721
+      "duration": 3721,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238636_6096e536a11c6c22f65b.mp3"
     },
     {
       "id": "episode-55d0868d-9738-44fe-a175-d722a15c517e",
       "number": 388,
       "title": "Кот в коробке, Нуклеум, Битва игрушек",
       "date": "2025-12-16",
-      "duration": 3880
+      "duration": 3880,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238648_725ac14428357c7e8171.mp3"
     },
     {
       "id": "episode-9c28da67-aa40-40d1-afe3-b86477888752",
       "number": 389,
       "title": "Итоги ночной игротеки",
       "date": "2025-12-23",
-      "duration": 3587
+      "duration": 3587,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238660_f7b670c1dc6341a5e907.mp3"
     },
     {
       "id": "episode-589e4e04-a5d3-4d0b-a1c2-bd55d5f3a794",
       "number": 390,
       "title": "Итоги 2025 года",
       "date": "2025-12-31",
-      "duration": 8087
+      "duration": 8087,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238674_45e94d84e68160452741.mp3"
     },
     {
       "id": "episode-25957009-5d69-4cd0-8c99-b2f775588559",
       "number": 391,
       "title": "Новые игры нового года — Империи, Комитет, Нуклеум",
       "date": "2026-01-13",
-      "duration": 4378
+      "duration": 4378,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238692_0f2fe6c97799b5a7f1dd.mp3"
     },
     {
       "id": "episode-984e956f-a875-48a9-bb61-c506b77e45e6",
       "number": 392,
       "title": "Новые игры не нужны!",
       "date": "2026-01-20",
-      "duration": 6445
+      "duration": 6445,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238706_ef2b6d291961882424e4.mp3"
     },
     {
       "id": "episode-d25b5bb7-b5f6-4966-b129-a2fb2558c209",
       "number": 393,
       "title": "Детективы из параллельной вселенной, Roll Player Adventures и Звёздные империи — Наследие",
       "date": "2026-01-27",
-      "duration": 3946
+      "duration": 3946,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238719_ea364732df6c6a72bdf1.mp3"
     },
     {
       "id": "episode-d2abfdfe-0895-42cc-b830-4dba7fc7a30c",
       "number": 394,
       "title": "Games Day и «Игрокон» с Олегом Мелешиным",
       "date": "2026-02-03",
-      "duration": 4743
+      "duration": 4743,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238731_1caf91e87e37f7277958.mp3"
     },
     {
       "id": "episode-03a68374-9cff-49e5-9958-bb2f69cb0398",
       "number": 395,
       "title": "Комитет, Золотые храмы, Перспективы, Загадочное убийство",
       "date": "2026-02-10",
-      "duration": 3847
+      "duration": 3847,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238743_6756a571013d15309355.mp3"
     },
     {
       "id": "episode-255a783a-e726-44fa-a334-15c167c1d565",
       "number": 396,
       "title": "Поколения, Звёздные империи — Наследие, Грызуны и гробницы",
       "date": "2026-02-17",
-      "duration": 3668
+      "duration": 3668,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238754_047b2f160eccb67a975e.mp3"
     },
     {
       "id": "episode-9c3a25d1-e35a-486b-bb83-3c733f73f785",
       "number": 397,
       "title": "Переговорные игры",
       "date": "2026-02-25",
-      "duration": 3713
+      "duration": 3713,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238766_190d194df72ebf20dca5.mp3"
     },
     {
       "id": "episode-a7aa9c80-8dca-4192-8102-bddf7e633443",
       "number": 398,
       "title": "Игры, заслуживающие второго шанса",
       "date": "2026-03-03",
-      "duration": 5733
+      "duration": 5733,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238779_beeb2ee2a5578a493e88.mp3"
     },
     {
       "id": "episode-19a318c3-171b-4405-8afe-422f889d509c",
       "number": 399,
       "title": "Мистика, кэмп, квесты и вомбаты",
       "date": "2026-03-10",
-      "duration": 3694
+      "duration": 3694,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238794_15e00cde7101cbad33dd.mp3"
     },
     {
       "id": "episode-1a22da03-30d1-4fce-969a-e11e8abcf71a",
       "number": 400,
       "title": "Вы не спрашивали, но мы отвечаем",
       "date": "2026-03-17",
-      "duration": 6958
+      "duration": 6958,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238806_51fe9ffeb3f1c07ec762.mp3"
     },
     {
       "id": "episode-50335f31-7177-42ea-800a-ba80b0f5e91f",
       "number": 401,
       "title": "Игры на столе и на компьютере",
       "date": "2026-03-24",
-      "duration": 3864
+      "duration": 3864,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238820_31a61f546d462f1c52ec.mp3"
     },
     {
       "id": "episode-118fdcf0-1dbc-4735-91f7-ea7197b34b80",
       "number": 402,
       "title": "День дурака",
       "date": "2026-04-01",
-      "duration": 3525
+      "duration": 3525,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238832_26537add8a3384c95c5c.mp3"
     },
     {
       "id": "episode-32720b21-cdd6-4d96-a749-1feab6c7bb95",
       "number": 403,
       "title": "Русское настольное инди",
       "date": "2026-04-07",
-      "duration": 4242
+      "duration": 4242,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238845_d4fd36d7a03da8bdfa53.mp3"
     },
     {
       "id": "episode-781e6c6b-2553-482b-8556-ac9a0e0cc540",
       "number": 404,
       "title": "Колодостоительный зуд",
       "date": "2026-04-14",
-      "duration": 4672
+      "duration": 4672,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238857_431977c394bdfecd4fe4.mp3"
     },
     {
       "id": "episode-cab05200-1db0-49d1-b353-3b5ccb9146b4",
       "number": 405,
       "title": "«Граникон-2026» с Алёной Мироновой",
       "date": "2026-04-21",
-      "duration": 5345
+      "duration": 5345,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238871_884cc57a4a8b1f435287.mp3"
     },
     {
       "id": "episode-261af9a7-e0bf-4df8-baef-e0f083d0d062",
       "number": 406,
       "title": "«Граникон-2026» с Юрием Ямщиковым",
       "date": "2026-04-26",
-      "duration": 3743
+      "duration": 3743,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238885_dad41adb781dbe0ba02f.mp3"
     },
     {
       "id": "episode-9b058fef-30b8-42e7-8609-3942cbdf1433",
       "number": 407,
       "title": "«Граникон-2026» — Сборная солянка интервью",
       "date": "2026-04-28",
-      "duration": 7463
+      "duration": 7463,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238902_3dfc1bf20890b6aab3cc.mp3"
     },
     {
       "id": "episode-b99e8046-a206-411f-98d8-2e24b38125d0",
       "number": 408,
       "title": "Страшные истории, Монополия и Терминатор",
       "date": "2026-05-06",
-      "duration": 3469
+      "duration": 3469,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238920_953754c38cd9c78a5858.mp3"
     },
     {
       "id": "episode-c9130664-96eb-4b5f-bb42-68dbe644f9ab",
       "number": 409,
       "title": "Mindbug, детский Ticket to Ride, свежие филлеры",
       "date": "2026-05-12",
-      "duration": 3807
+      "duration": 3807,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238933_83775fde5c3171e94d8b.mp3"
     },
     {
       "id": "episode-92afb6dc-c3eb-4aaf-bec2-a5ae5d92c391",
       "number": 410,
       "title": "Идеальный шторм на рынке настольных игр",
       "date": "2026-05-19",
-      "duration": 3569
+      "duration": 3569,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238947_64f9e6cb108d0bdad0bf.mp3"
     },
     {
       "id": "episode-e61ce7d7-9eb8-450a-992b-39e90a9c38ca",
       "number": 411,
       "title": "Гоночные игры",
       "date": "2026-05-26",
-      "duration": 4512
+      "duration": 4512,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238960_945a474740edd32d9bdf.mp3"
     },
     {
       "id": "episode-db90dee0-9a08-4edd-abcd-49c1c276c877",
       "number": 412,
       "title": "Анекдотический выпуск",
       "date": "2026-06-02",
-      "duration": 3763
+      "duration": 3763,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238974_99d829f35bc90559fc28.mp3"
     },
     {
       "id": "episode-aef8e47b-9025-4b81-83c4-b7e9a6db95dd",
       "number": 413,
       "title": "Что взять с собой на «Настолкэмп-2026»",
       "date": "2026-06-09",
-      "duration": 4300
+      "duration": 4300,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791238987_867df284cedcd04b033a.mp3"
     },
     {
       "id": "episode-1a2c38a9-ce6a-4ea8-bc63-334949fff50d",
       "number": 414,
       "title": "Конспирация, детективы, исследование и строительство",
       "date": "2026-06-23",
-      "duration": 3561
+      "duration": 3561,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791239000_68dd1f0c80bc0d9ccb19.mp3"
     },
     {
       "id": "episode-66a8b6ce-3a33-4ae0-9f77-7800c865472b",
       "number": 415,
       "title": "День неопробованных игр, Жри их всех и Космополит",
       "date": "2026-06-30",
-      "duration": 4588
+      "duration": 4588,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791239011_07ba1c47ecb7c57fdc20.mp3"
     },
     {
       "id": "episode-d2613817-1db6-4acf-bb99-d2cc93b83b91",
       "number": 416,
       "title": "ТОП игр от Hobby World",
       "date": "2026-07-07",
-      "duration": 5838
+      "duration": 5838,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791239026_dc12a41ade9c6d81bbd1.mp3"
     },
     {
       "id": "episode-f6bcc3ea-21af-444b-83b4-4153f6eb87b6",
       "number": 417,
       "title": "Интервью с Сергеем Голубкиным",
       "date": "2026-07-15",
-      "duration": 4394
+      "duration": 4394,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791239040_b86cb2def5c21628c67b.mp3"
     },
     {
       "id": "episode-f8bc4807-0a4d-401b-9349-a3608766f304",
       "number": 418,
       "title": "Настолкэмп-2026 (1 из 2)",
       "date": "2026-07-22",
-      "duration": 4117
+      "duration": 4117,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791239055_5022f5db69df4866436c.mp3"
     },
     {
       "id": "episode-ae2fef70-31b6-46ba-a4d3-816bbb8594da",
       "number": 419,
       "title": "Rallyman GT, Ахой, Магические атлеты",
       "date": "2026-07-28",
-      "duration": 3941
+      "duration": 3941,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791239068_5bb1f288d2183d120e2d.mp3"
     },
     {
       "id": "episode-d743d389-2e08-4261-9fdd-c0e21ab10a88",
       "number": 420,
       "title": "Настолкэмп-2026 (2 из 2)",
       "date": "2026-08-04",
-      "duration": 4580
+      "duration": 4580,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791239085_244c55e35a3379143f78.mp3"
     },
     {
       "id": "episode-804a2d29-bf14-486d-ba7b-5320ef1175cd",
       "number": 421,
       "title": "Бэнг! на кубиках, Кровь на часовой башне, Оборотни, Перспективы",
       "date": "2026-08-11",
-      "duration": 3782
+      "duration": 3782,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791239100_1c3d265bd5120411cfd9.mp3"
     },
     {
       "id": "episode-771c75c7-cdd6-47d4-97ee-ef7ece984f3e",
       "number": 422,
       "title": "Куда пойти головой",
       "date": "2026-08-18",
-      "duration": 3971
+      "duration": 3971,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791239113_1cc4a7e171ec096d817a.mp3"
     },
     {
       "id": "episode-e330c7a5-5f1f-4178-bfaa-47a94fe72f46",
       "number": 423,
       "title": "Поколения — Книга Свона и 18XX",
       "date": "2026-08-25",
-      "duration": 4679
+      "duration": 4679,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791239125_a9993e6b22857d9dc73e.mp3"
     },
     {
       "id": "episode-6281d276-29e6-472b-a7d1-e822d2dac537",
       "number": 424,
       "title": "Эра Галактики, Мультаун, Бродячие города, Голод",
       "date": "2026-09-01",
-      "duration": 3586
+      "duration": 3586,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791239137_184bff71bb77913e52ef.mp3"
     },
     {
       "id": "episode-87cfe098-9d8c-4ead-b960-fc488a4ee8b9",
       "number": 425,
       "title": "Встреча с Михаилом Акуловым",
       "date": "2026-09-08",
-      "duration": 3500
+      "duration": 3500,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791239150_e105b2fa1ee444c8dfcc.mp3"
     },
     {
       "id": "episode-b1e195a7-6130-4ed4-846f-1e6a8a11c9cc",
       "number": 426,
       "title": "Гадючий компресс",
       "date": "2026-09-15",
-      "duration": 4266
+      "duration": 4266,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791239159_6d80d497072ca8168620.mp3"
     },
     {
       "id": "episode-93c2c244-27fa-468c-9a0d-6975744fb1e5",
       "number": 427,
       "title": "Инновационный колодострой «Непобедимые»",
       "date": "2026-09-22",
-      "duration": 3626
+      "duration": 3626,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791239170_c56c6b455f35823ea061.mp3"
     },
     {
       "id": "episode-b4233d55-6ce8-4d0f-8db7-92d61386ee6d",
       "number": 428,
       "title": "Петля трагедии, SKYJO, Вечные колоды",
       "date": "2026-09-29",
-      "duration": 4340
+      "duration": 4340,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791239182_1c84bf19a3a678d34962.mp3"
     }
   ],
   "games": [

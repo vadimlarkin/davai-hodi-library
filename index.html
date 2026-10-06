@@ -8,9 +8,10 @@
   <meta name="description" content="Настольные игры в подкасте «Давай ходи»: цитаты, выпуски и тайминги.">
   <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png?v=2">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=0.4.3">
-  <script defer src="quote-card.js?v=0.4.3"></script>
-  <script defer src="app.js?v=0.4.3"></script>
+  <link rel="stylesheet" href="style.css?v=0.5.0">
+  <script defer src="quote-card.js?v=0.5.0"></script>
+  <script defer src="quote-audio.js?v=0.5.0"></script>
+  <script defer src="app.js?v=0.5.0"></script>
 </head>
 <body>
   <header class="masthead">
@@ -63,6 +64,7 @@
     <div id="manual-share-link" hidden><label class="sr-only" for="share-link">Ссылка на выбранную цитату</label><input id="share-link" type="text" readonly><p id="copy-link-note">Скопируйте выделенную ссылку и отправьте её.</p></div>
   </dialog>
   <div id="share-notice" class="share-notice" role="status" hidden></div>
+  <audio id="quote-audio" preload="none" hidden></audio>
   <div id="announcement" class="sr-only" aria-live="polite"></div>
   <div id="error" role="alert" hidden></div>
 </body>

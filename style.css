@@ -44,3 +44,13 @@
 .quote-image-preview{display:block;width:100%;height:auto;border-radius:8px;border:1px solid var(--line);margin-top:16px}.share-dialog{width:min(520px,calc(100vw - 24px));padding:20px}.image-share-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.image-share-actions>*{flex:1;text-align:center;white-space:nowrap;font-size:14px;font-weight:700}.image-download{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 14px;border:1px solid var(--line);border-radius:6px;text-decoration:none}.copy-link-secondary{display:block;min-height:44px;margin-top:8px;padding:8px 0;border:0;background:transparent;color:var(--muted);font-size:13px;text-decoration:underline;text-underline-offset:3px}.share-copy:disabled{opacity:.5}.share-dialog-heading{position:sticky;top:-20px;background:white;padding:4px 0;z-index:1}.share-dialog #image-share-note{margin:12px 0}.share-dialog input{margin-top:4px}
 
 @media(max-width:420px){.share-dialog{padding:16px}.share-dialog-heading{top:-16px}.share-dialog-heading h2{font-size:20px}.image-share-actions{flex-direction:column;align-items:stretch}.image-share-actions>*{width:100%;white-space:normal}.copy-link-secondary{text-align:left}.quote-image-preview{max-width:100%}}
+
+/* Quote playback shares one audio element; controls stay with the quote. */
+.quote-buttons{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.listen-quote{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:8px 12px;border:1px solid var(--ink);border-radius:5px;background:var(--ink);color:#fff;font-size:12px;font-weight:700;white-space:nowrap}
+.listen-quote:hover,.listen-quote[aria-pressed=true]{background:#cb3926;border-color:#cb3926}
+.quote-playback{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:12px 0 0 19px;font-size:12px;color:var(--muted)}
+.quote-playback progress{width:100px;height:6px;accent-color:var(--accent);flex:1;min-width:70px}
+.audio-time{font-variant-numeric:tabular-nums;white-space:nowrap}.audio-message:not(:empty){flex-basis:100%;line-height:1.5}
+.quote-footer{flex-wrap:wrap}.quote-footer .quote-buttons{margin-left:auto}
+@media(max-width:700px){.quote-buttons{gap:8px}.listen-quote{font-size:13px}}

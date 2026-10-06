@@ -13,6 +13,7 @@ const shareDialog = document.getElementById('share-dialog');
 const grid = document.getElementById('games');
 const panel = document.getElementById('details');
 const content = document.getElementById('detail-content');
+const quoteAudio = new QuoteAudio(document.getElementById('quote-audio'), renderAudioState);
 const picker = document.getElementById('episode-picker');
 const search = document.getElementById('episode-search');
 const trigger = document.getElementById('episode-trigger');
@@ -91,6 +92,7 @@ function selectGame(id, userAction = false) {
   const game = database.games.find(g => g.id === id);
   const quotes = gameQuotes(id);
   if (!game || !quotes.length) return;
+  if (selectedId !== id) quoteAudio.reset();
   const wasOpen = cardOpen;
   if (userAction) {cardOpen = true;selectedQuote = null;}
   selectedId = id;
@@ -103,7 +105,8 @@ function selectGame(id, userAction = false) {
     <p class="game-description">${escapeHtml(game.description)}</p>
     <div class="quotes-summary"><strong>${quotes.length} ${plural(quotes.length,'цитата','цитаты','цитат')}</strong><span>${episodes.length} ${plural(episodes.length,'выпуск','выпуска','выпусков')}</span></div>
     ${episodes.map(epId => {const ep=database.episodes.find(ep=>ep.id===epId);return quotes.filter(q=>q.episode_id===epId).map(q => `<article class="quote-item${q.id===selectedQuote?' is-highlighted':''}" id="${escapeHtml(q.id)}" tabindex="-1" aria-label="Цитата: ${escapeHtml(quoteEpisodeName(ep))}, ${time(q.start)}"><blockquote>«${escapeHtml(q.text)}»</blockquote>
-    <div class="quote-footer"><p class="quote-source"><button type="button" class="quote-episode" data-episode="${escapeHtml(ep.id)}" aria-label="Показать игры из ${ep.number==null?'этого выпуска':`выпуска ${ep.number}`}">${escapeHtml(quoteEpisodeName(ep))}</button> · ${time(q.start)}</p><button type="button" class="share-quote" data-share-quote="${escapeHtml(q.id)}" aria-label="Поделиться цитатой: ${escapeHtml(quoteEpisodeName(ep))}, ${time(q.start)}"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 16V3m-5 5 5-5 5 5M5 13v7h14v-7"/></svg>Поделиться</button></div></article>`).join('');}).join('')}`;
+    <div class="quote-footer"><p class="quote-source"><button type="button" class="quote-episode" data-episode="${escapeHtml(ep.id)}" aria-label="Показать игры из ${ep.number==null?'этого выпуска':`выпуска ${ep.number}`}">${escapeHtml(quoteEpisodeName(ep))}</button> · ${time(q.start)}</p><div class="quote-buttons">${audioButton(q,ep)}<button type="button" class="share-quote" data-share-quote="${escapeHtml(q.id)}" aria-label="Поделиться цитатой: ${escapeHtml(quoteEpisodeName(ep))}, ${time(q.start)}"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 16V3m-5 5 5-5 5 5M5 13v7h14v-7"/></svg>Поделиться</button></div></div>${audioProgress(q)}</article>`).join('');}).join('')}`;
+  renderAudioState(quoteAudio.state);
   panel.scrollTop = 0;
   syncPanel();
   if (userAction) {
@@ -116,6 +119,36 @@ function selectGame(id, userAction = false) {
     if (selectedQuote !== target.id || !target.isConnected) return;
     panel.scrollTop = target.offsetTop - content.offsetTop - 80;
     target.focus({preventScroll:true});
+  });
+}
+function audioButton(quote, episode) {
+  if (!episode.audio_url || !Number.isFinite(quote.start) || !Number.isFinite(quote.end) || quote.end <= quote.start) return '';
+  return `<button type="button" class="listen-quote" data-listen-quote="${escapeHtml(quote.id)}" data-listen-description="${escapeHtml(quoteEpisodeName(episode))}, ${time(quote.start)}" aria-pressed="false" aria-label="Прослушать цитату: ${escapeHtml(quoteEpisodeName(episode))}, ${time(quote.start)}"><span data-listen-icon aria-hidden="true">▶</span><span data-listen-label>Прослушать</span></button>`;
+}
+function audioProgress(quote) {
+  return `<div class="quote-playback" data-audio-progress="${escapeHtml(quote.id)}" hidden><progress max="${quote.end-quote.start}" value="0" aria-label="Прослушано цитаты"></progress><span class="audio-time"></span><span class="audio-message" role="status"></span></div>`;
+}
+function renderAudioState(state) {
+  content.querySelectorAll('[data-listen-quote]').forEach(button=>{
+    const active=state?.id===button.dataset.listenQuote;
+    const running=active && ['playing','loading'].includes(state.status);
+    button.setAttribute('aria-pressed',String(Boolean(running)));
+    button.querySelector('[data-listen-icon]').textContent=running?'Ⅱ':'▶';
+    const label=running?'Пауза':active && state.status==='paused'?'Продолжить':active && state.status==='ended'?'Ещё раз':'Прослушать';
+    button.querySelector('[data-listen-label]').textContent=label;
+    const action=running?'Поставить цитату на паузу':active && state.status==='ended'?'Прослушать цитату ещё раз':`${label} цитату`;
+    button.setAttribute('aria-label',`${action}. ${button.dataset.listenDescription}`);
+  });
+  content.querySelectorAll('[data-audio-progress]').forEach(row=>{
+    const active=state?.id===row.dataset.audioProgress;
+    row.hidden=!active;
+    if(!active)return;
+    const progress=row.querySelector('progress');
+    progress.max=state.end-state.start;progress.value=state.elapsed;
+    row.querySelector('.audio-time').textContent=`${time(state.elapsed)} / ${time(progress.max)}`;
+    const message=row.querySelector('.audio-message');
+    const text=state.status==='error'?'Не удалось включить запись. Нажмите «Прослушать», чтобы попробовать ещё раз.':state.status==='loading'?'Загружаем…':'';
+    if(message.textContent!==text)message.textContent=text;
   });
 }
 function closePanel() {
@@ -135,6 +168,7 @@ function closePanel() {
   }
 }
 function dismissCard() {
+  quoteAudio.reset();
   cardOpen=false;selectedQuote=null;
   if (shareDialog.open) shareDialog.close();
   closePanel();
@@ -226,6 +260,7 @@ async function shareQuoteImage() {
 }
 function selectEpisode(id, userAction = true) {
   if (id && !database.episodes.some(ep=>ep.id===id)) return;
+  quoteAudio.reset();
   if (userAction) {cardOpen=false;selectedQuote=null;}
   closePanel();
   if (shareDialog.open) shareDialog.close();
@@ -258,6 +293,12 @@ picker.addEventListener('click',e=>{const choice=e.target.closest('[data-select-
 grid.addEventListener('click',e=>{const card=e.target.closest('[data-game]');if(card)selectGame(card.dataset.game,true);else if(e.target.closest('.show-all-episodes'))selectEpisode(null);});
 content.addEventListener('click',e=>{
   if(e.target.closest('.close-details,.back-details')) {dismissCard();return;}
+  const listen=e.target.closest('[data-listen-quote]');
+  if(listen) {
+    const quote=database.quotes.find(q=>q.id===listen.dataset.listenQuote);
+    if(quote) quoteAudio.toggle(quote,database.episodes.find(ep=>ep.id===quote.episode_id));
+    return;
+  }
   const share=e.target.closest('[data-share-quote]');
   if(share) {shareQuote(share.dataset.shareQuote,share);return;}
   const episode=e.target.closest('[data-episode]');if(episode)selectEpisode(episode.dataset.episode);
@@ -286,6 +327,7 @@ function restoreLocation(initial = false) {
     updateUrl(true);
   }
 }
+window.addEventListener('pagehide',()=>quoteAudio.reset());
 window.addEventListener('popstate',()=>{if(database)restoreLocation();});
 window.addEventListener('hashchange',()=>{if(database)restoreLocation();});
-fetch('data.json?v=0.4.2').then(r=>{if(!r.ok)throw new Error('data');return r.json();}).then(d=>{database=d;restoreLocation(true);trigger.disabled=false;}).catch(()=>{document.getElementById('error').hidden=false;document.getElementById('error').textContent='Не удалось открыть библиотеку. Обновите страницу.';});
+fetch('data.json?v=0.5.0').then(r=>{if(!r.ok)throw new Error('data');return r.json();}).then(d=>{database=d;restoreLocation(true);trigger.disabled=false;}).catch(()=>{document.getElementById('error').hidden=false;document.getElementById('error').textContent='Не удалось открыть библиотеку. Обновите страницу.';});
