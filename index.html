@@ -8,12 +8,12 @@
   <meta name="description" content="Настольные игры в подкасте «Давай ходи»: цитаты, выпуски и тайминги.">
   <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png?v=2">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=0.7.0">
-  <script defer src="quote-card.js?v=0.5.0"></script>
-  <script defer src="quote-audio.js?v=0.5.0"></script>
-  <script defer src="app.js?v=0.7.0&amp;content=f97734185d51"></script>
-  <script defer src="quote-feedback.js?v=0.7.0"></script>
-  <script defer src="quote-votes.js?v=0.7.0"></script>
+  <link rel="stylesheet" href="style.css?v=0.8.0">
+  <script defer src="quote-card.js?v=0.8.0"></script>
+  <script defer src="quote-audio.js?v=0.8.0"></script>
+  <script defer src="app.js?v=0.8.0&amp;content=350169c56173"></script>
+  <script defer src="quote-feedback.js?v=0.8.0"></script>
+  <script defer src="quote-votes.js?v=0.8.0"></script>
 </head>
 <body>
   <header class="masthead">
@@ -34,6 +34,10 @@
           <span id="game-total">107 игр</span><span class="meta-dot">·</span>
           <button type="button" id="episode-trigger" class="episode-trigger" aria-haspopup="dialog" aria-controls="episode-picker" disabled><span id="episode-label">Все выпуски</span><span aria-hidden="true">⌄</span></button>
           <span id="episode-meta"></span>
+          <div class="game-sort" role="group" aria-label="Порядок игр">
+            <button type="button" id="sort-alphabet" aria-pressed="false" disabled>По алфавиту</button>
+            <button type="button" id="sort-mentions" aria-pressed="true" title="По количеству цитат в выбранных выпусках, от большего к меньшему" disabled>По упоминаниям</button>
+          </div>
         </div>
       </div>
       <div class="game-search">
@@ -94,10 +98,10 @@
     <blockquote id="correction-preview"></blockquote>
     <form id="correction-form">
       <label for="correction-kind">Что исправить?</label>
-      <select id="correction-kind"><option value="text">Текст цитаты</option><option value="game">Привязку к игре</option><option value="both">Текст и игру</option></select>
-      <div id="correction-game-fields" hidden><label for="correction-game">Правильная игра</label><input id="correction-game" type="text" maxlength="150" list="correction-games" placeholder="Название игры"><datalist id="correction-games"></datalist><label for="correction-game-url">Ссылка на BGG <span>(необязательно)</span></label><input id="correction-game-url" type="url" maxlength="200" placeholder="https://boardgamegeek.com/boardgame/…"></div>
-      <label for="correction-replacement">Как правильно? <span>(необязательно)</span></label>
-      <textarea id="correction-replacement" maxlength="2000" rows="3" placeholder="Правильное слово или фраза"></textarea>
+      <select id="correction-kind"><option value="text">Текст цитаты</option><option value="game">Не та игра</option><option value="both">Текст и игру</option><option value="positive">Это положительный отзыв</option><option value="negative">Это негативный отзыв</option></select>
+      <div id="correction-game-fields" hidden><label for="correction-game">Правильная игра</label><input id="correction-game" type="search" maxlength="150" autocomplete="off" placeholder="Поиск по названию игры" aria-controls="correction-game-results" aria-describedby="correction-game-note"><div id="correction-game-results" class="correction-game-results" role="group" aria-label="Найденные игры" hidden></div><p id="correction-game-note" role="status">Выберите игру из списка. Если её нет в игротеке, укажите название и, если знаете, ссылку на BGG.</p><label for="correction-game-url">Ссылка на BGG <span>(необязательно)</span></label><input id="correction-game-url" type="url" maxlength="200" placeholder="https://boardgamegeek.com/boardgame/…"></div>
+      <div id="correction-text-fields"><label for="correction-replacement">Как правильно? <span>(необязательно)</span></label>
+      <textarea id="correction-replacement" maxlength="2000" rows="3" placeholder="Правильное слово или фраза"></textarea></div>
       <label for="correction-comment">Комментарий <span>(необязательно)</span></label>
       <textarea id="correction-comment" maxlength="1000" rows="3" placeholder="Что слышно в записи?"></textarea>
       <p id="correction-status" role="status" aria-live="polite"></p>

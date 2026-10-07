@@ -2,6 +2,10 @@
 let database;
 let selectedId;
 let selectedEpisode = null;
+let gameSort = 'mentions';
+const goldenId = 'golden-fund';
+const trophy = '<svg aria-hidden="true" viewBox="0 0 100 100"><path fill="#d7a529" d="M24 16h52v22c0 19-9 31-21 33v12h17v8H28v-8h17V71C33 69 24 57 24 38z"/><path fill="none" stroke="#b98616" stroke-width="7" d="M24 23H12v12c0 13 8 20 20 20m44-32h12v12c0 13-8 20-20 20"/><path fill="#f7d774" d="M32 22h9v18c0 9 2 15 5 18-9-4-14-13-14-24z"/></svg>';
+const gameNameOrder = new Intl.Collator('ru', {numeric: true, sensitivity: 'base'});
 let previouslyFocused;
 let cardOpen = false;
 let selectedQuote = null;
@@ -114,16 +118,24 @@ const visibleGames = () => {
   return episodeGames().filter(g=>{
     const names=normalize(`${g.name} ${g.original_name || ''}`);
     return words.every(word=>names.includes(word));
-  });
+  }).sort((a,b) => (gameSort === 'mentions' ? gameQuotes(b.id).length - gameQuotes(a.id).length : 0) || gameNameOrder.compare(a.name,b.name));
 };
 function image(game, large = false) {
   return game.cover ? `<img src="${escapeHtml(game.cover)}" alt="Игра ${escapeHtml(game.name)}" ${large?'':'loading="lazy"'}>` : '<span class="missing-cover">Обложка уточняется</span>';
+}
+function goldenCard() {
+  return `<button type="button" class="game-card golden-card" data-game="${goldenId}" aria-pressed="${selectedId===goldenId}" aria-label="Золотой фонд. Лучшие 10 цитат. Открыть"><span class="cover-stage golden-cover">${trophy}</span><span class="game-name">Золотой фонд</span><span class="game-subtitle">10 лучших цитат по голосам</span></button>`;
 }
 function renderLibrary() {
   const allOpinions=(database.evaluations || []).filter(e=>!selectedEpisode || e.episode_id===selectedEpisode);
   const confirmed=allOpinions.filter(e=>e.review_status==='accepted').length;
   document.getElementById('evaluations-overview').textContent=`${confirmed} проверено · ${allOpinions.length-confirmed} не подтверждено. Предварительные оценки отмечены на карточках.`;
   const games = visibleGames();
+  for (const mode of ['alphabet','mentions']) {
+    const button = document.getElementById('sort-' + mode);
+    button.disabled = false;
+    button.setAttribute('aria-pressed', String(gameSort === mode));
+  }
   const query = normalize(gameSearch.value);
   const total = episodeGames().length;
   clearGameSearch.hidden = !gameSearch.value;
@@ -135,14 +147,14 @@ function renderLibrary() {
   document.getElementById('episode-meta').hidden = Boolean(episode);
   document.getElementById('episode-meta').textContent = episode ? '' : `${new Set(database.quotes.map(q=>q.episode_id)).size} ${plural(new Set(database.quotes.map(q=>q.episode_id)).size,'выпуск','выпуска','выпусков')} с цитатами`;
   document.getElementById('library-note').hidden = Boolean(selectedEpisode);
-  grid.innerHTML = games.map(g => {
+  grid.innerHTML = goldenCard() + games.map(g => {
     const n = gameQuotes(g.id).length;
     return `<button type="button" class="game-card" data-game="${escapeHtml(g.id)}" aria-pressed="${g.id===selectedId}" aria-label="${escapeHtml(g.name)}. ${n} ${plural(n,'цитата','цитаты','цитат')}. Открыть">
       <span class="quote-count">${n} ${plural(n,'цитата','цитаты','цитат')}</span><span class="cover-stage">${image(g)}${opinionCounters(g.id)}</span>
       <span class="game-name">${escapeHtml(g.name)}</span><span class="game-subtitle">${escapeHtml(g.description)}</span></button>`;
   }).join('');
   if (!games.length) {
-    grid.innerHTML = query && total ? `<div class="empty-episode"><h2>Игры не найдены</h2><p>Попробуйте другое название или очистите поиск${episode ? ', чтобы увидеть все игры этого выпуска' : ''}.</p><button type="button" class="clear-game-search">Очистить поиск</button>${episode ? '<button type="button" class="show-all-episodes">Искать во всех выпусках</button>' : ''}</div>` : `<div class="empty-episode"><h2>${escapeHtml(episode ? episodeName(episode) : 'Картотека пополняется')}</h2><p>Игры и цитаты из этого выпуска пока не добавлены в картотеку.</p><button type="button" class="show-all-episodes">Посмотреть все игры</button></div>`;
+    grid.innerHTML = goldenCard() + (query && total ? `<div class="empty-episode"><h2>Игры не найдены</h2><p>Попробуйте другое название или очистите поиск${episode ? ', чтобы увидеть все игры этого выпуска' : ''}.</p><button type="button" class="clear-game-search">Очистить поиск</button>${episode ? '<button type="button" class="show-all-episodes">Искать во всех выпусках</button>' : ''}</div>` : `<div class="empty-episode"><h2>${escapeHtml(episode ? episodeName(episode) : 'Картотека пополняется')}</h2><p>Игры и цитаты из этого выпуска пока не добавлены в картотеку.</p><button type="button" class="show-all-episodes">Посмотреть все игры</button></div>`);
     content.innerHTML = '<h2 id="detail-title" class="empty-detail-title">Цитаты появятся здесь</h2><p class="game-description">Выберите другой выпуск или вернитесь ко всем играм.</p>';
     if (query && total) content.innerHTML = '<h2 id="detail-title" class="empty-detail-title">Игры не найдены</h2><p class="game-description">Измените название или очистите поиск.</p>';
   }
@@ -151,6 +163,7 @@ function libraryUrl() {
   const url = new URL(location.href);
   if (selectedEpisode) url.searchParams.set('episode',selectedEpisode); else url.searchParams.delete('episode');
   if (normalize(gameSearch.value)) url.searchParams.set('q',gameSearch.value.trim()); else url.searchParams.delete('q');
+  if (gameSort === 'alphabet') url.searchParams.set('sort', 'alphabet'); else url.searchParams.delete('sort');
   url.searchParams.delete('quote');
   url.hash = '';
   return url;
@@ -174,7 +187,48 @@ function syncPanel() {
     document.body.classList.add('card-open');
   } else closePanel();
 }
+function renderQuote(q, showGame = false) {
+  const ep = database.episodes.find(e=>e.id===q.episode_id);
+  const game = database.games.find(g=>g.id===q.game_id);
+  return `<article class="quote-item${q.id===selectedQuote?' is-highlighted':''}" id="${escapeHtml(q.id)}" tabindex="-1" aria-label="Цитата: ${escapeHtml(quoteEpisodeName(ep))}, ${time(q.start)}">${showGame?`<p class="golden-quote-game"><a href="${escapeHtml(quoteUrl(q))}">${escapeHtml(game.name)}</a></p>`:''}<blockquote>«<span data-correction-text="${escapeHtml(q.id)}">${escapeHtml(q.text)}</span>»</blockquote>
+    <div class="quote-footer"><p class="quote-source"><button type="button" class="quote-episode" data-episode="${escapeHtml(ep.id)}" aria-label="Показать игры из ${ep.number==null?'этого выпуска':`выпуска ${ep.number}`}">${escapeHtml(quoteEpisodeName(ep))}</button> · ${time(q.start)}</p><div class="quote-buttons">${audioButton(q,ep)}<button type="button" class="share-quote" data-share-quote="${escapeHtml(q.id)}" aria-label="Поделиться цитатой: ${escapeHtml(quoteEpisodeName(ep))}, ${time(q.start)}"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 16V3m-5 5 5-5 5 5M5 13v7h14v-7"/></svg>Поделиться</button></div></div>${audioProgress(q)}<div class="quote-feedback-row"><div class="quote-votes" data-vote-quote="${escapeHtml(q.id)}" role="group" aria-label="Голосование за цитату"><button type="button" data-vote-value="1" aria-label="Нравится цитата" aria-pressed="false" disabled>▲</button><span data-vote-score role="status" aria-live="polite">…</span><button type="button" data-vote-value="-1" aria-label="Не нравится цитата" aria-pressed="false" disabled>▼</button></div><button type="button" class="report-quote" data-report-quote="${escapeHtml(q.id)}" aria-pressed="false">Сообщить об ошибке</button><div class="vote-status"><p data-vote-note class="vote-note" role="status"></p><button type="button" data-vote-refresh class="vote-refresh" hidden>Повторить</button></div></div></article>`;
+}
+function selectGolden(userAction = false) {
+  const wasOpen = cardOpen;
+  if (selectedId !== goldenId) quoteAudio.reset();
+  if (userAction) {cardOpen = true;selectedQuote = null;}
+  selectedId = goldenId;
+  grid.querySelectorAll('[data-game]').forEach(card => card.setAttribute('aria-pressed', String(card.dataset.game === goldenId)));
+  content.innerHTML = `<div class="details-topline"><button type="button" class="back-details" aria-label="Вернуться к библиотеке">← Все игры</button><p class="eyebrow">ЛУЧШИЕ ЦИТАТЫ</p><button type="button" class="icon-button close-details" aria-label="Закрыть карточку">×</button></div><div class="game-profile"><div class="detail-cover golden-cover">${trophy}</div><div><h2 id="detail-title">Золотой фонд</h2><p class="original-name">Топ-10 всей игротеки</p></div></div><p class="game-description">Цитаты с наибольшей суммой голосов: апвоты минус даунвоты.</p><p id="golden-status" class="opinion-note" role="status">Загружаем лучшие цитаты…</p>`;
+  panel.scrollTop = 0; syncPanel();
+  if (userAction) {
+    updateUrl(!wasOpen);
+    if (narrow.matches) content.querySelector('.back-details').focus({preventScroll:true});
+    document.getElementById('announcement').textContent='Открыт золотой фонд: 10 лучших цитат всей игротеки.';
+  }
+}
+function renderGoldenQuotes(items) {
+  if (selectedId !== goldenId) return;
+  const quotes = items.map(item=>database.quotes.find(q=>q.id===item.quote_id)).filter(Boolean);
+  const existing = new Map([...content.querySelectorAll('.quote-item')].map(article=>[article.id, article]));
+  const ids = new Set(quotes.map(q=>q.id));
+  if (quoteAudio.state?.id && !ids.has(quoteAudio.state.id)) quoteAudio.reset();
+  for (const [id, article] of existing) if (!ids.has(id)) article.remove();
+  for (const quote of quotes) if (!existing.has(quote.id)) {
+    content.insertAdjacentHTML('beforeend', renderQuote(quote, true));
+  }
+  for (let index=0; index<quotes.length; index++) {
+    const current=content.querySelectorAll('.quote-item')[index], wanted=document.getElementById(quotes[index].id);
+    if (current!==wanted) {
+      if (typeof content.moveBefore==='function') content.moveBefore(wanted, current);
+      else content.insertBefore(wanted, current);
+    }
+  }
+  document.getElementById('golden-status').textContent = `${quotes.length} лучших цитат · по убыванию суммы голосов`;
+  renderAudioState(quoteAudio.state);
+}
 function selectGame(id, userAction = false) {
+  if (id === goldenId) { selectGolden(userAction); return; }
   const game = database.games.find(g => g.id === id);
   const quotes = gameQuotes(id);
   if (!game || (!quotes.length && !gameEvaluations(id).length)) return;
@@ -190,8 +244,7 @@ function selectGame(id, userAction = false) {
     <a class="bgg-link" href="${escapeHtml(game.bgg_url)}" target="_blank" rel="noopener">Карточка на BGG</a></div></div>
     <p class="game-description">${escapeHtml(game.description)}</p>
     <div class="quotes-summary"><strong>${quotes.length} ${plural(quotes.length,'цитата','цитаты','цитат')}</strong><span>${episodes.length} ${plural(episodes.length,'выпуск','выпуска','выпусков')}</span></div>
-    ${episodes.map(epId => {const ep=database.episodes.find(ep=>ep.id===epId);return quotes.filter(q=>q.episode_id===epId).map(q => `<article class="quote-item${q.id===selectedQuote?' is-highlighted':''}" id="${escapeHtml(q.id)}" tabindex="-1" aria-label="Цитата: ${escapeHtml(quoteEpisodeName(ep))}, ${time(q.start)}"><blockquote>«<span data-correction-text="${escapeHtml(q.id)}">${escapeHtml(q.text)}</span>»</blockquote>
-    <div class="quote-footer"><p class="quote-source"><button type="button" class="quote-episode" data-episode="${escapeHtml(ep.id)}" aria-label="Показать игры из ${ep.number==null?'этого выпуска':`выпуска ${ep.number}`}">${escapeHtml(quoteEpisodeName(ep))}</button> · ${time(q.start)}</p><div class="quote-buttons">${audioButton(q,ep)}<button type="button" class="share-quote" data-share-quote="${escapeHtml(q.id)}" aria-label="Поделиться цитатой: ${escapeHtml(quoteEpisodeName(ep))}, ${time(q.start)}"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 16V3m-5 5 5-5 5 5M5 13v7h14v-7"/></svg>Поделиться</button></div></div>${audioProgress(q)}<div class="quote-feedback-row"><div class="quote-votes" data-vote-quote="${escapeHtml(q.id)}" role="group" aria-label="Голосование за цитату"><button type="button" data-vote-value="1" aria-label="Нравится цитата" aria-pressed="false" disabled>▲</button><span data-vote-score role="status" aria-live="polite">…</span><button type="button" data-vote-value="-1" aria-label="Не нравится цитата" aria-pressed="false" disabled>▼</button><button type="button" data-vote-refresh class="vote-refresh" hidden>Повторить</button><p data-vote-note class="vote-note" role="status"></p></div><button type="button" class="report-quote" data-report-quote="${escapeHtml(q.id)}" aria-pressed="false">Сообщить об ошибке</button></div></article>`).join('');}).join('')}`;
+    ${quotes.map(q=>renderQuote(q)).join('')}`;
   renderAudioState(quoteAudio.state);
   panel.scrollTop = 0;
   syncPanel();
@@ -354,7 +407,7 @@ function selectEpisode(id, userAction = true) {
   if (picker.open) picker.close();
   selectedEpisode = id || null;
   const games = visibleGames();
-  if (!games.some(g=>g.id===selectedId)) selectedId=games[0]?.id || null;
+  if (selectedId !== goldenId && !games.some(g=>g.id===selectedId)) selectedId=games[0]?.id || null;
   renderLibrary();
   if (selectedId) selectGame(selectedId);
   if (userAction) {
@@ -380,7 +433,7 @@ function applyGameSearch() {
   cardOpen=false;selectedQuote=null;
   closePanel();
   const games=visibleGames();
-  if (!games.some(g=>g.id===selectedId)) selectedId=games[0]?.id || null;
+  if (selectedId !== goldenId && !games.some(g=>g.id===selectedId)) selectedId=games[0]?.id || null;
   renderLibrary();
   if (selectedId) selectGame(selectedId);
   updateUrl();
@@ -388,6 +441,13 @@ function applyGameSearch() {
 function resetGameSearch() {
   gameSearch.value='';applyGameSearch();gameSearch.focus();
 }
+for (const mode of ['alphabet','mentions']) document.getElementById('sort-' + mode).addEventListener('click', () => {
+  if (!database || gameSort === mode) return;
+  gameSort = mode;
+  renderLibrary();
+  updateUrl();
+  document.getElementById('announcement').textContent = mode === 'alphabet' ? 'Игры по алфавиту.' : 'Игры по убыванию количества цитат.';
+});
 gameSearch.addEventListener('input',applyGameSearch);
 gameSearch.addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();resetGameSearch();}});
 clearGameSearch.addEventListener('click',resetGameSearch);
@@ -433,12 +493,13 @@ document.addEventListener('keydown',e=>{if(shareDialog.open || nativeSharePendin
 narrow.addEventListener('change',syncPanel);
 function restoreLocation(initial = false) {
   const url=new URL(location.href);
+  gameSort = url.searchParams.get('sort') === 'alphabet' ? 'alphabet' : 'mentions';
   const quote=database.quotes.find(q=>q.id===url.searchParams.get('quote'));
   const episode=quote?.episode_id || url.searchParams.get('episode');
   const gameId=quote?.game_id || url.hash.slice(1);
-  const validGame=database.games.some(g=>g.id===gameId) && [...database.quotes.map(q=>({game_ids:[q.game_id],episode_id:q.episode_id})),...(database.evaluations || [])].some(q=>q.game_ids.includes(gameId) && (!episode || q.episode_id===episode));
+  const validGame=gameId === goldenId || database.games.some(g=>g.id===gameId) && [...database.quotes.map(q=>({game_ids:[q.game_id],episode_id:q.episode_id})),...(database.evaluations || [])].some(q=>q.game_ids.includes(gameId) && (!episode || q.episode_id===episode));
   gameSearch.value=url.searchParams.get('q') || '';
-  if (validGame) {
+  if (validGame && gameId !== goldenId) {
     const game=database.games.find(g=>g.id===gameId);
     const names=normalize(`${game.name} ${game.original_name || ''}`);
     if (!normalize(gameSearch.value).split(/\s+/).every(word=>names.includes(word))) gameSearch.value='';
@@ -455,4 +516,4 @@ function restoreLocation(initial = false) {
 window.addEventListener('pagehide',()=>quoteAudio.reset());
 window.addEventListener('popstate',()=>{if(database)restoreLocation();});
 window.addEventListener('hashchange',()=>{if(database)restoreLocation();});
-fetch('data.json?revision=f97734185d51').then(r=>{if(!r.ok)throw new Error('data');return r.json();}).then(d=>{database=d;restoreLocation(true);trigger.disabled=false;gameSearch.disabled=false;document.getElementById('open-evaluations').disabled=false;}).catch(()=>{document.getElementById('error').hidden=false;document.getElementById('error').textContent='Не удалось открыть библиотеку. Обновите страницу.';});
+fetch('data.json?revision=350169c56173').then(r=>{if(!r.ok)throw new Error('data');return r.json();}).then(d=>{database=d;restoreLocation(true);trigger.disabled=false;gameSearch.disabled=false;document.getElementById('open-evaluations').disabled=false;}).catch(()=>{document.getElementById('error').hidden=false;document.getElementById('error').textContent='Не удалось открыть библиотеку. Обновите страницу.';});
