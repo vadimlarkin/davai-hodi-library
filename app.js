@@ -330,4 +330,4 @@ function restoreLocation(initial = false) {
 window.addEventListener('pagehide',()=>quoteAudio.reset());
 window.addEventListener('popstate',()=>{if(database)restoreLocation();});
 window.addEventListener('hashchange',()=>{if(database)restoreLocation();});
-fetch('data.json?v=0.5.0').then(r=>{if(!r.ok)throw new Error('data');return r.json();}).then(d=>{database=d;restoreLocation(true);trigger.disabled=false;}).catch(()=>{document.getElementById('error').hidden=false;document.getElementById('error').textContent='Не удалось открыть библиотеку. Обновите страницу.';});
+fetch('data.json?revision=6c6ee22b77c8').then(r=>{if(!r.ok)throw new Error('data');return r.json();}).then(d=>{database=d;restoreLocation(true);trigger.disabled=false;}).catch(()=>{document.getElementById('error').hidden=false;document.getElementById('error').textContent='Не удалось открыть библиотеку. Обновите страницу.';});
