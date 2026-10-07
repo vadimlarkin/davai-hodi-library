@@ -3,6 +3,8 @@ let database;
 let selectedId;
 let selectedEpisode = null;
 let gameSort = 'mentions';
+const associationStates = new Map();
+const associationKey = (episode, game) => episode + ':' + game;
 const goldenId = 'golden-fund';
 const trophy = '<svg aria-hidden="true" viewBox="0 0 100 100"><path fill="#d7a529" d="M24 16h52v22c0 19-9 31-21 33v12h17v8H28v-8h17V71C33 69 24 57 24 38z"/><path fill="none" stroke="#b98616" stroke-width="7" d="M24 23H12v12c0 13 8 20 20 20m44-32h12v12c0 13-8 20-20 20"/><path fill="#f7d774" d="M32 22h9v18c0 9 2 15 5 18-9-4-14-13-14-24z"/></svg>';
 const gameNameOrder = new Intl.Collator('ru', {numeric: true, sensitivity: 'base'});
@@ -45,6 +47,27 @@ function plural(n, one, few, many) {return n%10===1&&n%100!==11?one:n%10>=2&&n%1
 const currentQuotes = () => database.quotes.filter(q => !selectedEpisode || q.episode_id === selectedEpisode);
 const gameQuotes = id => currentQuotes().filter(q => q.game_id === id);
 const gameEvaluations = id => (database.evaluations || []).filter(e=>e.game_ids.includes(id) && (!selectedEpisode || e.episode_id===selectedEpisode));
+function sourceGameConfirmed(id, episode = selectedEpisode) {
+  if (!episode) return true;
+  return database.quotes.some(q=>q.episode_id===episode && q.game_id===id) ||
+    (database.evaluations || []).some(e=>e.episode_id===episode && e.game_ids.includes(id) && e.review_status==='accepted');
+}
+function gameConfirmed(id) {
+  return sourceGameConfirmed(id) || (associationStates.get(associationKey(selectedEpisode,id))?.score ?? 0) > 0;
+}
+function gameConfirmationLabel(id) {
+  if (!selectedEpisode || sourceGameConfirmed(id)) return '';
+  return gameConfirmed(id) ? 'Подтверждено посетителями' : 'Не подтверждено';
+}
+function updateGameConfirmations(items) {
+  for (const item of items) associationStates.set(associationKey(item.episode_id, item.game_id), item);
+  const active = document.activeElement;
+  const focusedGame = grid.contains(active) ? active.dataset.game : null;
+  renderLibrary();
+  if (focusedGame) grid.querySelector(`[data-game="${CSS.escape(focusedGame)}"]`)?.focus({preventScroll:true});
+  const cover = content.querySelector('.detail-cover');
+  if (cover && selectedId !== goldenId) cover.classList.toggle('is-unconfirmed', !gameConfirmed(selectedId));
+}
 const evaluationPicker = document.getElementById('evaluation-picker');
 const evaluationList = document.getElementById('evaluation-list');
 let evaluationPage = 0;
@@ -118,7 +141,7 @@ const visibleGames = () => {
   return episodeGames().filter(g=>{
     const names=normalize(`${g.name} ${g.original_name || ''}`);
     return words.every(word=>names.includes(word));
-  }).sort((a,b) => (gameSort === 'mentions' ? gameQuotes(b.id).length - gameQuotes(a.id).length : 0) || gameNameOrder.compare(a.name,b.name));
+  }).sort((a,b) => Number(gameConfirmed(b.id)) - Number(gameConfirmed(a.id)) || (gameSort === 'mentions' ? gameQuotes(b.id).length - gameQuotes(a.id).length : 0) || gameNameOrder.compare(a.name,b.name));
 };
 function image(game, large = false) {
   return game.cover ? `<img src="${escapeHtml(game.cover)}" alt="Игра ${escapeHtml(game.name)}" ${large?'':'loading="lazy"'}>` : '<span class="missing-cover">Обложка уточняется</span>';
@@ -149,9 +172,11 @@ function renderLibrary() {
   document.getElementById('library-note').hidden = Boolean(selectedEpisode);
   grid.innerHTML = goldenCard() + games.map(g => {
     const n = gameQuotes(g.id).length;
-    return `<button type="button" class="game-card" data-game="${escapeHtml(g.id)}" aria-pressed="${g.id===selectedId}" aria-label="${escapeHtml(g.name)}. ${n} ${plural(n,'цитата','цитаты','цитат')}. Открыть">
-      <span class="quote-count">${n} ${plural(n,'цитата','цитаты','цитат')}</span><span class="cover-stage">${image(g)}${opinionCounters(g.id)}</span>
-      <span class="game-name">${escapeHtml(g.name)}</span><span class="game-subtitle">${escapeHtml(g.description)}</span></button>`;
+    const label = gameConfirmationLabel(g.id);
+    const count = n ? `${n} ${plural(n,'цитата','цитаты','цитат')}` : 'Фрагменты';
+    return `<button type="button" class="game-card${gameConfirmed(g.id)?'':' is-unconfirmed'}" data-game="${escapeHtml(g.id)}" aria-pressed="${g.id===selectedId}" aria-label="${escapeHtml(g.name)}. ${count}.${label?' '+label+'.':''} Открыть">
+      <span class="quote-count">${count}</span><span class="cover-stage">${image(g)}${opinionCounters(g.id)}</span>
+      <span class="game-name">${escapeHtml(g.name)}</span><span class="game-subtitle">${escapeHtml(g.description)}</span>${label?`<span class="game-confirmation-label">${label}</span>`:''}</button>`;
   }).join('');
   if (!games.length) {
     grid.innerHTML = goldenCard() + (query && total ? `<div class="empty-episode"><h2>Игры не найдены</h2><p>Попробуйте другое название или очистите поиск${episode ? ', чтобы увидеть все игры этого выпуска' : ''}.</p><button type="button" class="clear-game-search">Очистить поиск</button>${episode ? '<button type="button" class="show-all-episodes">Искать во всех выпусках</button>' : ''}</div>` : `<div class="empty-episode"><h2>${escapeHtml(episode ? episodeName(episode) : 'Картотека пополняется')}</h2><p>Игры и цитаты из этого выпуска пока не добавлены в картотеку.</p><button type="button" class="show-all-episodes">Посмотреть все игры</button></div>`);
@@ -227,6 +252,14 @@ function renderGoldenQuotes(items) {
   document.getElementById('golden-status').textContent = `${quotes.length} лучших цитат · по убыванию суммы голосов`;
   renderAudioState(quoteAudio.state);
 }
+function gameConfirmation(id) {
+  if (!selectedEpisode || sourceGameConfirmed(id)) return '';
+  const rows=gameEvaluations(id);
+  return `<section class="game-confirmation" data-association-game="${escapeHtml(id)}" data-association-episode="${escapeHtml(selectedEpisode)}"><h3>Это про эту игру?</h3><p>Предположительная привязка к выпуску. При сумме +1 и выше карточка становится цветной; при нуле или ниже — снова серой.</p><div class="association-actions" role="group" aria-label="Подтверждение игры в выпуске"><button type="button" data-association-value="1" aria-pressed="false" disabled>▲ Да, это про эту игру</button><span data-association-score aria-label="Сумма подтверждений">…</span><button type="button" data-association-value="-1" aria-pressed="false" disabled>▼ Нет, это не та игра</button></div><p data-association-state class="association-state" role="status">${gameConfirmationLabel(id)}</p><p data-association-note class="association-note" role="status"></p><button type="button" data-association-refresh class="vote-refresh" hidden>Повторить</button></section><section class="game-evidence"><h3>Основания привязки</h3><p class="opinion-note">Фрагменты расшифровки. Прослушайте запись, чтобы проверить игру.</p>${rows.map(e=>{
+    const ep=database.episodes.find(ep=>ep.id===e.episode_id);
+    return `<article class="association-evidence"><blockquote>«${escapeHtml(e.original_text)}»</blockquote><div class="quote-footer"><p class="quote-source">${escapeHtml(quoteEpisodeName(ep))} · ${time(e.start)}</p>${audioButton(e,ep)}</div>${audioProgress(e)}</article>`;
+  }).join('')}</section>`;
+}
 function selectGame(id, userAction = false) {
   if (id === goldenId) { selectGolden(userAction); return; }
   const game = database.games.find(g => g.id === id);
@@ -239,11 +272,11 @@ function selectGame(id, userAction = false) {
   const episodes = [...new Set(quotes.map(q => q.episode_id))];
   grid.querySelectorAll('[data-game]').forEach(card => card.setAttribute('aria-pressed', card.dataset.game === id));
   content.innerHTML = `<div class="details-topline"><button type="button" class="back-details" aria-label="Вернуться к библиотеке">← Все игры</button><p class="eyebrow">ЧТО МЫ ГОВОРИЛИ</p><button type="button" class="icon-button close-details" aria-label="Закрыть карточку">×</button></div>
-    <div class="game-profile"><div class="detail-cover">${image(game,true)}${opinionCounters(id)}</div><div><h2 id="detail-title">${escapeHtml(game.name)}</h2>
+    <div class="game-profile"><div class="detail-cover${gameConfirmed(id)?'':' is-unconfirmed'}">${image(game,true)}${opinionCounters(id)}</div><div><h2 id="detail-title">${escapeHtml(game.name)}</h2>
     ${game.original_name&&game.original_name!==game.name?`<p class="original-name">${escapeHtml(game.original_name)}</p>`:''}
     <a class="bgg-link" href="${escapeHtml(game.bgg_url)}" target="_blank" rel="noopener">Карточка на BGG</a></div></div>
-    <p class="game-description">${escapeHtml(game.description)}</p>
-    <div class="quotes-summary"><strong>${quotes.length} ${plural(quotes.length,'цитата','цитаты','цитат')}</strong><span>${episodes.length} ${plural(episodes.length,'выпуск','выпуска','выпусков')}</span></div>
+    <p class="game-description">${escapeHtml(game.description)}</p>${gameConfirmation(id)}
+    ${quotes.length?`<div class="quotes-summary"><strong>${quotes.length} ${plural(quotes.length,'цитата','цитаты','цитат')}</strong><span>${episodes.length} ${plural(episodes.length,'выпуск','выпуска','выпусков')}</span></div>`:''}
     ${quotes.map(q=>renderQuote(q)).join('')}`;
   renderAudioState(quoteAudio.state);
   panel.scrollTop = 0;
