@@ -1,6 +1,6 @@
 {
   "version": "0.6.1",
-  "content_revision": "676e9d9aa092",
+  "content_revision": "548178efd617",
   "episodes": [
     {
       "id": "episode-001",
@@ -3473,6 +3473,14 @@
       "date": "2026-09-29",
       "duration": 4340,
       "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791239182_1c84bf19a3a678d34962.mp3"
+    },
+    {
+      "id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "number": 429,
+      "title": "Игровые поля",
+      "date": "2026-10-06",
+      "duration": 3833,
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791310823_9b556de1288ca3b16ab9.mp3"
     }
   ],
   "games": [
@@ -3574,6 +3582,15 @@
       "bgg_url": "https://boardgamegeek.com/boardgame/147451",
       "description": "2013 · Настольная игра",
       "cover": "assets/field-of-glory.jpg"
+    },
+    {
+      "id": "game-bgg-50",
+      "name": "Lost Cities",
+      "original_name": "Lost Cities",
+      "bgg_id": 50,
+      "bgg_url": "https://boardgamegeek.com/boardgame/50",
+      "description": "1999 · Настольная игра",
+      "cover": "assets/50.jpg"
     },
     {
       "id": "game-mage-knight",
@@ -6630,6 +6647,86 @@
       "start": 5301.6,
       "end": 5325.04,
       "text": "В том же Доминионе количество выбора на единицу пространства запредельно выше. То есть каждую секунду, каждое твоё движение связано с выбором, с каким-то планом на игру."
+    },
+    {
+      "id": "quote-auto-340c4e8ee2fac57ff91b60d3",
+      "game_id": "game-last-night-on-earth",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "start": 610.6,
+      "end": 616.92,
+      "text": "Но это пример такого поля, которое есть, ну и как будто не так уж сильно ощущается."
+    },
+    {
+      "id": "quote-auto-4abe35cd61bc734765b1f207",
+      "game_id": "game-agricola",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "start": 1050.76,
+      "end": 1060.12,
+      "text": "Вспомни вот эти планшеты агрикольские, где на личном планшете игрока у тебя сверху есть такие насечки, куда что складывать. Вот мне это очень нравится почему-то."
+    },
+    {
+      "id": "quote-auto-87f916472e6107150d2fd874",
+      "game_id": "game-bgg-50",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "start": 1079.52,
+      "end": 1091.36,
+      "text": "Это как бы чисто поле-органайзер. Оно есть, оно совершенно не нужно. Я вообще его куда-то убрал. Я даже фиг его знает, где сейчас моё поле от Lost Cities. Я использую только карты, потому что поле там не нужно вообще."
+    },
+    {
+      "id": "quote-auto-532a56e41ed17080d884ed76",
+      "game_id": "game-bgg-50",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "start": 1085.52,
+      "end": 1100.08,
+      "text": "От поля больше проблем, потому что его надо носить. Коробку, значит, надо сразу большую. А на практике оно ничем не помогает тебе."
+    },
+    {
+      "id": "quote-auto-87c7dc653de731389cfe6fda",
+      "game_id": "game-eclipse-2011",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "start": 1582.48,
+      "end": 1597.88,
+      "text": "И второй момент: здесь поле не имеет заранее заданной геометрической конфигурации. Ты можешь строить там хоть кружки, хоть квадратики, хоть в кишку эти гексы складывать. Вот как решишь, так оно и будет."
+    },
+    {
+      "id": "quote-auto-9e8c048deffc2a58d772a171",
+      "game_id": "game-agricola",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "start": 2100.36,
+      "end": 2120.24,
+      "text": "Личный планшет игрока еще как выполняет функцию географическую, равно как и в Агриколе. Только там у тебя просто вот эти клеточки, ты как бы городишь: тут у меня загоны, тут грядки, тут у меня дом. Это еще как-то географическая функция. Просто это география такого отдельно взятого дачного участка."
+    },
+    {
+      "id": "quote-auto-0a663bbebfb37f2f23658f26",
+      "game_id": "game-7-wonders",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "start": 2163.12,
+      "end": 2177.44,
+      "text": "Там есть вот эта плашечка, на которой написано: твое чудо света. У него есть сторона А, сторона Б, там всякая памятка, всякие штуки для организации пространства. А географией служат тот, кто у тебя слева, и тот, кто у тебя справа."
+    },
+    {
+      "id": "quote-auto-657d4d9ee0292c4bbac97c74",
+      "game_id": "game-carcassonne",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "start": 2608.88,
+      "end": 2622.32,
+      "text": "Тут логистика заключается не в том, как у тебя фишки ходят, потому что в Каркассоне фишки вообще, как правило, не ходят. Ну, там тоже не без исключений. Слишком много каркассонов, там есть и фишки, которые ходят. Но в основном фишки там просто лежат."
+    },
+    {
+      "id": "quote-auto-1ef7d36bed243c9c852b343c",
+      "game_id": "game-dominion",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "start": 2690.2,
+      "end": 2696.76,
+      "text": "Доминион — прекрасная игра. Ему не нужно поле."
+    },
+    {
+      "id": "quote-auto-bffd045d6c170b356224e4e8",
+      "game_id": "game-agricola",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "start": 2893.32,
+      "end": 2907.72,
+      "text": "Я именно поэтому готов с тобой согласиться в Агриколе, потому что твой личный планшет в первом ходу и твой личный планшет в 14-м ходу — это два очень сильно разных планшета. Он поменялся, и он развился."
     }
   ],
   "evaluations": [
@@ -34645,6 +34742,517 @@
       "attribution": "reported",
       "candidate_names": [
         "Nothing Personal"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-e3786cc40f38b8b74e8a9ef5",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "Это ситуация, когда как с этой наворией формально поле есть, но фактически оно не нужно.",
+      "start": 418.76,
+      "end": 429.32,
+      "polarity": "negative",
+      "aspect": "components",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "наворией"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-f18315e3b23c578fd7fccb84",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "И так как там игра строится на постоянных атаках, я тогда подумал: а зачем это поле? Ну, типа, я бы просто назначал атаки на какого-то игрока. Вот зачем декларировать, что у нас есть поле. Хотя оно вот как бы своей функцией не выполняет. Если я могу перейти все за один ход, то считай, для меня поля нет.",
+      "start": 506.08,
+      "end": 526.32,
+      "polarity": "negative",
+      "aspect": "mechanics",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Кемет"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-f633c0eed589943da1c8133a",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "Оно как бы есть, но его как будто бы и нет практически.",
+      "start": 553.4,
+      "end": 556.2,
+      "polarity": null,
+      "aspect": "mechanics",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Last Night on Earth"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-fd95954a01cf1fe4a6a8a2df",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "Вот лучше уж вот такое хромое поле, чем никакого. Ну, потому что если бы вот убери его из last night on ears или",
+      "start": 825.56,
+      "end": 835.32,
+      "polarity": "negative",
+      "aspect": "mechanics",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Last Night on Earth"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-637ce7bde7542e4e3a0d86c8",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "Но, конечно, вот когда ты видишь поле, ты не ожидаешь, что оно окажется такое маленькое, такое крохотное, такое легко пересекаемое. Ну и вот хочется, как ты говоришь, что типа ну ты уж там постарайся немножко, как гейм-дизайнер, чтобы оно у тебя было нормальным.",
+      "start": 846.12,
+      "end": 862.8,
+      "polarity": "negative",
+      "aspect": "mechanics",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Last Night on Earth"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-442d6e320114242a116a8e74",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "его раскладываешь и обнаруживается, что там либо нет никаких этих локаций, либо они есть, но вот немножко такие фейкового характера, потому что по сути там эта локация она может быть и подается тебе как локация, но это трек просто какое-то. И здесь это типа еще один шаг в сторону куда-то не туда,",
+      "start": 887.92,
+      "end": 911.2,
+      "polarity": "negative",
+      "aspect": "mechanics",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Навория"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-3ad39fc11f086890ff9683e2",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "В принципе, в Агриколе поле тоже не так уж и нужно.",
+      "start": 991.64,
+      "end": 994.52,
+      "polarity": "negative",
+      "aspect": "components",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Агрикола"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-310245ece966fa245ca65ba4",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "поле просто выполняет функцию, во-первых, организационную, что тоже важно, да.",
+      "start": 1025.24,
+      "end": 1029.64,
+      "polarity": "positive",
+      "aspect": "components",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Агрикола"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-b8460eb198ce1cd03ec8d573",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "там там есть кое-какая информация, которая в принципе так-то не обязательно, чтобы на поле было, но просто удобно всем туда удобно смотреть.",
+      "start": 1042.76,
+      "end": 1050.52,
+      "polarity": "positive",
+      "aspect": "components",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Агрикола"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-2a4c985d8fc709554277953c",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "У тебя сверху есть такие насечки, куда что складывать. Вот мне это очень нравится почему-то.",
+      "start": 1055.48,
+      "end": 1060.12,
+      "polarity": "positive",
+      "aspect": "components",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Агрикола"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-ea6dbb6525db512db1ffb060",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "Оно есть, оно совершенно не нужно. Я использую только карты, потому что поле там не нужно вообще.",
+      "start": 1082.32,
+      "end": 1091.36,
+      "polarity": "negative",
+      "aspect": "components",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Lost Cities"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-74e7b2bbd53316d9b4987f52",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "То есть от него больше проблем, потому что его надо носить. Это, ну, типа, коробку, значит, надо сразу большую.",
+      "start": 1091.44,
+      "end": 1096.8,
+      "polarity": "negative",
+      "aspect": "components",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Lost Cities"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-9b279f57e070c0b4fd5e41b1",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "А на практике оно ничем не помогает тебе.",
+      "start": 1097.2,
+      "end": 1100.08,
+      "polarity": "negative",
+      "aspect": "mechanics",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Lost Cities"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-460f7efdf12b7f53b9a4ac97",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "я сформулировал для этого термин избыточное поле, которое типа положили вот, я не знаю, в коробку - вот только чтоб ты его купил и габариты ее увеличиваются.",
+      "start": 1101.68,
+      "end": 1112.8,
+      "polarity": "negative",
+      "aspect": "components",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Lost Cities"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-1c6afbf15f642c4a09d8feb6",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "Оно приятно нарисовано.",
+      "start": 1118.4,
+      "end": 1119.76,
+      "polarity": "positive",
+      "aspect": "artwork",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Lost Cities"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-0078cd99fd024a0f380dd787",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "Мне нравится, что оно есть.",
+      "start": 1119.84,
+      "end": 1121.12,
+      "polarity": "positive",
+      "aspect": "components",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Lost Cities"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-163909809870fd83c5058a8e",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "Просто для геймплея не нужно.",
+      "start": 1121.36,
+      "end": 1123.12,
+      "polarity": "negative",
+      "aspect": "mechanics",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Lost Cities"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-d764bb83b37dab8eabcf85e0",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [
+        "game-ascension"
+      ],
+      "original_text": "Вот в Ассеншине там выпендрились, и поле имеет форму такого типа, ну как круг",
+      "start": 1129.6,
+      "end": 1135.76,
+      "polarity": null,
+      "aspect": "components",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-812081072e6622ca818f53a0",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "во-вторых, она все равно помогает тебе сорганизоваться, понимаешь.",
+      "start": 1205.48,
+      "end": 1215.16,
+      "polarity": "positive",
+      "aspect": "components",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Амулет"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-fefe12c3a04a5af7e862bb64",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "это поле, когда ты смотришь, оно твоих первоначальных ожиданий может быть и не оправдывает,",
+      "start": 1296.96,
+      "end": 1302.48,
+      "polarity": "negative",
+      "aspect": "components",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-fb277a7150355023bce1e3ed",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "но с точки зрения удобства игроков, оно, наверное, именно свою функцию именно и вы полнять. Потому что по-другому этот интерфейс, его, наверное, можно было бы реализовать, но, наверное, это было бы менее удобно.",
+      "start": 1302.48,
+      "end": 1315.6,
+      "polarity": "positive",
+      "aspect": "components",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-1c03b1e6858e25d45c301c33",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "свое любимое дополнение вот с этими оранжевыми картами",
+      "start": 2187.84,
+      "end": 2192.32,
+      "polarity": "positive",
+      "aspect": "overall",
+      "review_status": "held",
+      "attribution": "reported",
+      "candidate_names": [
+        "Дополнение к «Семи чудесам» с оранжевыми картами"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-3271e95e23a05d7cdf5079de",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [
+        "game-dominion"
+      ],
+      "original_text": "доминион, прекрасная игра.",
+      "start": 2690.2,
+      "end": 2695.56,
+      "polarity": "positive",
+      "aspect": "overall",
+      "review_status": "draft",
+      "attribution": "own",
+      "candidate_names": [],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-4cf29290e86d960c07ba910a",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "наследие, которое подпортило впечатление",
+      "start": 2697.0,
+      "end": 2703.0,
+      "polarity": "negative",
+      "aspect": "overall",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Star Realms: наследие"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-5463fcf2c35253f9155a7ee7",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "так-то она тоже очень даже ничего.",
+      "start": 2703.0,
+      "end": 2705.0,
+      "polarity": "positive",
+      "aspect": "overall",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Star Realms"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-c6104e8abf87271a943e34bb",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "Вот две мои игры, которые я очень люблю: генералы и дюна.",
+      "start": 2818.0,
+      "end": 2823.04,
+      "polarity": "positive",
+      "aspect": "overall",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Генералы",
+        "Дюна"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-ee83ae914a6f01df74ab2768",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "Вот я именно поэтому готов с тобой согласиться в Агриколе, потому что твой личный планшет в первом ходу и твой личный планшет в 14-м ходу - это два разных планшета очень сильно. Он поменялся и он развился.",
+      "start": 2893.32,
+      "end": 2907.72,
+      "polarity": "positive",
+      "aspect": "mechanics",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Агрикола"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-bcc3f4d01d78656f2ffdcee6",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "Вот та же самая дюна, первый и последний хо на поле. Слабо отличаются, скажем так.",
+      "start": 2907.72,
+      "end": 2915.24,
+      "polarity": "negative",
+      "aspect": "mechanics",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Дюна",
+        "Dune: Imperium"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-ea09b06dec26ed6d531fcead",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "Да, будет больше солдатиков, будут выкупалены третий рабочие, но как бы принципиальных отличий таких ты не увидишь. Они, ну, какие-то косвенные признаки.",
+      "start": 2919.88,
+      "end": 2930.6,
+      "polarity": "negative",
+      "aspect": "mechanics",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Дюна",
+        "Dune: Imperium"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-5b61e7726a43b849d1f6920a",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "тут понятно, что как бы функция такая чисто географическая, но просто его применение его забавно. Не так часто мы по полю что-нибудь там щелкаем.",
+      "start": 3418.56,
+      "end": 3427.2,
+      "polarity": "positive",
+      "aspect": "mechanics",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "PitchCar"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-bc5fdb76a644f99348dbc048",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "Могу вспомнить, знаешь, очень интересно. StarCraft.",
+      "start": 3548.28,
+      "end": 3551.08,
+      "polarity": "positive",
+      "aspect": "other",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "StarCraft: The Board Game"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "evaluation-fd42b7c9be1805d7f08c8bce",
+      "episode_id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
+      "game_ids": [],
+      "original_text": "Вот здесь тоже, значит, имеет место, конечно, игра со сценариями, но очень интересно, как именно модифицируется игровое поле.",
+      "start": 3576.12,
+      "end": 3582.28,
+      "polarity": "positive",
+      "aspect": "mechanics",
+      "review_status": "held",
+      "attribution": "own",
+      "candidate_names": [
+        "Hero Quest"
       ],
       "duplicate_of": null
     }
