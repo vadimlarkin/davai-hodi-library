@@ -16,6 +16,8 @@ const content = document.getElementById('detail-content');
 const quoteAudio = new QuoteAudio(document.getElementById('quote-audio'), renderAudioState);
 const picker = document.getElementById('episode-picker');
 const search = document.getElementById('episode-search');
+const gameSearch = document.getElementById('game-search');
+const clearGameSearch = document.getElementById('clear-game-search');
 const trigger = document.getElementById('episode-trigger');
 const narrow = window.matchMedia('(max-width: 700px)');
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -38,12 +40,23 @@ const episodeDate = ep => {
 function plural(n, one, few, many) {return n%10===1&&n%100!==11?one:n%10>=2&&n%10<=4&&(n%100<12||n%100>14)?few:many;}
 const currentQuotes = () => database.quotes.filter(q => !selectedEpisode || q.episode_id === selectedEpisode);
 const gameQuotes = id => currentQuotes().filter(q => q.game_id === id);
-const visibleGames = () => {const ids=new Set(currentQuotes().map(q=>q.game_id));return database.games.filter(g=>ids.has(g.id));};
+const episodeGames = () => {const ids=new Set(currentQuotes().map(q=>q.game_id));return database.games.filter(g=>ids.has(g.id));};
+const visibleGames = () => {
+  const words = normalize(gameSearch.value).split(/\s+/).filter(Boolean);
+  return episodeGames().filter(g=>{
+    const names=normalize(`${g.name} ${g.original_name || ''}`);
+    return words.every(word=>names.includes(word));
+  });
+};
 function image(game, large = false) {
   return game.cover ? `<img src="${escapeHtml(game.cover)}" alt="Игра ${escapeHtml(game.name)}" ${large?'':'loading="lazy"'}>` : '<span class="missing-cover">Обложка уточняется</span>';
 }
 function renderLibrary() {
   const games = visibleGames();
+  const query = normalize(gameSearch.value);
+  const total = episodeGames().length;
+  clearGameSearch.hidden = !gameSearch.value;
+  document.getElementById('game-search-status').textContent = query ? `Найдено: ${games.length} ${plural(games.length,'игра','игры','игр')} из ${total}.` : '';
   const episode = database.episodes.find(ep=>ep.id===selectedEpisode);
   document.getElementById('game-total').textContent = `${games.length} ${plural(games.length,'игра','игры','игр')}`;
   document.getElementById('episode-label').textContent = episode ? episodeName(episode) : 'Все выпуски';
@@ -58,13 +71,15 @@ function renderLibrary() {
       <span class="game-name">${escapeHtml(g.name)}</span><span class="game-subtitle">${escapeHtml(g.description)}</span></button>`;
   }).join('');
   if (!games.length) {
-    grid.innerHTML = `<div class="empty-episode"><h2>${escapeHtml(episode ? episodeName(episode) : 'Картотека пополняется')}</h2><p>Игры и цитаты из этого выпуска пока не добавлены в картотеку.</p><button type="button" class="show-all-episodes">Посмотреть все игры</button></div>`;
+    grid.innerHTML = query && total ? `<div class="empty-episode"><h2>Игры не найдены</h2><p>Попробуйте другое название или очистите поиск${episode ? ', чтобы увидеть все игры этого выпуска' : ''}.</p><button type="button" class="clear-game-search">Очистить поиск</button>${episode ? '<button type="button" class="show-all-episodes">Искать во всех выпусках</button>' : ''}</div>` : `<div class="empty-episode"><h2>${escapeHtml(episode ? episodeName(episode) : 'Картотека пополняется')}</h2><p>Игры и цитаты из этого выпуска пока не добавлены в картотеку.</p><button type="button" class="show-all-episodes">Посмотреть все игры</button></div>`;
     content.innerHTML = '<h2 id="detail-title" class="empty-detail-title">Цитаты появятся здесь</h2><p class="game-description">Выберите другой выпуск или вернитесь ко всем играм.</p>';
+    if (query && total) content.innerHTML = '<h2 id="detail-title" class="empty-detail-title">Игры не найдены</h2><p class="game-description">Измените название или очистите поиск.</p>';
   }
 }
 function libraryUrl() {
   const url = new URL(location.href);
   if (selectedEpisode) url.searchParams.set('episode',selectedEpisode); else url.searchParams.delete('episode');
+  if (normalize(gameSearch.value)) url.searchParams.set('q',gameSearch.value.trim()); else url.searchParams.delete('q');
   url.searchParams.delete('quote');
   url.hash = '';
   return url;
@@ -179,6 +194,7 @@ function quoteUrl(quote) {
   // A quote link always names its episode, regardless of the sender's filter.
   url.searchParams.set('episode',quote.episode_id);
   url.searchParams.set('quote',quote.id);
+  url.searchParams.delete('q');
   url.hash = quote.game_id;
   return url.href;
 }
@@ -286,11 +302,28 @@ function renderEpisodeOptions() {
   }).join('') + (episodes.length ? '' : '<p class="episode-no-results">Выпуски не найдены. Попробуйте другой номер или название.</p>');
   document.getElementById('episode-picker-note').textContent = `${query?'Найдено':'В архиве'}: ${episodes.length} ${plural(episodes.length,'выпуск','выпуска','выпусков')}.`;
 }
+function applyGameSearch() {
+  if (!database) return;
+  quoteAudio.reset();
+  cardOpen=false;selectedQuote=null;
+  closePanel();
+  const games=visibleGames();
+  if (!games.some(g=>g.id===selectedId)) selectedId=games[0]?.id || null;
+  renderLibrary();
+  if (selectedId) selectGame(selectedId);
+  updateUrl();
+}
+function resetGameSearch() {
+  gameSearch.value='';applyGameSearch();gameSearch.focus();
+}
+gameSearch.addEventListener('input',applyGameSearch);
+gameSearch.addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();resetGameSearch();}});
+clearGameSearch.addEventListener('click',resetGameSearch);
 trigger.addEventListener('click',()=>{search.value='';renderEpisodeOptions();picker.showModal();search.focus();});
 search.addEventListener('input',renderEpisodeOptions);
 document.getElementById('close-episode-picker').addEventListener('click',()=>picker.close());
 picker.addEventListener('click',e=>{const choice=e.target.closest('[data-select-episode]');if(choice)selectEpisode(choice.dataset.selectEpisode);else if(e.target===picker){const r=picker.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)picker.close();}});
-grid.addEventListener('click',e=>{const card=e.target.closest('[data-game]');if(card)selectGame(card.dataset.game,true);else if(e.target.closest('.show-all-episodes'))selectEpisode(null);});
+grid.addEventListener('click',e=>{const card=e.target.closest('[data-game]');if(card)selectGame(card.dataset.game,true);else if(e.target.closest('.clear-game-search'))resetGameSearch();else if(e.target.closest('.show-all-episodes'))selectEpisode(null);});
 content.addEventListener('click',e=>{
   if(e.target.closest('.close-details,.back-details')) {dismissCard();return;}
   const listen=e.target.closest('[data-listen-quote]');
@@ -318,6 +351,12 @@ function restoreLocation(initial = false) {
   const episode=quote?.episode_id || url.searchParams.get('episode');
   const gameId=quote?.game_id || url.hash.slice(1);
   const validGame=database.games.some(g=>g.id===gameId) && database.quotes.some(q=>q.game_id===gameId && (!episode || q.episode_id===episode));
+  gameSearch.value=url.searchParams.get('q') || '';
+  if (validGame) {
+    const game=database.games.find(g=>g.id===gameId);
+    const names=normalize(`${game.name} ${game.original_name || ''}`);
+    if (!normalize(gameSearch.value).split(/\s+/).every(word=>names.includes(word))) gameSearch.value='';
+  }
   cardOpen=validGame;selectedQuote=validGame && quote ? quote.id : null;
   selectedId=validGame ? gameId : selectedId;
   selectEpisode(database.episodes.some(ep=>ep.id===episode)?episode:null,false);
@@ -330,4 +369,4 @@ function restoreLocation(initial = false) {
 window.addEventListener('pagehide',()=>quoteAudio.reset());
 window.addEventListener('popstate',()=>{if(database)restoreLocation();});
 window.addEventListener('hashchange',()=>{if(database)restoreLocation();});
-fetch('data.json?revision=6c6ee22b77c8').then(r=>{if(!r.ok)throw new Error('data');return r.json();}).then(d=>{database=d;restoreLocation(true);trigger.disabled=false;}).catch(()=>{document.getElementById('error').hidden=false;document.getElementById('error').textContent='Не удалось открыть библиотеку. Обновите страницу.';});
+fetch('data.json?revision=6c6ee22b77c8').then(r=>{if(!r.ok)throw new Error('data');return r.json();}).then(d=>{database=d;restoreLocation(true);trigger.disabled=false;gameSearch.disabled=false;}).catch(()=>{document.getElementById('error').hidden=false;document.getElementById('error').textContent='Не удалось открыть библиотеку. Обновите страницу.';});

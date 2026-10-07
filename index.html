@@ -8,10 +8,10 @@
   <meta name="description" content="Настольные игры в подкасте «Давай ходи»: цитаты, выпуски и тайминги.">
   <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png?v=2">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=0.5.0">
+  <link rel="stylesheet" href="style.css?v=0.5.1">
   <script defer src="quote-card.js?v=0.5.0"></script>
   <script defer src="quote-audio.js?v=0.5.0"></script>
-  <script defer src="app.js?v=0.5.0&amp;content=6c6ee22b77c8"></script>
+  <script defer src="app.js?v=0.5.1&amp;content=6c6ee22b77c8"></script>
 </head>
 <body>
   <header class="masthead">
@@ -33,6 +33,14 @@
           <button type="button" id="episode-trigger" class="episode-trigger" aria-haspopup="dialog" aria-controls="episode-picker" disabled><span id="episode-label">Все выпуски</span><span aria-hidden="true">⌄</span></button>
           <span id="episode-meta"></span>
         </div>
+      </div>
+      <div class="game-search">
+        <label for="game-search">Найти игру</label>
+        <div class="game-search-field">
+          <input id="game-search" type="search" placeholder="Русское или оригинальное название" autocomplete="off" aria-controls="games" aria-describedby="game-search-status" disabled>
+          <button type="button" id="clear-game-search" aria-label="Очистить поиск игр" hidden>×</button>
+        </div>
+        <p id="game-search-status" role="status" aria-live="polite" aria-atomic="true"></p>
       </div>
       <div class="grid" id="games" aria-label="Библиотека игр"></div>
       <p class="library-note" id="library-note">В картотеке цитаты из выпусков 1–25. Неясные названия добавим после проверки.</p>
