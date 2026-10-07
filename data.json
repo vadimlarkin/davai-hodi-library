@@ -1,6 +1,6 @@
 {
-  "version": "0.6.1",
-  "content_revision": "548178efd617",
+  "version": "0.7.0",
+  "content_revision": "f97734185d51",
   "episodes": [
     {
       "id": "episode-001",
@@ -4259,6 +4259,15 @@
       "cover": "assets/twilight-struggle.jpg"
     },
     {
+      "id": "game-bgg-20551",
+      "name": "Сёгун",
+      "original_name": "Shogun",
+      "bgg_id": 20551,
+      "bgg_url": "https://boardgamegeek.com/boardgame/20551",
+      "description": "2006 · Настольная игра",
+      "cover": "assets/20551.jpg"
+    },
+    {
       "id": "game-taiga",
       "name": "Тайга",
       "original_name": "Taiga",
@@ -4874,11 +4883,11 @@
     },
     {
       "id": "quote-e003-019",
-      "game_id": "game-7-wonders",
+      "game_id": "game-bgg-20551",
       "episode_id": "episode-3236bb2c-8c2c-409f-85fd-718403d3f124",
       "start": 2944.76,
       "end": 2959.6,
-      "text": "Парни косятся глазами на «Цивилизацию» Сида Мейера или в 7 Wonders поиграть, а девушки: «Нет, давайте что-то весёлое»."
+      "text": "Парни косятся глазами на «Цивилизацию» Сида Мейера или в Сёгун поиграть, а девушки: «Нет, давайте что-то весёлое»."
     },
     {
       "id": "quote-e004-001",

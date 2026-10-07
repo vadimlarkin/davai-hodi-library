@@ -8,10 +8,12 @@
   <meta name="description" content="Настольные игры в подкасте «Давай ходи»: цитаты, выпуски и тайминги.">
   <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png?v=2">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=0.6.1">
+  <link rel="stylesheet" href="style.css?v=0.7.0">
   <script defer src="quote-card.js?v=0.5.0"></script>
   <script defer src="quote-audio.js?v=0.5.0"></script>
-  <script defer src="app.js?v=0.6.1&amp;content=548178efd617"></script>
+  <script defer src="app.js?v=0.7.0&amp;content=f97734185d51"></script>
+  <script defer src="quote-feedback.js?v=0.7.0"></script>
+  <script defer src="quote-votes.js?v=0.7.0"></script>
 </head>
 <body>
   <header class="masthead">
@@ -29,7 +31,7 @@
         <p class="eyebrow">НАСТОЛЬНЫЕ ИГРЫ В НАШИХ РАЗГОВОРАХ</p>
         <h1 id="library-title">Игры на слух<span>.</span></h1>
         <div class="library-meta">
-          <span id="game-total">106 игр</span><span class="meta-dot">·</span>
+          <span id="game-total">107 игр</span><span class="meta-dot">·</span>
           <button type="button" id="episode-trigger" class="episode-trigger" aria-haspopup="dialog" aria-controls="episode-picker" disabled><span id="episode-label">Все выпуски</span><span aria-hidden="true">⌄</span></button>
           <span id="episode-meta"></span>
         </div>
@@ -84,6 +86,23 @@
     <div class="image-share-actions"><button type="button" id="share-quote-image" class="share-copy" disabled>Поделиться картинкой</button><a id="download-quote-image" class="image-download" download hidden>Сохранить картинку</a></div>
     <button type="button" id="copy-share-link" class="copy-link-secondary">Копировать ссылку на цитату</button>
     <div id="manual-share-link" hidden><label class="sr-only" for="share-link">Ссылка на выбранную цитату</label><input id="share-link" type="text" readonly><p id="copy-link-note">Скопируйте выделенную ссылку и отправьте её.</p></div>
+  </dialog>
+  <button type="button" id="report-selection" class="report-selection" hidden>Сообщить об ошибке</button>
+  <dialog id="correction-dialog" class="share-dialog correction-dialog" aria-labelledby="correction-title" aria-describedby="correction-help">
+    <div class="share-dialog-heading"><h2 id="correction-title">Ошибка в цитате</h2><button type="button" class="icon-button" id="close-correction" aria-label="Закрыть замечание">×</button></div>
+    <p id="correction-help">Выделенный фрагмент сохраним для проверки по записи.</p>
+    <blockquote id="correction-preview"></blockquote>
+    <form id="correction-form">
+      <label for="correction-kind">Что исправить?</label>
+      <select id="correction-kind"><option value="text">Текст цитаты</option><option value="game">Привязку к игре</option><option value="both">Текст и игру</option></select>
+      <div id="correction-game-fields" hidden><label for="correction-game">Правильная игра</label><input id="correction-game" type="text" maxlength="150" list="correction-games" placeholder="Название игры"><datalist id="correction-games"></datalist><label for="correction-game-url">Ссылка на BGG <span>(необязательно)</span></label><input id="correction-game-url" type="url" maxlength="200" placeholder="https://boardgamegeek.com/boardgame/…"></div>
+      <label for="correction-replacement">Как правильно? <span>(необязательно)</span></label>
+      <textarea id="correction-replacement" maxlength="2000" rows="3" placeholder="Правильное слово или фраза"></textarea>
+      <label for="correction-comment">Комментарий <span>(необязательно)</span></label>
+      <textarea id="correction-comment" maxlength="1000" rows="3" placeholder="Что слышно в записи?"></textarea>
+      <p id="correction-status" role="status" aria-live="polite"></p>
+      <button type="submit" id="send-correction" class="share-copy">Отправить замечание</button>
+    </form>
   </dialog>
   <div id="share-notice" class="share-notice" role="status" hidden></div>
   <audio id="quote-audio" preload="none" hidden></audio>
