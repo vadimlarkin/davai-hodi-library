@@ -57,6 +57,14 @@ function opinionBadges(id) {
   const {positive,negative,total,pending}=opinionCounts(id);
   return total ? `<span class="opinion-badges">${pending?'<span class="opinion-pending">Предварительно</span>':''}<span class="opinion-positive">${positive} ${plural(positive,'похвала','похвалы','похвал')}</span><span class="opinion-negative">${negative} ${plural(negative,'критическое замечание','критических замечания','критических замечаний')}</span></span>` : '';
 }
+// Compact cover counters; detailed opinions are temporarily hidden.
+function opinionCounters(id) {
+  const {positive,negative,pending}=opinionCounts(id);
+  const suffix=pending?' (предварительно, есть неподтверждённые реплики)':'';
+  const counter=(count,kind,label)=>count ? `<span class="opinion-counter opinion-counter-${kind}" title="${label}: ${count}${suffix}" aria-label="${label}: ${count}${suffix}">${count}</span>` : '';
+  const counters=counter(positive,'positive','Похвалы')+counter(negative,'negative','Критические замечания');
+  return counters ? `<span class="opinion-counters">${counters}</span>` : '';
+}
 function opinionItem(e, showGame=false) {
   const ep=database.episodes.find(ep=>ep.id===e.episode_id);
   const names=e.game_ids.map(id=>database.games.find(g=>g.id===id)?.name).filter(Boolean);
@@ -130,8 +138,8 @@ function renderLibrary() {
   grid.innerHTML = games.map(g => {
     const n = gameQuotes(g.id).length;
     return `<button type="button" class="game-card" data-game="${escapeHtml(g.id)}" aria-pressed="${g.id===selectedId}" aria-label="${escapeHtml(g.name)}. ${n} ${plural(n,'цитата','цитаты','цитат')}. Открыть">
-      <span class="quote-count">${n} ${plural(n,'цитата','цитаты','цитат')}</span><span class="cover-stage">${image(g)}</span>
-      <span class="game-name">${escapeHtml(g.name)}</span><span class="game-subtitle">${escapeHtml(g.description)}</span>${opinionBadges(g.id)}</button>`;
+      <span class="quote-count">${n} ${plural(n,'цитата','цитаты','цитат')}</span><span class="cover-stage">${image(g)}${opinionCounters(g.id)}</span>
+      <span class="game-name">${escapeHtml(g.name)}</span><span class="game-subtitle">${escapeHtml(g.description)}</span></button>`;
   }).join('');
   if (!games.length) {
     grid.innerHTML = query && total ? `<div class="empty-episode"><h2>Игры не найдены</h2><p>Попробуйте другое название или очистите поиск${episode ? ', чтобы увидеть все игры этого выпуска' : ''}.</p><button type="button" class="clear-game-search">Очистить поиск</button>${episode ? '<button type="button" class="show-all-episodes">Искать во всех выпусках</button>' : ''}</div>` : `<div class="empty-episode"><h2>${escapeHtml(episode ? episodeName(episode) : 'Картотека пополняется')}</h2><p>Игры и цитаты из этого выпуска пока не добавлены в картотеку.</p><button type="button" class="show-all-episodes">Посмотреть все игры</button></div>`;
@@ -177,11 +185,10 @@ function selectGame(id, userAction = false) {
   const episodes = [...new Set(quotes.map(q => q.episode_id))];
   grid.querySelectorAll('[data-game]').forEach(card => card.setAttribute('aria-pressed', card.dataset.game === id));
   content.innerHTML = `<div class="details-topline"><button type="button" class="back-details" aria-label="Вернуться к библиотеке">← Все игры</button><p class="eyebrow">ЧТО МЫ ГОВОРИЛИ</p><button type="button" class="icon-button close-details" aria-label="Закрыть карточку">×</button></div>
-    <div class="game-profile"><div class="detail-cover">${image(game,true)}</div><div><h2 id="detail-title">${escapeHtml(game.name)}</h2>
+    <div class="game-profile"><div class="detail-cover">${image(game,true)}${opinionCounters(id)}</div><div><h2 id="detail-title">${escapeHtml(game.name)}</h2>
     ${game.original_name&&game.original_name!==game.name?`<p class="original-name">${escapeHtml(game.original_name)}</p>`:''}
     <a class="bgg-link" href="${escapeHtml(game.bgg_url)}" target="_blank" rel="noopener">Карточка на BGG</a></div></div>
     <p class="game-description">${escapeHtml(game.description)}</p>
-    ${renderOpinions(id)}
     <div class="quotes-summary"><strong>${quotes.length} ${plural(quotes.length,'цитата','цитаты','цитат')}</strong><span>${episodes.length} ${plural(episodes.length,'выпуск','выпуска','выпусков')}</span></div>
     ${episodes.map(epId => {const ep=database.episodes.find(ep=>ep.id===epId);return quotes.filter(q=>q.episode_id===epId).map(q => `<article class="quote-item${q.id===selectedQuote?' is-highlighted':''}" id="${escapeHtml(q.id)}" tabindex="-1" aria-label="Цитата: ${escapeHtml(quoteEpisodeName(ep))}, ${time(q.start)}"><blockquote>«${escapeHtml(q.text)}»</blockquote>
     <div class="quote-footer"><p class="quote-source"><button type="button" class="quote-episode" data-episode="${escapeHtml(ep.id)}" aria-label="Показать игры из ${ep.number==null?'этого выпуска':`выпуска ${ep.number}`}">${escapeHtml(quoteEpisodeName(ep))}</button> · ${time(q.start)}</p><div class="quote-buttons">${audioButton(q,ep)}<button type="button" class="share-quote" data-share-quote="${escapeHtml(q.id)}" aria-label="Поделиться цитатой: ${escapeHtml(quoteEpisodeName(ep))}, ${time(q.start)}"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 16V3m-5 5 5-5 5 5M5 13v7h14v-7"/></svg>Поделиться</button></div></div>${audioProgress(q)}</article>`).join('');}).join('')}`;
