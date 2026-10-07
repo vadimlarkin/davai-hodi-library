@@ -1,6 +1,6 @@
 {
   "version": "0.8.0",
-  "content_revision": "350169c56173",
+  "content_revision": "8313cead501a",
   "episodes": [
     {
       "id": "episode-001",
@@ -5123,7 +5123,7 @@
     },
     {
       "id": "quote-e006-002",
-      "game_id": "game-7-wonders",
+      "game_id": "game-nations",
       "episode_id": "episode-74cf5740-1fb5-47a1-b850-837147a36a93",
       "start": 173.64,
       "end": 197.16,
@@ -6591,7 +6591,7 @@
       "episode_id": "episode-ea1b1490-a009-4d2a-be48-3d15508bb6b8",
       "start": 878.16,
       "end": 883.6,
-      "text": "Нет, Lafletter — очень хорошая игра. Она на вкус и цвет, но если она попадёт, то она попадёт."
+      "text": "Нет, Love Letter — очень хорошая игра. Она на вкус и цвет, но если она попадёт, то она попадёт."
     },
     {
       "id": "quote-auto-c78f7e7f44346ca62cf417ba",
@@ -6599,7 +6599,7 @@
       "episode_id": "episode-ea1b1490-a009-4d2a-be48-3d15508bb6b8",
       "start": 888.32,
       "end": 896.16,
-      "text": "Лучшая компанейская игра La Flat Letter, да. Хотя, опять же, максимум четыре игрока — очень-то странно."
+      "text": "Лучшая компанейская игра Love Letter, да. Хотя, опять же, максимум четыре игрока — очень-то странно."
     },
     {
       "id": "quote-auto-5b804c4e5ac958dc6e9b6b51",
@@ -27237,7 +27237,7 @@
       "end": 1834.28,
       "polarity": "positive",
       "aspect": "overall",
-      "review_status": "draft",
+      "review_status": "accepted",
       "attribution": "own",
       "candidate_names": [],
       "duplicate_of": null
@@ -27253,7 +27253,7 @@
       "end": 1839.08,
       "polarity": "positive",
       "aspect": "mechanics",
-      "review_status": "draft",
+      "review_status": "accepted",
       "attribution": "own",
       "candidate_names": [],
       "duplicate_of": null
