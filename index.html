@@ -8,10 +8,10 @@
   <meta name="description" content="Настольные игры в подкасте «Давай ходи»: цитаты, выпуски и тайминги.">
   <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png?v=2">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=0.5.1">
+  <link rel="stylesheet" href="style.css?v=0.6.0">
   <script defer src="quote-card.js?v=0.5.0"></script>
   <script defer src="quote-audio.js?v=0.5.0"></script>
-  <script defer src="app.js?v=0.5.1&amp;content=6c6ee22b77c8"></script>
+  <script defer src="app.js?v=0.6.0&amp;content=676e9d9aa092"></script>
 </head>
 <body>
   <header class="masthead">
@@ -42,6 +42,8 @@
         </div>
         <p id="game-search-status" role="status" aria-live="polite" aria-atomic="true"></p>
       </div>
+      <button type="button" class="all-opinions" id="open-evaluations" disabled>Оценки из разговоров</button>
+      <p class="opinion-note" id="evaluations-overview"></p>
       <div class="grid" id="games" aria-label="Библиотека игр"></div>
       <p class="library-note" id="library-note">В картотеке цитаты из выпусков 1–25. Неясные названия добавим после проверки.</p>
       <footer class="library-footer">
@@ -54,6 +56,18 @@
       <div class="details-content" id="detail-content"><p class="loading">Открываем картотеку…</p></div>
     </aside>
   </main>
+
+  <dialog id="evaluation-picker" class="episode-picker evaluation-picker" aria-labelledby="evaluation-picker-title">
+    <div class="episode-picker-heading"><h2 id="evaluation-picker-title">Оценки из разговоров</h2><button type="button" class="icon-button" id="close-evaluations" aria-label="Закрыть оценки">×</button></div>
+    <p class="opinion-note">Здесь есть непроверенные фрагменты. Привязка к игре и смысл оценки могут измениться после разбора.</p>
+    <label for="evaluation-search">Поиск по игре или тексту реплики</label>
+    <input id="evaluation-search" type="search" placeholder="Название или слова из реплики" autocomplete="off">
+    <label for="evaluation-filter">Какие оценки показать</label>
+    <select id="evaluation-filter"><option value="all">Все оценки</option><option value="accepted">Проверенные</option><option value="pending">Неподтверждённые</option><option value="unresolved">Нужно разобрать</option></select>
+    <p class="opinion-note" id="evaluation-list-status" role="status"></p>
+    <div id="evaluation-list"></div>
+    <div class="evaluation-pages"><button type="button" id="evaluation-previous">← Назад</button><span id="evaluation-page"></span><button type="button" id="evaluation-next">Далее →</button></div>
+  </dialog>
 
   <dialog id="episode-picker" class="episode-picker" aria-labelledby="episode-picker-title">
     <div class="episode-picker-heading"><h2 id="episode-picker-title">Выберите выпуск</h2><button type="button" class="icon-button" id="close-episode-picker" aria-label="Закрыть список выпусков">×</button></div>
