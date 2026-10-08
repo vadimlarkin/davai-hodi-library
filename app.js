@@ -78,7 +78,7 @@ function renderLibrary() {
   document.getElementById('library-note').hidden = Boolean(selectedEpisode);
   grid.innerHTML = goldenCard() + games.map(g => {
     const n = gameQuotes(g.id).length;
-    const count = n ? `${n} ${plural(n,'цитата','цитаты','цитат')}` : 'Фрагменты';
+    const count = n ? `${n} ${plural(n,'цитата','цитаты','цитат')}` : 'Без цитат';
     return `<button type="button" class="game-card" data-game="${escapeHtml(g.id)}" aria-pressed="${g.id===selectedId}" aria-label="${escapeHtml(g.name)}. ${count}. Открыть">
       <span class="quote-count">${count}</span><span class="cover-stage">${image(g)}</span>
       <span class="game-name">${escapeHtml(g.name)}</span><span class="game-subtitle">${escapeHtml(g.description)}</span></button>`;
@@ -161,7 +161,7 @@ function selectGame(id, userAction = false) {
   if (id === goldenId) { selectGolden(userAction); return; }
   const game = database.games.find(g => g.id === id);
   const quotes = gameQuotes(id);
-  if (!game || !quotes.length) return;
+  if (!game || (!quotes.length && !game.standalone)) return;
   if (selectedId !== id) quoteAudio.reset();
   const wasOpen = cardOpen;
   if (userAction) {cardOpen = true;selectedQuote = null;}
@@ -174,7 +174,7 @@ function selectGame(id, userAction = false) {
     ${game.bgg_url?`<a class="bgg-link" href="${escapeHtml(game.bgg_url)}" target="_blank" rel="noopener">Карточка на BGG</a>`:`<p class="original-name">${game.catalog_kind==='puzzle'?'Головоломка':'Традиционная игра'}</p>`}${game.image_origin==='generated'?'<p class="original-name">Авторская иллюстрация</p>':''}</div></div>
     <p class="game-description">${escapeHtml(game.description)}</p>
     ${quotes.length?`<div class="quotes-summary"><strong>${quotes.length} ${plural(quotes.length,'цитата','цитаты','цитат')}</strong><span>${episodes.length} ${plural(episodes.length,'выпуск','выпуска','выпусков')}</span></div>`:''}
-    ${quotes.map(q=>renderQuote(q)).join('')}`;
+    ${quotes.length ? quotes.map(q=>renderQuote(q)).join('') : '<p class="game-description">Цитаты для этой карточки пока не добавлены.</p>'}`;
   renderAudioState(quoteAudio.state);
   panel.scrollTop = 0;
   syncPanel();
