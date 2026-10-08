@@ -348,13 +348,13 @@ function selectEpisode(id, userAction = true) {
 }
 function renderEpisodeOptions() {
   const query = normalize(search.value);
-  const episodes = [...database.episodes].sort((a,b)=>(b.number??-Infinity)-(a.number??-Infinity)).filter(ep=>/^\d+$/.test(query) ? String(ep.number)===String(Number(query)) : normalize(episodeName(ep)).includes(query));
+  const episodes = [...database.episodes].filter(ep=>database.quotes.some(q=>q.episode_id===ep.id)).sort((a,b)=>(b.number??-Infinity)-(a.number??-Infinity)).filter(ep=>/^\d+$/.test(query) ? String(ep.number)===String(Number(query)) : normalize(episodeName(ep)).includes(query));
   document.getElementById('episode-options').innerHTML = `<button type="button" class="episode-option all-episodes" data-select-episode="" aria-pressed="${!selectedEpisode}"><span><strong>Все выпуски</strong><small>Все игры и цитаты картотеки</small></span><span aria-hidden="true">${!selectedEpisode?'✓':''}</span></button>` + episodes.map(ep=>{
     const quotes=database.quotes.filter(q=>q.episode_id===ep.id);
     const count=new Set(quotes.map(q=>q.game_id)).size;
     return `<button type="button" class="episode-option" data-select-episode="${escapeHtml(ep.id)}" aria-pressed="${ep.id===selectedEpisode}"><span><strong>${escapeHtml(episodeName(ep))}</strong><small class="${count?'episode-ready':'episode-pending'}">${count?`${count} ${plural(count,'игра','игры','игр')} · ${quotes.length} ${plural(quotes.length,'цитата','цитаты','цитат')}`:'Игры пока не добавлены'}</small></span><span aria-hidden="true">${ep.id===selectedEpisode?'✓':''}</span></button>`;
   }).join('') + (episodes.length ? '' : '<p class="episode-no-results">Выпуски не найдены. Попробуйте другой номер или название.</p>');
-  document.getElementById('episode-picker-note').textContent = `${query?'Найдено':'В архиве'}: ${episodes.length} ${plural(episodes.length,'выпуск','выпуска','выпусков')}.`;
+  document.getElementById('episode-picker-note').textContent = `${query?'Найдено':'В картотеке'}: ${episodes.length} ${plural(episodes.length,'выпуск','выпуска','выпусков')}.`;
 }
 function applyGameSearch() {
   if (!database) return;
