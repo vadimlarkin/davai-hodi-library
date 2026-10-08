@@ -58,7 +58,7 @@ const quoteCard = (() => {
     ctx.fillText('ЧТО МЫ ГОВОРИЛИ ПРО',padding,76);
     ctx.fillStyle='#16191c';ctx.font='bold 46px Arial, Helvetica, sans-serif';
     titleLines.forEach((line,i)=>ctx.fillText(line,padding,132+i*56));
-    ctx.fillStyle='#f04e37';ctx.fillRect(padding,quoteTop,5,lines.length*lineHeight-12);
+    ctx.fillStyle='#258b75';ctx.fillRect(padding,quoteTop,5,lines.length*lineHeight-12);
     ctx.fillStyle='#16191c';ctx.font=`${size}px Georgia, "Times New Roman", serif`;
     lines.forEach((line,i)=>ctx.fillText(line,padding+32,quoteTop+i*lineHeight));
     const footer=canvas.height-footerHeight;
