@@ -1,6 +1,6 @@
 {
   "version": "0.10.3",
-  "content_revision": "d030abfbfee8",
+  "content_revision": "70b9e0ba596b",
   "episodes": [
     {
       "id": "episode-001",
@@ -264,7 +264,11 @@
       "title": "Подземелье раллийных покемонов",
       "date": "2014-06-25",
       "duration": 5733,
-      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233877_de0b9f215c2e9a42641c.mp3"
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233877_de0b9f215c2e9a42641c.mp3",
+      "audio_seek_index": {
+        "url": "audio-indexes/episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7-c055d52b4419f19df0dd.json",
+        "sha256": "bec49fbaf24ea19d7b6b2b19da09c4f1bbde59596719dd96759c7dfb046abaef"
+      }
     },
     {
       "id": "episode-e7e4a124-c587-45dd-94c6-ee83c56f97c1",
@@ -272,7 +276,11 @@
       "title": "Риск, риск и немного обо всём остальном",
       "date": "2014-07-07",
       "duration": 4144,
-      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233892_6bc085d54df5634f08dc.mp3"
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233892_6bc085d54df5634f08dc.mp3",
+      "audio_seek_index": {
+        "url": "audio-indexes/episode-e7e4a124-c587-45dd-94c6-ee83c56f97c1-ab0854d5538716bf0156.json",
+        "sha256": "3c0cc9ecd6ba85ed27dc6c67ca6a092d200f9c80173fb99e51a07d2bbdfb8740"
+      }
     },
     {
       "id": "episode-5a60120d-be22-4f84-88f9-922778d51194",
@@ -280,7 +288,11 @@
       "title": "Эссен, Игромир и Комик Кон",
       "date": "2014-11-04",
       "duration": 3275,
-      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233904_dabce8d494099b82a311.mp3"
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233904_dabce8d494099b82a311.mp3",
+      "audio_seek_index": {
+        "url": "audio-indexes/episode-5a60120d-be22-4f84-88f9-922778d51194-2ca80faf1f4b6a1d382e.json",
+        "sha256": "d561f6f2792e7bacab2591db67cad9491b2a20c92fec9a94eadb13fafed76a15"
+      }
     },
     {
       "id": "episode-a8df6075-f0b7-427f-8b5d-068f9962b1a6",
@@ -288,7 +300,11 @@
       "title": "Репортажи с Игрокона (лучше поздно чем никогда)",
       "date": "2014-11-05",
       "duration": 1200,
-      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233912_bf1cff1d512c8d5308c0.mp3"
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233912_bf1cff1d512c8d5308c0.mp3",
+      "audio_seek_index": {
+        "url": "audio-indexes/episode-a8df6075-f0b7-427f-8b5d-068f9962b1a6-7a6478b413baebb71226.json",
+        "sha256": "0b00b1c34a2ab98b29e96cf8580679b8588b7b23c1ddebd93b004f28397008b9"
+      }
     },
     {
       "id": "episode-531f626e-7ae6-4323-8074-7e0ddef5720b",
@@ -296,7 +312,11 @@
       "title": "Аутизм и Рисование",
       "date": "2014-11-29",
       "duration": 4856,
-      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233922_7e5b2d63503b457c5aae.mp3"
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233922_7e5b2d63503b457c5aae.mp3",
+      "audio_seek_index": {
+        "url": "audio-indexes/episode-531f626e-7ae6-4323-8074-7e0ddef5720b-31bec3c8b760ccf29254.json",
+        "sha256": "a1e9b0079a35c0b139751ec88b44f06f80ee59d3ebfa282d233c440ec760451b"
+      }
     },
     {
       "id": "episode-23ab4b53-86d0-453a-ba05-adbab2d7d8a0",
@@ -304,7 +324,11 @@
       "title": "Дурак и Ягель",
       "date": "2014-12-14",
       "duration": 3762,
-      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233936_9ffdbf41a34084a7291a.mp3"
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233936_9ffdbf41a34084a7291a.mp3",
+      "audio_seek_index": {
+        "url": "audio-indexes/episode-23ab4b53-86d0-453a-ba05-adbab2d7d8a0-da3bb0d90977ea313417.json",
+        "sha256": "6a9beee084bd17ff43f0b3214bbb5b84ceee7903e9d7ba3f68372baa6798e715"
+      }
     },
     {
       "id": "episode-c94d4ba9-07ca-42e5-a1e2-b9ca8b2b1600",
@@ -312,7 +336,11 @@
       "title": "Запоздалые итоги 2014 года и робкие надежды на 2015 год. (32)",
       "date": "2015-02-17",
       "duration": 4942,
-      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233951_6df4126f66c64e7833e2.mp3"
+      "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791233951_6df4126f66c64e7833e2.mp3",
+      "audio_seek_index": {
+        "url": "audio-indexes/episode-c94d4ba9-07ca-42e5-a1e2-b9ca8b2b1600-520138223734cc16d9b6.json",
+        "sha256": "8a57845df2a94b11a137022b4d88477c60e73bc03d5495cffbf848ec35be783c"
+      }
     },
     {
       "id": "episode-31dd0497-f320-49ac-b48d-7f54786a0ba3",
@@ -3546,6 +3574,15 @@
       "cover": "assets/city-of-horror.jpg"
     },
     {
+      "id": "game-bgg-62222",
+      "name": "Commands & Colors: Napoleonics",
+      "original_name": "Commands & Colors: Napoleonics",
+      "bgg_id": 62222,
+      "bgg_url": "https://boardgamegeek.com/boardgame/62222",
+      "description": "2010 · Настольная игра",
+      "cover": "assets/62222.jpg"
+    },
+    {
       "id": "game-bgg-448646",
       "name": "Compress",
       "original_name": "Compress",
@@ -3643,6 +3680,15 @@
       "bgg_url": "https://boardgamegeek.com/boardgame/2402",
       "description": "2001 · Настольная игра",
       "cover": "assets/2402.jpg"
+    },
+    {
+      "id": "game-bgg-129437",
+      "name": "Legendary",
+      "original_name": "Legendary: A Marvel Deck Building Game",
+      "bgg_id": 129437,
+      "bgg_url": "https://boardgamegeek.com/boardgame/129437",
+      "description": "2012 · Настольная игра",
+      "cover": "assets/129437.jpg"
     },
     {
       "id": "game-bgg-50",
@@ -4218,6 +4264,15 @@
       "cover": "assets/maya.jpg"
     },
     {
+      "id": "game-bgg-17396",
+      "name": "Маневр",
+      "original_name": "Manoeuvre",
+      "bgg_id": 17396,
+      "bgg_url": "https://boardgamegeek.com/boardgame/17396",
+      "description": "2008 · Настольная игра",
+      "cover": "assets/17396.jpg"
+    },
+    {
       "id": "game-manhattan-project",
       "name": "Манхэттенский проект",
       "original_name": "The Manhattan Project",
@@ -4402,6 +4457,15 @@
       "bgg_url": "https://boardgamegeek.com/boardgame/3076",
       "description": "Классика евроигр",
       "cover": "assets/puerto-rico.jpg"
+    },
+    {
+      "id": "game-bgg-60435",
+      "name": "Раллимен",
+      "original_name": "Rallyman",
+      "bgg_id": 60435,
+      "bgg_url": "https://boardgamegeek.com/boardgame/60435",
+      "description": "2009 · Настольная игра",
+      "cover": "assets/60435.png"
     },
     {
       "id": "game-robinson-crusoe",
@@ -8017,6 +8081,222 @@
       "start": 4086.4,
       "end": 4110.76,
       "text": "Я про Compress сказал: это не игра. Наверное, это всё-таки игра, да, не хуже, чем придумывать пароль или судоку решать, или ещё что-то. Но это, наверное, немного не та эмоция, которую я бы хотел от игры, и здесь взаимодействие вообще нулевое. То есть каждый просто пытается запомнить тот же набор цифр, а друг с другом-то ты не играешь."
+    },
+    {
+      "id": "quote-auto-7c968a6266459ed2ee912bf4",
+      "game_id": "game-bgg-62222",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 236.8,
+      "end": 247.68,
+      "text": "На эти блоки нужно наклеивать наклейки. На каждый блок с двух сторон клеится изображение какого-то солдатика. Это такое занятие — надо сесть и поклеить эти наклейки."
+    },
+    {
+      "id": "quote-auto-ae520b07c1bf30af0edaa264",
+      "game_id": "game-bgg-62222",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 247.68,
+      "end": 263.2,
+      "text": "Я потратил на это примерно два часа и обнаружил, что один лист с наклейками у меня попался дефектный. Там была неверная вырубка, со смещением. И наклейки фактически все испортились."
+    },
+    {
+      "id": "quote-auto-09d8941aa589068eee234f05",
+      "game_id": "game-dominion",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 1525.52,
+      "end": 1532.24,
+      "text": "«Доминион» был оригинальный, а всё остальное — это уже какое-то копирование, да?"
+    },
+    {
+      "id": "quote-auto-d3baa673f55752e801bfed6c",
+      "game_id": "game-dominion",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 1537.92,
+      "end": 1549.84,
+      "text": "Что такое «Доминион»? У тебя есть колода, на столе лежат карты, и ты в руке собираешь денежку и пытаешься что-то купить: или хорошую карту, или победные очки."
+    },
+    {
+      "id": "quote-auto-bd2f25ff446c225e0c301f06",
+      "game_id": "game-bgg-68425",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 1562.48,
+      "end": 1586.8,
+      "text": "В этот момент срабатывает карта, которую ты взял со стола. Ты можешь усилить её эффект, если у тебя на руке есть подходящие карточки. Более того, все остальные игроки тоже в твой ход могут воспользоваться бонусом выбранной тобой карты и усилить её эффект для себя. Такой подход — новаторский, в «Доминионе» его нету."
+    },
+    {
+      "id": "quote-auto-a103568db9fecc93b1138262",
+      "game_id": "game-bgg-68425",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 1590.12,
+      "end": 1601.56,
+      "text": "В «Пуэрто-Рико» и в Race for the Galaxy, например, работала механика выбора роли. Она соединилась с колодостроением — получилась очень прикольная игрушка."
+    },
+    {
+      "id": "quote-auto-62a401b44565b97c3e670844",
+      "game_id": "game-bgg-68425",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 1637.0,
+      "end": 1643.08,
+      "text": "А Eminent Domain — это именно свой какой-то оригинальный подход. Этим она и ценна."
+    },
+    {
+      "id": "quote-auto-270154882872ac07720b22fd",
+      "game_id": "game-bgg-68425",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 1652.44,
+      "end": 1664.84,
+      "text": "Хотя всё равно Eminent Domain — это «Доминион» со свистелками и перделками."
+    },
+    {
+      "id": "quote-auto-4c19e36ea6be4a60a5ab5bd0",
+      "game_id": "game-bgg-17396",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 1832.44,
+      "end": 1855.8,
+      "text": "Каждый ход ты можешь подвинуть одного солдатика у себя на поле, а потом любым можешь напасть на врага. Но чтобы напасть, у тебя должна быть карта именно этого солдата. Есть у тебя восемь отрядов — например, у меня был какой-то четвёртый элитный полк. Если у тебя есть карточка четвёртого элитного полка, ты можешь им напасть. Если нет, то не можешь."
+    },
+    {
+      "id": "quote-auto-889674eb091d3b96a996a07c",
+      "game_id": "game-bgg-17396",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 1885.16,
+      "end": 1914.96,
+      "text": "Эти карты имитируют туман войны: ты не знаешь, что есть у противника в руке, а чего нет. Тебе неизвестно, кто у него будет атаковать, в какой последовательности и так далее. Игрушка оказалась достаточно простой — правила, на мой взгляд, абсолютно элементарные, — но при этом очень глубокой. Ты маневрируешь этими солдатиками, пытаешься занять более выгодную позицию, рассчитать место и время для удара."
+    },
+    {
+      "id": "quote-auto-ffd7aee2bb304f9d3445158a",
+      "game_id": "game-bgg-60435",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 2116.56,
+      "end": 2127.36,
+      "text": "Примерно то же самое происходит и с «Раллименом». Эта игра очень хорошо имитирует процесс раллийных гонок."
+    },
+    {
+      "id": "quote-auto-1a51585c69979a64444b05af",
+      "game_id": "game-bgg-37904",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 2197.12,
+      "end": 2214.72,
+      "text": "Мы играли, например, в «Формулу D». Очень классная гоночная игра. Там всё просто и понятно: перед тобой поле, по нему едут машинки. Какая первая пересечёт финишную линию — та и победила."
+    },
+    {
+      "id": "quote-auto-b855e027804d7fd6189a35ec",
+      "game_id": "game-bgg-60435",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 2317.32,
+      "end": 2330.4,
+      "text": "Сама игра абсолютно лишена азарта, которого мне, например, хочется от гонок. Она хорошая, но когда за неё садишься, у тебя нет желания в неё играть — прямо играть и играть."
+    },
+    {
+      "id": "quote-auto-982808d2ee153b6197a2a42a",
+      "game_id": "game-bgg-60435",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 2338.4,
+      "end": 2348.24,
+      "text": "Юра правильно сказал: это очень хороший симулятор ралли. Но как игра — это не очень хорошо. Хороший симулятор ещё не есть хорошая игра, к сожалению."
+    },
+    {
+      "id": "quote-auto-652a417b9bc8f8ff20870981",
+      "game_id": "game-bgg-60435",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 2367.36,
+      "end": 2377.68,
+      "text": "А «Раллимен» — это, мне кажется, боль. Это всё непонятно зачем. Настольная игра не должна быть ничем другим, кроме настольной игры."
+    },
+    {
+      "id": "quote-auto-e7dbadfb921e559190b55fb3",
+      "game_id": "game-bgg-60435",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 2610.88,
+      "end": 2616.24,
+      "text": "К сожалению, в Rallyman играть, если ты не фанат, не очень интересно."
+    },
+    {
+      "id": "quote-auto-81cf62e45d9a8df20171ddc6",
+      "game_id": "game-memoir-44",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 2762.08,
+      "end": 2772.08,
+      "text": "Мы любим «Мемуары», а не картонные варгеймы, которые гораздо более хардкорные, но более реалистичные."
+    },
+    {
+      "id": "quote-auto-19d319620bf84dab2cb03bf0",
+      "game_id": "game-trains",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 2876.76,
+      "end": 2880.92,
+      "text": "Trains — это «Доминион» без свистелок и перделок. Trains — это просто «Доминион»."
+    },
+    {
+      "id": "quote-auto-51b6e3ddfaaacbe67a8586ce",
+      "game_id": "game-dominion",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 2904.2,
+      "end": 2909.24,
+      "text": "Я в Trains сам ещё не играл, но «Доминион» — игра очень хорошая."
+    },
+    {
+      "id": "quote-auto-e7646089fe63cfeb1f2c70ec",
+      "game_id": "game-bgg-129437",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 2950.76,
+      "end": 2958.24,
+      "text": "Legendary круче «Доминиона» и, скорее всего, круче, чем Trains. Но справедливости ради в Trains я пока не играл."
+    },
+    {
+      "id": "quote-auto-30a67860b3d89177f3d93505",
+      "game_id": "game-trains",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 3229.28,
+      "end": 3233.92,
+      "text": "Я понимаю, почему Trains победил. Просто на безрыбье."
+    },
+    {
+      "id": "quote-auto-a7a42bb10aa0b148cbbfef13",
+      "game_id": "game-pokemon-tcg",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 3370.2,
+      "end": 3392.48,
+      "text": "Я уверен, что карточные «Покемоны» ничуть не хуже МТГ по играбельности, коллекционируемости и прочему. И, возможно, по количеству увлечённых игрой людей «Покемоны» даже уделывают МТГ."
+    },
+    {
+      "id": "quote-auto-8d782036280d907eaec80fa7",
+      "game_id": "game-pokemon-tcg",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 3466.56,
+      "end": 3477.08,
+      "text": "В саму игру я не играл. Мне очень интересно попробовать. Я видел только картинки в интернете. Но для того, чтобы в неё сыграть, нужно как минимум два человека."
+    },
+    {
+      "id": "quote-auto-0cfc32259acff34c1a60e370",
+      "game_id": "game-pokemon-tcg",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 3528.04,
+      "end": 3538.68,
+      "text": "А в другой комнате чуваки накрывают столы и играют в эти карточные «Покемоны». Это огромная культура — это очень круто. У них также есть фойловые карты."
+    },
+    {
+      "id": "quote-auto-2caeaa749f43b6e06f524f7d",
+      "game_id": "game-russian-railroads",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 4280.88,
+      "end": 4302.08,
+      "text": "Ты выставляешь на эти участки блочки в виде рельс. Когда поставил достаточно блочков — ты построил эту часть железной дороги. Игра очень абстрактная. Там ты и прокачиваешь поезда, и нанимаешь новый персонал, изучаешь новые технологии и так далее."
+    },
+    {
+      "id": "quote-auto-30543f557c4d817894e05ec0",
+      "game_id": "game-twilight-struggle",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 4877.36,
+      "end": 4891.36,
+      "text": "Как я думаю, игра-то хорошая, но играть в неё всем не с кем. Все хотели, чтобы она была в компьютере, чтобы в неё можно было хотя бы с кем-то поиграть. Поэтому ГМТ попали в точку с цифровым изданием этой игры."
+    },
+    {
+      "id": "quote-auto-1ae5a545ce3d0dad6496d489",
+      "game_id": "game-zombicide",
+      "episode_id": "episode-4ae5af43-6eca-46b9-8368-38d2adf1f8f7",
+      "start": 5238.2,
+      "end": 5245.08,
+      "text": "Будет третий сезон. Ребята, будет ещё больше зомби. Зачем это нужно — совершенно непонятно. Игра не развивается абсолютно."
     }
   ],
   "evaluations": []
