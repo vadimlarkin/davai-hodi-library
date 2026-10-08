@@ -52,9 +52,7 @@
     document.getElementById('correction-game-fields').hidden = !changingGame;
     document.getElementById('correction-text-fields').hidden = !changingText;
     gameName.required = changingGame;
-    document.getElementById('correction-help').textContent = ['positive', 'negative'].includes(kind.value)
-      ? 'Предложенную оценку проверим по записи перед изменением счётчиков игры.'
-      : 'Замечание сохраним для проверки по записи.';
+    document.getElementById('correction-help').textContent = 'Замечание сохраним для проверки по записи.';
   }
   function renderGames() {
     gameResults.replaceChildren();
@@ -97,7 +95,7 @@
     updateKind();
     window.getSelection()?.removeAllRanges();
     dialog.showModal();
-    (['game','both'].includes(mode) ? gameName : ['positive','negative'].includes(mode) ? comment : replacement).focus();
+    (['game','both'].includes(mode) ? gameName : replacement).focus();
     if (['game','both'].includes(mode)) renderGames();
   }
   function chooseWord(id, button) {
@@ -151,7 +149,7 @@
     const controls = document.createElement('div'); controls.dataset.correctionControls = id;
     controls.className = 'correction-selection-controls correction-kind-controls';
     const hint = document.createElement('p'); hint.textContent = 'О чём сообщить?'; controls.append(hint);
-    for (const [mode, label] of [['text','Ошибка в тексте'], ['game','Не та игра'], ['positive','Положительный отзыв'], ['negative','Негативный отзыв']]) {
+    for (const [mode, label] of [['text','Ошибка в тексте'], ['game','Не та игра']]) {
       const choice = document.createElement('button'); choice.type = 'button'; choice.textContent = label;
       choice.addEventListener('click', () => {
         resetPicking();
@@ -209,8 +207,7 @@
       }
       const receipt = await response.json();
       if (receipt.status !== 'saved' || receipt.id !== draft.request_id) throw new Error('Invalid receipt');
-      const savedKind = kind.value;
-      dialog.close(); notifyShare(['positive','negative'].includes(savedKind) ? 'Оценка сохранена для проверки по записи. Спасибо!' : 'Замечание сохранено. Спасибо! Проверим его по записи.');
+      dialog.close(); notifyShare('Замечание сохранено. Спасибо! Проверим его по записи.');
     } catch {
       status.textContent = 'Не удалось получить подтверждение. Попробуйте ещё раз — повторное нажатие не создаст копию.';
     } finally {

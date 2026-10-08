@@ -8,12 +8,12 @@
   <meta name="description" content="Настольные игры в подкасте «Давай ходи»: цитаты, выпуски и тайминги.">
   <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png?v=2">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=0.9.0">
-  <script defer src="quote-card.js?v=0.9.0"></script>
-  <script defer src="quote-audio.js?v=0.9.0"></script>
-  <script defer src="app.js?v=0.9.0&amp;content=8313cead501a"></script>
-  <script defer src="quote-feedback.js?v=0.9.0"></script>
-  <script defer src="quote-votes.js?v=0.9.0"></script>
+  <link rel="stylesheet" href="style.css?v=0.10.0">
+  <script defer src="quote-card.js?v=0.10.0"></script>
+  <script defer src="quote-audio.js?v=0.10.0"></script>
+  <script defer src="app.js?v=0.10.0&amp;content=8313cead501a"></script>
+  <script defer src="quote-feedback.js?v=0.10.0"></script>
+  <script defer src="quote-votes.js?v=0.10.0"></script>
 </head>
 <body>
   <header class="masthead">
@@ -48,8 +48,6 @@
         </div>
         <p id="game-search-status" role="status" aria-live="polite" aria-atomic="true"></p>
       </div>
-      <button type="button" class="all-opinions" id="open-evaluations" hidden disabled>Оценки из разговоров</button>
-      <p class="opinion-note" id="evaluations-overview" hidden></p>
       <div class="grid" id="games" aria-label="Библиотека игр"></div>
       <p class="library-note" id="library-note">В картотеке цитаты из выпусков 1–25, 429. Неясные названия добавим после проверки.</p>
       <footer class="library-footer">
@@ -62,18 +60,6 @@
       <div class="details-content" id="detail-content"><p class="loading">Открываем картотеку…</p></div>
     </aside>
   </main>
-
-  <dialog id="evaluation-picker" class="episode-picker evaluation-picker" aria-labelledby="evaluation-picker-title">
-    <div class="episode-picker-heading"><h2 id="evaluation-picker-title">Оценки из разговоров</h2><button type="button" class="icon-button" id="close-evaluations" aria-label="Закрыть оценки">×</button></div>
-    <p class="opinion-note">Здесь есть непроверенные фрагменты. Привязка к игре и смысл оценки могут измениться после разбора.</p>
-    <label for="evaluation-search">Поиск по игре или тексту реплики</label>
-    <input id="evaluation-search" type="search" placeholder="Название или слова из реплики" autocomplete="off">
-    <label for="evaluation-filter">Какие оценки показать</label>
-    <select id="evaluation-filter"><option value="all">Все оценки</option><option value="accepted">Проверенные</option><option value="pending">Неподтверждённые</option><option value="unresolved">Нужно разобрать</option></select>
-    <p class="opinion-note" id="evaluation-list-status" role="status"></p>
-    <div id="evaluation-list"></div>
-    <div class="evaluation-pages"><button type="button" id="evaluation-previous">← Назад</button><span id="evaluation-page"></span><button type="button" id="evaluation-next">Далее →</button></div>
-  </dialog>
 
   <dialog id="episode-picker" class="episode-picker" aria-labelledby="episode-picker-title">
     <div class="episode-picker-heading"><h2 id="episode-picker-title">Выберите выпуск</h2><button type="button" class="icon-button" id="close-episode-picker" aria-label="Закрыть список выпусков">×</button></div>
@@ -98,7 +84,7 @@
     <blockquote id="correction-preview"></blockquote>
     <form id="correction-form">
       <label for="correction-kind">Что исправить?</label>
-      <select id="correction-kind"><option value="text">Текст цитаты</option><option value="game">Не та игра</option><option value="both">Текст и игру</option><option value="positive">Это положительный отзыв</option><option value="negative">Это негативный отзыв</option></select>
+      <select id="correction-kind"><option value="text">Текст цитаты</option><option value="game">Не та игра</option><option value="both">Текст и игру</option></select>
       <div id="correction-game-fields" hidden><label for="correction-game">Правильная игра</label><input id="correction-game" type="search" maxlength="150" autocomplete="off" placeholder="Поиск по названию игры" aria-controls="correction-game-results" aria-describedby="correction-game-note"><div id="correction-game-results" class="correction-game-results" role="group" aria-label="Найденные игры" hidden></div><p id="correction-game-note" role="status">Выберите игру из списка. Если её нет в игротеке, укажите название и, если знаете, ссылку на BGG.</p><label for="correction-game-url">Ссылка на BGG <span>(необязательно)</span></label><input id="correction-game-url" type="url" maxlength="200" placeholder="https://boardgamegeek.com/boardgame/…"></div>
       <div id="correction-text-fields"><label for="correction-replacement">Как правильно? <span>(необязательно)</span></label>
       <textarea id="correction-replacement" maxlength="2000" rows="3" placeholder="Правильное слово или фраза"></textarea></div>
