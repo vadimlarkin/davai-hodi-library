@@ -1,6 +1,6 @@
 {
   "version": "0.10.2",
-  "content_revision": "f3ad09fd0aa6",
+  "content_revision": "6ec0b71a6bd0",
   "episodes": [
     {
       "id": "episode-001",
@@ -4465,7 +4465,7 @@
       "bgg_id": 392842,
       "bgg_url": "https://boardgamegeek.com/boardgame/392842",
       "description": "2023 · Настольная игра",
-      "cover": "assets/392842.jpg"
+      "cover": "assets/392842-hq.jpg"
     },
     {
       "id": "game-shakal",
