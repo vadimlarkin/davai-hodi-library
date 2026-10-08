@@ -1,6 +1,6 @@
 {
-  "version": "0.10.2",
-  "content_revision": "5b67811f50c6",
+  "version": "0.10.3",
+  "content_revision": "c9d5a336ea45",
   "episodes": [
     {
       "id": "episode-001",
@@ -3465,7 +3465,10 @@
       "date": "2026-09-22",
       "duration": 3626,
       "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791239170_c56c6b455f35823ea061.mp3",
-      "playback_audio_url": "https://davai-hodi-audio.s3.cloud.ru/media/library-playback/93c2c244-27fa-468c-9a0d-6975744fb1e5/cbr160-93fa700481b9c0d0b80f.mp3"
+      "audio_seek_index": {
+        "url": "audio-indexes/episode-93c2c244-27fa-468c-9a0d-6975744fb1e5-0246b93bc277696d4c76.json",
+        "sha256": "c13a1d72405aefa750bbedf1dabad672d93a06a4b56d566464f6df63b0fc4653"
+      }
     },
     {
       "id": "episode-b4233d55-6ce8-4d0f-8db7-92d61386ee6d",
@@ -3474,7 +3477,10 @@
       "date": "2026-09-29",
       "duration": 4340,
       "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791239182_1c84bf19a3a678d34962.mp3",
-      "playback_audio_url": "https://davai-hodi-audio.s3.cloud.ru/media/library-playback/b4233d55-6ce8-4d0f-8db7-92d61386ee6d/cbr160-aba9ffd4c4014fa2bdfd.mp3"
+      "audio_seek_index": {
+        "url": "audio-indexes/episode-b4233d55-6ce8-4d0f-8db7-92d61386ee6d-3c05723e2d03803301fd.json",
+        "sha256": "4add49d883f2db9df97e0d4b00490ed2cfc38b14cb6155dbef6f599a48a44a73"
+      }
     },
     {
       "id": "episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb",
@@ -3483,7 +3489,10 @@
       "date": "2026-10-06",
       "duration": 3833,
       "audio_url": "https://davai-hodi-audio.s3.cloud.ru/podcasts/davaihodi/1791310823_9b556de1288ca3b16ab9.mp3",
-      "playback_audio_url": "https://davai-hodi-audio.s3.cloud.ru/media/library-playback/b86127f0-2393-44ee-8d9b-0ae66d2520fb/cbr160-aacf86ddceef2d93619f.mp3"
+      "audio_seek_index": {
+        "url": "audio-indexes/episode-b86127f0-2393-44ee-8d9b-0ae66d2520fb-fa8a4a885d9f62582427.json",
+        "sha256": "cd1ff67fdaa326910694323c8612b8e7996292d8c1d7e62bb086e310d1512275"
+      }
     }
   ],
   "games": [

@@ -191,7 +191,7 @@ function selectGame(id, userAction = false) {
   });
 }
 function audioButton(quote, episode) {
-  if (!episode.audio_url || !Number.isFinite(quote.start) || !Number.isFinite(quote.end) || quote.end <= quote.start) return '';
+  if (!(episode.playback_audio_url || episode.audio_url) || !Number.isFinite(quote.start) || !Number.isFinite(quote.end) || quote.end <= quote.start) return '';
   return `<button type="button" class="listen-quote" data-listen-quote="${escapeHtml(quote.id)}" data-listen-description="${escapeHtml(quoteEpisodeName(episode))}, ${time(quote.start)}" aria-pressed="false" aria-label="Прослушать цитату: ${escapeHtml(quoteEpisodeName(episode))}, ${time(quote.start)}"><span data-listen-icon aria-hidden="true">▶</span><span data-listen-label>Прослушать</span></button>`;
 }
 function audioProgress(quote) {
@@ -431,4 +431,4 @@ function restoreLocation(initial = false) {
 window.addEventListener('pagehide',()=>quoteAudio.reset());
 window.addEventListener('popstate',()=>{if(database)restoreLocation();});
 window.addEventListener('hashchange',()=>{if(database)restoreLocation();});
-fetch('data.json?revision=5b67811f50c6').then(r=>{if(!r.ok)throw new Error('data');return r.json();}).then(d=>{database=d;restoreLocation(true);trigger.disabled=false;gameSearch.disabled=false;}).catch(()=>{document.getElementById('error').hidden=false;document.getElementById('error').textContent='Не удалось открыть библиотеку. Обновите страницу.';});
+fetch('data.json?revision=c9d5a336ea45').then(r=>{if(!r.ok)throw new Error('data');return r.json();}).then(d=>{database=d;restoreLocation(true);trigger.disabled=false;gameSearch.disabled=false;}).catch(()=>{document.getElementById('error').hidden=false;document.getElementById('error').textContent='Не удалось открыть библиотеку. Обновите страницу.';});

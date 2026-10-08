@@ -1,7 +1,7 @@
 'use strict';
 
 // One media element keeps quotations from playing over one another.
-class QuoteAudio {
+class NativeQuoteAudio {
   constructor(audio, onChange) {
     this.audio = audio;
     this.onChange = onChange;
@@ -54,7 +54,7 @@ class QuoteAudio {
       this.state = {id: quote.id, start: quote.start, end: quote.end, status: 'loading', elapsed: 0};
       this.pendingSeek = true;
       // Media fragments also request the initial seek before playback on mobile.
-      this.audio.src = `${audioUrl}#t=${quote.start},${quote.end}`;
+      this.audio.src = `${audioUrl}#t=${this.state.start},${this.state.end}`;
       this.seekStart();
     } else {
       this.state.status = 'loading';
@@ -110,4 +110,13 @@ class QuoteAudio {
     this.audio.load();
     this.changed();
   }
+}
+
+// Indexed episodes bypass native MP3 seeking; older episodes retain their existing player.
+class QuoteAudio {
+  constructor(audio,onChange){this.audio=audio;this.native=new NativeQuoteAudio(audio,onChange);this.indexed=typeof IndexedQuoteAudio==='function'?new IndexedQuoteAudio(onChange):null;this.active=this.native;}
+  get state(){return this.active.state;}
+  toggle(quote,episode){const next=episode?.audio_seek_index?this.indexed:this.native;if(!next)return;if(next!==this.active){this.active.reset();this.active=next;}this.active.toggle(quote,episode);}
+  pause(){this.active.pause();}
+  reset(){this.active.reset();}
 }
