@@ -22,7 +22,8 @@
     const selection = window.getSelection();
     if (pending.size || content.querySelector('[data-correction-controls]') ||
         (selection && !selection.isCollapsed && content.contains(selection.anchorNode))) return;
-    const articles = [...content.querySelectorAll('.quote-item')];
+    const list = content.querySelector('.details-quotes') || content;
+    const articles = [...list.querySelectorAll('.quote-item')];
     for (const article of articles) if (!originalOrder.has(article)) originalOrder.set(article, nextOrder++);
     const ordered = [...articles].sort((a, b) =>
       (states.get(b.id)?.score ?? 0) - (states.get(a.id)?.score ?? 0) || originalOrder.get(a) - originalOrder.get(b));
@@ -33,15 +34,15 @@
     try {
       // Move the existing nodes so playback and correction controls keep their state.
       for (let index = 0; index < ordered.length; index++) {
-        const current = content.querySelectorAll('.quote-item')[index];
+        const current = list.querySelectorAll('.quote-item')[index];
         if (current !== ordered[index]) {
-          if (typeof content.moveBefore === 'function') content.moveBefore(ordered[index], current);
-          else content.insertBefore(ordered[index], current);
+          if (typeof list.moveBefore === 'function') list.moveBefore(ordered[index], current);
+          else list.insertBefore(ordered[index], current);
         }
       }
       if (active && content.contains(active)) {
         if (document.activeElement !== active) active.focus({preventScroll: true});
-        if (active.closest('.quote-item')) document.getElementById('details').scrollTop += active.getBoundingClientRect().top - activeTop;
+        if (active.closest('.quote-item')) list.scrollTop += active.getBoundingClientRect().top - activeTop;
       }
     } finally { observer.observe(content, {childList: true}); }
   }
@@ -87,7 +88,7 @@
           document.getElementById('golden-status').textContent='Не удалось загрузить лучшие цитаты.';
           if (!content.querySelector('[data-retry-top]')) {
             const retry = document.createElement('button'); retry.type='button'; retry.dataset.retryTop='';
-            retry.className='vote-refresh'; retry.textContent='Повторить'; content.append(retry);
+            retry.className='vote-refresh'; retry.textContent='Повторить'; (content.querySelector('.details-quotes') || content).append(retry);
           }
         }
       }
