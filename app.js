@@ -44,7 +44,7 @@ const episodeDate = ep => {
 function plural(n, one, few, many) {return n%10===1&&n%100!==11?one:n%10>=2&&n%10<=4&&(n%100<12||n%100>14)?few:many;}
 const currentQuotes = () => database.quotes.filter(q => !selectedEpisode || q.episode_id === selectedEpisode);
 const gameQuotes = id => currentQuotes().filter(q => q.game_id === id);
-const episodeGames = () => {const ids=new Set(currentQuotes().map(q=>q.game_id));return database.games.filter(g=>ids.has(g.id));};
+const episodeGames = () => {const ids=new Set(currentQuotes().map(q=>q.game_id));return database.games.filter(g=>ids.has(g.id)||g.standalone&&(!selectedEpisode||(g.mention_episode_ids||[]).includes(selectedEpisode)));};
 const visibleGames = () => {
   const words = normalize(gameSearch.value).split(/\s+/).filter(Boolean);
   return episodeGames().filter(g=>{
@@ -171,7 +171,7 @@ function selectGame(id, userAction = false) {
   content.innerHTML = `<div class="details-topline"><button type="button" class="back-details" aria-label="Вернуться к библиотеке">← Все игры</button><p class="eyebrow">ЧТО МЫ ГОВОРИЛИ</p><button type="button" class="icon-button close-details" aria-label="Закрыть карточку">×</button></div>
     <div class="game-profile"><div class="detail-cover">${image(game,true)}</div><div><h2 id="detail-title">${escapeHtml(game.name)}</h2>
     ${game.original_name&&game.original_name!==game.name?`<p class="original-name">${escapeHtml(game.original_name)}</p>`:''}
-    <a class="bgg-link" href="${escapeHtml(game.bgg_url)}" target="_blank" rel="noopener">Карточка на BGG</a></div></div>
+    ${game.bgg_url?`<a class="bgg-link" href="${escapeHtml(game.bgg_url)}" target="_blank" rel="noopener">Карточка на BGG</a>`:`<p class="original-name">${game.catalog_kind==='puzzle'?'Головоломка':'Традиционная игра'}</p>`}${game.image_origin==='generated'?'<p class="original-name">Авторская иллюстрация</p>':''}</div></div>
     <p class="game-description">${escapeHtml(game.description)}</p>
     ${quotes.length?`<div class="quotes-summary"><strong>${quotes.length} ${plural(quotes.length,'цитата','цитаты','цитат')}</strong><span>${episodes.length} ${plural(episodes.length,'выпуск','выпуска','выпусков')}</span></div>`:''}
     ${quotes.map(q=>renderQuote(q)).join('')}`;
