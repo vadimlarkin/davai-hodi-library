@@ -1,6 +1,6 @@
 {
   "version": "0.10.3",
-  "content_revision": "b3e5c41ddd4b",
+  "content_revision": "d030abfbfee8",
   "episodes": [
     {
       "id": "episode-001",
@@ -4074,21 +4074,6 @@
       "cover": "assets/dominion.jpg"
     },
     {
-      "id": "game-bgg-29351",
-      "name": "Дурак",
-      "original_name": "Durak",
-      "bgg_id": 29351,
-      "bgg_url": "https://boardgamegeek.com/boardgame/29351",
-      "description": "Традиционная карточная игра с козырем, атакой и защитой.",
-      "cover": "assets/local-durak.png",
-      "catalog_kind": "traditional",
-      "standalone": true,
-      "mention_episode_ids": [
-        "episode-b1e195a7-6130-4ed4-846f-1e6a8a11c9cc"
-      ],
-      "image_origin": "generated"
-    },
-    {
       "id": "game-mammuz",
       "name": "Заврики",
       "original_name": "MammuZ",
@@ -4350,21 +4335,6 @@
       "cover": "assets/kolejka.jpg"
     },
     {
-      "id": "game-local-ochko",
-      "name": "Очко",
-      "original_name": "Ochko",
-      "bgg_id": null,
-      "bgg_url": null,
-      "description": "Традиционная карточная игра: набрать очки близко к 21 и не перебрать.",
-      "cover": "assets/local-ochko.png",
-      "catalog_kind": "traditional",
-      "standalone": true,
-      "mention_episode_ids": [
-        "episode-b1e195a7-6130-4ed4-846f-1e6a8a11c9cc"
-      ],
-      "image_origin": "generated"
-    },
-    {
       "id": "game-pandemic",
       "name": "Пандемия",
       "original_name": "Pandemic",
@@ -4432,18 +4402,6 @@
       "bgg_url": "https://boardgamegeek.com/boardgame/3076",
       "description": "Классика евроигр",
       "cover": "assets/puerto-rico.jpg"
-    },
-    {
-      "id": "game-local-pyanitsa",
-      "name": "Пьяница",
-      "original_name": "Pyanitsa",
-      "bgg_id": null,
-      "bgg_url": null,
-      "description": "Традиционная карточная игра: сравнивать карты и забирать разыгранные пары.",
-      "cover": "assets/local-pyanitsa.png",
-      "catalog_kind": "traditional",
-      "standalone": true,
-      "image_origin": "generated"
     },
     {
       "id": "game-robinson-crusoe",

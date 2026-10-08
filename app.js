@@ -44,7 +44,7 @@ const episodeDate = ep => {
 function plural(n, one, few, many) {return n%10===1&&n%100!==11?one:n%10>=2&&n%10<=4&&(n%100<12||n%100>14)?few:many;}
 const currentQuotes = () => database.quotes.filter(q => !selectedEpisode || q.episode_id === selectedEpisode);
 const gameQuotes = id => currentQuotes().filter(q => q.game_id === id);
-const episodeGames = () => {const ids=new Set(currentQuotes().map(q=>q.game_id));return database.games.filter(g=>ids.has(g.id)||g.standalone&&(!selectedEpisode||(g.mention_episode_ids||[]).includes(selectedEpisode)));};
+const episodeGames = () => {const ids=new Set(currentQuotes().map(q=>q.game_id));return database.games.filter(g=>ids.has(g.id));};
 const visibleGames = () => {
   const words = normalize(gameSearch.value).split(/\s+/).filter(Boolean);
   return episodeGames().filter(g=>{
@@ -174,7 +174,7 @@ function selectGame(id, userAction = false) {
   if (id === goldenId) { selectGolden(userAction); return; }
   const game = database.games.find(g => g.id === id);
   const quotes = gameQuotes(id);
-  if (!game || (!quotes.length && !game.standalone)) return;
+  if (!game || !quotes.length) return;
   if (selectedId !== id) quoteAudio.reset();
   const wasOpen = cardOpen;
   if (userAction) {cardOpen = true;selectedQuote = null;}
@@ -445,4 +445,4 @@ function restoreLocation(initial = false) {
 window.addEventListener('pagehide',()=>quoteAudio.reset());
 window.addEventListener('popstate',()=>{if(database)restoreLocation();});
 window.addEventListener('hashchange',()=>{if(database)restoreLocation();});
-fetch('data.json?revision=b3e5c41ddd4b').then(r=>{if(!r.ok)throw new Error('data');return r.json();}).then(d=>{database=d;restoreLocation(true);trigger.disabled=false;gameSearch.disabled=false;}).catch(()=>{document.getElementById('error').hidden=false;document.getElementById('error').textContent='Не удалось открыть библиотеку. Обновите страницу.';});
+fetch('data.json?revision=d030abfbfee8').then(r=>{if(!r.ok)throw new Error('data');return r.json();}).then(d=>{database=d;restoreLocation(true);trigger.disabled=false;gameSearch.disabled=false;}).catch(()=>{document.getElementById('error').hidden=false;document.getElementById('error').textContent='Не удалось открыть библиотеку. Обновите страницу.';});
