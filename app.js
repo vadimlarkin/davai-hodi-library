@@ -106,6 +106,17 @@ function updateUrl(push = false) {
   }
   history[push?'pushState':'replaceState']({libraryCard:cardOpen},'',url);
 }
+function sizeDetails() {
+  if (!narrow.matches) panel.style.setProperty('--detail-space', `${Math.max(280, window.innerHeight - Math.max(24, panel.getBoundingClientRect().top) - 24)}px`);
+}
+let detailsSizePending = false;
+function scheduleDetailsSize() {
+  if (detailsSizePending) return;
+  detailsSizePending = true;
+  requestAnimationFrame(() => { detailsSizePending = false; sizeDetails(); });
+}
+window.addEventListener('scroll', scheduleDetailsSize, {passive:true});
+window.addEventListener('resize', scheduleDetailsSize);
 function syncPanel() {
   const open = narrow.matches && cardOpen;
   if (open) {
@@ -116,6 +127,7 @@ function syncPanel() {
     document.querySelector('.masthead').inert=true;
     document.body.classList.add('card-open');
   } else closePanel();
+  scheduleDetailsSize();
 }
 function renderQuote(q, showGame = false) {
   const ep = database.episodes.find(e=>e.id===q.episode_id);
@@ -129,7 +141,7 @@ function selectGolden(userAction = false) {
   if (userAction) {cardOpen = true;selectedQuote = null;}
   selectedId = goldenId;
   grid.querySelectorAll('[data-game]').forEach(card => card.setAttribute('aria-pressed', String(card.dataset.game === goldenId)));
-  content.innerHTML = `<div class="details-topline"><button type="button" class="back-details" aria-label="Вернуться к библиотеке">← Все игры</button><p class="eyebrow">ЛУЧШИЕ ЦИТАТЫ</p><button type="button" class="icon-button close-details" aria-label="Закрыть карточку">×</button></div><div class="game-profile"><div class="detail-cover golden-cover">${trophy}</div><div><h2 id="detail-title">Золотой фонд</h2><p class="original-name">Топ-10 всей игротеки</p></div></div><p class="game-description">Цитаты с наибольшей суммой голосов: апвоты минус даунвоты.</p><p id="golden-status" class="vote-note" role="status">Загружаем лучшие цитаты…</p>`;
+  content.innerHTML = `<div class="details-fixed"><div class="details-topline"><button type="button" class="back-details" aria-label="Вернуться к библиотеке">← Все игры</button><p class="eyebrow">ЛУЧШИЕ ЦИТАТЫ</p><button type="button" class="icon-button close-details" aria-label="Закрыть карточку">×</button></div><div class="game-profile"><div class="detail-cover golden-cover">${trophy}</div><div><h2 id="detail-title">Золотой фонд</h2><p class="original-name">Топ-10 всей игротеки</p></div></div><p class="game-description">Цитаты с наибольшей суммой голосов: апвоты минус даунвоты.</p><p id="golden-status" class="vote-note" role="status">Загружаем лучшие цитаты…</p></div><div class="details-quotes" role="region" aria-label="Лучшие цитаты" tabindex="0"></div>`;
   panel.scrollTop = 0; syncPanel();
   if (userAction) {
     updateUrl(!wasOpen);
@@ -140,18 +152,19 @@ function selectGolden(userAction = false) {
 function renderGoldenQuotes(items) {
   if (selectedId !== goldenId) return;
   const quotes = items.map(item=>database.quotes.find(q=>q.id===item.quote_id)).filter(Boolean);
-  const existing = new Map([...content.querySelectorAll('.quote-item')].map(article=>[article.id, article]));
+  const list = content.querySelector('.details-quotes');
+  const existing = new Map([...list.querySelectorAll('.quote-item')].map(article=>[article.id, article]));
   const ids = new Set(quotes.map(q=>q.id));
   if (quoteAudio.state?.id && !ids.has(quoteAudio.state.id)) quoteAudio.reset();
   for (const [id, article] of existing) if (!ids.has(id)) article.remove();
   for (const quote of quotes) if (!existing.has(quote.id)) {
-    content.insertAdjacentHTML('beforeend', renderQuote(quote, true));
+    list.insertAdjacentHTML('beforeend', renderQuote(quote, true));
   }
   for (let index=0; index<quotes.length; index++) {
-    const current=content.querySelectorAll('.quote-item')[index], wanted=document.getElementById(quotes[index].id);
+    const current=list.querySelectorAll('.quote-item')[index], wanted=document.getElementById(quotes[index].id);
     if (current!==wanted) {
-      if (typeof content.moveBefore==='function') content.moveBefore(wanted, current);
-      else content.insertBefore(wanted, current);
+      if (typeof list.moveBefore==='function') list.moveBefore(wanted, current);
+      else list.insertBefore(wanted, current);
     }
   }
   document.getElementById('golden-status').textContent = `${quotes.length} лучших цитат · по убыванию суммы голосов`;
@@ -168,13 +181,13 @@ function selectGame(id, userAction = false) {
   selectedId = id;
   const episodes = [...new Set(quotes.map(q => q.episode_id))];
   grid.querySelectorAll('[data-game]').forEach(card => card.setAttribute('aria-pressed', card.dataset.game === id));
-  content.innerHTML = `<div class="details-topline"><button type="button" class="back-details" aria-label="Вернуться к библиотеке">← Все игры</button><p class="eyebrow">ЧТО МЫ ГОВОРИЛИ</p><button type="button" class="icon-button close-details" aria-label="Закрыть карточку">×</button></div>
+  content.innerHTML = `<div class="details-fixed"><div class="details-topline"><button type="button" class="back-details" aria-label="Вернуться к библиотеке">← Все игры</button><p class="eyebrow">ЧТО МЫ ГОВОРИЛИ</p><button type="button" class="icon-button close-details" aria-label="Закрыть карточку">×</button></div>
     <div class="game-profile"><div class="detail-cover">${image(game,true)}</div><div><h2 id="detail-title">${escapeHtml(game.name)}</h2>
     ${game.original_name&&game.original_name!==game.name?`<p class="original-name">${escapeHtml(game.original_name)}</p>`:''}
     ${game.bgg_url?`<a class="bgg-link" href="${escapeHtml(game.bgg_url)}" target="_blank" rel="noopener">Карточка на BGG</a>`:`<p class="original-name">${game.catalog_kind==='puzzle'?'Головоломка':'Традиционная игра'}</p>`}${game.image_origin==='generated'?'<p class="original-name">Авторская иллюстрация</p>':''}</div></div>
     <p class="game-description">${escapeHtml(game.description)}</p>
     ${quotes.length?`<div class="quotes-summary"><strong>${quotes.length} ${plural(quotes.length,'цитата','цитаты','цитат')}</strong><span>${episodes.length} ${plural(episodes.length,'выпуск','выпуска','выпусков')}</span></div>`:''}
-    ${quotes.length ? quotes.map(q=>renderQuote(q)).join('') : '<p class="game-description">Цитаты для этой карточки пока не добавлены.</p>'}`;
+    </div><div class="details-quotes" role="region" aria-label="Цитаты об игре" tabindex="0">${quotes.length ? quotes.map(q=>renderQuote(q)).join('') : '<p class="game-description">Цитаты для этой карточки пока не добавлены.</p>'}</div>`;
   renderAudioState(quoteAudio.state);
   panel.scrollTop = 0;
   syncPanel();
@@ -186,7 +199,8 @@ function selectGame(id, userAction = false) {
   const target = selectedQuote && document.getElementById(selectedQuote);
   if (target) requestAnimationFrame(()=>{
     if (selectedQuote !== target.id || !target.isConnected) return;
-    panel.scrollTop = target.offsetTop - content.offsetTop - 80;
+    const list = content.querySelector('.details-quotes');
+    list.scrollTop += target.getBoundingClientRect().top - list.getBoundingClientRect().top - 16;
     target.focus({preventScroll:true});
   });
 }

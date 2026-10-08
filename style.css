@@ -155,3 +155,16 @@
 @media(max-width:1000px){.ecosystem-tabs{width:calc(100% - 60px)}}
 @media(max-width:700px){.ecosystem-tabs{width:calc(100% - 44px)}.ecosystem-tabs a{padding-left:22px;padding-right:22px}.masthead{min-height:290px;padding-top:26px;padding-bottom:60px}}
 @media(max-width:360px){.ecosystem-tabs{width:calc(100% - 32px)}}
+
+/* Compact sorting stays on the same line as the episode selector. */
+.library-meta{display:grid;grid-template-columns:auto 4px minmax(0,1fr) auto;align-items:center;gap:8px}
+.library-meta .episode-trigger{width:100%;min-width:0}.library-meta #episode-meta{grid-column:1 / -1;font-size:12px;margin-top:2px}.library-meta #episode-meta:empty{display:none}
+.game-sort{display:flex;flex:none;gap:8px;white-space:nowrap}.game-sort button{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;min-width:40px;min-height:40px;padding:0;border:1px solid #dce3e0;border-radius:50%;background:white;color:#747474;font-size:18px;font-family:Onest,Lato,Arial,sans-serif;font-weight:600;line-height:1}
+.game-sort button svg{width:20px;height:20px}.game-sort button:hover{border-color:#258b75;color:#258b75}.game-sort button[aria-pressed=true]{border-color:#258b75;background:#f3f7f6;color:#258b75}
+/* The game heading remains outside the independently scrolling quotes. */
+.details{height:var(--detail-space,calc(100dvh - 48px));overflow:hidden;max-height:calc(100dvh - 48px)}
+.details-content{display:flex;flex-direction:column;height:100%;min-height:0;padding:32px 0 0 26px}
+.details-fixed{flex:none;min-width:0}.details-fixed .details-topline{margin-bottom:18px}.details-fixed .game-profile{margin-bottom:16px}.details-fixed .game-description{margin-bottom:16px}.details-fixed .quotes-summary{padding-bottom:16px}
+.details-quotes{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;padding:0 12px 32px 0;scroll-padding-top:16px}.details-quotes:focus-visible{outline:2px solid #258b75;outline-offset:-2px}.details-quotes .quote-item{scroll-margin-top:16px}.details-quotes .quote-item:last-child{border-bottom:0}
+@media(max-width:1000px){.details-content{padding-left:22px}}
+@media(max-width:700px){.game-sort button{width:44px;height:44px;min-width:44px;min-height:44px}.library-meta{gap:7px;grid-template-columns:auto 3px minmax(0,1fr) auto}.library-meta .meta-dot{font-size:11px}.details{height:100dvh;max-height:none}.details-content{padding:0 max(20px,env(safe-area-inset-right)) 0 max(20px,env(safe-area-inset-left))}.details-fixed .details-topline{margin-bottom:18px}.details-quotes{padding-right:0;padding-bottom:max(32px,env(safe-area-inset-bottom))}}
