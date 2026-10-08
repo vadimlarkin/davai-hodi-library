@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#16191c">
+  <meta name="theme-color" content="#062329">
   <title>Игротека — Давай ходи</title>
   <meta name="description" content="Настольные игры в подкасте «Давай ходи»: цитаты, выпуски и тайминги.">
   <link rel="canonical" href="https://podcast.boardgamer.ru/igroteka/">
@@ -14,7 +14,8 @@
   </script>
   <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png?v=2">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=0.10.3">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;800&family=Lato:wght@400;700;900&display=swap">
+  <link rel="stylesheet" href="style.css?v=0.10.3&amp;design=boardgamer-1">
   <script defer src="quote-card.js?v=0.10.3"></script>
   <script defer src="vendor/mpg123-decoder-1.0.2.min.js" charset="utf-8"></script>
   <script defer src="mp3-index.js?v=1"></script>
@@ -24,20 +25,26 @@
   <script defer src="quote-votes.js?v=0.10.3"></script>
 </head>
 <body>
-  <header class="masthead">
-    <a class="brand" href="#" aria-label="Давай ходи — библиотека игр">
-      <img class="brand-logo" src="assets/podcast-logo-transparent.png" alt="" width="64" height="64">
-      <span>давай ходи</span>
-    </a>
-    <span class="header-section">ИГРОТЕКА ПОДКАСТА</span>
-    <span class="prototype-label">Выпуски 1–25, 427–429</span>
+  <header class="masthead" aria-label="Игротека подкаста Давай ходи">
+    <img class="ecosystem-banner" src="assets/boardgamer-banner.jpg" alt="" fetchpriority="high">
+    <div class="ecosystem-brand">
+      <a class="brand" href="https://podcast.boardgamer.ru/@davaihodi" aria-label="Давай ходи — к выпускам подкаста">
+        <img class="brand-logo" src="assets/boardgamer-logo.png" alt="Эмблема подкаста Давай ходи" width="180" height="180">
+      </a>
+      <div class="ecosystem-copy">
+        <p class="ecosystem-kicker"><span aria-hidden="true"></span> Игротека подкаста</p>
+        <h1>Давай ходи!</h1>
+        <p class="ecosystem-description">Настольные игры, о которых мы говорили. Цитаты и фрагменты выпусков.</p>
+        <a class="podcast-return" href="https://podcast.boardgamer.ru/@davaihodi">← К выпускам подкаста</a>
+      </div>
+    </div>
   </header>
 
   <main class="workspace">
     <section class="library" aria-labelledby="library-title">
       <div class="library-heading">
         <p class="eyebrow">НАСТОЛЬНЫЕ ИГРЫ В НАШИХ РАЗГОВОРАХ</p>
-        <h1 id="library-title">Игры на слух<span>.</span></h1>
+        <h2 id="library-title">Игры на слух</h2>
         <div class="library-meta">
           <span id="game-total">118 игр</span><span class="meta-dot">·</span>
           <button type="button" id="episode-trigger" class="episode-trigger" aria-haspopup="dialog" aria-controls="episode-picker" disabled><span id="episode-label">Все выпуски</span><span aria-hidden="true">⌄</span></button>
