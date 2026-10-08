@@ -43,7 +43,8 @@ class QuoteAudio {
     catch {this.pendingSeek = true;}
   }
   toggle(quote, episode) {
-    if (!episode?.audio_url || !Number.isFinite(quote.start) || !Number.isFinite(quote.end) || quote.end <= quote.start) return;
+    const audioUrl = episode?.playback_audio_url || episode?.audio_url;
+    if (!audioUrl || !Number.isFinite(quote.start) || !Number.isFinite(quote.end) || quote.end <= quote.start) return;
     if (this.state?.id === quote.id && ['playing', 'loading'].includes(this.state.status)) {
       this.pause();return;
     }
@@ -53,7 +54,7 @@ class QuoteAudio {
       this.state = {id: quote.id, start: quote.start, end: quote.end, status: 'loading', elapsed: 0};
       this.pendingSeek = true;
       // Media fragments also request the initial seek before playback on mobile.
-      this.audio.src = `${episode.audio_url}#t=${quote.start},${quote.end}`;
+      this.audio.src = `${audioUrl}#t=${quote.start},${quote.end}`;
       this.seekStart();
     } else {
       this.state.status = 'loading';
