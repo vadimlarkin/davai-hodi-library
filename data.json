@@ -1,6 +1,6 @@
 {
   "version": "0.10.3",
-  "content_revision": "8eb2b84758ee",
+  "content_revision": "884a743e5384",
   "episodes": [
     {
       "id": "episode-001",
@@ -4495,6 +4495,15 @@
       "cover": "assets/148319.png"
     },
     {
+      "id": "game-bgg-122522",
+      "name": "Пираты против динозавров",
+      "original_name": "Smash Up",
+      "bgg_id": 122522,
+      "bgg_url": "https://boardgamegeek.com/boardgame/122522",
+      "description": "2012 · Настольная игра",
+      "cover": "assets/122522.jpg"
+    },
+    {
       "id": "game-discworld-ankhmorpork",
       "name": "Плоский мир: Анк-Морпорк",
       "original_name": "Discworld: Ankh-Morpork",
@@ -8771,6 +8780,54 @@
       "start": 4727.2,
       "end": 4730.4,
       "text": "И в «Звёздных империях» тоже оформление очень хорошее."
+    },
+    {
+      "id": "quote-auto-407e78a6cb02a0aea5991c4b",
+      "game_id": "game-ascension",
+      "episode_id": "episode-23ab4b53-86d0-453a-ba05-adbab2d7d8a0",
+      "start": 315.84,
+      "end": 327.84,
+      "text": "У меня Ascension слетел и не работал. К нему вышло какое-то сумасшедшее количество патчей. Мне кажется, больше ни к одному приложению на iPad столько патчей не выходило, сколько к Ascension."
+    },
+    {
+      "id": "quote-auto-e2a038d732370db45df2fea1",
+      "game_id": "game-ascension",
+      "episode_id": "episode-23ab4b53-86d0-453a-ba05-adbab2d7d8a0",
+      "start": 336.2,
+      "end": 343.64,
+      "text": "Я три месяца был без Ascension, забыл уже, как там комбы строить в колодах — ужас, ужас. Но всё, слава богу, заработало."
+    },
+    {
+      "id": "quote-auto-57232d8dd6e2c0e3d23df323",
+      "game_id": "game-eclipse-2011",
+      "episode_id": "episode-23ab4b53-86d0-453a-ba05-adbab2d7d8a0",
+      "start": 891.2,
+      "end": 899.68,
+      "text": "— А в Eclipse на iPad удобно играть? — Слушай, вообще нормально. Жалко только, дополнение к нему так и не вышло."
+    },
+    {
+      "id": "quote-auto-21be32ab8ace1d81c4838899",
+      "game_id": "game-ascension",
+      "episode_id": "episode-23ab4b53-86d0-453a-ba05-adbab2d7d8a0",
+      "start": 942.48,
+      "end": 954.96,
+      "text": "Если говорить об образцовых переносах настолок в цифру, то Ascension — одна из них, безусловно. Она совершенно без багов, не считая этого досадного недоразумения, когда она три месяца вообще не работала."
+    },
+    {
+      "id": "quote-auto-10c67f0c618f602c71d02a5e",
+      "game_id": "game-bgg-122522",
+      "episode_id": "episode-23ab4b53-86d0-453a-ba05-adbab2d7d8a0",
+      "start": 2456.12,
+      "end": 2468.68,
+      "text": "В «Пираты против динозавров» мы играли один раз — даже доиграть не смогли. Лично мне кажется, что игра такого уровня интересности в принципе не может даже никуда номинироваться."
+    },
+    {
+      "id": "quote-auto-8b3cc6b99837aaf3969b37c0",
+      "game_id": "game-legends-andor",
+      "episode_id": "episode-23ab4b53-86d0-453a-ba05-adbab2d7d8a0",
+      "start": 2581.6,
+      "end": 2583.28,
+      "text": "Это «Андор», который сложноватый."
     }
   ],
   "evaluations": []
