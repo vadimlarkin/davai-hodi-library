@@ -1,6 +1,6 @@
 {
   "version": "0.10.3",
-  "content_revision": "f49aa76d6c60",
+  "content_revision": "af9ad2faa330",
   "episodes": [
     {
       "id": "episode-001",
@@ -8549,6 +8549,14 @@
       "start": 2170.32,
       "end": 2180.16,
       "text": "Всем пофиг было на этих покемонов на карточках. Эти карточки, я так понимаю, покупают больше в качестве сувениров, чем чтобы играть."
+    },
+    {
+      "id": "quote-auto-1aa6a9f32d867acf5ddf9040",
+      "game_id": "game-ticket-to-ride",
+      "episode_id": "episode-a8df6075-f0b7-427f-8b5d-068f9962b1a6",
+      "start": 222.2,
+      "end": 230.08,
+      "text": "Мы сами пришли к настолкам через iPad: скачали Ticket to Ride — «Билет на поезд». Это была наша первая игра, 2010 год."
     }
   ],
   "evaluations": []
